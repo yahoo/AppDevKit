@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ModalViewController">
+            <connections>
+                <outlet property="descriptionTextView" destination="J5M-GN-GqP" id="KzF-c7-WUU"/>
+                <outlet property="imageView" destination="oQC-vg-70X" id="pUP-si-0Vj"/>
+                <outlet property="titleLabel" destination="5gn-2F-ySd" id="Xvz-yh-f6i"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="280" height="460"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Taiwan-Flag.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="oQC-vg-70X">
+                    <rect key="frame" x="0.0" y="0.0" width="280" height="309"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="309" id="iqi-2b-3tf"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5gn-2F-ySd">
+                    <rect key="frame" x="8" y="317" width="264" height="20"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J5M-GN-GqP">
+                    <rect key="frame" x="5" y="345" width="270" height="110"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0aQ-Ax-ZZe">
+                    <rect key="frame" x="202" y="8" width="70" height="30"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="0.70000000000000007" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="aQR-w4-jwc"/>
+                        <constraint firstAttribute="width" constant="70" id="k8P-3Y-hCM"/>
+                    </constraints>
+                    <state key="normal" title="CLOSE">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="closeButtonTapHandler:" destination="-1" eventType="touchUpInside" id="bvD-y5-BOI"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="J5M-GN-GqP" secondAttribute="bottom" constant="5" id="0lU-6t-jTg"/>
+                <constraint firstItem="oQC-vg-70X" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="7nT-hD-ML3"/>
+                <constraint firstItem="5gn-2F-ySd" firstAttribute="top" secondItem="oQC-vg-70X" secondAttribute="bottom" constant="8" id="CrF-Wj-dPv"/>
+                <constraint firstItem="5gn-2F-ySd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="OtY-l0-mim"/>
+                <constraint firstItem="J5M-GN-GqP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="5" id="VRQ-JB-6l2"/>
+                <constraint firstAttribute="trailing" secondItem="J5M-GN-GqP" secondAttribute="trailing" constant="5" id="dD1-WB-5OX"/>
+                <constraint firstAttribute="trailing" secondItem="5gn-2F-ySd" secondAttribute="trailing" constant="8" id="eCW-bb-lUu"/>
+                <constraint firstItem="0aQ-Ax-ZZe" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="8" id="fZq-S5-rnx"/>
+                <constraint firstItem="J5M-GN-GqP" firstAttribute="top" secondItem="5gn-2F-ySd" secondAttribute="bottom" constant="8" id="mno-Ya-SSj"/>
+                <constraint firstAttribute="trailing" secondItem="oQC-vg-70X" secondAttribute="trailing" id="tHF-9j-nyC"/>
+                <constraint firstAttribute="trailing" secondItem="0aQ-Ax-ZZe" secondAttribute="trailing" constant="8" id="zMf-pm-E7l"/>
+                <constraint firstItem="oQC-vg-70X" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="zrl-NX-LdX"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="149" y="331"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Taiwan-Flag.jpg" width="480" height="319"/>
+    </resources>
+</document>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SampleVCollectionViewCell" id="gTV-IL-0wX" customClass="SampleVCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Taiwan-Flag.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="7vB-FB-UOP">
+                        <rect key="frame" x="15" y="10" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="1zT-gK-Lvw"/>
+                            <constraint firstAttribute="height" constant="80" id="WbB-xI-2Ol"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ah-I7-i7P">
+                        <rect key="frame" x="112" y="18" width="200" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="u7w-qB-AMo"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Description" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="381-JR-aMq">
+                        <rect key="frame" x="112" y="48" width="200" height="42"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="42" id="gLB-fH-Gh0"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="7vB-FB-UOP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="3ed-KH-iVK"/>
+                <constraint firstItem="7vB-FB-UOP" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="HWt-2F-SsP"/>
+                <constraint firstAttribute="trailing" secondItem="381-JR-aMq" secondAttribute="trailing" constant="8" id="JxP-Wx-Q7f"/>
+                <constraint firstItem="381-JR-aMq" firstAttribute="top" secondItem="4ah-I7-i7P" secondAttribute="bottom" constant="8" id="NcF-mx-vZh"/>
+                <constraint firstItem="381-JR-aMq" firstAttribute="leading" secondItem="7vB-FB-UOP" secondAttribute="trailing" constant="17" id="bgJ-RA-Znt"/>
+                <constraint firstItem="4ah-I7-i7P" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="18" id="fov-FN-lJO"/>
+                <constraint firstAttribute="bottom" secondItem="381-JR-aMq" secondAttribute="bottom" priority="750" constant="10" id="gCy-s9-hiX"/>
+                <constraint firstAttribute="trailing" secondItem="4ah-I7-i7P" secondAttribute="trailing" constant="8" id="nbf-DX-umk"/>
+                <constraint firstItem="4ah-I7-i7P" firstAttribute="leading" secondItem="7vB-FB-UOP" secondAttribute="trailing" constant="17" id="zjI-i1-Lxf"/>
+            </constraints>
+            <size key="customSize" width="320" height="98"/>
+            <connections>
+                <outlet property="descriptionLabel" destination="381-JR-aMq" id="Ga1-Sz-dMH"/>
+                <outlet property="imageView" destination="7vB-FB-UOP" id="cXH-nz-Zb8"/>
+                <outlet property="titleLabel" destination="4ah-I7-i7P" id="iXC-dt-RbV"/>
+            </connections>
+            <point key="canvasLocation" x="290" y="399"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Taiwan-Flag.jpg" width="480" height="319"/>
+    </resources>
+</document>

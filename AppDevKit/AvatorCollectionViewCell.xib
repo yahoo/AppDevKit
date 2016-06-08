@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="AvatorCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Taiwan-Flag.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="lLl-6R-Nmm">
+                        <rect key="frame" x="10" y="10" width="80" height="80"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="lLl-6R-Nmm" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="77E-gc-ij7"/>
+                <constraint firstItem="lLl-6R-Nmm" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="Rkf-uD-GJ2"/>
+                <constraint firstAttribute="bottom" secondItem="lLl-6R-Nmm" secondAttribute="bottom" constant="10" id="nSx-OI-7id"/>
+                <constraint firstAttribute="trailing" secondItem="lLl-6R-Nmm" secondAttribute="trailing" constant="10" id="xSv-U6-5Mb"/>
+            </constraints>
+            <connections>
+                <outlet property="imageView" destination="lLl-6R-Nmm" id="IPj-vU-owq"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Taiwan-Flag.jpg" width="480" height="319"/>
+    </resources>
+</document>

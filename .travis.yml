@@ -1,0 +1,11 @@
+branches:
+  only:
+    - master
+language: objective-c
+osx_image: xcode7.3
+install:
+- gem install xcpretty -N --no-ri --no-rdoc
+script:
+- set -o pipefail && xcodebuild -workspace AppDevKit.xcworkspace -scheme AppDevKit -sdk iphonesimulator9.3 -destination 'platform=iOS Simulator,name=iPhone 6,OS=9.0' build test GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES | xcpretty -c
+after_success:
+  bash <(curl -s https://codecov.io/bash)

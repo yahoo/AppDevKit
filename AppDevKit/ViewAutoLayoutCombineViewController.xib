@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewAutoLayoutCombineViewController">
+            <connections>
+                <outlet property="bottomRightAssistLeftImageView" destination="C6b-UN-re6" id="psg-W7-Tc0"/>
+                <outlet property="bottomRightAssistTopImageView" destination="RN5-ja-L5P" id="PkO-b3-Xbz"/>
+                <outlet property="bottomRightImageView" destination="AKt-nl-pqc" id="sTX-rw-VLl"/>
+                <outlet property="hideBottomBtn" destination="nX6-19-OGY" id="HpT-Fa-fSV"/>
+                <outlet property="hideLeftBtn" destination="McO-X5-Hk4" id="e6w-dn-cPP"/>
+                <outlet property="hideRightBtn" destination="Ai5-mj-XeI" id="k33-c1-Q7Z"/>
+                <outlet property="hideTopBtn" destination="Lky-48-Zqs" id="tOz-pl-aoM"/>
+                <outlet property="topLeftAssistBottomImageView" destination="AWW-Xy-hfg" id="0HX-uZ-nk6"/>
+                <outlet property="topLeftAssistRightImageView" destination="wGn-VV-YqU" id="20U-8d-iMq"/>
+                <outlet property="topLeftImageView" destination="Z7O-zM-BcL" id="TVu-7v-6VW"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nX6-19-OGY" userLabel="Hide Bottom Btn">
+                    <rect key="frame" x="254" y="100" width="91" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="91" id="BZm-1W-jCQ"/>
+                        <constraint firstAttribute="height" constant="50" id="ktQ-p9-Emp"/>
+                    </constraints>
+                    <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="Hide Bottom">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="hideBottomTapped:" destination="-1" eventType="touchUpInside" id="9QJ-3o-711"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="McO-X5-Hk4" userLabel="Hide Left Btn">
+                    <rect key="frame" x="345" y="380" width="80" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="nTo-jW-61m"/>
+                        <constraint firstAttribute="height" constant="50" id="sFo-6n-Lqp"/>
+                    </constraints>
+                    <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="Hide Left">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="hideLeftTapped:" destination="-1" eventType="touchUpInside" id="rbe-Cz-KMJ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lky-48-Zqs" userLabel="Hide Top Btn">
+                    <rect key="frame" x="255" y="450" width="90" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="90" id="0vg-qk-ImT"/>
+                        <constraint firstAttribute="height" constant="50" id="TgM-hG-fq5"/>
+                    </constraints>
+                    <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="Hide Top">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="hideTopTapped:" destination="-1" eventType="touchUpInside" id="Oaa-yF-Mt9"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ai5-mj-XeI" userLabel="Hide Right Btn">
+                    <rect key="frame" x="175" y="170" width="80" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="6O6-F9-k4R"/>
+                        <constraint firstAttribute="height" constant="50" id="72H-yN-XAK"/>
+                    </constraints>
+                    <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="Hide Right">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="hideRightTapped:" destination="-1" eventType="touchUpInside" id="C8P-Pf-Meg"/>
+                    </connections>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="USA-Flag.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Z7O-zM-BcL">
+                    <rect key="frame" x="275" y="170" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Vvs-hg-Jnp"/>
+                        <constraint firstAttribute="width" constant="50" id="yM9-Q9-TTT"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="France-Flag.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="AWW-Xy-hfg">
+                    <rect key="frame" x="275" y="240" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="NHY-mz-QNT"/>
+                        <constraint firstAttribute="width" constant="50" id="XLJ-Ut-m3F"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UK-Flag.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="wGn-VV-YqU">
+                    <rect key="frame" x="345" y="170" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="Bd2-kj-BG0"/>
+                        <constraint firstAttribute="height" constant="50" id="OeM-uo-8xu"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Taiwan-Flag.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="AKt-nl-pqc">
+                    <rect key="frame" x="275" y="380" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="7H3-Pv-tg1"/>
+                        <constraint firstAttribute="height" constant="50" id="TnD-gT-grb"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Macau-Flag.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="C6b-UN-re6">
+                    <rect key="frame" x="205" y="380" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="KuZ-SW-KKV"/>
+                        <constraint firstAttribute="height" constant="50" id="OVU-11-HfD"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Portugal-Flag.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="RN5-ja-L5P">
+                    <rect key="frame" x="275" y="310" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="f5g-lh-v5p"/>
+                        <constraint firstAttribute="height" constant="50" id="gVS-ja-SHT"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Lky-48-Zqs" firstAttribute="top" secondItem="McO-X5-Hk4" secondAttribute="bottom" constant="20" id="1Rs-7P-c6K"/>
+                <constraint firstItem="nX6-19-OGY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="78P-dc-JJ9"/>
+                <constraint firstItem="Z7O-zM-BcL" firstAttribute="leading" secondItem="Ai5-mj-XeI" secondAttribute="trailing" constant="20" id="7c4-B5-Ta7"/>
+                <constraint firstItem="McO-X5-Hk4" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="85" id="DrK-1B-kgS"/>
+                <constraint firstItem="wGn-VV-YqU" firstAttribute="leading" secondItem="Z7O-zM-BcL" secondAttribute="trailing" constant="20" id="FB1-n7-B0b"/>
+                <constraint firstItem="AWW-Xy-hfg" firstAttribute="top" secondItem="Z7O-zM-BcL" secondAttribute="bottom" constant="20" id="Fcw-wa-xJO"/>
+                <constraint firstItem="Ai5-mj-XeI" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="-85" id="H5O-k9-IVZ"/>
+                <constraint firstAttribute="bottom" secondItem="Lky-48-Zqs" secondAttribute="bottom" constant="100" id="KwS-zs-bw1"/>
+                <constraint firstItem="AKt-nl-pqc" firstAttribute="top" secondItem="RN5-ja-L5P" secondAttribute="bottom" constant="20" id="N6s-yz-9lC"/>
+                <constraint firstItem="AKt-nl-pqc" firstAttribute="bottom" secondItem="Lky-48-Zqs" secondAttribute="top" constant="-20" id="R8i-iC-yDO"/>
+                <constraint firstItem="RN5-ja-L5P" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="UKC-3M-4oO"/>
+                <constraint firstItem="Lky-48-Zqs" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ZIe-AT-ofX"/>
+                <constraint firstItem="Ai5-mj-XeI" firstAttribute="top" secondItem="nX6-19-OGY" secondAttribute="bottom" constant="20" id="awc-2G-Ieh"/>
+                <constraint firstItem="nX6-19-OGY" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="b2R-kr-aye"/>
+                <constraint firstItem="wGn-VV-YqU" firstAttribute="centerY" secondItem="Ai5-mj-XeI" secondAttribute="centerY" id="bzk-L8-kTW"/>
+                <constraint firstItem="AWW-Xy-hfg" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="dNL-4K-ZdB"/>
+                <constraint firstItem="AKt-nl-pqc" firstAttribute="trailing" secondItem="McO-X5-Hk4" secondAttribute="leading" constant="-20" id="dqU-j3-0UH"/>
+                <constraint firstItem="Z7O-zM-BcL" firstAttribute="top" secondItem="nX6-19-OGY" secondAttribute="bottom" constant="20" id="kLO-u6-x8z"/>
+                <constraint firstItem="McO-X5-Hk4" firstAttribute="centerY" secondItem="C6b-UN-re6" secondAttribute="centerY" id="sFN-Uw-VJV"/>
+                <constraint firstItem="AKt-nl-pqc" firstAttribute="leading" secondItem="C6b-UN-re6" secondAttribute="trailing" constant="20" id="xeF-Uh-QIc"/>
+            </constraints>
+            <point key="canvasLocation" x="259" y="368"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="France-Flag.jpg" width="600" height="400"/>
+        <image name="Macau-Flag.jpg" width="600" height="400"/>
+        <image name="Portugal-Flag.jpg" width="600" height="400"/>
+        <image name="Taiwan-Flag.jpg" width="480" height="319"/>
+        <image name="UK-Flag.jpg" width="1200" height="600"/>
+        <image name="USA-Flag.jpg" width="1200" height="632"/>
+    </resources>
+</document>

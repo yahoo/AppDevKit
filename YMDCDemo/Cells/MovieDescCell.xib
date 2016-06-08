@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MovieDescCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cats &amp; Dogs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LAF-GG-zRc">
+                        <rect key="frame" x="0.0" y="12" width="375" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2z1-gL-QLX">
+                        <rect key="frame" x="0.0" y="45" width="375" height="113"/>
+                        <mutableString key="text">A secret war between cats and dogs quickly peaks as Professor Brody a scientist tries to create a serum to cure dog allergies in humans. As the unsuspecting humans go through their busy lives, the cats make several attempts to possess the formula, as their canine foes try tirelessly to stop them. Caught in the crossfire, a young beagle named Lou, adopted by the Brody family, tries hard to succeed as a secret agent, and in being a friend to the young Scotty Brody. A evil snow white cat named Mr. Tinkles is planning to sabotage the efforts of Professor Brody to discover a cure for human allergies to dogs. And he'll even make every person on Earth allergic to dogs so that he can take over the world with his army of evil cats! Written by Anthony Pereyra </mutableString>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3cb-HZ-C0g" customClass="ADKGradientView">
+                        <rect key="frame" x="0.0" y="58" width="375" height="100"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="XmP-31-bE3"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6T6-e9-8p0">
+                        <rect key="frame" x="173" y="158" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="Bbn-Bj-Kav"/>
+                            <constraint firstAttribute="width" constant="30" id="cxx-9z-voY"/>
+                        </constraints>
+                        <state key="normal" image="Icon-Arrow-Down">
+                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="expandButtonTap:" destination="gTV-IL-0wX" eventType="touchUpInside" id="509-od-4ny"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="3cb-HZ-C0g" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="1LT-NR-QrA"/>
+                <constraint firstItem="6T6-e9-8p0" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="2mw-9X-fPT"/>
+                <constraint firstAttribute="bottom" secondItem="6T6-e9-8p0" secondAttribute="bottom" constant="12" id="A66-DQ-yTN"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="2z1-gL-QLX" secondAttribute="bottom" constant="42" id="EXL-1H-jhi"/>
+                <constraint firstItem="2z1-gL-QLX" firstAttribute="top" secondItem="LAF-GG-zRc" secondAttribute="bottom" constant="12" id="Rfa-C2-ekb"/>
+                <constraint firstItem="LAF-GG-zRc" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="12" id="bEq-ow-JTM"/>
+                <constraint firstItem="2z1-gL-QLX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="gb9-ct-lSN"/>
+                <constraint firstAttribute="trailing" secondItem="2z1-gL-QLX" secondAttribute="trailing" id="i1y-kb-B8r"/>
+                <constraint firstAttribute="trailing" secondItem="3cb-HZ-C0g" secondAttribute="trailing" id="j78-Gz-NhM"/>
+                <constraint firstAttribute="bottom" secondItem="3cb-HZ-C0g" secondAttribute="bottom" constant="42" id="sl1-2G-DD8"/>
+                <constraint firstAttribute="trailing" secondItem="LAF-GG-zRc" secondAttribute="trailing" id="sp9-h8-ed0"/>
+                <constraint firstItem="LAF-GG-zRc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="uAL-Tn-GAd"/>
+            </constraints>
+            <connections>
+                <outlet property="descriptionLabel" destination="2z1-gL-QLX" id="nLj-Xc-EXY"/>
+                <outlet property="expandButton" destination="6T6-e9-8p0" id="3EN-pm-Afh"/>
+                <outlet property="shadowView" destination="3cb-HZ-C0g" id="G8J-Z2-vN0"/>
+                <outlet property="titleLabel" destination="LAF-GG-zRc" id="2NY-J1-p96"/>
+            </connections>
+            <point key="canvasLocation" x="317.5" y="251"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Icon-Arrow-Down" width="14" height="8"/>
+    </resources>
+</document>

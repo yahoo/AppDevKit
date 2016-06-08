@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9532"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AutoLayoutSupportTestView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" horizontalHuggingPriority="50" translatesAutoresizingMaskIntoConstraints="NO" id="tkR-9i-ctB">
+                    <rect key="frame" x="30" y="30" width="50" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="HtB-Ei-zx3"/>
+                        <constraint firstAttribute="height" constant="50" id="bh4-dD-vsb"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" horizontalHuggingPriority="50" translatesAutoresizingMaskIntoConstraints="NO" id="Z78-EL-nen">
+                    <rect key="frame" x="30" y="95" width="50" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="g8l-Us-pPq"/>
+                        <constraint firstAttribute="height" constant="50" id="sCe-D0-yNi"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" horizontalHuggingPriority="50" translatesAutoresizingMaskIntoConstraints="NO" id="gx7-Uy-6K9">
+                    <rect key="frame" x="140" y="30" width="50" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="D16-M2-MUt"/>
+                        <constraint firstAttribute="height" constant="50" id="LiK-jo-PXj"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="gx7-Uy-6K9" firstAttribute="leading" secondItem="tkR-9i-ctB" secondAttribute="trailing" constant="60" id="79I-Z6-8Cq"/>
+                <constraint firstItem="tkR-9i-ctB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="30" id="ClJ-5q-6HC"/>
+                <constraint firstItem="gx7-Uy-6K9" firstAttribute="top" secondItem="tkR-9i-ctB" secondAttribute="top" id="Pcj-WM-7zn"/>
+                <constraint firstItem="Z78-EL-nen" firstAttribute="leading" secondItem="tkR-9i-ctB" secondAttribute="leading" id="Puk-hf-Lh2"/>
+                <constraint firstItem="tkR-9i-ctB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="bJf-sg-Umo"/>
+                <constraint firstItem="Z78-EL-nen" firstAttribute="top" secondItem="tkR-9i-ctB" secondAttribute="bottom" constant="15" id="dDA-XY-9n6"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="buttomView" destination="Z78-EL-nen" id="etu-ec-yJP"/>
+                <outlet property="centerView" destination="tkR-9i-ctB" id="iIU-gZ-Rrd"/>
+                <outlet property="rightView" destination="gx7-Uy-6K9" id="Cc1-Ox-PWG"/>
+            </connections>
+            <point key="canvasLocation" x="428.5" y="238.5"/>
+        </view>
+    </objects>
+</document>

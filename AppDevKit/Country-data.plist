@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>photo</key>
+		<string>USA-Flag.jpg</string>
+		<key>title</key>
+		<string>USA</string>
+		<key>desc</key>
+		<string>The United States of America (USA), commonly referred to as the United States (U.S.) or America, is a federal republic composed of 50 states, the federal district of Washington, D.C., five major territories, and various possessions.</string>
+	</dict>
+	<dict>
+		<key>photo</key>
+		<string>UK-Flag.jpg</string>
+		<key>title</key>
+		<string>United Kingdom</string>
+		<key>desc</key>
+		<string>The United Kingdom of Great Britain and Northern Ireland, commonly known as the United Kingdom (UK) or Britain, is a sovereign state in Europe. Lying off the north-western coast of the European mainland, it includes the island of Great Britain (the name of which is also loosely applied to the whole country), the north-eastern part of the island of Ireland and many smaller islands.</string>
+	</dict>
+	<dict>
+		<key>photo</key>
+		<string>France-Flag.jpg</string>
+		<key>title</key>
+		<string>France</string>
+		<key>desc</key>
+		<string>France (French: [fʁɑ̃s]), officially the French Republic (French: République française [ʁepyblik fʁɑ̃sɛz]), is a unitary sovereign state comprising territory in western Europe and several overseas regions and territories.</string>
+	</dict>
+	<dict>
+		<key>photo</key>
+		<string>Portugal-Flag.jpg</string>
+		<key>title</key>
+		<string>Portugal</string>
+		<key>desc</key>
+		<string>Portugal (Portuguese: [puɾtuˈɣaɫ]), officially the Portuguese Republic (Portuguese: República Portuguesa), is a country on the Iberian Peninsula, in Southwestern Europe.</string>
+	</dict>
+	<dict>
+		<key>photo</key>
+		<string>Spain-Flag.jpg</string>
+		<key>title</key>
+		<string>Spain</string>
+		<key>desc</key>
+		<string>Spain (Listeni/ˈspeɪn/; Spanish: España [esˈpaɲa] ( listen)), officially the Kingdom of Spain (Spanish: Reino de España),[a][b] is a sovereign state largely located on the Iberian Peninsula in southwestern Europe, with archipelagos in the Atlantic Ocean and Mediterranean Sea, and several small territories on and near the north African coast. Its mainland is bordered to the south and east by the Mediterranean Sea except for a small land boundary with Gibraltar; to the north and northeast by France, Andorra, and the Bay of Biscay; and to the west and northwest by Portugal and the Atlantic Ocean. Along with France and Morocco, it is one of only three countries to have both Atlantic and Mediterranean coastlines. Extending to 1,214 km (754 mi), the Portugal–Spain border is the longest uninterrupted border within the European Union.</string>
+	</dict>
+	<dict>
+		<key>photo</key>
+		<string>Mexico-Flag.jpg</string>
+		<key>title</key>
+		<string>Mexico</string>
+		<key>desc</key>
+		<string>Mexico (Spanish: México [ˈmexiko] ( listen)), officially the United Mexican States (Spanish: Estados Unidos Mexicanos, About this sound listen (help·info)),[9][10][11][12] is a federal republic located in North America. The country is bordered to the north by the United States; to the south and west by the Pacific Ocean; to the southeast by Guatemala, Belize, and the Caribbean Sea; and to the east by the Gulf of Mexico.[13] Covering almost two million square kilometres (over 760,000 sq mi),[12] Mexico is the fifth largest country in the Americas by total area and the 13th largest independent nation in the world. With an estimated population of over 120 million,[14] it is the eleventh most populous country and the most populous Spanish-speaking country in the world and the second most populous country in Latin America. Mexico is a federation comprising thirty-one states and a Federal District, its capital and largest city.</string>
+	</dict>
+	<dict>
+		<key>photo</key>
+		<string>Turkey-Flag.jpg</string>
+		<key>title</key>
+		<string>Turkey</string>
+		<key>desc</key>
+		<string>Turkey (Listeni/ˈtɜːrki/; Turkish: Türkiye [ˈtyɾcije]), officially the Republic of Turkey (Turkish: About this sound Türkiye Cumhuriyeti (help·info); pronounced [ˈtyɾcije d͡ʒumˈhuɾijeti]), is a parliamentary republic in Eurasia, largely located in Western Asia, with the smaller portion of Eastern Thrace in Southeast Europe. Turkey is bordered by eight countries: Syria and Iraq to the south; Iran, Armenia, and the Azerbaijani exclave of Nakhchivan to the east; Georgia to the northeast; Bulgaria to the northwest; and Greece to the west. The Black Sea is to the north, the Mediterranean Sea to the south, and the Aegean Sea to the west. The Bosphorus, the Sea of Marmara, and the Dardanelles (which together form the Turkish Straits) demarcate the boundary between Thrace and Anatolia; they also separate Europe and Asia.[5] Turkey&apos;s location at the crossroads of Europe and Asia makes it a country of significant geostrategic importance.</string>
+	</dict>
+	<dict>
+		<key>photo</key>
+		<string>Taiwan-Flag.jpg</string>
+		<key>title</key>
+		<string>Taiwan</string>
+		<key>desc</key>
+		<string>Taiwan (Listeni/ˌtaɪˈwɑːn/; Chinese: 臺灣 or 台灣; see below), officially the Republic of China (ROC; Chinese: 中華民國; pinyin: Zhōnghuá Mínguó) is, a state in East Asia. Originally based in mainland China, the ROC has since 1945 governed the island of Taiwan, which constitutes more than 99% of its territory,[e] as well as Penghu, Kinmen, Matsu, and other minor islands, following its loss of the mainland China territory in 1949 in the Chinese Civil War. This remaining area is also called the &quot;Free area of the Republic of China&quot;, which is not ruled by the Government of the People&apos;s Republic of China (PRC) in Beijing although only 22 countries officially recognize it.</string>
+	</dict>
+	<dict>
+		<key>photo</key>
+		<string>Macau-Flag.jpg</string>
+		<key>title</key>
+		<string>Macau</string>
+		<key>desc</key>
+		<string>Macau (/məˈkaʊ/; 澳門; 澳门; &quot;Bay gate&quot;), also spelled Macao, officially known as the Macao Special Administrative Region of the People&apos;s Republic of China, is a special administrative region on the southern coast of China. Macau lies on the western side of the Pearl River Delta across from Hong Kong, which is about 64 kilometers to the east, and it is also bordered by Guangdong province of Mainland China to the north and the South China Sea to the east and south.[6] With an estimated population of around 636,200 living in an area of 30.3 km2 (11.6 sq mi), it is the most densely populated region in the world.[a]</string>
+	</dict>
+</array>
+</plist>
