@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>ADKModalMaskView Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">AppDevKit </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Yahoo</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/delegate">delegate</option>
+		
+		<option value="//api/name/modalColor">modalColor</option>
+		
+		<option value="//api/name/modalMode">modalMode</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/dismiss:">- dismiss:</option>
+		
+		<option value="//api/name/dismiss:withAnimation:">- dismiss:withAnimation:</option>
+		
+		<option value="//api/name/initWithView:">- initWithView:</option>
+		
+		<option value="//api/name/initWithView:autoDismiss:">- initWithView:autoDismiss:</option>
+		
+		<option value="//api/name/initWithView:modalColor:">- initWithView:modalColor:</option>
+		
+		<option value="//api/name/initWithView:modalColor:autoDismiss:">- initWithView:modalColor:autoDismiss:</option>
+		
+		<option value="//api/name/initWithView:showInFullScreen:autoDismiss:modalColor:maskView:">- initWithView:showInFullScreen:autoDismiss:modalColor:maskView:</option>
+		
+		<option value="//api/name/initWithView:showInFullScreen:modalColor:">- initWithView:showInFullScreen:modalColor:</option>
+		
+		<option value="//api/name/showInView:completion:">- showInView:completion:</option>
+		
+		<option value="//api/name/showInView:withAnimation:completion:">- showInView:withAnimation:completion:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">ADKModalMaskView Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>UIView</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>ADKModalMaskView.h<br />ADKModalMaskView.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/modalColor" title="modalColor"></a>
+	<h3 class="method-title"><code><a href="#//api/name/modalColor">&nbsp;&nbsp;modalColor</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Describe a specific UIColor that you want to apply on ADKModalMaskView&rsquo;s modal color.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) UIColor *modalColor</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ADKModalMaskView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/delegate" title="delegate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/delegate">&nbsp;&nbsp;delegate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Assign a delegate owner for ADKModalMaskView. It will help you to do something before ADKModalMaskView dismiss or after dismiss.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, weak) id&lt;ADKModalMaskViewDelegate&gt; delegate</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ADKModalMaskView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/modalMode" title="modalMode"></a>
+	<h3 class="method-title"><code><a href="#//api/name/modalMode">&nbsp;&nbsp;modalMode</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Decide which present mode will be using in ADKModalMaskView.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) ADKModalMaskModeType modalMode</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ADKModalMaskView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initWithView:" title="initWithView:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithView:">&ndash;&nbsp;initWithView:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Generating a ADKModalMaskView to present your view.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)initWithView:(UIView *)<em>view</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>view</code></th>
+						<td><p>Assiging specific view that you want to present on the screen.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Instance of ADKModalMaskView.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ADKModalMaskView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initWithView:autoDismiss:" title="initWithView:autoDismiss:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithView:autoDismiss:">&ndash;&nbsp;initWithView:autoDismiss:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Generating a ADKModalMaskView to present your view and set automatic dismiss mode at begin.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)initWithView:(UIView *)<em>view</em> autoDismiss:(BOOL)<em>isAuto</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>view</code></th>
+						<td><p>Assiging specific view that you want to present on the screen.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>isAuto</code></th>
+						<td><p>Enable or disable automatic dismiss mode. Yes means enabled and NO means disable.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Instance of ADKModalMaskView.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ADKModalMaskView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initWithView:modalColor:" title="initWithView:modalColor:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithView:modalColor:">&ndash;&nbsp;initWithView:modalColor:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Generating a ADKModalMaskView to present your view with specific modal color.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)initWithView:(UIView *)<em>view</em> modalColor:(UIColor *)<em>color</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>view</code></th>
+						<td><p>Assiging specific view that you want to present on the screen.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>color</code></th>
+						<td><p>Describe a specific UIColor that you want to apply on ADKModalMaskView&rsquo;s modal color.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Instance of ADKModalMaskView.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ADKModalMaskView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initWithView:modalColor:autoDismiss:" title="initWithView:modalColor:autoDismiss:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithView:modalColor:autoDismiss:">&ndash;&nbsp;initWithView:modalColor:autoDismiss:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Generating a ADKModalMaskView to present your view with specific modal color and set automatic dismiss mode at begin.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)initWithView:(UIView *)<em>view</em> modalColor:(UIColor *)<em>color</em> autoDismiss:(BOOL)<em>isAuto</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>view</code></th>
+						<td><p>Assiging specific view that you want to present on the screen.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>color</code></th>
+						<td><p>Describe a specific UIColor that you want to apply on ADKModalMaskView&rsquo;s modal color.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>isAuto</code></th>
+						<td><p>Enable or disable automatic dismiss mode. Yes means enabled and NO means disable.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Instance of ADKModalMaskView.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ADKModalMaskView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initWithView:showInFullScreen:modalColor:" title="initWithView:showInFullScreen:modalColor:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithView:showInFullScreen:modalColor:">&ndash;&nbsp;initWithView:showInFullScreen:modalColor:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Generating a ADKModalMaskView to present your view with specific modal color and set automatic dismiss mode at begin.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)initWithView:(UIView *)<em>view</em> showInFullScreen:(BOOL)<em>showInFullScreen</em> modalColor:(UIColor *)<em>color</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>view</code></th>
+						<td><p>Assiging specific view that you want to present on the screen.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>showInFullScreen</code></th>
+						<td><p>Decide presented view scaling mode. Yes means ADKModalMaskView will scale your view to full screen size. No means keep original size.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>color</code></th>
+						<td><p>Descirbe a specific UIColor that you want to apply on ADKModalMaskView&rsquo;s modal color.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Instance of ADKModalMaskView.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ADKModalMaskView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initWithView:showInFullScreen:autoDismiss:modalColor:maskView:" title="initWithView:showInFullScreen:autoDismiss:modalColor:maskView:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithView:showInFullScreen:autoDismiss:modalColor:maskView:">&ndash;&nbsp;initWithView:showInFullScreen:autoDismiss:modalColor:maskView:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Generating a ADKModalMaskView to present your view with specific modal color and set automatic dismiss mode at begin.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)initWithView:(UIView *)<em>view</em> showInFullScreen:(BOOL)<em>showInFullScreen</em> autoDismiss:(BOOL)<em>isAuto</em> modalColor:(UIColor *)<em>color</em> maskView:(UIView *)<em>maskView</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>view</code></th>
+						<td><p>Assiging specific view that you want to present on the screen.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>showInFullScreen</code></th>
+						<td><p>Decide presnted view scaling mode. Yes means ADKModalMaskView will scale your view to full screen size. No means keep original size.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>isAuto</code></th>
+						<td><p>Enable or disable automatic dismiss mode. Yes means enabled and NO means disable.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>color</code></th>
+						<td><p>Decide a specific UIColor that you want to apply on ADKModalMaskView&rsquo;s modal color.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>maskView</code></th>
+						<td><p>Giving a specific view instance to replace original pure color.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Instance of ADKModalMaskView.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ADKModalMaskView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/showInView:completion:" title="showInView:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/showInView:completion:">&ndash;&nbsp;showInView:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Present your modal view by ADKModalMaskView.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)showInView:(UIView *)<em>baseView</em> completion:(void ( ^ ) ( BOOL finished ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>baseView</code></th>
+						<td><p>Presented view will show above a specific base view.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>This block will run when ADKModalMaskView did finish present.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ADKModalMaskView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/showInView:withAnimation:completion:" title="showInView:withAnimation:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/showInView:withAnimation:completion:">&ndash;&nbsp;showInView:withAnimation:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Present your modal view by ADKModalMaskView with aniamtion effect.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)showInView:(UIView *)<em>baseView</em> withAnimation:(BOOL)<em>animation</em> completion:(void ( ^ ) ( BOOL finished ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>baseView</code></th>
+						<td><p>Presented view will show above a specific base view.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>animation</code></th>
+						<td><p>Present ADKModalMaskView with animation effect or without animation. Yes means want to use animation effect.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>This block will run when ADKModalMaskView did finish present.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ADKModalMaskView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/dismiss:" title="dismiss:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/dismiss:">&ndash;&nbsp;dismiss:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Dismissing ADKModalMaskView manually.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)dismiss:(void ( ^ ) ( BOOL finished ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>This block will run when ADKModalMaskView did finish dismiss.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ADKModalMaskView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/dismiss:withAnimation:" title="dismiss:withAnimation:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/dismiss:withAnimation:">&ndash;&nbsp;dismiss:withAnimation:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Dismissing ADKModalMaskView manually and decide to use animation effect or not.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)dismiss:(void ( ^ ) ( BOOL finished ))<em>completion</em> withAnimation:(BOOL)<em>animation</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>This block will run when ADKModalMaskView did finish dismiss.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>animation</code></th>
+						<td><p>Dismiss ADKModalMaskView with animation effect or without animation. Yes means want to use animation effect.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ADKModalMaskView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2016 Yahoo. All rights reserved. Updated: 2016-06-08</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

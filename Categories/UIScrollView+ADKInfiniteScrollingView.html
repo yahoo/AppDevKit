@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>UIScrollView(ADKInfiniteScrollingView) Category Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">AppDevKit </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Yahoo</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/infiniteScrollingContentView">infiniteScrollingContentView</option>
+		
+		<option value="//api/name/showInfiniteScrolling">showInfiniteScrolling</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/ADKAddInfiniteScrollingWithHandleView:actionHandler:">- ADKAddInfiniteScrollingWithHandleView:actionHandler:</option>
+		
+		<option value="//api/name/ADKTriggerInfiniteScrollingWithAnimation:">- ADKTriggerInfiniteScrollingWithAnimation:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">UIScrollView(ADKInfiniteScrollingView) Category Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Declared in</th>
+	<td>UIScrollView+ADKInfiniteScrollingView.h<br />UIScrollView+ADKInfiniteScrollingView.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/ADKAddInfiniteScrollingWithHandleView:actionHandler:" title="ADKAddInfiniteScrollingWithHandleView:actionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ADKAddInfiniteScrollingWithHandleView:actionHandler:">&ndash;&nbsp;ADKAddInfiniteScrollingWithHandleView:actionHandler:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Add a infinite scrolling view at scrollview content view end, when infinite scrolling trigger, actionHandler will be triggered</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)ADKAddInfiniteScrollingWithHandleView:(UIView&lt;ADKInfiniteScrollingViewProtocol&gt; *)<em>infiniteScrollingHandleView</em> actionHandler:(void ( ^ ) ( void ))<em>actionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>infiniteScrollingHandleView</code></th>
+						<td><p>A UIView should conform <a href="../Protocols/ADKInfiniteScrollingViewProtocol.html">ADKInfiniteScrollingViewProtocol</a></p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>actionHandler</code></th>
+						<td><p>Block will invoke while infinite scrolling triggered</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UIScrollView+ADKInfiniteScrollingView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ADKTriggerInfiniteScrollingWithAnimation:" title="ADKTriggerInfiniteScrollingWithAnimation:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ADKTriggerInfiniteScrollingWithAnimation:">&ndash;&nbsp;ADKTriggerInfiniteScrollingWithAnimation:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Programmatically trigger infinite scrolling loading, will invoke actionHandler</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)ADKTriggerInfiniteScrollingWithAnimation:(BOOL)<em>animated</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>animated</code></th>
+						<td><p>Do scrolling animate or not</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UIScrollView+ADKInfiniteScrollingView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/infiniteScrollingContentView" title="infiniteScrollingContentView"></a>
+	<h3 class="method-title"><code><a href="#//api/name/infiniteScrollingContentView">&nbsp;&nbsp;infiniteScrollingContentView</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Deal animation and infinite scrolling state. Please reference Class <a href="../Classes/ADKInfiniteScrollingContentView.html">ADKInfiniteScrollingContentView</a></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) ADKInfiniteScrollingContentView *infiniteScrollingContentView</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UIScrollView+ADKInfiniteScrollingView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/showInfiniteScrolling" title="showInfiniteScrolling"></a>
+	<h3 class="method-title"><code><a href="#//api/name/showInfiniteScrolling">&nbsp;&nbsp;showInfiniteScrolling</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Enable/disable and make <a href="#//api/name/infiniteScrollingContentView">infiniteScrollingContentView</a> visiable/hidden</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL showInfiniteScrolling</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UIScrollView+ADKInfiniteScrollingView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2016 Yahoo. All rights reserved. Updated: 2016-06-08</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

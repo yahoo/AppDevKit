@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>UIView(ADKAutoLayoutSupport) Category Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">AppDevKit </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Yahoo</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/constraintForAttribute:">- constraintForAttribute:</option>
+		
+		<option value="//api/name/hideBottomConstraint">- hideBottomConstraint</option>
+		
+		<option value="//api/name/hideLeadingConstraint">- hideLeadingConstraint</option>
+		
+		<option value="//api/name/hideTopConstraint">- hideTopConstraint</option>
+		
+		<option value="//api/name/hideTrailingConstraint">- hideTrailingConstraint</option>
+		
+		<option value="//api/name/hideView:withConstraints:">- hideView:withConstraints:</option>
+		
+		<option value="//api/name/hideViewHeight">- hideViewHeight</option>
+		
+		<option value="//api/name/hideViewWidth">- hideViewWidth</option>
+		
+		<option value="//api/name/setConstraintConstant:forAttribute:">- setConstraintConstant:forAttribute:</option>
+		
+		<option value="//api/name/unhideBottomConstraint">- unhideBottomConstraint</option>
+		
+		<option value="//api/name/unhideLeadingConstraint">- unhideLeadingConstraint</option>
+		
+		<option value="//api/name/unhideTopConstraint">- unhideTopConstraint</option>
+		
+		<option value="//api/name/unhideTrailingConstraint">- unhideTrailingConstraint</option>
+		
+		<option value="//api/name/unhideViewHeight">- unhideViewHeight</option>
+		
+		<option value="//api/name/unhideViewWidth">- unhideViewWidth</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">UIView(ADKAutoLayoutSupport) Category Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Declared in</th>
+	<td>UIView+ADKAutoLayoutSupport.h<br />UIView+ADKAutoLayoutSupport.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/hideView:withConstraints:" title="hideView:withConstraints:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/hideView:withConstraints:">&ndash;&nbsp;hideView:withConstraints:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Hide/unhide view and it&rsquo;s constraint, e.g. ADKLayoutAttributeBottom | ADKLayoutAttributeHeight will handle both bottom constraint and height constraint</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)hideView:(BOOL)<em>isHidden</em> withConstraints:(ADKLayoutAttribute)<em>attributes</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>isHidden</code></th>
+						<td><p>View will hide for YES, show for NO</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>attributes</code></th>
+						<td><p>Constraints will be affect, please reference <a href="../Constants/ADKLayoutAttribute.html">ADKLayoutAttribute</a></p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UIView+ADKAutoLayoutSupport.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/hideViewWidth" title="hideViewWidth"></a>
+	<h3 class="method-title"><code><a href="#//api/name/hideViewWidth">&ndash;&nbsp;hideViewWidth</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Support auto layout to hide view&rsquo;s width.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)hideViewWidth</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UIView+ADKAutoLayoutSupport.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/unhideViewWidth" title="unhideViewWidth"></a>
+	<h3 class="method-title"><code><a href="#//api/name/unhideViewWidth">&ndash;&nbsp;unhideViewWidth</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Support auto layout to unhide view&rsquo;s width.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)unhideViewWidth</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UIView+ADKAutoLayoutSupport.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/hideViewHeight" title="hideViewHeight"></a>
+	<h3 class="method-title"><code><a href="#//api/name/hideViewHeight">&ndash;&nbsp;hideViewHeight</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Support auto layout to hide view&rsquo;s height.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)hideViewHeight</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UIView+ADKAutoLayoutSupport.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/unhideViewHeight" title="unhideViewHeight"></a>
+	<h3 class="method-title"><code><a href="#//api/name/unhideViewHeight">&ndash;&nbsp;unhideViewHeight</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Support auto layout to unhide view&rsquo;s height.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)unhideViewHeight</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UIView+ADKAutoLayoutSupport.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/hideTopConstraint" title="hideTopConstraint"></a>
+	<h3 class="method-title"><code><a href="#//api/name/hideTopConstraint">&ndash;&nbsp;hideTopConstraint</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Support auto layout to hide view&rsquo;s top constraint.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)hideTopConstraint</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UIView+ADKAutoLayoutSupport.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/unhideTopConstraint" title="unhideTopConstraint"></a>
+	<h3 class="method-title"><code><a href="#//api/name/unhideTopConstraint">&ndash;&nbsp;unhideTopConstraint</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Support auto layout to unhide view&rsquo;s top constraint.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)unhideTopConstraint</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UIView+ADKAutoLayoutSupport.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/hideBottomConstraint" title="hideBottomConstraint"></a>
+	<h3 class="method-title"><code><a href="#//api/name/hideBottomConstraint">&ndash;&nbsp;hideBottomConstraint</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Support auto layout to hide view&rsquo;s bottom constraint.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)hideBottomConstraint</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UIView+ADKAutoLayoutSupport.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/unhideBottomConstraint" title="unhideBottomConstraint"></a>
+	<h3 class="method-title"><code><a href="#//api/name/unhideBottomConstraint">&ndash;&nbsp;unhideBottomConstraint</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Support auto layout to unhide view&rsquo;s bottom constraint.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)unhideBottomConstraint</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UIView+ADKAutoLayoutSupport.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/hideLeadingConstraint" title="hideLeadingConstraint"></a>
+	<h3 class="method-title"><code><a href="#//api/name/hideLeadingConstraint">&ndash;&nbsp;hideLeadingConstraint</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Support auto layout to hide view&rsquo;s leading constraint.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)hideLeadingConstraint</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UIView+ADKAutoLayoutSupport.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/unhideLeadingConstraint" title="unhideLeadingConstraint"></a>
+	<h3 class="method-title"><code><a href="#//api/name/unhideLeadingConstraint">&ndash;&nbsp;unhideLeadingConstraint</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Support auto layout to unhide view&rsquo;s leading constraint.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)unhideLeadingConstraint</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UIView+ADKAutoLayoutSupport.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/hideTrailingConstraint" title="hideTrailingConstraint"></a>
+	<h3 class="method-title"><code><a href="#//api/name/hideTrailingConstraint">&ndash;&nbsp;hideTrailingConstraint</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Support auto layout to hide view&rsquo;s trailing constraint.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)hideTrailingConstraint</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UIView+ADKAutoLayoutSupport.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/unhideTrailingConstraint" title="unhideTrailingConstraint"></a>
+	<h3 class="method-title"><code><a href="#//api/name/unhideTrailingConstraint">&ndash;&nbsp;unhideTrailingConstraint</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Support auto layout to unhide view&rsquo;s trailing constraint.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)unhideTrailingConstraint</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UIView+ADKAutoLayoutSupport.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setConstraintConstant:forAttribute:" title="setConstraintConstant:forAttribute:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setConstraintConstant:forAttribute:">&ndash;&nbsp;setConstraintConstant:forAttribute:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Support auto layout to set constraint constant on view easily.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setConstraintConstant:(CGFloat)<em>constant</em> forAttribute:(NSLayoutAttribute)<em>attribute</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>constant</code></th>
+						<td><p>Set view&rsquo;s constraint constant with CGFloat.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>attribute</code></th>
+						<td><p>Set view&rsquo;s attribute with NSLayoutAttribute.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UIView+ADKAutoLayoutSupport.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/constraintForAttribute:" title="constraintForAttribute:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/constraintForAttribute:">&ndash;&nbsp;constraintForAttribute:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Support auto layout to get NSLayoutConstraint instance on view easily.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSLayoutConstraint *)constraintForAttribute:(NSLayoutAttribute)<em>attribute</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>attribute</code></th>
+						<td><p>Set view&rsquo;s attribute with NSLayoutAttribute.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UIView+ADKAutoLayoutSupport.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2016 Yahoo. All rights reserved. Updated: 2016-06-08</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
