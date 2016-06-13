@@ -1,5 +1,6 @@
 AppDevKit
 ============
+[![Build Status](https://travis-ci.org/yahoo/AppDevKit.svg?branch=master)](https://travis-ci.org/yahoo/AppDevKit)
 
 AppDevKit is an iOS development library that provides foundational and developer everyday required features for their iOS app development. It has been using in Yahoo’s iOS app productions for 3 years and future outsourcing apps will use AppDevKit as well. The stability and scalability has been verified on these production app. It makes difficult development easer and save 30% development time in real case. It also cover incompatible issues on different iOS platform.
 
