@@ -1,0 +1,6 @@
+coverage:
+  ignore:
+    - Pods/*
+    - YMDCDemo/*
+  status:
+    patch: false
