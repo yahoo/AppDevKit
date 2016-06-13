@@ -2,7 +2,7 @@ AppDevKit
 ============
 [![Build Status](https://travis-ci.org/yahoo/AppDevKit.svg?branch=master)](https://travis-ci.org/yahoo/AppDevKit)
 
-AppDevKit is an iOS development library that provides foundational and developer everyday required features for their iOS app development. It has been using in Yahoo’s iOS app productions for 3 years and future outsourcing apps will use AppDevKit as well. The stability and scalability has been verified on these production app. It makes difficult development easer and save 30% development time in real case. It also cover incompatible issues on different iOS platform.
+AppDevKit is an iOS development library that provides foundational and developer everyday required features for their iOS app development. It has been used by Yahoo’s iOS app production for 3 years, and future outsourcing apps will also be using AppDevKit. The stability and scalability has been verified on these production apps. It makes difficult development tasks easier and has saved 30% development time in real case. It also covers incompatibility issues caused by different iOS platforms.
 
 It has 5 major parts that include command, user interfaces, animate, image and list view support libraries. Please leverage AppDevKit in your iOS project or join our development group of AppDevKit. We will maintain this project for you.
 
@@ -14,7 +14,7 @@ If you have any idea to improve this project, please feel free to contact with m
 
 ### Installation with CocoaPods
 
-The easiest way to leverage AppDevKit is using cocoaPods. Please edit your **Podfile** like this:
+The easiest way to leverage AppDevKit is using CocoaPods. Please edit your **Podfile** like this:
 
 <pre>
 source 'https://github.com/CocoaPods/Specs.git'  
@@ -31,40 +31,40 @@ pod 'AppDevKit'
 ### Common Tools
 
   - **ADKAppUtil** > The foundational tools to support common tasks.
-  - **ADKStringHelper** > The string formatter that it generate formatted stings form date, number and etc for you.
-  - **ADKCalculatorHelper** > The calculation set include distance, size, width, height and etc.
-  - **ADKNibCacheManager** > The manager to cache different instances in memory and keep it singleton.
-  - **UIView+ADKGetUIViewController** > Support get any view's UIViewController.
-  - **UIColor+ADKHexPresentation** > Supporting HEX color format and color shift.
-  - **ADKViewExclusiveTouch** > Supporting exclusive touch on each sub views.
+  - **ADKStringHelper** > The string formatter that will generate formatted stings form date, number and etc for you.
+  - **ADKCalculatorHelper** > The calculation set including distance, size, width, height, etc.
+  - **ADKNibCacheManager** > The manager to cache different instances in memory and keep it as a singleton.
+  - **UIView+ADKGetUIViewController** > Supports get any view's UIViewController.
+  - **UIColor+ADKHexPresentation** > Supports HEX color format and color shift.
+  - **ADKViewExclusiveTouch** > Supports exclusive touch on each sub views.
 
 
 ### UI Tools
 
-  - **UIView+ADKAutoLayoutSupport** > Supporting command autolayout features.
-  - **UIScrollView+ADKPullToRefreshView** > Supporting pull to refresh feature on scrollable view. For example: UIScrollView, UITableView and UICollectionView.
-  - **UIScrollView+ADKInfiniteScrollingView** > Supporting infinite scrolling feature on scrollable view. For example: UIScrollView, UITableView and UICollectionView.
+  - **UIView+ADKAutoLayoutSupport** > Supports command autolayout features.
+  - **UIScrollView+ADKPullToRefreshView** > Supports pull to refresh feature on scrollable view. For example: UIScrollView, UITableView and UICollectionView.
+  - **UIScrollView+ADKInfiniteScrollingView** > Supports infinite scrolling feature on scrollable view. For example: UIScrollView, UITableView and UICollectionView.
   - **ADKModalMaskView** > Providing a way to create a modal view for presenting specific view.
-  - **ADKGradientView** > Create a gradient view for you.
-  - **ADKDashedLineView** > Create a dashed line around your view.
+  - **ADKGradientView** > Creates a gradient view for you.
+  - **ADKDashedLineView** > Creates a dashed line around your view.
 
 
-### Animate Tools
-  - **UIView+ADKAnimationMacro** > Giving some simple animations behavior for specific UIView.
+### Animation Tools
+  - **UIView+ADKAnimationMacro** > Gives some simple animation behavior for specific UIView.
   
 
 ### Image Tools
 
-  - **UIImage+ADKColorReplacement** > Supporting color changing / replacement feature on UIImage.
-  - **UIImage+ADKImageFilter** > Supporting image FX, resize, crop and etc on UIImage.
-  - **UIImage+ADKDrawingTemplate** > Supporting loss less image from a PDF source.
+  - **UIImage+ADKColorReplacement** > Supports color changing / replacement feature on UIImage.
+  - **UIImage+ADKImageFilter** > Supports image FX, resize, crop, etc. on UIImage.
+  - **UIImage+ADKDrawingTemplate** > Supports loss less image from a PDF source.
 
 
 ### ListView Tools
   
-  - **UICollectionView+ADKOperation** > Supporting force stop scrolling in collection view.
-  - **ADKNibSizeCalculator** > Providing correct cell size for different devices effectively.
-  - **ADKCellDynamicSizeCalculator** > Calculation dynamic cell with and height for UICollectionViewCell and UITableViewCell.
+  - **UICollectionView+ADKOperation** > Supports force stop scrolling in collection view.
+  - **ADKNibSizeCalculator** > Provides correct cell size for different devices effectively.
+  - **ADKCellDynamicSizeCalculator** > Calculates dynamic cell with and height for UICollectionViewCell and UITableViewCell.
   - **ADKCollectionViewDynamicSizeCell** > Base UICollectionViewCell supports dynamic width and height features.
   - **ADKTableViewDynamicSizeCell** > Base UITableViewCell supports dynamic width and height features.
 
