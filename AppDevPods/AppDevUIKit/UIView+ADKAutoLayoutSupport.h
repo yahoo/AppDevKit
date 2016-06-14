@@ -98,7 +98,7 @@ typedef NS_ENUM(NSUInteger, ADKLayoutAttribute) {
  * @param constant Set view's constraint constant with CGFloat.
  * @param attribute Set view's attribute with NSLayoutAttribute.
  */
-- (void)setADKConstraintConstant:(CGFloat)constant forAttribute:(NSLayoutAttribute)attribute;
+- (void)ADKSetConstraintConstant:(CGFloat)constant forAttribute:(NSLayoutAttribute)attribute;
 
 /**
  * @brief Support auto layout to get NSLayoutConstraint instance on view easily.
