@@ -1,5 +1,7 @@
 coverage:
   ignore:
+    - AppDevKit/*
+    - AppDevKitTests/*
     - Pods/*
     - YMDCDemo/*
   status:
