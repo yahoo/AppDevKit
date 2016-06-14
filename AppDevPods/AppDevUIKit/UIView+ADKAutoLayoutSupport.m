@@ -129,33 +129,33 @@ NSString * const valueObjectConstantKey;
 
 #pragma mark - Support methods
 
-- (void)hideView:(BOOL)isHidden withConstraints:(ADKLayoutAttribute)attributes
+- (void)ADKHideView:(BOOL)isHidden withConstraints:(ADKLayoutAttribute)attributes
 {
     ADKAutoLayoutValueObject *valueObject = self.cacheConstraintValueObject;
     if (isHidden) {
         if (attributes & ADKLayoutAttributeLeading) {
-            NSLayoutConstraint *constraint = [self constraintForAttribute:NSLayoutAttributeLeading];
+            NSLayoutConstraint *constraint = [self ADKConstraintForAttribute:NSLayoutAttributeLeading];
             if (constraint.constant != 0.0f) {
                 valueObject.cachedLeadingConstraintConstant = constraint.constant;
                 constraint.constant = 0.0f;
             }
         }
         if (attributes & ADKLayoutAttributeTrailing) {
-            NSLayoutConstraint *constraint = [self constraintForAttribute:NSLayoutAttributeTrailing];
+            NSLayoutConstraint *constraint = [self ADKConstraintForAttribute:NSLayoutAttributeTrailing];
             if (constraint.constant != 0.0f) {
                 valueObject.cachedTrailingConstraintConstant = constraint.constant;
                 constraint.constant = 0.0f;
             }
         }
         if (attributes & ADKLayoutAttributeTop) {
-            NSLayoutConstraint *constraint = [self constraintForAttribute:NSLayoutAttributeTop];
+            NSLayoutConstraint *constraint = [self ADKConstraintForAttribute:NSLayoutAttributeTop];
             if (constraint.constant != 0.0f) {
                 valueObject.cachedTopConstraintConstant = constraint.constant;
                 constraint.constant = 0.0f;
             }
         }
         if (attributes & ADKLayoutAttributeBottom) {
-            NSLayoutConstraint *constraint = [self constraintForAttribute:NSLayoutAttributeBottom];
+            NSLayoutConstraint *constraint = [self ADKConstraintForAttribute:NSLayoutAttributeBottom];
             if (constraint.constant != 0.0f) {
                 valueObject.cachedBottomConstraintConstant = constraint.constant;
                 constraint.constant = 0.0f;
@@ -165,7 +165,7 @@ NSString * const valueObjectConstantKey;
             [self setNeedsLayout];
             [self layoutIfNeeded];
             CGSize viewSize = self.bounds.size;
-            NSLayoutConstraint *constraint = [self constraintForAttribute:NSLayoutAttributeWidth];
+            NSLayoutConstraint *constraint = [self ADKConstraintForAttribute:NSLayoutAttributeWidth];
             if (constraint.constant != 0.0f) {
                 valueObject.cachedWidthConstraintConstant = viewSize.width;
                 constraint.constant = 0.0f;
@@ -176,7 +176,7 @@ NSString * const valueObjectConstantKey;
             [self setNeedsLayout];
             [self layoutIfNeeded];
             CGSize viewSize = self.bounds.size;
-            NSLayoutConstraint *constraint = [self constraintForAttribute:NSLayoutAttributeHeight];
+            NSLayoutConstraint *constraint = [self ADKConstraintForAttribute:NSLayoutAttributeHeight];
             if (constraint.constant != 0.0f) {
                 valueObject.cachedHeightConstraintConstant = viewSize.height;
                 constraint.constant = 0.0f;
@@ -186,97 +186,97 @@ NSString * const valueObjectConstantKey;
     }
     else {
         if (attributes & ADKLayoutAttributeLeading) {
-            NSLayoutConstraint *constraint = [self constraintForAttribute:NSLayoutAttributeLeading];
+            NSLayoutConstraint *constraint = [self ADKConstraintForAttribute:NSLayoutAttributeLeading];
             constraint.constant = valueObject.cachedLeadingConstraintConstant;
         }
         if (attributes & ADKLayoutAttributeTrailing) {
-            NSLayoutConstraint *constraint = [self constraintForAttribute:NSLayoutAttributeTrailing];
+            NSLayoutConstraint *constraint = [self ADKConstraintForAttribute:NSLayoutAttributeTrailing];
             constraint.constant = valueObject.cachedTrailingConstraintConstant;
         }
         if (attributes & ADKLayoutAttributeTop) {
-            NSLayoutConstraint *constraint = [self constraintForAttribute:NSLayoutAttributeTop];
+            NSLayoutConstraint *constraint = [self ADKConstraintForAttribute:NSLayoutAttributeTop];
             constraint.constant = valueObject.cachedTopConstraintConstant;
         }
         if (attributes & ADKLayoutAttributeBottom) {
-            NSLayoutConstraint *constraint = [self constraintForAttribute:NSLayoutAttributeBottom];
+            NSLayoutConstraint *constraint = [self ADKConstraintForAttribute:NSLayoutAttributeBottom];
             constraint.constant = valueObject.cachedBottomConstraintConstant;
         }
         if (attributes & ADKLayoutAttributeWidth) {
-            NSLayoutConstraint *constraint = [self constraintForAttribute:NSLayoutAttributeWidth];
+            NSLayoutConstraint *constraint = [self ADKConstraintForAttribute:NSLayoutAttributeWidth];
             constraint.constant = valueObject.cachedWidthConstraintConstant;
             self.hidden = isHidden;
         }
         if (attributes & ADKLayoutAttributeHeight) {
-            NSLayoutConstraint *constraint = [self constraintForAttribute:NSLayoutAttributeHeight];
+            NSLayoutConstraint *constraint = [self ADKConstraintForAttribute:NSLayoutAttributeHeight];
             constraint.constant = valueObject.cachedHeightConstraintConstant;
             self.hidden = isHidden;
         }
     }
 }
 
-- (void)hideViewWidth
+- (void)ADKHideViewWidth
 {
-    [self hideView:YES byAttribute:NSLayoutAttributeWidth];
+    [self ADKHideView:YES byAttribute:NSLayoutAttributeWidth];
 }
 
-- (void)unhideViewWidth
+- (void)ADKUnhideViewWidth
 {
-    [self hideView:NO byAttribute:NSLayoutAttributeWidth];
+    [self ADKHideView:NO byAttribute:NSLayoutAttributeWidth];
 }
 
-- (void)hideViewHeight
+- (void)ADKHideViewHeight
 {
-    [self hideView:YES byAttribute:NSLayoutAttributeHeight];
+    [self ADKHideView:YES byAttribute:NSLayoutAttributeHeight];
 }
 
-- (void)unhideViewHeight
+- (void)ADKUnhideViewHeight
 {
-    [self hideView:NO byAttribute:NSLayoutAttributeHeight];
+    [self ADKHideView:NO byAttribute:NSLayoutAttributeHeight];
 }
 
-- (void)hideTopConstraint
+- (void)ADKHideTopConstraint
 {
-    [self hideView:YES byAttribute:NSLayoutAttributeTop];
+    [self ADKHideView:YES byAttribute:NSLayoutAttributeTop];
 }
 
-- (void)unhideTopConstraint
+- (void)ADKUnhideTopConstraint
 {
-    [self hideView:NO byAttribute:NSLayoutAttributeTop];
+    [self ADKHideView:NO byAttribute:NSLayoutAttributeTop];
 }
 
-- (void)hideBottomConstraint
+- (void)ADKHideBottomConstraint
 {
-    [self hideView:YES byAttribute:NSLayoutAttributeBottom];
+    [self ADKHideView:YES byAttribute:NSLayoutAttributeBottom];
 }
 
-- (void)unhideBottomConstraint
+- (void)ADKUnhideBottomConstraint
 {
-    [self hideView:NO byAttribute:NSLayoutAttributeBottom];
+    [self ADKHideView:NO byAttribute:NSLayoutAttributeBottom];
 }
 
-- (void)hideLeadingConstraint
+- (void)ADKHideLeadingConstraint
 {
-    [self hideView:YES byAttribute:NSLayoutAttributeLeading];
+    [self ADKHideView:YES byAttribute:NSLayoutAttributeLeading];
 }
 
-- (void)unhideLeadingConstraint
+- (void)ADKUnhideLeadingConstraint
 {
-    [self hideView:NO byAttribute:NSLayoutAttributeLeading];
+    [self ADKHideView:NO byAttribute:NSLayoutAttributeLeading];
 }
 
-- (void)hideTrailingConstraint
+- (void)ADKHideTrailingConstraint
 {
-    [self hideView:YES byAttribute:NSLayoutAttributeTrailing];
+    [self ADKHideView:YES byAttribute:NSLayoutAttributeTrailing];
 }
 
-- (void)unhideTrailingConstraint
+- (void)ADKUnhideTrailingConstraint
 {
-    [self hideView:NO byAttribute:NSLayoutAttributeTrailing];
+    [self ADKHideView:NO byAttribute:NSLayoutAttributeTrailing];
 }
 
-- (void)hideView:(BOOL)hidden byAttribute:(NSLayoutAttribute)attribute
+- (void)ADKHideView:(BOOL)hidden byAttribute:(NSLayoutAttribute)attribute
 {
-    NSLayoutConstraint *constraint = [self constraintForAttribute:attribute];
+    NSLayoutConstraint *constraint = [self ADKConstraintForAttribute:attribute];
 
     if (hidden) {
         if (constraint && constraint.constant > 0.0f) {
@@ -308,21 +308,21 @@ NSString * const valueObjectConstantKey;
         }
 
         // Set up new constraint for hidden
-        [self setConstraintConstant:0.0f forAttribute:attribute];
+        [self setADKConstraintConstant:0.0f forAttribute:attribute];
     } else {
         // Restore constraint for unhidden
         if (attribute == NSLayoutAttributeWidth && self.cachedWidthConstraintConstant != 0.0f) {
-            [self setConstraintConstant:self.cachedWidthConstraintConstant forAttribute:attribute];
+            [self setADKConstraintConstant:self.cachedWidthConstraintConstant forAttribute:attribute];
         } else if (attribute == NSLayoutAttributeHeight && self.cachedHeightConstraintConstant != 0.0f) {
-            [self setConstraintConstant:self.cachedHeightConstraintConstant forAttribute:attribute];
+            [self setADKConstraintConstant:self.cachedHeightConstraintConstant forAttribute:attribute];
         } else if (attribute == NSLayoutAttributeTop) {
-            [self setConstraintConstant:self.cachedTopConstraintConstant forAttribute:attribute];
+            [self setADKConstraintConstant:self.cachedTopConstraintConstant forAttribute:attribute];
         } else if (attribute == NSLayoutAttributeBottom) {
-            [self setConstraintConstant:self.cachedBottomConstraintConstant forAttribute:attribute];
+            [self setADKConstraintConstant:self.cachedBottomConstraintConstant forAttribute:attribute];
         } else if (attribute == NSLayoutAttributeLeading && self.cachedLeadingConstraintConstant != 0.0f) {
-            [self setConstraintConstant:self.cachedLeadingConstraintConstant forAttribute:attribute];
+            [self setADKConstraintConstant:self.cachedLeadingConstraintConstant forAttribute:attribute];
         } else if (attribute == NSLayoutAttributeTrailing && self.cachedLeadingConstraintConstant != 0.0f) {
-            [self setConstraintConstant:self.cachedTrailingConstraintConstant forAttribute:attribute];
+            [self setADKConstraintConstant:self.cachedTrailingConstraintConstant forAttribute:attribute];
         }
     }
 
@@ -331,9 +331,9 @@ NSString * const valueObjectConstantKey;
     }
 }
 
-- (void)setConstraintConstant:(CGFloat)constant forAttribute:(NSLayoutAttribute)attribute
+- (void)setADKConstraintConstant:(CGFloat)constant forAttribute:(NSLayoutAttribute)attribute
 {
-    NSLayoutConstraint *constraint = [self constraintForAttribute:attribute];
+    NSLayoutConstraint *constraint = [self ADKConstraintForAttribute:attribute];
 
     if (constraint) {
         constraint.constant = constant;
@@ -348,7 +348,7 @@ NSString * const valueObjectConstantKey;
     }
 }
 
-- (NSLayoutConstraint *)constraintForAttribute:(NSLayoutAttribute)attribute
+- (NSLayoutConstraint *)ADKConstraintForAttribute:(NSLayoutAttribute)attribute
 {
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"firstItem = %@ && firstAttribute = %d && class == %@", self, attribute, [NSLayoutConstraint class]];
     NSArray *predicatedArray;
@@ -366,7 +366,7 @@ NSString * const valueObjectConstantKey;
             return reverseConstraint;
         }
         // No constraint found, try to use NSContentSizeLayoutConstraint instead.
-        return [self contentSizeConstraintForAttribute:attribute];
+        return [self contentSizeADKConstraintForAttribute:attribute];
     }
 }
 
@@ -383,7 +383,7 @@ NSString * const valueObjectConstantKey;
     return predicatedArray.firstObject;
 }
 
-- (NSLayoutConstraint *)contentSizeConstraintForAttribute:(NSLayoutAttribute)attribute
+- (NSLayoutConstraint *)contentSizeADKConstraintForAttribute:(NSLayoutAttribute)attribute
 {
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"firstItem = %@ && firstAttribute = %d", self, attribute];
     NSArray *predicatedArray;
