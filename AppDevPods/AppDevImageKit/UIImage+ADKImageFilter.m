@@ -77,7 +77,7 @@
 - (UIImage *)ADKGaussianBlurWithRadius:(NSInteger)blurRadius
 {
     CGRect imageDrawRect = CGRectMake(0.0f, 0.0f, self.size.width, self.size.height);
-    UIImage *finalImage = self;
+    UIImage *finalImage = nil;
 
     UIGraphicsBeginImageContextWithOptions(self.size, NO, [[UIScreen mainScreen] scale]);
     CGContextRef effectInContext = UIGraphicsGetCurrentContext();
