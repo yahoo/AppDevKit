@@ -69,10 +69,9 @@ pod 'AppDevKit'
 
 ### Instruction
 
-  - **Introduction of YDevelopKit** > https://drive.google.com/a/yahoo-inc.com/file/d/0B4rg-DXSff5VWGxwNHVIOGltclE/view?usp=sharing  (AppDevKit's previous version is YDevelopKit)
-  - **Quickstart of YDevelopKit** > https://drive.google.com/a/yahoo-inc.com/file/d/0B4rg-DXSff5VZDJ1amRMWmpGaHM/view?usp=sharing
+  - **Introduction of AppDevKit** > http://www.slideshare.net/anistarsung/appdevkit-for-ios-development
   - **Sample Codes** has been written in AppDevKit project. You can read code to know about "How to implement these features in your project". Just use git to clone AppDevKit to your local disk. It should run well with your XCode. 
-  - **API Reference Documents** > Please refer the [gh-pages](https://yahoo.github.io/AppDevKit/) in AppDevKit project. (Doc/index.html)
+  - **API Reference Documents** > Please refer the [gh-pages](https://yahoo.github.io/AppDevKit/) in AppDevKit project.
   <img width="100%" src="img/DocScreenShot.png">
 
 ### License
