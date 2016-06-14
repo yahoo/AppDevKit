@@ -21,7 +21,7 @@
 @property (assign, nonatomic) CGFloat cachedBottomConstraintConstant;
 @property (assign, nonatomic) CGFloat cachedLeadingConstraintConstant;
 @property (assign, nonatomic) CGFloat cachedTrailingConstraintConstant;
-@property (assign, nonatomic) ADKAutoLayoutValueObject *cacheConstraintValueObject;
+@property (assign, nonatomic) ADKAutoLayoutValueObject *cachedConstraintValueObject;
 
 @end
 
@@ -41,89 +41,89 @@ NSString * const valueObjectConstantKey;
 
 #pragma mark - Getter and Setter
 
-- (void)setCacheConstraintValueObject:(ADKAutoLayoutValueObject *)cacheConstraintValueObject
+- (void)setCachedConstraintValueObject:(ADKAutoLayoutValueObject *)cachedConstraintValueObject
 {
-    objc_setAssociatedObject(self, &valueObjectConstantKey, cacheConstraintValueObject, OBJC_ASSOCIATION_RETAIN);
+    objc_setAssociatedObject(self, &valueObjectConstantKey, cachedConstraintValueObject, OBJC_ASSOCIATION_RETAIN);
 }
 
-- (ADKAutoLayoutValueObject *)cacheConstraintValueObject
+- (ADKAutoLayoutValueObject *)cachedConstraintValueObject
 {
     ADKAutoLayoutValueObject *obj = objc_getAssociatedObject(self, &valueObjectConstantKey);
     if (!obj) {
         obj = [[ADKAutoLayoutValueObject alloc] init];
-        self.cacheConstraintValueObject = obj;
+        self.cachedConstraintValueObject = obj;
     }
     return obj;
 }
 
 - (void)setInitializedMargin:(CGFloat)initializedMargin
 {
-    self.cacheConstraintValueObject.initializedMargin = initializedMargin;
+    self.cachedConstraintValueObject.initializedMargin = initializedMargin;
 }
 
 - (CGFloat)initializedMargin
 {
-    return self.cacheConstraintValueObject.initializedMargin;
+    return self.cachedConstraintValueObject.initializedMargin;
 }
 
 - (void)setCachedWidthConstraintConstant:(CGFloat)cachedWidthConstraintConstant
 {
-    self.cacheConstraintValueObject.cachedWidthConstraintConstant = cachedWidthConstraintConstant;
+    self.cachedConstraintValueObject.cachedWidthConstraintConstant = cachedWidthConstraintConstant;
 }
 
 - (CGFloat)cachedWidthConstraintConstant
 {
-    return self.cacheConstraintValueObject.cachedWidthConstraintConstant;
+    return self.cachedConstraintValueObject.cachedWidthConstraintConstant;
 }
 
 - (void)setCachedHeightConstraintConstant:(CGFloat)cachedHeightConstraintConstant
 {
-    self.cacheConstraintValueObject.cachedHeightConstraintConstant = cachedHeightConstraintConstant;
+    self.cachedConstraintValueObject.cachedHeightConstraintConstant = cachedHeightConstraintConstant;
 }
 
 - (CGFloat)cachedHeightConstraintConstant
 {
-    return self.cacheConstraintValueObject.cachedHeightConstraintConstant;
+    return self.cachedConstraintValueObject.cachedHeightConstraintConstant;
 }
 
 - (void)setCachedTopConstraintConstant:(CGFloat)cachedTopConstraintConstant
 {
-    self.cacheConstraintValueObject.cachedTopConstraintConstant = cachedTopConstraintConstant;
+    self.cachedConstraintValueObject.cachedTopConstraintConstant = cachedTopConstraintConstant;
 }
 
 - (CGFloat)cachedTopConstraintConstant
 {
-    return self.cacheConstraintValueObject.cachedTopConstraintConstant;
+    return self.cachedConstraintValueObject.cachedTopConstraintConstant;
 }
 
 - (void)setCachedBottomConstraintConstant:(CGFloat)cachedBottomConstraintConstant
 {
-    self.cacheConstraintValueObject.cachedBottomConstraintConstant = cachedBottomConstraintConstant;
+    self.cachedConstraintValueObject.cachedBottomConstraintConstant = cachedBottomConstraintConstant;
 }
 
 - (CGFloat)cachedBottomConstraintConstant
 {
-    return self.cacheConstraintValueObject.cachedBottomConstraintConstant;
+    return self.cachedConstraintValueObject.cachedBottomConstraintConstant;
 }
 
 - (void)setCachedLeadingConstraintConstant:(CGFloat)cachedLeadingConstraintConstant
 {
-    self.cacheConstraintValueObject.cachedLeadingConstraintConstant = cachedLeadingConstraintConstant;
+    self.cachedConstraintValueObject.cachedLeadingConstraintConstant = cachedLeadingConstraintConstant;
 }
 
 - (CGFloat)cachedLeadingConstraintConstant
 {
-    return self.cacheConstraintValueObject.cachedLeadingConstraintConstant;
+    return self.cachedConstraintValueObject.cachedLeadingConstraintConstant;
 }
 
 - (void)setCachedTrailingConstraintConstant:(CGFloat)cachedTrailingConstraintConstant
 {
-    self.cacheConstraintValueObject.cachedTrailingConstraintConstant = cachedTrailingConstraintConstant;
+    self.cachedConstraintValueObject.cachedTrailingConstraintConstant = cachedTrailingConstraintConstant;
 }
 
 - (CGFloat)cachedTrailingConstraintConstant
 {
-    return self.cacheConstraintValueObject.cachedTrailingConstraintConstant;
+    return self.cachedConstraintValueObject.cachedTrailingConstraintConstant;
 }
 
 
@@ -131,7 +131,7 @@ NSString * const valueObjectConstantKey;
 
 - (void)ADKHideView:(BOOL)isHidden withConstraints:(ADKLayoutAttribute)attributes
 {
-    ADKAutoLayoutValueObject *valueObject = self.cacheConstraintValueObject;
+    ADKAutoLayoutValueObject *valueObject = self.cachedConstraintValueObject;
     if (isHidden) {
         if (attributes & ADKLayoutAttributeLeading) {
             NSLayoutConstraint *constraint = [self ADKConstraintForAttribute:NSLayoutAttributeLeading];
@@ -308,21 +308,21 @@ NSString * const valueObjectConstantKey;
         }
 
         // Set up new constraint for hidden
-        [self setADKConstraintConstant:0.0f forAttribute:attribute];
+        [self ADKSetConstraintConstant:0.0f forAttribute:attribute];
     } else {
         // Restore constraint for unhidden
         if (attribute == NSLayoutAttributeWidth && self.cachedWidthConstraintConstant != 0.0f) {
-            [self setADKConstraintConstant:self.cachedWidthConstraintConstant forAttribute:attribute];
+            [self ADKSetConstraintConstant:self.cachedWidthConstraintConstant forAttribute:attribute];
         } else if (attribute == NSLayoutAttributeHeight && self.cachedHeightConstraintConstant != 0.0f) {
-            [self setADKConstraintConstant:self.cachedHeightConstraintConstant forAttribute:attribute];
+            [self ADKSetConstraintConstant:self.cachedHeightConstraintConstant forAttribute:attribute];
         } else if (attribute == NSLayoutAttributeTop) {
-            [self setADKConstraintConstant:self.cachedTopConstraintConstant forAttribute:attribute];
+            [self ADKSetConstraintConstant:self.cachedTopConstraintConstant forAttribute:attribute];
         } else if (attribute == NSLayoutAttributeBottom) {
-            [self setADKConstraintConstant:self.cachedBottomConstraintConstant forAttribute:attribute];
+            [self ADKSetConstraintConstant:self.cachedBottomConstraintConstant forAttribute:attribute];
         } else if (attribute == NSLayoutAttributeLeading && self.cachedLeadingConstraintConstant != 0.0f) {
-            [self setADKConstraintConstant:self.cachedLeadingConstraintConstant forAttribute:attribute];
+            [self ADKSetConstraintConstant:self.cachedLeadingConstraintConstant forAttribute:attribute];
         } else if (attribute == NSLayoutAttributeTrailing && self.cachedLeadingConstraintConstant != 0.0f) {
-            [self setADKConstraintConstant:self.cachedTrailingConstraintConstant forAttribute:attribute];
+            [self ADKSetConstraintConstant:self.cachedTrailingConstraintConstant forAttribute:attribute];
         }
     }
 
@@ -331,7 +331,7 @@ NSString * const valueObjectConstantKey;
     }
 }
 
-- (void)setADKConstraintConstant:(CGFloat)constant forAttribute:(NSLayoutAttribute)attribute
+- (void)ADKSetConstraintConstant:(CGFloat)constant forAttribute:(NSLayoutAttribute)attribute
 {
     NSLayoutConstraint *constraint = [self ADKConstraintForAttribute:attribute];
 
