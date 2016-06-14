@@ -5,7 +5,7 @@ AppDevKit is an iOS development library that provides foundational and developer
 
 It has 5 major parts that include command, user interfaces, animate, image and list view support libraries. Please leverage AppDevKit in your iOS project or join our development group of AppDevKit. We will maintain this project for you.
 
-If you have any idea to improve this project, please feel free to contact with me (**cfsung@yahoo-inc.com**) and core team (**y-develop-kit@yahoo-inc.com**) or send **Pull Request** to us. Thank you. 
+If you have any idea to improve this project, please feel free to contact with me (**cfsung@yahoo-inc.com**) and core team (**app-dev-kit@yahoo-inc.com**) or send **Pull Request** to us. Thank you. 
 
 <img src="img/AppDevKitSticker.jpg">
 
