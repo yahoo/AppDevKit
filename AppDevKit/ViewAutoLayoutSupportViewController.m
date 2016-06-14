@@ -79,13 +79,13 @@ static NSString * const CellCollectionViewCellIdentifier = @"SampleVCollectionVi
 - (void)typeChangedHandler
 {
     if (self.typeSegmentedControl.selectedSegmentIndex == 0) {
-//        [self.avatorCollectionView unhideViewHeight];
-//        [self.demoCollectionView unhideTopConstraint];
-        [self.avatorCollectionView hideView:NO withConstraints:ADKLayoutAttributeHeight | ADKLayoutAttributeTop];
+//        [self.avatorCollectionView ADKUnhideViewHeight];
+//        [self.demoCollectionView ADKUnhideTopConstraint];
+        [self.avatorCollectionView ADKHideView:NO withConstraints:ADKLayoutAttributeHeight | ADKLayoutAttributeTop];
     } else {
 //        [self.avatorCollectionView hideViewHeight];
 //        [self.demoCollectionView hideTopConstraint];
-        [self.avatorCollectionView hideView:YES withConstraints:ADKLayoutAttributeHeight | ADKLayoutAttributeTop];
+        [self.avatorCollectionView ADKHideView:YES withConstraints:ADKLayoutAttributeHeight | ADKLayoutAttributeTop];
     }
 }
 

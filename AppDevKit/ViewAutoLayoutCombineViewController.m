@@ -79,25 +79,25 @@
 - (IBAction)hideTopTapped:(UIButton *)sender
 {
     sender.selected = !sender.selected;
-    [self.bottomRightImageView hideView:sender.isSelected withConstraints:ADKLayoutAttributeBottom | ADKLayoutAttributeHeight];
+    [self.bottomRightImageView ADKHideView:sender.isSelected withConstraints:ADKLayoutAttributeBottom | ADKLayoutAttributeHeight];
 }
 
 - (IBAction)hideLeftTapped:(UIButton *)sender
 {
     sender.selected = !sender.selected;
-    [self.bottomRightImageView hideView:sender.isSelected withConstraints:ADKLayoutAttributeTrailing | ADKLayoutAttributeWidth];
+    [self.bottomRightImageView ADKHideView:sender.isSelected withConstraints:ADKLayoutAttributeTrailing | ADKLayoutAttributeWidth];
 }
 
 - (IBAction)hideBottomTapped:(UIButton *)sender
 {
     sender.selected = !sender.selected;
-    [self.topLeftImageView hideView:sender.isSelected withConstraints:ADKLayoutAttributeTop | ADKLayoutAttributeHeight];
+    [self.topLeftImageView ADKHideView:sender.isSelected withConstraints:ADKLayoutAttributeTop | ADKLayoutAttributeHeight];
 }
 
 - (IBAction)hideRightTapped:(UIButton *)sender
 {
     sender.selected = !sender.selected;
-    [self.topLeftImageView hideView:sender.isSelected withConstraints:ADKLayoutAttributeLeading | ADKLayoutAttributeWidth];
+    [self.topLeftImageView ADKHideView:sender.isSelected withConstraints:ADKLayoutAttributeLeading | ADKLayoutAttributeWidth];
 }
 
 @end
