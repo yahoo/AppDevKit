@@ -3,11 +3,11 @@
 [![codecov](https://codecov.io/gh/yahoo/AppDevKit/branch/master/graph/badge.svg)](https://codecov.io/gh/yahoo/AppDevKit)
 [![CocoaPods](https://img.shields.io/cocoapods/v/AppDevKit.svg?maxAge=2592000?style=flat-square)](https://github.com/yahoo/AppDevKit)
 
-AppDevKit is an iOS development library that provides fundamental and usefull features to help your iOS app development. This kit has used by Yahoo’s iOS app development team in Taiwan for the past 3 years, and we plan on having future outsourced apps use AppDevKit too. Our use of this code in many production environments helped improve its stability and scalability. We find thes libraries make difficult development tasks easier and has saved us up to 30% development time in some cases. The kit also helps address some incompatibility issues found in different iOS versionss.
+AppDevKit is an iOS development library that provides fundamental and useful features to help your iOS app development. This kit has used by Yahoo’s iOS app development team in Taiwan for the past 3 years, and we plan on having future outsourced apps use AppDevKit too. Our use of this code in many production environments helped improve its stability and scalability. We find these libraries make difficult development tasks easier and has saved us up to 30% development time in some cases. The kit also helps address some incompatibility issues found in different iOS versionss.
 
 AppDevKit has 5 major parts. These are: command, user interfaces, animation, image, and list view support libraries. Please feel welcome to use AppDevKit in your iOS projects and help contribute improvements to too.
 
-If you have suggestions about how to improve this project, please feel free to contact (**cfsung@yahoo-inc.com**) and core development team (**app-dev-kit@yahoo-inc.com**) or send **Pull Request** to this project. Thank you. 
+If you have suggestions about how to improve this project, please feel free to contact (**cfsung@yahoo-inc.com**) and core development team (**app-dev-kit@yahoo-inc.com**) or send a **pull request** to this project. Thank you. 
 
 <img src="img/AppDevKitSticker.jpg">
 
