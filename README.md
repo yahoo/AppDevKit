@@ -1,13 +1,13 @@
 # AppDevKit [![Build Status](https://travis-ci.org/yahoo/AppDevKit.svg?branch=master)](https://travis-ci.org/yahoo/AppDevKit) [![codecov](https://codecov.io/gh/yahoo/AppDevKit/branch/master/graph/badge.svg)](https://codecov.io/gh/yahoo/AppDevKit)
 
 
-AppDevKit is an iOS development library that provides foundational and developer everyday required features for their iOS app development. It has been used by Yahoo’s iOS app production for 3 years, and future outsourcing apps will also be using AppDevKit. The stability and scalability has been verified on these production apps. It makes difficult development tasks easier and has saved 30% development time in real case. It also covers incompatibility issues caused by different iOS platforms.
+AppDevKit is an iOS development library that provides developers fundamental features for their everyday iOS app development needs. It has been used by Yahoo’s iOS app production for 3 years, and future outsourcing apps will also be using AppDevKit. The stability and scalability has been verified on these production apps. It makes difficult development tasks easier and has saved 30% development time in real case. It also covers incompatibility issues caused by different iOS platforms.
 
 It has 5 major parts that include command, user interfaces, animate, image and list view support libraries. Please leverage AppDevKit in your iOS project or join our development group of AppDevKit. We will maintain this project for you.
 
 If you have any idea to improve this project, please feel free to contact with me (**cfsung@yahoo-inc.com**) and core team (**app-dev-kit@yahoo-inc.com**) or send **Pull Request** to us. Thank you. 
 
-<img src="img/AppDevKitSticker.jpg">
+<img src="img/AppDevKit-Sticker.png">
 
 ## Usage
 
