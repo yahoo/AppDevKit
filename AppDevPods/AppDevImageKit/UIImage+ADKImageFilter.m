@@ -109,7 +109,7 @@
 
     UIImage *finalImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
-
+    UIGraphicsEndImageContext();
 
     UIGraphicsBeginImageContextWithOptions(self.size, NO, [[UIScreen mainScreen] scale]);
     CGContextRef outputContext = UIGraphicsGetCurrentContext();
