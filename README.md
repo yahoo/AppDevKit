@@ -3,11 +3,13 @@
 [![codecov](https://codecov.io/gh/yahoo/AppDevKit/branch/master/graph/badge.svg)](https://codecov.io/gh/yahoo/AppDevKit)
 [![CocoaPods](https://img.shields.io/cocoapods/v/AppDevKit.svg?maxAge=2592000?style=flat-square)](https://cocoapods.org/?q=appdevkit)
 
-AppDevKit is an iOS development library that provides developers fundamental features for their everyday iOS app development needs. It has been used by Yahoo’s iOS app production for 3 years, and future outsourcing apps will also be using AppDevKit. The stability and scalability has been verified on these production apps. It makes difficult development tasks easier and has saved 30% development time in real case. It also covers incompatibility issues caused by different iOS platforms.
+AppDevKit is an iOS development library that provides developers with useful features to fulfill their everyday iOS app development needs.
 
-It has 5 major parts that include command, user interfaces, animate, image and list view support libraries. Please leverage AppDevKit in your iOS project or join our development group of AppDevKit. We will maintain this project for you.
+Yahoo’s Taiwan based iOS app development team has been using this development kit for the past three years, and we plan future apps to use AppDevKit as well. Our use of this code in many apps helped improve its stability and utility. We find these libraries help address some incompatibility issues found in different iOS versions, and overall make app development easier and our apps operate more consistently. 
 
-If you have any idea to improve this project, please feel free to contact with me (**cfsung@yahoo-inc.com**) and core team (**app-dev-kit@yahoo-inc.com**) or send **Pull Request** to us. Thank you. 
+AppDevKit has five major parts that include command, user interfaces, animations, image view, and list view support libraries. Please feel welcome to use AppDevKit in your iOS projects as it is licensed under the permissive open source BSD license. 
+
+You can help contribute improvements to this project too. If you have suggestions, corrections, or enhancements, please send us a pull request. If you have questions for the team, you can contact **cfsung@yahoo-inc.com** directly, or the core team at **app-dev-kit@yahoo-inc.com**. Thank you for checking this out. 
 
 <img src="img/AppDevKit-Sticker.png">
 
