@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -21,7 +21,7 @@
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2z1-gL-QLX">
                         <rect key="frame" x="0.0" y="45" width="375" height="113"/>
-                        <mutableString key="text">A secret war between cats and dogs quickly peaks as Professor Brody a scientist tries to create a serum to cure dog allergies in humans. As the unsuspecting humans go through their busy lives, the cats make several attempts to possess the formula, as their canine foes try tirelessly to stop them. Caught in the crossfire, a young beagle named Lou, adopted by the Brody family, tries hard to succeed as a secret agent, and in being a friend to the young Scotty Brody. A evil snow white cat named Mr. Tinkles is planning to sabotage the efforts of Professor Brody to discover a cure for human allergies to dogs. And he'll even make every person on Earth allergic to dogs so that he can take over the world with his army of evil cats! Written by Anthony Pereyra </mutableString>
+                        <string key="text">A secret war between cats and dogs quickly peaks as Professor Brody a scientist tries to create a serum to cure dog allergies in humans. As the unsuspecting humans go through their busy lives, the cats make several attempts to possess the formula, as their canine foes try tirelessly to stop them. Caught in the crossfire, a young beagle named Lou, adopted by the Brody family, tries hard to succeed as a secret agent, and in being a friend to the young Scotty Brody. A evil snow white cat named Mr. Tinkles is planning to sabotage the efforts of Professor Brody to discover a cure for human allergies to dogs. And he'll even make every person on Earth allergic to dogs so that he can take over the world with his army of evil cats! Written by Anthony Pereyra </string>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
