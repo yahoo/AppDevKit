@@ -16,7 +16,7 @@
 {
     self = [super initWithCoder:coder];
     if (self) {
-        self.blensType = ADKBlensTypeFromTopToBottom;
+        self.blendsType = ADKBlendsTypeFromTopToBottom;
         [self setupView];
     }
     return self;
@@ -65,20 +65,20 @@
     
     CGPoint beginPoint;
     CGPoint endPoint;
-    switch (self.blensType) {
-        case ADKBlensTypeFromLeftToRight:
+    switch (self.blendsType) {
+        case ADKBlendsTypeFromLeftToRight:
             beginPoint = CGPointMake(0.0f, CGRectGetHeight(rect) / 2.0f);
             endPoint = CGPointMake(CGRectGetWidth(rect), CGRectGetHeight(rect) / 2.0f);
             break;
-        case ADKBlensTypeFromLeftTopToRightBottom:
+        case ADKBlendsTypeFromLeftTopToRightBottom:
             beginPoint = CGPointMake(0.0f, 0.0f);
             endPoint = CGPointMake(CGRectGetWidth(rect), CGRectGetHeight(rect));
             break;
-        case ADKBlensTypeFromRightTopToLeftBottom:
+        case ADKBlendsTypeFromRightTopToLeftBottom:
             beginPoint = CGPointMake(CGRectGetWidth(rect), 0.0f);
             endPoint = CGPointMake(0.0f, CGRectGetHeight(rect));
             break;
-        case ADKBlensTypeFromTopToBottom:
+        case ADKBlendsTypeFromTopToBottom:
         default:
             beginPoint = CGPointMake(CGRectGetWidth(rect) / 2.0f, 0.0f);
             endPoint = CGPointMake(CGRectGetWidth(rect) / 2.0f, CGRectGetHeight(rect));

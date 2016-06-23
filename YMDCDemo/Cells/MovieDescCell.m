@@ -26,7 +26,7 @@ NSString * const MovieDescCellIdentifier = @"MovieDescCell";
     self.titleLabel.textColor = [UIColor whiteColor];
     self.descriptionLabel.textColor = [UIColor whiteColor];
     
-    self.shadowView.blensType = ADKBlensTypeFromTopToBottom;
+    self.shadowView.blendsType = ADKBlendsTypeFromTopToBottom;
     self.shadowView.beginColor = [UIColor clearColor];
     self.shadowView.endColor = [UIColor colorWithWhite:0.0f alpha:0.7f];
     
