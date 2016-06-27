@@ -7,7 +7,7 @@ AppDevKit is an iOS development library that provides developers with useful fea
 
 Yahoo’s Taiwan based iOS app development team has been using this development kit for the past three years, and we plan future apps to use AppDevKit as well. Our use of this code in many apps helped improve its stability and utility. We find these libraries help address some incompatibility issues found in different iOS versions, and overall make app development easier and our apps operate more consistently. 
 
-AppDevKit has five major parts that include command, user interfaces, animations, image view, and list view support libraries. Please feel welcome to use AppDevKit in your iOS projects as it is licensed under the permissive open source BSD license. 
+AppDevKit has five major parts that include command, user interfaces, animations, image view, and list view support libraries. AppDevKit could be installed by CocoaPods. Please feel welcome to use AppDevKit in your iOS projects as it is licensed under the permissive open source BSD license. 
 
 You can help contribute improvements to this project too. If you have suggestions, corrections, or enhancements, please send us a pull request. If you have questions for the team, you can contact **cfsung@yahoo-inc.com** directly, or the core team at **app-dev-kit@yahoo-inc.com**. Thank you for checking this out. 
 
@@ -24,6 +24,17 @@ source 'https://github.com/CocoaPods/Specs.git'
 
 pod 'AppDevKit'
 </pre>
+
+AppDevKit has 5 sub-pods. They're **AppDevCommonKit**, **AppDevUIKit**, **AppDevAnimateKit**, **AppDevImageKit** and **AppDevListViewKit**. If you don't want to install whole package, you could pick sub-library and use CocoaPods to install it. For example:
+
+<pre>
+source 'https://github.com/CocoaPods/Specs.git'  
+
+# Only insatll image kit in AppDevKit
+pod 'AppDevKit/AppDevImageKit'
+</pre>
+
+
 
 ### Basic Usage
   
