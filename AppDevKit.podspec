@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "AppDevKit"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "The collection of open develop utilities for iOS development team. It contains foundationl and useful features that Apple didn't provide."
   s.homepage     = "https://github.com/yahoo/AppDevKit"
   s.license      = "Yahoo! Inc. BSD license"
