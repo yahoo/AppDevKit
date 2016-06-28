@@ -2,13 +2,19 @@
 All notable changes to this project will be documented in this file.
 `AppDevKit` adheres to [Semantic Versioning](http://semver.org/).
 
+## 1.0.2
+#### Fixed
+* Fixing wrong spelling in ADKGradientView.
+#### Updated
+* Updateing readme description for sub-pod and tutorial materials.
+
 ## 1.0.1
 #### Added
-* Add Change log
+* Adding Change log.
 #### Fixed
-* Refine UIImage+ADKImageFilter and fix bug in ADKGaussianBlurWithRadius
+* Refining UIImage+ADKImageFilter and fix bug in ADKGaussianBlurWithRadius.
 #### Updated
-* Readme description, badge
+* Updating readme description, badge.
 
 ## 1.0.0
-* First release for AppDevKit
+* Making first release for AppDevKit.
