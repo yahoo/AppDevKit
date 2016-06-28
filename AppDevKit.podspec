@@ -1,21 +1,19 @@
 Pod::Spec.new do |s|
 
   s.name         = "AppDevKit"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "The collection of open develop utilities for iOS development team. It contains foundationl and useful features that Apple didn't provide."
   s.homepage     = "https://github.com/yahoo/AppDevKit"
   s.license      = "Yahoo! Inc. BSD license"
 
-  s.author       = { "anistar sung" => "cfsung@yahoo-inc.com" }
+  s.author       = { "anistar sung" => "cfsung@yahoo-inc.com", "core team" => "app-dev-kit@yahoo-inc.com" }
   s.platform     = :ios, "7.0"
   s.ios.deployment_target = '7.0'
 
   s.subspec 'AppDevCommonKit' do |appDevCommonKit|
       appDevCommonKit.source_files = ['AppDevPods/AppDevCommonKit/**/*', 'AppDevPods/AppDevCommonKit.h']
       appDevCommonKit.public_header_files = ['AppDevPods/AppDevCommonKit/**/*.h', 'AppDevPods/AppDevCommonKit.h']
-  # AppDevCommonKit.dependency '', ''
   end
-
 
   s.subspec 'AppDevUIKit' do |appDevUIKit|
       appDevUIKit.source_files = ['AppDevPods/AppDevUIKit/**/*', 'AppDevPods/AppDevUIKit.h']
@@ -26,7 +24,6 @@ Pod::Spec.new do |s|
   s.subspec 'AppDevAnimateKit' do |appDevAnimateKit|
       appDevAnimateKit.source_files = ['AppDevPods/AppDevAnimateKit/**/*', 'AppDevPods/AppDevAnimateKit.h']
       appDevAnimateKit.public_header_files = ['AppDevPods/AppDevAnimateKit/**/*.h', 'AppDevPods/AppDevAnimateKit.h']
-  # AppDevAnimateKit.dependency '', ''
   end
 
   s.subspec 'AppDevImageKit' do |appDevImageKit|
