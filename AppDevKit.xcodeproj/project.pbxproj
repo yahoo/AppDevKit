@@ -871,9 +871,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3C99D7841B035D2800D65CB3 /* AppDevKit */ = {
+		3C99D7841B035D2800D65CB3 /* AppDevKitExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3C99D7A81B035D2900D65CB3 /* Build configuration list for PBXNativeTarget "AppDevKit" */;
+			buildConfigurationList = 3C99D7A81B035D2900D65CB3 /* Build configuration list for PBXNativeTarget "AppDevKitExample" */;
 			buildPhases = (
 				998F8DE32438AF0380E3ED13 /* [CP] Check Pods Manifest.lock */,
 				3C99D7811B035D2800D65CB3 /* Sources */,
@@ -886,7 +886,7 @@
 			);
 			dependencies = (
 			);
-			name = AppDevKit;
+			name = AppDevKitExample;
 			productName = ECDevelopKit;
 			productReference = 3C99D7851B035D2800D65CB3 /* AppDevKit.app */;
 			productType = "com.apple.product-type.application";
@@ -943,7 +943,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3C99D7841B035D2800D65CB3 /* AppDevKit */,
+				3C99D7841B035D2800D65CB3 /* AppDevKitExample */,
 				3C99D79D1B035D2900D65CB3 /* AppDevKitTests */,
 			);
 		};
@@ -1218,7 +1218,7 @@
 /* Begin PBXTargetDependency section */
 		3C99D7A01B035D2900D65CB3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3C99D7841B035D2800D65CB3 /* AppDevKit */;
+			target = 3C99D7841B035D2800D65CB3 /* AppDevKitExample */;
 			targetProxy = 3C99D79F1B035D2900D65CB3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1414,7 +1414,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3C99D7A81B035D2900D65CB3 /* Build configuration list for PBXNativeTarget "AppDevKit" */ = {
+		3C99D7A81B035D2900D65CB3 /* Build configuration list for PBXNativeTarget "AppDevKitExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3C99D7A91B035D2900D65CB3 /* Debug */,

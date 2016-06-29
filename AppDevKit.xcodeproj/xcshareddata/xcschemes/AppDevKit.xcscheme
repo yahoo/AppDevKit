@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3C99D7841B035D2800D65CB3"
                BuildableName = "AppDevKit.app"
-               BlueprintName = "AppDevKit"
+               BlueprintName = "AppDevKitExample"
                ReferencedContainer = "container:AppDevKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,7 +45,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3C99D7841B035D2800D65CB3"
             BuildableName = "AppDevKit.app"
-            BlueprintName = "AppDevKit"
+            BlueprintName = "AppDevKitExample"
             ReferencedContainer = "container:AppDevKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -68,7 +68,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3C99D7841B035D2800D65CB3"
             BuildableName = "AppDevKit.app"
-            BlueprintName = "AppDevKit"
+            BlueprintName = "AppDevKitExample"
             ReferencedContainer = "container:AppDevKit.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -87,7 +87,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3C99D7841B035D2800D65CB3"
             BuildableName = "AppDevKit.app"
-            BlueprintName = "AppDevKit"
+            BlueprintName = "AppDevKitExample"
             ReferencedContainer = "container:AppDevKit.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
