@@ -33,10 +33,6 @@
 		001D992C1C17F3EA0097623E /* ADKGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 001D99131C17F3EA0097623E /* ADKGradientView.m */; };
 		001D992D1C17F3EA0097623E /* ADKModalMaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = 001D99151C17F3EA0097623E /* ADKModalMaskView.m */; };
 		001D99311C17F6370097623E /* ADKAutoLayoutValueObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 001D99301C17F6370097623E /* ADKAutoLayoutValueObject.m */; };
-		003D23A41D33BF0100529597 /* AppDevAnimateKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 001D98E31C17F3EA0097623E /* AppDevAnimateKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		003D23A51D33BF0100529597 /* AppDevCommonKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 001D98F31C17F3EA0097623E /* AppDevCommonKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		003D23A61D33BF0100529597 /* AppDevImageKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 001D98FB1C17F3EA0097623E /* AppDevImageKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		003D23A71D33BF0100529597 /* AppDevListViewKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 001D99081C17F3EA0097623E /* AppDevListViewKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		003D23A81D33BF0100529597 /* AppDevUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 001D99161C17F3EA0097623E /* AppDevUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		003D23A91D33C29F00529597 /* ADKAutoLayoutValueObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 001D992F1C17F6370097623E /* ADKAutoLayoutValueObject.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		003D23AA1D33C29F00529597 /* UIScrollView+ADKInfiniteScrollingView.h in Headers */ = {isa = PBXBuildFile; fileRef = 001D990A1C17F3EA0097623E /* UIScrollView+ADKInfiniteScrollingView.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -116,7 +112,6 @@
 		00C6D1811D238B650011E55C /* ViewAutoLayoutSupportViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00C6D14B1D238B650011E55C /* ViewAutoLayoutSupportViewController.xib */; };
 		00C6D1821D238B650011E55C /* InfiniteScrollingHelpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C6D14E1D238B650011E55C /* InfiniteScrollingHelpView.m */; };
 		00C6D1831D238B650011E55C /* PullToRefreshHelpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C6D1501D238B650011E55C /* PullToRefreshHelpView.m */; };
-		00C6D18C1D238CEB0011E55C /* AppDevKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 00C6D18B1D238CEB0011E55C /* AppDevKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		00F333851B12C9B80004164C /* ControllerTestUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F3337B1B12C9B80004164C /* ControllerTestUtils.m */; };
 		00F333861B12C9B80004164C /* ImageTestUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F3337D1B12C9B80004164C /* ImageTestUtils.m */; };
 		00F333871B12C9B80004164C /* LocationTestUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F3337F1B12C9B80004164C /* LocationTestUtils.m */; };
@@ -916,11 +911,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00C6D18C1D238CEB0011E55C /* AppDevKit.h in Headers */,
-				003D23A41D33BF0100529597 /* AppDevAnimateKit.h in Headers */,
-				003D23A51D33BF0100529597 /* AppDevCommonKit.h in Headers */,
-				003D23A61D33BF0100529597 /* AppDevImageKit.h in Headers */,
-				003D23A71D33BF0100529597 /* AppDevListViewKit.h in Headers */,
 				003D23A81D33BF0100529597 /* AppDevUIKit.h in Headers */,
 				003D23A91D33C29F00529597 /* ADKAutoLayoutValueObject.h in Headers */,
 				003D23AA1D33C29F00529597 /* UIScrollView+ADKInfiniteScrollingView.h in Headers */,
