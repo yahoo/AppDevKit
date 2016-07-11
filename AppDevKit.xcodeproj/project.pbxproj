@@ -112,6 +112,43 @@
 		00C6D1811D238B650011E55C /* ViewAutoLayoutSupportViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00C6D14B1D238B650011E55C /* ViewAutoLayoutSupportViewController.xib */; };
 		00C6D1821D238B650011E55C /* InfiniteScrollingHelpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C6D14E1D238B650011E55C /* InfiniteScrollingHelpView.m */; };
 		00C6D1831D238B650011E55C /* PullToRefreshHelpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C6D1501D238B650011E55C /* PullToRefreshHelpView.m */; };
+		00DF7AED1D33CDBC0034F137 /* AppDevKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 001D98FC1C17F3EA0097623E /* AppDevKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00DF7AEE1D33CDBC0034F137 /* AppDevAnimateKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 001D98E31C17F3EA0097623E /* AppDevAnimateKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00DF7AEF1D33CDBC0034F137 /* AppDevCommonKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 001D98F31C17F3EA0097623E /* AppDevCommonKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00DF7AF01D33CDBC0034F137 /* AppDevImageKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 001D98FB1C17F3EA0097623E /* AppDevImageKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00DF7AF11D33CDBC0034F137 /* AppDevListViewKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 001D99081C17F3EA0097623E /* AppDevListViewKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00DF7AF21D33CDF30034F137 /* UIView+ADKAnimationMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = 001D98E11C17F3EA0097623E /* UIView+ADKAnimationMacro.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00DF7AF31D33CDF30034F137 /* UIColor+ADKHexPresentation.h in Headers */ = {isa = PBXBuildFile; fileRef = 001D98E51C17F3EA0097623E /* UIColor+ADKHexPresentation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00DF7AF41D33CDF30034F137 /* UIView+ADKGetUIViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 001D98E71C17F3EA0097623E /* UIView+ADKGetUIViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00DF7AF51D33CDF40034F137 /* ADKAppUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 001D98E91C17F3EA0097623E /* ADKAppUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00DF7AF61D33CDF40034F137 /* ADKCalculatorHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 001D98EB1C17F3EA0097623E /* ADKCalculatorHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00DF7AF71D33CDF40034F137 /* ADKNibCacheManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 001D98ED1C17F3EA0097623E /* ADKNibCacheManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00DF7AF81D33CDF40034F137 /* ADKStringHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 001D98EF1C17F3EA0097623E /* ADKStringHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00DF7AF91D33CDF40034F137 /* ADKViewExclusiveTouch.h in Headers */ = {isa = PBXBuildFile; fileRef = 001D98F11C17F3EA0097623E /* ADKViewExclusiveTouch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00DF7AFA1D33CDF40034F137 /* UIImage+ADKColorReplacement.h in Headers */ = {isa = PBXBuildFile; fileRef = 001D98F51C17F3EA0097623E /* UIImage+ADKColorReplacement.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00DF7AFB1D33CDF40034F137 /* UIImage+ADKDrawingTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = 001D98F71C17F3EA0097623E /* UIImage+ADKDrawingTemplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00DF7AFC1D33CDF40034F137 /* UIImage+ADKImageFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 001D98F91C17F3EA0097623E /* UIImage+ADKImageFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00DF7AFD1D33CDF40034F137 /* UICollectionView+ADKOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 001D98FE1C17F3EA0097623E /* UICollectionView+ADKOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00DF7AFE1D33CDF40034F137 /* ADKCellDynamicSizeCalculator.h in Headers */ = {isa = PBXBuildFile; fileRef = 001D99001C17F3EA0097623E /* ADKCellDynamicSizeCalculator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00DF7AFF1D33CDF40034F137 /* ADKCollectionViewDynamicSizeCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 001D99021C17F3EA0097623E /* ADKCollectionViewDynamicSizeCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00DF7B001D33CDF40034F137 /* ADKNibSizeCalculator.h in Headers */ = {isa = PBXBuildFile; fileRef = 001D99041C17F3EA0097623E /* ADKNibSizeCalculator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00DF7B011D33CDF40034F137 /* ADKTableViewDynamicSizeCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 001D99061C17F3EA0097623E /* ADKTableViewDynamicSizeCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00DF7B101D33CE1E0034F137 /* UIView+ADKAnimationMacro.m in Sources */ = {isa = PBXBuildFile; fileRef = 001D98E21C17F3EA0097623E /* UIView+ADKAnimationMacro.m */; };
+		00DF7B121D33CE1E0034F137 /* UIColor+ADKHexPresentation.m in Sources */ = {isa = PBXBuildFile; fileRef = 001D98E61C17F3EA0097623E /* UIColor+ADKHexPresentation.m */; };
+		00DF7B141D33CE1E0034F137 /* UIView+ADKGetUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 001D98E81C17F3EA0097623E /* UIView+ADKGetUIViewController.m */; };
+		00DF7B161D33CE1E0034F137 /* ADKAppUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 001D98EA1C17F3EA0097623E /* ADKAppUtil.m */; };
+		00DF7B181D33CE1E0034F137 /* ADKCalculatorHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 001D98EC1C17F3EA0097623E /* ADKCalculatorHelper.m */; };
+		00DF7B1A1D33CE1E0034F137 /* ADKNibCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 001D98EE1C17F3EA0097623E /* ADKNibCacheManager.m */; };
+		00DF7B1C1D33CE1E0034F137 /* ADKStringHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 001D98F01C17F3EA0097623E /* ADKStringHelper.m */; };
+		00DF7B1E1D33CE1E0034F137 /* ADKViewExclusiveTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 001D98F21C17F3EA0097623E /* ADKViewExclusiveTouch.m */; };
+		00DF7B201D33CE1E0034F137 /* UIImage+ADKColorReplacement.m in Sources */ = {isa = PBXBuildFile; fileRef = 001D98F61C17F3EA0097623E /* UIImage+ADKColorReplacement.m */; };
+		00DF7B221D33CE1E0034F137 /* UIImage+ADKDrawingTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 001D98F81C17F3EA0097623E /* UIImage+ADKDrawingTemplate.m */; };
+		00DF7B241D33CE1E0034F137 /* UIImage+ADKImageFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 001D98FA1C17F3EA0097623E /* UIImage+ADKImageFilter.m */; };
+		00DF7B261D33CE1E0034F137 /* UICollectionView+ADKOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 001D98FF1C17F3EA0097623E /* UICollectionView+ADKOperation.m */; };
+		00DF7B281D33CE1E0034F137 /* ADKCellDynamicSizeCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 001D99011C17F3EA0097623E /* ADKCellDynamicSizeCalculator.m */; };
+		00DF7B2A1D33CE1E0034F137 /* ADKCollectionViewDynamicSizeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 001D99031C17F3EA0097623E /* ADKCollectionViewDynamicSizeCell.m */; };
+		00DF7B2C1D33CE1E0034F137 /* ADKNibSizeCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 001D99051C17F3EA0097623E /* ADKNibSizeCalculator.m */; };
+		00DF7B2E1D33CE1E0034F137 /* ADKTableViewDynamicSizeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 001D99071C17F3EA0097623E /* ADKTableViewDynamicSizeCell.m */; };
 		00F333851B12C9B80004164C /* ControllerTestUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F3337B1B12C9B80004164C /* ControllerTestUtils.m */; };
 		00F333861B12C9B80004164C /* ImageTestUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F3337D1B12C9B80004164C /* ImageTestUtils.m */; };
 		00F333871B12C9B80004164C /* LocationTestUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F3337F1B12C9B80004164C /* LocationTestUtils.m */; };
@@ -916,9 +953,30 @@
 				003D23AA1D33C29F00529597 /* UIScrollView+ADKInfiniteScrollingView.h in Headers */,
 				003D23AB1D33C29F00529597 /* UIScrollView+ADKPullToRefreshView.h in Headers */,
 				003D23AC1D33C29F00529597 /* UIView+ADKAutoLayoutSupport.h in Headers */,
+				00DF7AED1D33CDBC0034F137 /* AppDevKit.h in Headers */,
+				00DF7AEE1D33CDBC0034F137 /* AppDevAnimateKit.h in Headers */,
+				00DF7AEF1D33CDBC0034F137 /* AppDevCommonKit.h in Headers */,
+				00DF7AF01D33CDBC0034F137 /* AppDevImageKit.h in Headers */,
+				00DF7AF11D33CDBC0034F137 /* AppDevListViewKit.h in Headers */,
 				003D23AD1D33C29F00529597 /* ADKDashedLineView.h in Headers */,
 				003D23AE1D33C29F00529597 /* ADKGradientView.h in Headers */,
 				003D23AF1D33C29F00529597 /* ADKModalMaskView.h in Headers */,
+				00DF7AF21D33CDF30034F137 /* UIView+ADKAnimationMacro.h in Headers */,
+				00DF7AF31D33CDF30034F137 /* UIColor+ADKHexPresentation.h in Headers */,
+				00DF7AF41D33CDF30034F137 /* UIView+ADKGetUIViewController.h in Headers */,
+				00DF7AF51D33CDF40034F137 /* ADKAppUtil.h in Headers */,
+				00DF7AF61D33CDF40034F137 /* ADKCalculatorHelper.h in Headers */,
+				00DF7AF71D33CDF40034F137 /* ADKNibCacheManager.h in Headers */,
+				00DF7AF81D33CDF40034F137 /* ADKStringHelper.h in Headers */,
+				00DF7AF91D33CDF40034F137 /* ADKViewExclusiveTouch.h in Headers */,
+				00DF7AFA1D33CDF40034F137 /* UIImage+ADKColorReplacement.h in Headers */,
+				00DF7AFB1D33CDF40034F137 /* UIImage+ADKDrawingTemplate.h in Headers */,
+				00DF7AFC1D33CDF40034F137 /* UIImage+ADKImageFilter.h in Headers */,
+				00DF7AFD1D33CDF40034F137 /* UICollectionView+ADKOperation.h in Headers */,
+				00DF7AFE1D33CDF40034F137 /* ADKCellDynamicSizeCalculator.h in Headers */,
+				00DF7AFF1D33CDF40034F137 /* ADKCollectionViewDynamicSizeCell.h in Headers */,
+				00DF7B001D33CDF40034F137 /* ADKNibSizeCalculator.h in Headers */,
+				00DF7B011D33CDF40034F137 /* ADKTableViewDynamicSizeCell.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1221,6 +1279,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00DF7B101D33CE1E0034F137 /* UIView+ADKAnimationMacro.m in Sources */,
+				00DF7B121D33CE1E0034F137 /* UIColor+ADKHexPresentation.m in Sources */,
+				00DF7B141D33CE1E0034F137 /* UIView+ADKGetUIViewController.m in Sources */,
+				00DF7B161D33CE1E0034F137 /* ADKAppUtil.m in Sources */,
+				00DF7B181D33CE1E0034F137 /* ADKCalculatorHelper.m in Sources */,
+				00DF7B1A1D33CE1E0034F137 /* ADKNibCacheManager.m in Sources */,
+				00DF7B1C1D33CE1E0034F137 /* ADKStringHelper.m in Sources */,
+				00DF7B1E1D33CE1E0034F137 /* ADKViewExclusiveTouch.m in Sources */,
+				00DF7B201D33CE1E0034F137 /* UIImage+ADKColorReplacement.m in Sources */,
+				00DF7B221D33CE1E0034F137 /* UIImage+ADKDrawingTemplate.m in Sources */,
+				00DF7B241D33CE1E0034F137 /* UIImage+ADKImageFilter.m in Sources */,
+				00DF7B261D33CE1E0034F137 /* UICollectionView+ADKOperation.m in Sources */,
+				00DF7B281D33CE1E0034F137 /* ADKCellDynamicSizeCalculator.m in Sources */,
+				00DF7B2A1D33CE1E0034F137 /* ADKCollectionViewDynamicSizeCell.m in Sources */,
+				00DF7B2C1D33CE1E0034F137 /* ADKNibSizeCalculator.m in Sources */,
+				00DF7B2E1D33CE1E0034F137 /* ADKTableViewDynamicSizeCell.m in Sources */,
 				003D23B01D33C2B900529597 /* ADKAutoLayoutValueObject.m in Sources */,
 				003D23B11D33C2B900529597 /* UIScrollView+ADKInfiniteScrollingView.m in Sources */,
 				003D23B21D33C2B900529597 /* UIScrollView+ADKPullToRefreshView.m in Sources */,
