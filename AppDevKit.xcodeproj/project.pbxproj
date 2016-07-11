@@ -33,6 +33,25 @@
 		001D992C1C17F3EA0097623E /* ADKGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 001D99131C17F3EA0097623E /* ADKGradientView.m */; };
 		001D992D1C17F3EA0097623E /* ADKModalMaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = 001D99151C17F3EA0097623E /* ADKModalMaskView.m */; };
 		001D99311C17F6370097623E /* ADKAutoLayoutValueObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 001D99301C17F6370097623E /* ADKAutoLayoutValueObject.m */; };
+		003D23A41D33BF0100529597 /* AppDevAnimateKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 001D98E31C17F3EA0097623E /* AppDevAnimateKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		003D23A51D33BF0100529597 /* AppDevCommonKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 001D98F31C17F3EA0097623E /* AppDevCommonKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		003D23A61D33BF0100529597 /* AppDevImageKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 001D98FB1C17F3EA0097623E /* AppDevImageKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		003D23A71D33BF0100529597 /* AppDevListViewKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 001D99081C17F3EA0097623E /* AppDevListViewKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		003D23A81D33BF0100529597 /* AppDevUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 001D99161C17F3EA0097623E /* AppDevUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		003D23A91D33C29F00529597 /* ADKAutoLayoutValueObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 001D992F1C17F6370097623E /* ADKAutoLayoutValueObject.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		003D23AA1D33C29F00529597 /* UIScrollView+ADKInfiniteScrollingView.h in Headers */ = {isa = PBXBuildFile; fileRef = 001D990A1C17F3EA0097623E /* UIScrollView+ADKInfiniteScrollingView.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		003D23AB1D33C29F00529597 /* UIScrollView+ADKPullToRefreshView.h in Headers */ = {isa = PBXBuildFile; fileRef = 001D990C1C17F3EA0097623E /* UIScrollView+ADKPullToRefreshView.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		003D23AC1D33C29F00529597 /* UIView+ADKAutoLayoutSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 001D990E1C17F3EA0097623E /* UIView+ADKAutoLayoutSupport.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		003D23AD1D33C29F00529597 /* ADKDashedLineView.h in Headers */ = {isa = PBXBuildFile; fileRef = 001D99101C17F3EA0097623E /* ADKDashedLineView.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		003D23AE1D33C29F00529597 /* ADKGradientView.h in Headers */ = {isa = PBXBuildFile; fileRef = 001D99121C17F3EA0097623E /* ADKGradientView.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		003D23AF1D33C29F00529597 /* ADKModalMaskView.h in Headers */ = {isa = PBXBuildFile; fileRef = 001D99141C17F3EA0097623E /* ADKModalMaskView.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		003D23B01D33C2B900529597 /* ADKAutoLayoutValueObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 001D99301C17F6370097623E /* ADKAutoLayoutValueObject.m */; };
+		003D23B11D33C2B900529597 /* UIScrollView+ADKInfiniteScrollingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 001D990B1C17F3EA0097623E /* UIScrollView+ADKInfiniteScrollingView.m */; };
+		003D23B21D33C2B900529597 /* UIScrollView+ADKPullToRefreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = 001D990D1C17F3EA0097623E /* UIScrollView+ADKPullToRefreshView.m */; };
+		003D23B31D33C2B900529597 /* UIView+ADKAutoLayoutSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 001D990F1C17F3EA0097623E /* UIView+ADKAutoLayoutSupport.m */; };
+		003D23B41D33C2B900529597 /* ADKDashedLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 001D99111C17F3EA0097623E /* ADKDashedLineView.m */; };
+		003D23B51D33C2B900529597 /* ADKGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 001D99131C17F3EA0097623E /* ADKGradientView.m */; };
+		003D23B61D33C2B900529597 /* ADKModalMaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = 001D99151C17F3EA0097623E /* ADKModalMaskView.m */; };
 		0047036F1C951C0B00AFDBF0 /* UIView+ADKAutoLayoutSupportSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 0047036E1C951C0B00AFDBF0 /* UIView+ADKAutoLayoutSupportSpec.m */; };
 		004703721C951D6C00AFDBF0 /* AutoLayoutSupportTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 004703711C951D6C00AFDBF0 /* AutoLayoutSupportTestView.m */; };
 		004703761C951D9300AFDBF0 /* AutoLayoutSupportTestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 004703751C951D9300AFDBF0 /* AutoLayoutSupportTestView.xib */; };
@@ -898,6 +917,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				00C6D18C1D238CEB0011E55C /* AppDevKit.h in Headers */,
+				003D23A41D33BF0100529597 /* AppDevAnimateKit.h in Headers */,
+				003D23A51D33BF0100529597 /* AppDevCommonKit.h in Headers */,
+				003D23A61D33BF0100529597 /* AppDevImageKit.h in Headers */,
+				003D23A71D33BF0100529597 /* AppDevListViewKit.h in Headers */,
+				003D23A81D33BF0100529597 /* AppDevUIKit.h in Headers */,
+				003D23A91D33C29F00529597 /* ADKAutoLayoutValueObject.h in Headers */,
+				003D23AA1D33C29F00529597 /* UIScrollView+ADKInfiniteScrollingView.h in Headers */,
+				003D23AB1D33C29F00529597 /* UIScrollView+ADKPullToRefreshView.h in Headers */,
+				003D23AC1D33C29F00529597 /* UIView+ADKAutoLayoutSupport.h in Headers */,
+				003D23AD1D33C29F00529597 /* ADKDashedLineView.h in Headers */,
+				003D23AE1D33C29F00529597 /* ADKGradientView.h in Headers */,
+				003D23AF1D33C29F00529597 /* ADKModalMaskView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1200,6 +1231,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				003D23B01D33C2B900529597 /* ADKAutoLayoutValueObject.m in Sources */,
+				003D23B11D33C2B900529597 /* UIScrollView+ADKInfiniteScrollingView.m in Sources */,
+				003D23B21D33C2B900529597 /* UIScrollView+ADKPullToRefreshView.m in Sources */,
+				003D23B31D33C2B900529597 /* UIView+ADKAutoLayoutSupport.m in Sources */,
+				003D23B41D33C2B900529597 /* ADKDashedLineView.m in Sources */,
+				003D23B51D33C2B900529597 /* ADKGradientView.m in Sources */,
+				003D23B61D33C2B900529597 /* ADKModalMaskView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1526,6 +1564,7 @@
 				00C6D1901D238CEB0011E55C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3C99D7801B035D2800D65CB3 /* Build configuration list for PBXProject "AppDevKit" */ = {
 			isa = XCConfigurationList;
