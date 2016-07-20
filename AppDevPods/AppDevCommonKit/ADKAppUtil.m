@@ -50,7 +50,6 @@ CGFloat ADKPortraitScreenRatio()
 {
     CGRect screenRect = ADKPortraitScreenBoundRect();
     CGFloat ratio = CGRectGetWidth(screenRect) / CGRectGetHeight(screenRect);
-
     return ratio;
 }
 
