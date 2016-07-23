@@ -15,7 +15,8 @@
 BOOL ADKIsLongerScreen()
 {
     // iPhone 4 and iPad will idendifer to short screen.
-    return ADKPortraitScreenRatio() > 0.65f;
+    // the shorter ratio of screen width / height, the longer screen
+    return ADKPortraitScreenRatio() < 0.65f;
 }
 
 BOOL ADKIsBelowIOS7()
@@ -49,7 +50,6 @@ CGFloat ADKPortraitScreenRatio()
 {
     CGRect screenRect = ADKPortraitScreenBoundRect();
     CGFloat ratio = CGRectGetWidth(screenRect) / CGRectGetHeight(screenRect);
-
     return ratio;
 }
 

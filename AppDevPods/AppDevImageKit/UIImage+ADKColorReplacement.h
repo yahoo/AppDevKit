@@ -26,7 +26,7 @@
 + (UIImage *)ADKImage:(UIImage *)image tintColor:(UIColor *)color;
 
 /**
- * @brief Replace opcity pixel with specific color in image instance.
+ * @brief Replace opacity pixel with specific color in image instance.
  *
  * @param image The image instace want to process.
  * @param color The color will affect image result.
@@ -57,7 +57,7 @@
 + (UIImage *)ADKImageNamed:(NSString *)name tintColor:(UIColor *)color;
 
 /**
- * @brief Replace opcity pixel with specific color in image name.
+ * @brief Replace opacity pixel with specific color in image name.
  *
  * @param name The image name want to process.
  * @param color The color will affect image result.
