@@ -21,32 +21,80 @@ SPEC_BEGIN(ADKAppUtilSpec)
 
 describe(@"test ADKIsLongerScreen", ^{
     it(@"device is iPhone 4s", ^{
-        [[UIScreen mainScreen] stub:@selector(bounds) andReturn:theValue(CGRectMake(0.0f, 0.0f, 320.0f, 480.0f))];
+        CGRect rectBounds = CGRectMake(0.0f, 0.0f, 320.0f, 480.0f);
+
+        // stub bounds
+        [[UIScreen mainScreen] stub:@selector(bounds) andReturn:theValue(rectBounds)];
+        // stub fixedCoordinateSpace
+        id coordinateSpaceMock = [KWMock mockForProtocol:@protocol(UICoordinateSpace)];
+        [coordinateSpaceMock stub:@selector(bounds) andReturn:theValue(rectBounds)];
+        [[UIScreen mainScreen] stub:@selector(fixedCoordinateSpace) andReturn:theValue(coordinateSpaceMock)];
+        
         [[theValue(ADKIsLongerScreen()) should] beNo];
     });
     
     it(@"device is iPhone 5", ^{
-        [[UIScreen mainScreen] stub:@selector(bounds) andReturn:theValue(CGRectMake(0.0f, 0.0f, 320.0f, 568.0f))];
-        [[theValue(ADKIsLongerScreen()) should] beNo];
+        CGRect rectBounds = CGRectMake(0.0f, 0.0f, 320.0f, 568.0f);
+        
+        // stub bounds
+        [[UIScreen mainScreen] stub:@selector(bounds) andReturn:theValue(rectBounds)];
+        // stub fixedCoordinateSpace
+        id coordinateSpaceMock = [KWMock mockForProtocol:@protocol(UICoordinateSpace)];
+        [coordinateSpaceMock stub:@selector(bounds) andReturn:theValue(rectBounds)];
+        [[UIScreen mainScreen] stub:@selector(fixedCoordinateSpace) andReturn:theValue(coordinateSpaceMock)];
+        
+        [[theValue(ADKIsLongerScreen()) should] beYes];
     });
     
     it(@"device is iPhone 6", ^{
-        [[UIScreen mainScreen] stub:@selector(bounds) andReturn:theValue(CGRectMake(0.0f, 0.0f, 375.0f, 667.0f))];
-        [[theValue(ADKIsLongerScreen()) should] beNo];
+        CGRect rectBounds = CGRectMake(0.0f, 0.0f, 375.0f, 667.0f);
+        
+        // stub bounds
+        [[UIScreen mainScreen] stub:@selector(bounds) andReturn:theValue(rectBounds)];
+        // stub fixedCoordinateSpace
+        id coordinateSpaceMock = [KWMock mockForProtocol:@protocol(UICoordinateSpace)];
+        [coordinateSpaceMock stub:@selector(bounds) andReturn:theValue(rectBounds)];
+        [[UIScreen mainScreen] stub:@selector(fixedCoordinateSpace) andReturn:theValue(coordinateSpaceMock)];
+        
+        [[theValue(ADKIsLongerScreen()) should] beYes];
     });
     
     it(@"device is iPhone 6s", ^{
-        [[UIScreen mainScreen] stub:@selector(bounds) andReturn:theValue(CGRectMake(0.0f, 0.0f, 414.0f, 736.0f))];
-        [[theValue(ADKIsLongerScreen()) should] beNo];
+        CGRect rectBounds = CGRectMake(0.0f, 0.0f, 414.0f, 736.0f);
+        
+        // stub bounds
+        [[UIScreen mainScreen] stub:@selector(bounds) andReturn:theValue(rectBounds)];
+        // stub fixedCoordinateSpace
+        id coordinateSpaceMock = [KWMock mockForProtocol:@protocol(UICoordinateSpace)];
+        [coordinateSpaceMock stub:@selector(bounds) andReturn:theValue(rectBounds)];
+        [[UIScreen mainScreen] stub:@selector(fixedCoordinateSpace) andReturn:theValue(coordinateSpaceMock)];
+        
+        [[theValue(ADKIsLongerScreen()) should] beYes];
     });
     
     it(@"device is iPad", ^{
-        [[UIScreen mainScreen] stub:@selector(bounds) andReturn:theValue(CGRectMake(0.0f, 0.0f, 768.0f, 1024.0f))];
+        CGRect rectBounds = CGRectMake(0.0f, 0.0f, 768.0f, 1024.0f);
+        
+        // stub bounds
+        [[UIScreen mainScreen] stub:@selector(bounds) andReturn:theValue(rectBounds)];
+        // stub fixedCoordinateSpace
+        id coordinateSpaceMock = [KWMock mockForProtocol:@protocol(UICoordinateSpace)];
+        [coordinateSpaceMock stub:@selector(bounds) andReturn:theValue(rectBounds)];
+        [[UIScreen mainScreen] stub:@selector(fixedCoordinateSpace) andReturn:theValue(coordinateSpaceMock)];
+        
         [[theValue(ADKIsLongerScreen()) should] beNo];
     });
     
     it(@"device is iPad pro", ^{
-        [[UIScreen mainScreen] stub:@selector(bounds) andReturn:theValue(CGRectMake(0.0f, 0.0f, 1536.0f, 2048.0f))];
+        CGRect rectBounds = CGRectMake(0.0f, 0.0f, 1536.0f, 2048.0f);
+        
+        // stub bounds
+        [[UIScreen mainScreen] stub:@selector(bounds) andReturn:theValue(rectBounds)];
+        // stub fixedCoordinateSpace
+        id coordinateSpaceMock = [KWMock mockForProtocol:@protocol(UICoordinateSpace)];
+        [coordinateSpaceMock stub:@selector(bounds) andReturn:theValue(rectBounds)];
+        [[UIScreen mainScreen] stub:@selector(fixedCoordinateSpace) andReturn:theValue(coordinateSpaceMock)];
+        
         [[theValue(ADKIsLongerScreen()) should] beNo];
     });
 });
