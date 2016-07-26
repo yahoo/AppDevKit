@@ -5,8 +5,11 @@ All notable changes to this project will be documented in this file.
 ## 1.0.2
 #### Fixed
 * Fixing wrong spelling in ADKGradientView.
+* Fix ADKIsLongerScreen logic
+
 #### Updated
 * Updateing readme description for sub-pod and tutorial materials.
+* Refine project settings
 
 ## 1.0.1
 #### Added
