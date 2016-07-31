@@ -203,12 +203,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3C99D79F1B035D2900D65CB3 /* PBXContainerItemProxy */ = {
+		0091BF141D4E20F9002EFF98 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3C99D77D1B035D2800D65CB3 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3C99D7841B035D2800D65CB3;
-			remoteInfo = ECDevelopKit;
+			remoteGlobalIDString = 00C6D1881D238CEB0011E55C;
+			remoteInfo = AppDevKit;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -1035,7 +1035,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				3C99D7A01B035D2900D65CB3 /* PBXTargetDependency */,
+				0091BF151D4E20F9002EFF98 /* PBXTargetDependency */,
 			);
 			name = AppDevKitTests;
 			productName = ECDevelopKitTests;
@@ -1059,7 +1059,6 @@
 					};
 					3C99D79D1B035D2900D65CB3 = {
 						CreatedOnToolsVersion = 6.3.1;
-						TestTargetID = 3C99D7841B035D2800D65CB3;
 					};
 				};
 			};
@@ -1387,10 +1386,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3C99D7A01B035D2900D65CB3 /* PBXTargetDependency */ = {
+		0091BF151D4E20F9002EFF98 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3C99D7841B035D2800D65CB3 /* AppDevKitExample */;
-			targetProxy = 3C99D79F1B035D2900D65CB3 /* PBXContainerItemProxy */;
+			target = 00C6D1881D238CEB0011E55C /* AppDevKit */;
+			targetProxy = 0091BF141D4E20F9002EFF98 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1582,7 +1581,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5EFAA98DAB11C32BD66F0BCE /* Pods-AppDevKitTests.debug.xcconfig */;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -1592,11 +1590,10 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = AppDevKitTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yahoo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = AppDevKit;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppDevKit.app/AppDevKit";
 			};
 			name = Debug;
 		};
@@ -1604,17 +1601,15 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3B65A2B5AB01A8E9D6C03F5B /* Pods-AppDevKitTests.release.xcconfig */;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = AppDevKitTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yahoo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = AppDevKit;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppDevKit.app/AppDevKit";
 			};
 			name = Release;
 		};
