@@ -202,16 +202,6 @@
 		BF799D5BE76608DD7BBA726F /* libPods-AppDevKitTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3353F8C431CCC316D7168E45 /* libPods-AppDevKitTests.a */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		0091BF141D4E20F9002EFF98 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3C99D77D1B035D2800D65CB3 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 00C6D1881D238CEB0011E55C;
-			remoteInfo = AppDevKit;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		0013F6C41D06923800256C57 /* UIImage+ADKColorReplacementSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ADKColorReplacementSpec.m"; sourceTree = "<group>"; };
 		0013F6C51D06923800256C57 /* UIImage+ADKImageFilterSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ADKImageFilterSpec.m"; sourceTree = "<group>"; };
@@ -1035,7 +1025,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				0091BF151D4E20F9002EFF98 /* PBXTargetDependency */,
 			);
 			name = AppDevKitTests;
 			productName = ECDevelopKitTests;
@@ -1076,8 +1065,8 @@
 			projectRoot = "";
 			targets = (
 				3C99D7841B035D2800D65CB3 /* AppDevKitExample */,
-				3C99D79D1B035D2900D65CB3 /* AppDevKitTests */,
 				00C6D1881D238CEB0011E55C /* AppDevKit */,
+				3C99D79D1B035D2900D65CB3 /* AppDevKitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -1384,14 +1373,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		0091BF151D4E20F9002EFF98 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 00C6D1881D238CEB0011E55C /* AppDevKit */;
-			targetProxy = 0091BF141D4E20F9002EFF98 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		00C6D1031D238B650011E55C /* LaunchScreen.xib */ = {
