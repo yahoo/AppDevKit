@@ -31,12 +31,12 @@
     CGSize expectedImageSize = CGSizeMake(CGImageGetWidth(expectedImage.CGImage), CGImageGetHeight(expectedImage.CGImage));
 
     UIGraphicsBeginImageContext(testImageSize);
-    [testImage drawInRect:CGRectMake(0.f, 0.f, testImageSize.width, testImageSize.height)];
+    [testImage drawInRect:CGRectMake(0.0f, 0.0f, testImageSize.width, testImageSize.height)];
     testImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
 
     UIGraphicsBeginImageContext(expectedImageSize);
-    [expectedImage drawInRect:CGRectMake(0.f, 0.f, expectedImageSize.width, expectedImageSize.height)];
+    [expectedImage drawInRect:CGRectMake(0.0f, 0.0f, expectedImageSize.width, expectedImageSize.height)];
     expectedImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
 

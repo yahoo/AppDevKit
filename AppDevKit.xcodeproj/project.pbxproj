@@ -752,15 +752,6 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		00C6D18A1D238CEB0011E55C /* AppDevKit */ = {
-			isa = PBXGroup;
-			children = (
-				00C6D18B1D238CEB0011E55C /* AppDevKit.h */,
-				00C6D18D1D238CEB0011E55C /* Info.plist */,
-			);
-			path = AppDevKit;
-			sourceTree = "<group>";
-		};
 		00F333771B12C9B80004164C /* TestUtils */ = {
 			isa = PBXGroup;
 			children = (
@@ -793,7 +784,6 @@
 			children = (
 				3C99D7871B035D2800D65CB3 /* AppDevKit */,
 				3C99D7A11B035D2900D65CB3 /* AppDevKitTests */,
-				00C6D18A1D238CEB0011E55C /* AppDevKit */,
 				3C99D7861B035D2800D65CB3 /* Products */,
 				8E97E63AC2520391A5C1CE86 /* Pods */,
 				DFCBC74AEEB73C66AF16A57E /* Frameworks */,
@@ -813,6 +803,8 @@
 		3C99D7871B035D2800D65CB3 /* AppDevKit */ = {
 			isa = PBXGroup;
 			children = (
+				00C6D18B1D238CEB0011E55C /* AppDevKit.h */,
+				00C6D18D1D238CEB0011E55C /* Info.plist */,
 				00C6D1001D238B650011E55C /* AppDevKitExample */,
 				0091316E1C9D2DC0006509B5 /* YMDCDemo */,
 				001D98DC1C17F3EA0097623E /* AppDevKitPods */,
