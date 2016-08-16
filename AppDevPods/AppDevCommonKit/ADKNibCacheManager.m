@@ -42,7 +42,8 @@
     if ([self.nibInstanceCache objectForKey:nibNameKey]) {
         classInstance = [self.nibInstanceCache objectForKey:nibNameKey];
     } else {
-        NSArray *objects = [[NSBundle mainBundle] loadNibNamed:nibName owner:self options:nil];
+        NSBundle *bundle = [NSBundle bundleForClass:NSClassFromString(nibName)];
+        NSArray *objects = [bundle loadNibNamed:nibName owner:self options:nil];
         __block UIView *blockClassInstance = nil;
         [objects enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             if ([obj isKindOfClass:[UIView class]]) {
@@ -64,7 +65,8 @@
     if ([self.nibInstanceCache objectForKey:classNameKey]) {
         classInstance = [self.nibInstanceCache objectForKey:classNameKey];
     } else {
-        Class class = [[NSBundle mainBundle] classNamed:className];
+        NSBundle *bundle = [NSBundle bundleForClass:NSClassFromString(className)];
+        Class class = [bundle classNamed:className];
         classInstance = [[class alloc] init];
         [self.nibInstanceCache setObject:classInstance forKey:classNameKey];
     }
