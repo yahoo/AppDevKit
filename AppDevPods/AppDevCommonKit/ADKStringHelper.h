@@ -19,10 +19,8 @@ typedef NS_ENUM(NSUInteger, ADKDateCompareStyle) {
     ADKDateCompareStyleMedium = 0x0002,                    // 2 units
     ADKDateCompareStyleLong = 0x0003,                      // 3 units
     ADKDateCompareStyleFull = 0x0004,                      // all units (including seconds)
-    ADKDateCompareStyleMask = 0x000F
-};
-
-typedef NS_ENUM(NSUInteger, ADKDateCompareOption) {
+    ADKDateCompareStyleMask = 0x000F,
+    
     ADKDateCompareOptionShowZeroUnit = 0x0010,             // X days 00 hours
     ADKDateCompareOptionShowBeforeAfter = 0x0020,          // XX days (before|after)
     ADKDateCompareOptionAppendZeroPrefix = 0x0040,         // 0X mins

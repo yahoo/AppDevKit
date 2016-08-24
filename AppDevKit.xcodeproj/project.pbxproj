@@ -46,6 +46,7 @@
 		009131811C9D3D0E006509B5 /* YMDCDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0091317F1C9D3D0E006509B5 /* YMDCDemoViewController.xib */; };
 		009131851C9D440D006509B5 /* DynamicHeightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 009131831C9D440D006509B5 /* DynamicHeightCell.m */; };
 		009131861C9D440D006509B5 /* DynamicHeightCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 009131841C9D440D006509B5 /* DynamicHeightCell.xib */; };
+		00AB34851D6DC59D005031BF /* ADKStringHelperSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 00AB34841D6DC59D005031BF /* ADKStringHelperSpec.m */; };
 		00C074D61CA416C5004AF305 /* YMDCDemoImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C074D41CA416C5004AF305 /* YMDCDemoImageCell.m */; };
 		00C074D71CA416C5004AF305 /* YMDCDemoImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00C074D51CA416C5004AF305 /* YMDCDemoImageCell.xib */; };
 		00C074DA1CA58093004AF305 /* LSPullToRefreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C074D91CA58093004AF305 /* LSPullToRefreshView.m */; };
@@ -235,6 +236,7 @@
 		009131821C9D440D006509B5 /* DynamicHeightCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicHeightCell.h; sourceTree = "<group>"; };
 		009131831C9D440D006509B5 /* DynamicHeightCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicHeightCell.m; sourceTree = "<group>"; };
 		009131841C9D440D006509B5 /* DynamicHeightCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DynamicHeightCell.xib; sourceTree = "<group>"; };
+		00AB34841D6DC59D005031BF /* ADKStringHelperSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADKStringHelperSpec.m; sourceTree = "<group>"; };
 		00C074D31CA416C5004AF305 /* YMDCDemoImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMDCDemoImageCell.h; sourceTree = "<group>"; };
 		00C074D41CA416C5004AF305 /* YMDCDemoImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMDCDemoImageCell.m; sourceTree = "<group>"; };
 		00C074D51CA416C5004AF305 /* YMDCDemoImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YMDCDemoImageCell.xib; sourceTree = "<group>"; };
@@ -595,6 +597,7 @@
 			children = (
 				00F333831B12C9B80004164C /* ADKAppUtilSpec.m */,
 				0013F6CB1D07D50400256C57 /* UIColor+ADKHexPresentationSpec.m */,
+				00AB34841D6DC59D005031BF /* ADKStringHelperSpec.m */,
 			);
 			path = AppDevCommonKit;
 			sourceTree = "<group>";
@@ -1192,6 +1195,7 @@
 				546930DE1CC4E66F00378A6F /* TestNibFile.m in Sources */,
 				0013F6C61D06923800256C57 /* UIImage+ADKColorReplacementSpec.m in Sources */,
 				0047036F1C951C0B00AFDBF0 /* UIView+ADKAutoLayoutSupportSpec.m in Sources */,
+				00AB34851D6DC59D005031BF /* ADKStringHelperSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
