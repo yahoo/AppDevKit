@@ -15,11 +15,11 @@
 
 #import <UIKit/UIKit.h>
 
-typedef NS_ENUM(NSUInteger, ADKBlensType) {
-    ADKBlensTypeFromTopToBottom = 0,
-    ADKBlensTypeFromLeftToRight,
-    ADKBlensTypeFromLeftTopToRightBottom,
-    ADKBlensTypeFromRightTopToLeftBottom
+typedef NS_ENUM(NSUInteger, ADKBlendsType) {
+    ADKBlendsTypeFromTopToBottom = 0,
+    ADKBlendsTypeFromLeftToRight,
+    ADKBlendsTypeFromLeftTopToRightBottom,
+    ADKBlendsTypeFromRightTopToLeftBottom
 };
 
 @interface ADKGradientView : UIView
@@ -40,7 +40,7 @@ typedef NS_ENUM(NSUInteger, ADKBlensType) {
  * @brief Decide how to paint gradient on this view.
  *
  */
-@property (nonatomic, assign) ADKBlensType blensType;
+@property (nonatomic, assign) ADKBlendsType blendsType;
 
 @end
 

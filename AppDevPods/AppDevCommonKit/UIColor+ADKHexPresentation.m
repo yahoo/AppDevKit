@@ -22,21 +22,21 @@
     return [[UIColor alloc] initWithRed:red / (0xff*1.0f) green:green / (0xff*1.0f) blue:blue / (0xff*1.0f) alpha:alpha];
 }
 
-+ (UIColor *)ADKColorWithHexString:(NSString *)hexstring
++ (UIColor *)ADKColorWithHexString:(NSString *)hexString
 {
-    return [[UIColor alloc] ADKInitWithHexString:hexstring];
+    return [[UIColor alloc] ADKInitWithHexString:hexString];
 }
 
-+ (UIColor *)ADKColorWithHexString:(NSString *)hexstring alpha:(CGFloat)alpha
++ (UIColor *)ADKColorWithHexString:(NSString *)hexString alpha:(CGFloat)alpha
 {
-    return [[UIColor ADKColorWithHexString:hexstring] colorWithAlphaComponent:alpha];
+    return [[UIColor ADKColorWithHexString:hexString] colorWithAlphaComponent:alpha];
 }
 
-- (UIColor *)ADKInitWithHexString:(NSString *)hexstring
+- (UIColor *)ADKInitWithHexString:(NSString *)hexString
 {
     NSUInteger rgbValue = 0;
-    NSScanner *scanner = [NSScanner scannerWithString:hexstring];
-    if ( [hexstring hasPrefix:@"#"] ) {
+    NSScanner *scanner = [NSScanner scannerWithString:hexString];
+    if ( [hexString hasPrefix:@"#"] ) {
         [scanner setScanLocation:1];
     }
     [scanner scanHexInt:(unsigned int *)&rgbValue];

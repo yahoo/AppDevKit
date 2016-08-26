@@ -15,7 +15,7 @@
 
 SPEC_BEGIN(ADKAutoLayoutSupportSpec)
 
-describe(@"Test hideView:withConstraints:", ^{
+describe(@"Test ADKHideView:withConstraints:", ^{
     __block AutoLayoutSupportTestView *testView;
     
     beforeEach(^{
@@ -26,7 +26,7 @@ describe(@"Test hideView:withConstraints:", ^{
         it(@"test hide ADKLayoutAttributeTop", ^{
             [[testView shouldNot] beNil];
             CGRect expectRect = CGRectOffset(testView.buttomView.frame, 0.0f, -30.0f);
-            [testView.centerView hideView:YES withConstraints:ADKLayoutAttributeTop];
+            [testView.centerView ADKHideView:YES withConstraints:ADKLayoutAttributeTop];
             [testView setNeedsLayout];
             [testView layoutIfNeeded];
             [[theValue(testView.buttomView.frame) should] equal:theValue(expectRect)];
@@ -35,7 +35,7 @@ describe(@"Test hideView:withConstraints:", ^{
         it(@"test hide ADKLayoutAttributeLeading", ^{
             [[testView shouldNot] beNil];
             CGRect expectRect = CGRectOffset(testView.centerView.frame, -30.0f, 0.0f);
-            [testView.centerView hideView:YES withConstraints:ADKLayoutAttributeLeading];
+            [testView.centerView ADKHideView:YES withConstraints:ADKLayoutAttributeLeading];
             [testView setNeedsLayout];
             [testView layoutIfNeeded];
             [[theValue(testView.centerView.frame) should] equal:theValue(expectRect)];
@@ -44,7 +44,7 @@ describe(@"Test hideView:withConstraints:", ^{
         it(@"test hide ADKLayoutAttributeTrailing", ^{
             [[testView shouldNot] beNil];
             CGRect expectRect = CGRectOffset(testView.rightView.frame, -60.0f, 0.0f);
-            [testView.centerView hideView:YES withConstraints:ADKLayoutAttributeTrailing];
+            [testView.centerView ADKHideView:YES withConstraints:ADKLayoutAttributeTrailing];
             [testView setNeedsLayout];
             [testView layoutIfNeeded];
             [[theValue(testView.rightView.frame) should] equal:theValue(expectRect)];
@@ -53,7 +53,7 @@ describe(@"Test hideView:withConstraints:", ^{
         it(@"test hide ADKLayoutAttributeBottom", ^{
             [[testView shouldNot] beNil];
             CGRect expectRect = CGRectOffset(testView.buttomView.frame, 0.0f, -15.0f);
-            [testView.centerView hideView:YES withConstraints:ADKLayoutAttributeBottom];
+            [testView.centerView ADKHideView:YES withConstraints:ADKLayoutAttributeBottom];
             [testView setNeedsLayout];
             [testView layoutIfNeeded];
             [[theValue(testView.buttomView.frame) should] equal:theValue(expectRect)];
@@ -63,7 +63,7 @@ describe(@"Test hideView:withConstraints:", ^{
             [[testView shouldNot] beNil];
             CGRect rightExpectRect = CGRectOffset(testView.rightView.frame, -50.0f, 0.0f);
             CGRect buttomExpectRect = CGRectOffset(testView.buttomView.frame, 0.0f, 0.0f);
-            [testView.centerView hideView:YES withConstraints:ADKLayoutAttributeWidth];
+            [testView.centerView ADKHideView:YES withConstraints:ADKLayoutAttributeWidth];
             [testView setNeedsLayout];
             [testView layoutIfNeeded];
             [testView layoutSubviews];
@@ -75,7 +75,7 @@ describe(@"Test hideView:withConstraints:", ^{
             [[testView shouldNot] beNil];
             CGRect rightExpectRect = CGRectOffset(testView.rightView.frame, 0.0f, 0.0f);
             CGRect buttomExpectRect = CGRectOffset(testView.buttomView.frame, 0.0f, -50.0f);
-            [testView.centerView hideView:YES withConstraints:ADKLayoutAttributeHeight];
+            [testView.centerView ADKHideView:YES withConstraints:ADKLayoutAttributeHeight];
             [testView setNeedsLayout];
             [testView layoutIfNeeded];
             [testView layoutSubviews];
@@ -86,7 +86,7 @@ describe(@"Test hideView:withConstraints:", ^{
 
 });
 
-describe(@"test hideTopConstraint", ^{
+describe(@"test ADKHideTopConstraint", ^{
     __block AutoLayoutSupportTestView *testView;
     
     beforeEach(^{
@@ -96,14 +96,14 @@ describe(@"test hideTopConstraint", ^{
     it(@"test single operation", ^{
         [[testView shouldNot] beNil];
         CGRect expectRect = CGRectOffset(testView.buttomView.frame, 0.0f, -30.0f);
-        [testView.centerView hideTopConstraint];
+        [testView.centerView ADKHideTopConstraint];
         [testView setNeedsLayout];
         [testView layoutIfNeeded];
         [[theValue(testView.buttomView.frame) should] equal:theValue(expectRect)];
     });
 });
 
-describe(@"test hideLeadingConstraint", ^{
+describe(@"test ADKHideLeadingConstraint", ^{
     __block AutoLayoutSupportTestView *testView;
     
     beforeEach(^{
@@ -113,14 +113,14 @@ describe(@"test hideLeadingConstraint", ^{
     it(@"test single operation", ^{
         [[testView shouldNot] beNil];
         CGRect expectRect = CGRectOffset(testView.centerView.frame, -30.0f, 0.0f);
-        [testView.centerView hideLeadingConstraint];
+        [testView.centerView ADKHideLeadingConstraint];
         [testView setNeedsLayout];
         [testView layoutIfNeeded];
         [[theValue(testView.centerView.frame) should] equal:theValue(expectRect)];
     });
 });
 
-describe(@"test hideTrailingConstraint", ^{
+describe(@"test ADKHideTrailingConstraint", ^{
     __block AutoLayoutSupportTestView *testView;
     
     beforeEach(^{
@@ -130,14 +130,14 @@ describe(@"test hideTrailingConstraint", ^{
     it(@"test single operation", ^{
         [[testView shouldNot] beNil];
         CGRect expectRect = CGRectOffset(testView.rightView.frame, -60.0f, 0.0f);
-        [testView.centerView hideTrailingConstraint];
+        [testView.centerView ADKHideTrailingConstraint];
         [testView setNeedsLayout];
         [testView layoutIfNeeded];
         [[theValue(testView.rightView.frame) should] equal:theValue(expectRect)];
     });
 });
 
-describe(@"test hideBottomConstraint", ^{
+describe(@"test ADKHideBottomConstraint", ^{
     __block AutoLayoutSupportTestView *testView;
     
     beforeEach(^{
@@ -147,14 +147,14 @@ describe(@"test hideBottomConstraint", ^{
     it(@"test single operation", ^{
         [[testView shouldNot] beNil];
         CGRect expectRect = CGRectOffset(testView.buttomView.frame, 0.0f, -15.0f);
-        [testView.centerView hideBottomConstraint];
+        [testView.centerView ADKHideBottomConstraint];
         [testView setNeedsLayout];
         [testView layoutIfNeeded];
         [[theValue(testView.buttomView.frame) should] equal:theValue(expectRect)];
     });
 });
 
-describe(@"test hideViewWidth", ^{
+describe(@"test ADKHideViewWidth", ^{
     __block AutoLayoutSupportTestView *testView;
     
     beforeEach(^{
@@ -165,7 +165,7 @@ describe(@"test hideViewWidth", ^{
         [[testView shouldNot] beNil];
         CGRect rightExpectRect = CGRectOffset(testView.rightView.frame, -50.0f, 0.0f);
         CGRect buttomExpectRect = CGRectOffset(testView.buttomView.frame, 0.0f, 0.0f);
-        [testView.centerView hideViewWidth];
+        [testView.centerView ADKHideViewWidth];
         [testView setNeedsLayout];
         [testView layoutIfNeeded];
         [testView layoutSubviews];
@@ -174,7 +174,7 @@ describe(@"test hideViewWidth", ^{
     });
 });
 
-describe(@"test hideViewHeight", ^{
+describe(@"test ADKHideViewHeight", ^{
     __block AutoLayoutSupportTestView *testView;
     
     beforeEach(^{
@@ -185,7 +185,7 @@ describe(@"test hideViewHeight", ^{
         [[testView shouldNot] beNil];
         CGRect rightExpectRect = CGRectOffset(testView.rightView.frame, 0.0f, 0.0f);
         CGRect buttomExpectRect = CGRectOffset(testView.buttomView.frame, 0.0f, -50.0f);
-        [testView.centerView hideViewHeight];
+        [testView.centerView ADKHideViewHeight];
         [testView setNeedsLayout];
         [testView layoutIfNeeded];
         [testView layoutSubviews];

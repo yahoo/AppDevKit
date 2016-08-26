@@ -30,67 +30,67 @@ typedef NS_ENUM(NSUInteger, ADKLayoutAttribute) {
  *  @param isHidden   View will hide for YES, show for NO
  *  @param attributes Constraints will be affect, please reference ADKLayoutAttribute
  */
-- (void)hideView:(BOOL)isHidden withConstraints:(ADKLayoutAttribute)attributes;
+- (void)ADKHideView:(BOOL)isHidden withConstraints:(ADKLayoutAttribute)attributes;
 
 /**
  * @brief Support auto layout to hide view's width.
  */
-- (void)hideViewWidth;
+- (void)ADKHideViewWidth;
 
 /**
  * @brief Support auto layout to unhide view's width.
  */
-- (void)unhideViewWidth;
+- (void)ADKUnhideViewWidth;
 
 /**
  * @brief Support auto layout to hide view's height.
  */
-- (void)hideViewHeight;
+- (void)ADKHideViewHeight;
 
 /**
  * @brief Support auto layout to unhide view's height.
  */
-- (void)unhideViewHeight;
+- (void)ADKUnhideViewHeight;
 
 /**
  * @brief Support auto layout to hide view's top constraint.
  */
-- (void)hideTopConstraint;
+- (void)ADKHideTopConstraint;
 
 /**
  * @brief Support auto layout to unhide view's top constraint.
  */
-- (void)unhideTopConstraint;
+- (void)ADKUnhideTopConstraint;
 
 /**
  * @brief Support auto layout to hide view's bottom constraint.
  */
-- (void)hideBottomConstraint;
+- (void)ADKHideBottomConstraint;
 
 /**
  * @brief Support auto layout to unhide view's bottom constraint.
  */
-- (void)unhideBottomConstraint;
+- (void)ADKUnhideBottomConstraint;
 
 /**
  * @brief Support auto layout to hide view's leading constraint.
  */
-- (void)hideLeadingConstraint;
+- (void)ADKHideLeadingConstraint;
 
 /**
  * @brief Support auto layout to unhide view's leading constraint.
  */
-- (void)unhideLeadingConstraint;
+- (void)ADKUnhideLeadingConstraint;
 
 /**
  * @brief Support auto layout to hide view's trailing constraint.
  */
-- (void)hideTrailingConstraint;
+- (void)ADKHideTrailingConstraint;
 
 /**
  * @brief Support auto layout to unhide view's trailing constraint.
  */
-- (void)unhideTrailingConstraint;
+- (void)ADKUnhideTrailingConstraint;
 
 /**
  * @brief Support auto layout to set constraint constant on view easily.
@@ -98,13 +98,13 @@ typedef NS_ENUM(NSUInteger, ADKLayoutAttribute) {
  * @param constant Set view's constraint constant with CGFloat.
  * @param attribute Set view's attribute with NSLayoutAttribute.
  */
-- (void)setConstraintConstant:(CGFloat)constant forAttribute:(NSLayoutAttribute)attribute;
+- (void)ADKSetConstraintConstant:(CGFloat)constant forAttribute:(NSLayoutAttribute)attribute;
 
 /**
  * @brief Support auto layout to get NSLayoutConstraint instance on view easily.
  *
  * @param attribute Set view's attribute with NSLayoutAttribute.
  */
-- (NSLayoutConstraint *)constraintForAttribute:(NSLayoutAttribute)attribute;
+- (NSLayoutConstraint *)ADKConstraintForAttribute:(NSLayoutAttribute)attribute;
 
 @end

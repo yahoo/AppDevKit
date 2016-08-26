@@ -43,7 +43,7 @@
  *
  * @return The instance of UIColor.
  */
-+ (UIColor *)ADKColorWithHexString:(NSString *)hexstring;
++ (UIColor *)ADKColorWithHexString:(NSString *)hexString;
 
 /**
  * @brief Create a color by hex string and alpha.
@@ -53,7 +53,7 @@
  *
  * @return The instance of UIColor.
  */
-+ (UIColor *)ADKColorWithHexString:(NSString *)hexstring alpha:(CGFloat)alpha;
++ (UIColor *)ADKColorWithHexString:(NSString *)hexString alpha:(CGFloat)alpha;
 
 /**
  * @brief Create a color by hex string.
@@ -62,7 +62,7 @@
  *
  * @return The instance of UIColor.
  */
-- (UIColor *)ADKInitWithHexString:(NSString *)hexstring;
+- (UIColor *)ADKInitWithHexString:(NSString *)hexString;
 
 /**
  * @brief Create a color by hex number.

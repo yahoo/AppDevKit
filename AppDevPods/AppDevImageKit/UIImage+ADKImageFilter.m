@@ -77,8 +77,7 @@
 - (UIImage *)ADKGaussianBlurWithRadius:(NSInteger)blurRadius
 {
     CGRect imageDrawRect = CGRectMake(0.0f, 0.0f, self.size.width, self.size.height);
-    UIImage *finalImage = self;
-
+    
     UIGraphicsBeginImageContextWithOptions(self.size, NO, self.scale);
     CGContextRef effectInContext = UIGraphicsGetCurrentContext();
     CGContextScaleCTM(effectInContext, 1.0, -1.0);
@@ -100,7 +99,7 @@
     effectOutBuffer.rowBytes = CGBitmapContextGetBytesPerRow(effectOutContext);
 
     CGFloat inputRadius = blurRadius * self.scale;
-    int radius = floor(inputRadius * 3. * sqrt(2 * M_PI) / 4 + 0.5);
+    uint32_t radius = floorl(inputRadius * 3. * sqrt(2 * M_PI) / 4 + 0.5);
     if (radius % 2 != 1) {
         radius += 1;
     }
@@ -108,9 +107,9 @@
     vImageBoxConvolve_ARGB8888(&effectOutBuffer, &effectInBuffer, NULL, 0, 0, radius, radius, 0, kvImageEdgeExtend);
     vImageBoxConvolve_ARGB8888(&effectInBuffer, &effectOutBuffer, NULL, 0, 0, radius, radius, 0, kvImageEdgeExtend);
 
-    finalImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIImage *finalImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
-
+    UIGraphicsEndImageContext();
 
     UIGraphicsBeginImageContextWithOptions(self.size, NO, self.scale);
     CGContextRef outputContext = UIGraphicsGetCurrentContext();
