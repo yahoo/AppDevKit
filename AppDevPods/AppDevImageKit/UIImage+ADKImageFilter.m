@@ -53,7 +53,7 @@
     //UIGraphicsBeginImageContext(newSize);
     // In next line, pass 0.0 to use the current device's pixel scaling factor (and thus account for Retina resolution).
     // Pass 1.0 to force exact pixel size.
-    UIGraphicsBeginImageContextWithOptions(newSize, NO, [[UIScreen mainScreen] scale]);
+    UIGraphicsBeginImageContextWithOptions(newSize, NO, self.scale);
     [self drawInRect:CGRectMake(0, 0, newSize.width, newSize.height)];
     UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
@@ -78,7 +78,7 @@
 {
     CGRect imageDrawRect = CGRectMake(0.0f, 0.0f, self.size.width, self.size.height);
     
-    UIGraphicsBeginImageContextWithOptions(self.size, NO, [[UIScreen mainScreen] scale]);
+    UIGraphicsBeginImageContextWithOptions(self.size, NO, self.scale);
     CGContextRef effectInContext = UIGraphicsGetCurrentContext();
     CGContextScaleCTM(effectInContext, 1.0, -1.0);
     CGContextTranslateCTM(effectInContext, 0, -self.size.height);
@@ -90,7 +90,7 @@
     effectInBuffer.height   = CGBitmapContextGetHeight(effectInContext);
     effectInBuffer.rowBytes = CGBitmapContextGetBytesPerRow(effectInContext);
 
-    UIGraphicsBeginImageContextWithOptions(self.size, NO, [[UIScreen mainScreen] scale]);
+    UIGraphicsBeginImageContextWithOptions(self.size, NO, self.scale);
     CGContextRef effectOutContext = UIGraphicsGetCurrentContext();
     vImage_Buffer effectOutBuffer;
     effectOutBuffer.data     = CGBitmapContextGetData(effectOutContext);
@@ -98,7 +98,7 @@
     effectOutBuffer.height   = CGBitmapContextGetHeight(effectOutContext);
     effectOutBuffer.rowBytes = CGBitmapContextGetBytesPerRow(effectOutContext);
 
-    CGFloat inputRadius = blurRadius * [[UIScreen mainScreen] scale];
+    CGFloat inputRadius = blurRadius * self.scale;
     uint32_t radius = floorl(inputRadius * 3. * sqrt(2 * M_PI) / 4 + 0.5);
     if (radius % 2 != 1) {
         radius += 1;
@@ -111,7 +111,7 @@
     UIGraphicsEndImageContext();
     UIGraphicsEndImageContext();
 
-    UIGraphicsBeginImageContextWithOptions(self.size, NO, [[UIScreen mainScreen] scale]);
+    UIGraphicsBeginImageContextWithOptions(self.size, NO, self.scale);
     CGContextRef outputContext = UIGraphicsGetCurrentContext();
     CGContextScaleCTM(outputContext, 1.0, -1.0);
     CGContextTranslateCTM(outputContext, 0, -self.size.height);
