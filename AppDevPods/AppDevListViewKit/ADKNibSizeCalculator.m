@@ -54,7 +54,8 @@
         NSString *sizeString = [self.nibSizeCache objectForKey:nibwithStyle];
         nibSize = CGSizeFromString(sizeString);
     } else {
-        NSArray *objects = [[NSBundle mainBundle] loadNibNamed:nibName owner:self options:nil];
+        NSBundle *bundle = [NSBundle bundleForClass:NSClassFromString(nibName)];
+        NSArray *objects = [bundle loadNibNamed:nibName owner:self options:nil];
         __block UIView *blockClassInstance = nil;
         [objects enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             if ([obj isKindOfClass:[UIView class]]) {
