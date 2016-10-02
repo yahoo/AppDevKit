@@ -19,6 +19,13 @@
 BOOL ADKIsLongerScreen();
 
 /**
+ *  @brief Check device's screen is larger than smallest size, e.g 320.0f. iPhone 6, 5s, 6, 6+ will be wide screen.
+ *
+ *  @return YES if screen is wider than iPhone 4 / 4s and iPad.
+ */
+BOOL ADKIsWideScreen();
+
+/**
  *  @brief Check device's OS version is below iOS 7.
  *
  *  @return YES if OS verion is below 7.
@@ -38,6 +45,13 @@ BOOL ADKIsBelowIOS8();
  *  @return YES if OS verion is below 9.
  */
 BOOL ADKIsBelowIOS9();
+
+/**
+ *  @brief Check device's OS version is below iOS 10.
+ *
+ *  @return YES if OS verion is below 10.
+ */
+BOOL ADKIsBelowIOS10();
 
 /**
  *  @brief Check whether location services available. This is an expensive call. It should not be called frequently or from performance sensitive code.
