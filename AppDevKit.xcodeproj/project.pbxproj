@@ -39,6 +39,7 @@
 		0047036F1C951C0B00AFDBF0 /* UIView+ADKAutoLayoutSupportSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 0047036E1C951C0B00AFDBF0 /* UIView+ADKAutoLayoutSupportSpec.m */; };
 		004703721C951D6C00AFDBF0 /* AutoLayoutSupportTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 004703711C951D6C00AFDBF0 /* AutoLayoutSupportTestView.m */; };
 		004703761C951D9300AFDBF0 /* AutoLayoutSupportTestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 004703751C951D9300AFDBF0 /* AutoLayoutSupportTestView.xib */; };
+		005BF0C91DA104A4007119BD /* ViewTestUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 005BF0C81DA104A4007119BD /* ViewTestUtil.m */; };
 		007D0F941C101B51002FD0B1 /* ViewAutoLayoutCombineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 007D0F921C101B51002FD0B1 /* ViewAutoLayoutCombineViewController.m */; };
 		007D0F951C101B51002FD0B1 /* ViewAutoLayoutCombineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 007D0F931C101B51002FD0B1 /* ViewAutoLayoutCombineViewController.xib */; };
 		009131771C9D393C006509B5 /* YMDCDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 009131751C9D393C006509B5 /* YMDCDataProvider.m */; };
@@ -225,6 +226,8 @@
 		004703701C951D6C00AFDBF0 /* AutoLayoutSupportTestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoLayoutSupportTestView.h; sourceTree = "<group>"; };
 		004703711C951D6C00AFDBF0 /* AutoLayoutSupportTestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoLayoutSupportTestView.m; sourceTree = "<group>"; };
 		004703751C951D9300AFDBF0 /* AutoLayoutSupportTestView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AutoLayoutSupportTestView.xib; sourceTree = "<group>"; };
+		005BF0C71DA104A4007119BD /* ViewTestUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewTestUtil.h; sourceTree = "<group>"; };
+		005BF0C81DA104A4007119BD /* ViewTestUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewTestUtil.m; sourceTree = "<group>"; };
 		007D0F911C101B51002FD0B1 /* ViewAutoLayoutCombineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewAutoLayoutCombineViewController.h; sourceTree = "<group>"; };
 		007D0F921C101B51002FD0B1 /* ViewAutoLayoutCombineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewAutoLayoutCombineViewController.m; sourceTree = "<group>"; };
 		007D0F931C101B51002FD0B1 /* ViewAutoLayoutCombineViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewAutoLayoutCombineViewController.xib; sourceTree = "<group>"; };
@@ -588,6 +591,8 @@
 				00F3337F1B12C9B80004164C /* LocationTestUtils.m */,
 				00F333801B12C9B80004164C /* TimeTestUtils.h */,
 				00F333811B12C9B80004164C /* TimeTestUtils.m */,
+				005BF0C71DA104A4007119BD /* ViewTestUtil.h */,
+				005BF0C81DA104A4007119BD /* ViewTestUtil.m */,
 			);
 			path = TestUtils;
 			sourceTree = "<group>";
@@ -1188,6 +1193,7 @@
 				004703721C951D6C00AFDBF0 /* AutoLayoutSupportTestView.m in Sources */,
 				00F333871B12C9B80004164C /* LocationTestUtils.m in Sources */,
 				78BF7C731CBD0CD9005B61E6 /* ADKNibSizeCalculatorSpec.m in Sources */,
+				005BF0C91DA104A4007119BD /* ViewTestUtil.m in Sources */,
 				3C99D7A51B035D2900D65CB3 /* AppDevKitTests.m in Sources */,
 				00F333851B12C9B80004164C /* ControllerTestUtils.m in Sources */,
 				00F333891B12C9B80004164C /* ADKAppUtilSpec.m in Sources */,

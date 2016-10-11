@@ -19,6 +19,11 @@ BOOL ADKIsLongerScreen()
     return ADKPortraitScreenRatio() < 0.65f;
 }
 
+BOOL ADKIsWideScreen()
+{
+    return [UIScreen mainScreen].bounds.size.width > 320.0f;
+}
+
 BOOL ADKIsBelowIOS7()
 {
     return ![UIImage instancesRespondToSelector:@selector(imageWithRenderingMode:)];
@@ -32,6 +37,11 @@ BOOL ADKIsBelowIOS8()
 BOOL ADKIsBelowIOS9()
 {
     return ![UIImage instancesRespondToSelector:@selector(imageFlippedForRightToLeftLayoutDirection)];
+}
+
+BOOL ADKIsBelowIOS10()
+{
+    return ![UIImage instancesRespondToSelector:@selector(imageRendererFormat)];
 }
 
 BOOL ADKIsLocationServicesAvailableOrNotDetermined()

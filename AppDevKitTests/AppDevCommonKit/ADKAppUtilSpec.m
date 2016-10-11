@@ -14,6 +14,7 @@
 #import "ADKCalculatorHelper.h"
 #import "ADKStringHelper.h"
 #import "TimeTestUtils.h"
+#import "ViewTestUtil.h"
 
 #pragma mark - ADKAppUtil
 
@@ -96,6 +97,84 @@ describe(@"test ADKIsLongerScreen", ^{
         [[UIScreen mainScreen] stub:@selector(fixedCoordinateSpace) andReturn:theValue(coordinateSpaceMock)];
         
         [[theValue(ADKIsLongerScreen()) should] beNo];
+    });
+});
+
+describe(@"test ADKIsWideScreen", ^{
+    it(@"device is iPhone 4s", ^{
+        CGRect rectBounds = CGRectMake(0.0f, 0.0f, 320.0f, 480.0f);
+        
+        // stub bounds
+        [ViewTestUtil stubMainScreenBoundsWithRect:rectBounds];
+        
+        BOOL isWideScreen = ADKIsWideScreen();
+        [[theValue(isWideScreen) should] beNo];
+    });
+    
+    it(@"device is iPhone 5", ^{
+        CGRect rectBounds = CGRectMake(0.0f, 0.0f, 320.0f, 568.0f);
+        
+        // stub bounds
+        [ViewTestUtil stubMainScreenBoundsWithRect:rectBounds];
+        
+        BOOL isWideScreen = ADKIsWideScreen();
+        [[theValue(isWideScreen) should] beNo];
+    });
+    
+    it(@"device is iPhone 6", ^{
+        CGRect rectBounds = CGRectMake(0.0f, 0.0f, 375.0f, 667.0f);
+        
+        // stub bounds
+        [ViewTestUtil stubMainScreenBoundsWithRect:rectBounds];
+        
+        BOOL isWideScreen = ADKIsWideScreen();
+        [[theValue(isWideScreen) should] beYes];
+    });
+    
+    it(@"device is iPhone 6s", ^{
+        CGRect rectBounds = CGRectMake(0.0f, 0.0f, 414.0f, 736.0f);
+        
+        // stub bounds
+        [ViewTestUtil stubMainScreenBoundsWithRect:rectBounds];
+        
+        BOOL isWideScreen = ADKIsWideScreen();
+        [[theValue(isWideScreen) should] beYes];
+    });
+    
+    it(@"device is iPad", ^{
+        CGRect rectBounds = CGRectMake(0.0f, 0.0f, 768.0f, 1024.0f);
+        
+        // stub bounds
+        [ViewTestUtil stubMainScreenBoundsWithRect:rectBounds];
+        
+        BOOL isWideScreen = ADKIsWideScreen();
+        [[theValue(isWideScreen) should] beYes];
+    });
+    
+    it(@"device is iPad pro", ^{
+        CGRect rectBounds = CGRectMake(0.0f, 0.0f, 1536.0f, 2048.0f);
+        
+        // stub bounds
+        [ViewTestUtil stubMainScreenBoundsWithRect:rectBounds];
+        
+        BOOL isWideScreen = ADKIsWideScreen();
+        [[theValue(isWideScreen) should] beYes];
+    });
+});
+
+describe(@"Test ADKIsBelowIOS9", ^{
+    context(@"For different version", ^{
+        it(@"with version iOS 9", ^{
+            [[theValue(ADKIsBelowIOS9()) should] equal:theValue(NO)];
+        });
+    });
+});
+
+describe(@"Test ADKIsBelowIOS10", ^{
+    context(@"For different version", ^{
+        it(@"with version iOS 10", ^{
+            [[theValue(ADKIsBelowIOS10()) should] equal:theValue(YES)];
+        });
     });
 });
 
