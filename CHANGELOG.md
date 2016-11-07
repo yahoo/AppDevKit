@@ -2,6 +2,14 @@
 All notable changes to this project will be documented in this file.
 `AppDevKit` adheres to [Semantic Versioning](http://semver.org/).
 
+## 1.0.3
+#### Added
+* Version check for iOS 10
+* Wide screen check (Reconize device wider than 320 as wide screen)
+#### Fixed
+* Fix load wrong bundle when SDK embed AppDevKit
+* Fix image scale detect
+
 ## 1.0.2
 #### Fixed
 * Fixing wrong spelling in ADKGradientView.
