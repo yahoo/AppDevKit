@@ -85,6 +85,7 @@
 		3C2C4B8B1B27964F004414AD /* DemoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C2C4B891B27964F004414AD /* DemoCollectionViewCell.m */; };
 		3C2C4B8C1B27964F004414AD /* DemoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C2C4B8A1B27964F004414AD /* DemoCollectionViewCell.xib */; };
 		3C2C4B901B27A08A004414AD /* UIColor+ThemeColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C2C4B8F1B27A08A004414AD /* UIColor+ThemeColor.m */; };
+		3C2D70AF1E557E1E00667727 /* ADKCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C2D70AE1E557E1E00667727 /* ADKCamera.m */; };
 		3C8FA5901C155F31004A4ED9 /* InfiniteScrollingHelpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8FA58F1C155F31004A4ED9 /* InfiniteScrollingHelpView.m */; };
 		3C95C7BF1D054A1A00EA2A92 /* img-personalization-reminder-expected2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C95C7BE1D054A1A00EA2A92 /* img-personalization-reminder-expected2.png */; };
 		3C95C7C11D054A3500EA2A92 /* img-personalization-reminder-expected4.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C95C7C01D054A3500EA2A92 /* img-personalization-reminder-expected4.png */; };
@@ -301,6 +302,9 @@
 		3C2C4B8A1B27964F004414AD /* DemoCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DemoCollectionViewCell.xib; sourceTree = "<group>"; };
 		3C2C4B8E1B27A08A004414AD /* UIColor+ThemeColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ThemeColor.h"; sourceTree = "<group>"; };
 		3C2C4B8F1B27A08A004414AD /* UIColor+ThemeColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ThemeColor.m"; sourceTree = "<group>"; };
+		3C2D70AD1E557E1E00667727 /* ADKCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADKCamera.h; sourceTree = "<group>"; };
+		3C2D70AE1E557E1E00667727 /* ADKCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADKCamera.m; sourceTree = "<group>"; };
+		3C2D70B01E557F9900667727 /* AppDevCameraKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDevCameraKit.h; sourceTree = "<group>"; };
 		3C8FA58E1C155F31004A4ED9 /* InfiniteScrollingHelpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfiniteScrollingHelpView.h; sourceTree = "<group>"; };
 		3C8FA58F1C155F31004A4ED9 /* InfiniteScrollingHelpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfiniteScrollingHelpView.m; sourceTree = "<group>"; };
 		3C95C7BE1D054A1A00EA2A92 /* img-personalization-reminder-expected2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img-personalization-reminder-expected2.png"; sourceTree = "<group>"; };
@@ -423,11 +427,13 @@
 				001D98FB1C17F3EA0097623E /* AppDevImageKit.h */,
 				001D99081C17F3EA0097623E /* AppDevListViewKit.h */,
 				001D99161C17F3EA0097623E /* AppDevUIKit.h */,
+				3C2D70B01E557F9900667727 /* AppDevCameraKit.h */,
 				001D99091C17F3EA0097623E /* AppDevUIKit */,
 				001D98E01C17F3EA0097623E /* AppDevAnimateKit */,
 				001D98E41C17F3EA0097623E /* AppDevCommonKit */,
 				001D98F41C17F3EA0097623E /* AppDevImageKit */,
 				001D98FD1C17F3EA0097623E /* AppDevListViewKit */,
+				3C2D70AC1E557DF000667727 /* AppDevCameraKit */,
 			);
 			name = AppDevKitPods;
 			path = AppDevPods;
@@ -696,6 +702,15 @@
 				3C8FA58F1C155F31004A4ED9 /* InfiniteScrollingHelpView.m */,
 			);
 			name = Support;
+			sourceTree = "<group>";
+		};
+		3C2D70AC1E557DF000667727 /* AppDevCameraKit */ = {
+			isa = PBXGroup;
+			children = (
+				3C2D70AD1E557E1E00667727 /* ADKCamera.h */,
+				3C2D70AE1E557E1E00667727 /* ADKCamera.m */,
+			);
+			path = AppDevCameraKit;
 			sourceTree = "<group>";
 		};
 		3C99D77C1B035D2800D65CB3 = {
@@ -1151,6 +1166,7 @@
 				009131771C9D393C006509B5 /* YMDCDataProvider.m in Sources */,
 				00C074D61CA416C5004AF305 /* YMDCDemoImageCell.m in Sources */,
 				001D991E1C17F3EA0097623E /* ADKStringHelper.m in Sources */,
+				3C2D70AF1E557E1E00667727 /* ADKCamera.m in Sources */,
 				001D99181C17F3EA0097623E /* UIView+ADKAnimationMacro.m in Sources */,
 				00C074DE1CA662A2004AF305 /* MovieDescCell.m in Sources */,
 				001D99191C17F3EA0097623E /* UIColor+ADKHexPresentation.m in Sources */,
