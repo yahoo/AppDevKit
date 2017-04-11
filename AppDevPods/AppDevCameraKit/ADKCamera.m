@@ -38,6 +38,8 @@ static void *DeviceWhiteBalanceGainsContext = &DeviceWhiteBalanceGainsContext;
 @property (strong, nonatomic) AVCaptureDeviceInput *audioCaptureDeviceInput;
 @property (strong, nonatomic) AVCaptureVideoPreviewLayer *captureVideoPreviewLayer;
 @property (strong, nonatomic) AVCaptureStillImageOutput *captureStillImageOutput;
+// TODO: It will be implemented for iOS 10 SDK
+// @property (strong, nonatomic) AVCapturePhotoOutput *capturePhotoOutput;
 @property (strong, nonatomic) AVCaptureMovieFileOutput *captureMovieFileOutput;
 @property (assign, nonatomic) AVCaptureWhiteBalanceGains whiteBalanceGains;
 @property (assign, nonatomic) BOOL camcoderMode;
@@ -96,6 +98,7 @@ static void *DeviceWhiteBalanceGainsContext = &DeviceWhiteBalanceGainsContext;
     if (self) {
         self.delegate = delegate;
         [self setupDefaultSetting];
+
         self.cameraQuality = cameraQuality;
         self.cameraPosition = cameraPosition;
 
@@ -111,12 +114,13 @@ static void *DeviceWhiteBalanceGainsContext = &DeviceWhiteBalanceGainsContext;
     self = [super init];
     if (self) {
         self.delegate = delegate;
+        [self setupDefaultSetting];
+
         self.cameraQuality = cameraQuality;
         self.cameraPosition = cameraPosition;
         self.camcoderMode = YES;
 
         [self initializeCamera];
-        [self setupDefaultSetting];
         [self addObservers];
     }
     return self;
@@ -308,6 +312,8 @@ static void *DeviceWhiteBalanceGainsContext = &DeviceWhiteBalanceGainsContext;
 
     // set video orientation
     AVCaptureConnection *captureConnection = [self captureConnectionWithCaptureOutput:self.captureStillImageOutput];
+    // TODO: It will be implemented for iOS 10 SDK
+    // AVCaptureConnection *captureConnection = [self captureConnectionWithCaptureOutput:self.capturePhotoOutput];
     if (captureConnection.isVideoOrientationSupported) {
         captureConnection.videoOrientation = [self captureVideoOrientation];
     }
@@ -334,6 +340,9 @@ static void *DeviceWhiteBalanceGainsContext = &DeviceWhiteBalanceGainsContext;
                                                                       });
                                                                   }
                                                               }];
+
+    // TODO: It will be implemented for iOS 10 SDK
+    // [self.capturePhotoOutput capturePhotoWithSettings:nil delegate:<#(nonnull id<AVCapturePhotoCaptureDelegate>)#>]
 }
 
 - (void)startCaptureVideo:(void (^)(NSURL *, NSError *))completionBlock outputURL:(NSURL *)videoOutputURL
@@ -622,7 +631,7 @@ static void *DeviceWhiteBalanceGainsContext = &DeviceWhiteBalanceGainsContext;
 
 - (CGFloat)minExposureBias
 {
-    CGFloat minExposureBias;
+    CGFloat minExposureBias = NAN;
     if (self.videoCaptureDevice) {
         minExposureBias = self.videoCaptureDevice.minExposureTargetBias;
     }
@@ -632,7 +641,7 @@ static void *DeviceWhiteBalanceGainsContext = &DeviceWhiteBalanceGainsContext;
 
 - (CGFloat)maxExposureBias
 {
-    CGFloat maxExposureBias;
+    CGFloat maxExposureBias = NAN;
     if (self.videoCaptureDevice) {
         maxExposureBias = self.videoCaptureDevice.maxExposureTargetBias;
     }
@@ -903,6 +912,9 @@ static void *DeviceWhiteBalanceGainsContext = &DeviceWhiteBalanceGainsContext;
     // Color temperature definition of Kelvin https://en.wikipedia.org/wiki/Color_temperature#cite_note-4
 
     if (self.videoCaptureDevice) {
+        whiteBalanceTemperature = MIN(whiteBalanceTemperature, self.maxWhiteBalanceTemperature);
+        whiteBalanceTemperature = MAX(whiteBalanceTemperature, self.minWhiteBalanceTemperature);
+
         AVCaptureWhiteBalanceTemperatureAndTintValues temperatureAndTintValues = {
             .temperature = whiteBalanceTemperature,
             .tint = self.whiteBalanceTint,
