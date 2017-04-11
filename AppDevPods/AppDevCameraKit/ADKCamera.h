@@ -12,6 +12,7 @@
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
 
+
 typedef NS_ENUM(NSInteger, ADKCameraPosition) {
     ADKCameraPositionUnspecified = 0,
     ADKCameraPositionRear,
@@ -63,12 +64,34 @@ typedef NS_ENUM(NSInteger, ADKCameraErrorCode) {
 };
 
 
+@class ADKCamera;
+
+@protocol ADKCameraDelegate <NSObject>
+
+@optional
+- (void)ADKCamera:(ADKCamera *)camera focusIsAdjusting:(BOOL)adjusting;
+- (void)ADKCamera:(ADKCamera *)camera exposureIsAdjusting:(BOOL)adjusting;
+- (void)ADKCamera:(ADKCamera *)camera whiteBalanceIsAdjusting:(BOOL)adjusting;
+- (void)ADKCamera:(ADKCamera *)camera sessionIsRunnig:(BOOL)running;
+- (void)ADKCamera:(ADKCamera *)camera focusModeChanged:(ADKCameraFocusMode)focusMode;
+- (void)ADKCamera:(ADKCamera *)camera lensPositionChanged:(ADKCameraPosition)lensPosition;
+- (void)ADKCamera:(ADKCamera *)camera exposureModeChanged:(ADKCameraExposureMode)exposureMode;
+- (void)ADKCamera:(ADKCamera *)camera exposureDurationChanged:(CMTime)exposureDuration;
+- (void)ADKCamera:(ADKCamera *)camera ISOChanged:(CGFloat)ISO;
+- (void)ADKCamera:(ADKCamera *)camera exposureTargetBiasChanged:(CGFloat)exposureTargetBias;
+- (void)ADKCamera:(ADKCamera *)camera exposureTargetOffsetChanged:(CGFloat)exposureTargetOffset;
+- (void)ADKCamera:(ADKCamera *)camera whiteBalanceModeChanged:(ADKCameraWhiteBlanceMode)whiteBalanceMode;
+- (void)ADKCamera:(ADKCamera *)camera deviceWhiteBalanceGainsChanged:(AVCaptureWhiteBalanceGains)deviceWhiteBalanceGains;
+- (void)ADKCamera:(ADKCamera *)camera didFailWithError:(NSError *)error;
+@end
+
+
 @interface ADKCamera : NSObject
 
 /**
  * @brief The delegate instance for implement delegate methods. For example, you can use it to monitor focusing, exposuring, error handling and etc.
  */
-@property (weak, nonatomic) id delegate;
+@property (weak, nonatomic) id <ADKCameraDelegate> delegate;
 
 /**
  * @brief This property is determined to align photo or video's orientation with device or UIViewController. If you want to align with device orientation but UIViewController wouldn't rotate the UI, you should set alignDeviceOrientation with YES.
@@ -356,22 +379,3 @@ typedef NS_ENUM(NSInteger, ADKCameraErrorCode) {
 
 @end
 
-
-@protocol ADKCameraDelegate <NSObject>
-
-@optional
-- (void)ADKCamera:(ADKCamera *)camera focusIsAdjusting:(BOOL)adjusting;
-- (void)ADKCamera:(ADKCamera *)camera exposureIsAdjusting:(BOOL)adjusting;
-- (void)ADKCamera:(ADKCamera *)camera whiteBalanceIsAdjusting:(BOOL)adjusting;
-- (void)ADKCamera:(ADKCamera *)camera sessionIsRunnig:(BOOL)running;
-- (void)ADKCamera:(ADKCamera *)camera focusModeChanged:(ADKCameraFocusMode)focusMode;
-- (void)ADKCamera:(ADKCamera *)camera lensPositionChanged:(ADKCameraPosition)lensPosition;
-- (void)ADKCamera:(ADKCamera *)camera exposureModeChanged:(ADKCameraExposureMode)exposureMode;
-- (void)ADKCamera:(ADKCamera *)camera exposureDurationChanged:(CMTime)exposureDuration;
-- (void)ADKCamera:(ADKCamera *)camera ISOChanged:(CGFloat)ISO;
-- (void)ADKCamera:(ADKCamera *)camera exposureTargetBiasChanged:(CGFloat)exposureTargetBias;
-- (void)ADKCamera:(ADKCamera *)camera exposureTargetOffsetChanged:(CGFloat)exposureTargetOffset;
-- (void)ADKCamera:(ADKCamera *)camera whiteBalanceModeChanged:(ADKCameraWhiteBlanceMode)whiteBalanceMode;
-- (void)ADKCamera:(ADKCamera *)camera deviceWhiteBalanceGainsChanged:(AVCaptureWhiteBalanceGains)deviceWhiteBalanceGains;
-- (void)ADKCamera:(ADKCamera *)camera didFailWithError:(NSError *)error;
-@end
