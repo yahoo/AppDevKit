@@ -1,0 +1,2463 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>ADKCamera Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">AppDevKit </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Yahoo</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/ISO">ISO</option>
+		
+		<option value="//api/name/alignDeviceOrientation">alignDeviceOrientation</option>
+		
+		<option value="//api/name/cameraExposureMode">cameraExposureMode</option>
+		
+		<option value="//api/name/cameraFlashMode">cameraFlashMode</option>
+		
+		<option value="//api/name/cameraFocusMode">cameraFocusMode</option>
+		
+		<option value="//api/name/cameraMirrorMode">cameraMirrorMode</option>
+		
+		<option value="//api/name/cameraPosition">cameraPosition</option>
+		
+		<option value="//api/name/cameraQuality">cameraQuality</option>
+		
+		<option value="//api/name/cameraTorchMode">cameraTorchMode</option>
+		
+		<option value="//api/name/cameraWhiteBlanceMode">cameraWhiteBlanceMode</option>
+		
+		<option value="//api/name/captureVideoPreviewLayer">captureVideoPreviewLayer</option>
+		
+		<option value="//api/name/delegate">delegate</option>
+		
+		<option value="//api/name/exposureBias">exposureBias</option>
+		
+		<option value="//api/name/lensPosition">lensPosition</option>
+		
+		<option value="//api/name/lowLightBoost">lowLightBoost</option>
+		
+		<option value="//api/name/maxExposureBias">maxExposureBias</option>
+		
+		<option value="//api/name/maxISO">maxISO</option>
+		
+		<option value="//api/name/maxLensPosition">maxLensPosition</option>
+		
+		<option value="//api/name/maxShutterSpeed">maxShutterSpeed</option>
+		
+		<option value="//api/name/maxWhiteBalanceTemperature">maxWhiteBalanceTemperature</option>
+		
+		<option value="//api/name/maxWhiteBalanceTint">maxWhiteBalanceTint</option>
+		
+		<option value="//api/name/maxZoomFactor">maxZoomFactor</option>
+		
+		<option value="//api/name/minExposureBias">minExposureBias</option>
+		
+		<option value="//api/name/minISO">minISO</option>
+		
+		<option value="//api/name/minLensPosition">minLensPosition</option>
+		
+		<option value="//api/name/minShutterSpeed">minShutterSpeed</option>
+		
+		<option value="//api/name/minWhiteBalanceTemperature">minWhiteBalanceTemperature</option>
+		
+		<option value="//api/name/minWhiteBalanceTint">minWhiteBalanceTint</option>
+		
+		<option value="//api/name/minZoomFactor">minZoomFactor</option>
+		
+		<option value="//api/name/recording">recording</option>
+		
+		<option value="//api/name/shutterSpeed">shutterSpeed</option>
+		
+		<option value="//api/name/stabilization">stabilization</option>
+		
+		<option value="//api/name/whiteBalanceTemperature">whiteBalanceTemperature</option>
+		
+		<option value="//api/name/whiteBalanceTint">whiteBalanceTint</option>
+		
+		<option value="//api/name/zoomFactor">zoomFactor</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/cameraPermission">+ cameraPermission</option>
+		
+		<option value="//api/name/frontCameraAvailable">+ frontCameraAvailable</option>
+		
+		<option value="//api/name/microphonePermission">+ microphonePermission</option>
+		
+		<option value="//api/name/rearCameraAvailable">+ rearCameraAvailable</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/captureImage:">- captureImage:</option>
+		
+		<option value="//api/name/exposureAtPoint:">- exposureAtPoint:</option>
+		
+		<option value="//api/name/flashAvailable">- flashAvailable</option>
+		
+		<option value="//api/name/focusAtPoint:">- focusAtPoint:</option>
+		
+		<option value="//api/name/initCamcoderWithDelegate:quality:position:">- initCamcoderWithDelegate:quality:position:</option>
+		
+		<option value="//api/name/initCameraWithDelegate:quality:position:">- initCameraWithDelegate:quality:position:</option>
+		
+		<option value="//api/name/optimizeForHighestFrameRate">- optimizeForHighestFrameRate</option>
+		
+		<option value="//api/name/startCamera">- startCamera</option>
+		
+		<option value="//api/name/startCaptureVideo:outputURL:">- startCaptureVideo:outputURL:</option>
+		
+		<option value="//api/name/stopCamera">- stopCamera</option>
+		
+		<option value="//api/name/stopCaptureVideo">- stopCaptureVideo</option>
+		
+		<option value="//api/name/torchAvailable">- torchAvailable</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">ADKCamera Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>ADKCamera.h<br />ADKCamera.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/delegate" title="delegate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/delegate">&nbsp;&nbsp;delegate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The delegate instance for implement delegate methods. For example, you can use it to monitor focusing, exposuring, error handling and etc.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) id&lt;ADKCameraDelegate&gt; delegate</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ADKCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/alignDeviceOrientation" title="alignDeviceOrientation"></a>
+	<h3 class="method-title"><code><a href="#//api/name/alignDeviceOrientation">&nbsp;&nbsp;alignDeviceOrientation</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This property is determined to align photo or video&rsquo;s orientation with device or UIViewController. If you want to align with device orientation but UIViewController wouldn&rsquo;t rotate the UI, you should set alignDeviceOrientation with YES.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign, nonatomic) BOOL alignDeviceOrientation</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ADKCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cameraQuality" title="cameraQuality"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cameraQuality">&nbsp;&nbsp;cameraQuality</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The camera quality of image output result. This values should be the same with sessionPreset in AVCaptureSession.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (strong, readonly, nonatomic) NSString *cameraQuality</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ADKCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cameraPosition" title="cameraPosition"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cameraPosition">&nbsp;&nbsp;cameraPosition</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The camera position you want to use. It might be front or rear camera on your device. Please refer <a href="../Constants/ADKCameraPosition.html">ADKCameraPosition</a> to set this value to ADKCamera. Default value will be ADKCameraPositionRear.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign, nonatomic) ADKCameraPosition cameraPosition</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ADKCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cameraFlashMode" title="cameraFlashMode"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cameraFlashMode">&nbsp;&nbsp;cameraFlashMode</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The flash mode you want to use. It might be on, off or auto on your device. Please refer <a href="../Constants/ADKCameraFlashMode.html">ADKCameraFlashMode</a> to set this value to ADKCamera. Default value will be ADKCameraFlashModeOff.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign, nonatomic) ADKCameraFlashMode cameraFlashMode</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ADKCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cameraTorchMode" title="cameraTorchMode"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cameraTorchMode">&nbsp;&nbsp;cameraTorchMode</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The torch mode you want to use. It might be on or off on your device. Please refer <a href="../Constants/ADKCameraTorchMode.html">ADKCameraTorchMode</a> to set this value to ADKCamera. Default value will be ADKCameraTorchModeOff.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign, nonatomic) ADKCameraTorchMode cameraTorchMode</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ADKCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cameraMirrorMode" title="cameraMirrorMode"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cameraMirrorMode">&nbsp;&nbsp;cameraMirrorMode</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The mirror mode you want to use. It can be control real-time preview view on <a href="#//api/name/captureVideoPreviewLayer">captureVideoPreviewLayer</a> when you&rsquo;re using front camera. It might be on, off or auto on your device. Please refer <a href="../Constants/ADKCameraMirrorMode.html">ADKCameraMirrorMode</a> to set this value to ADKCamera. Default value will be ADKCameraMirrorModeAuto.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign, nonatomic) ADKCameraMirrorMode cameraMirrorMode</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ADKCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cameraFocusMode" title="cameraFocusMode"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cameraFocusMode">&nbsp;&nbsp;cameraFocusMode</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The focus mode you want to use. It might be locked, auto or continuous auto on your device. Please refer <a href="../Constants/ADKCameraFocusMode.html">ADKCameraFocusMode</a> to set this value to ADKCamera. Default value will be ADKCameraFocusModeAutoFocus.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign, nonatomic) ADKCameraFocusMode cameraFocusMode</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ADKCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cameraExposureMode" title="cameraExposureMode"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cameraExposureMode">&nbsp;&nbsp;cameraExposureMode</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The exposure mode you want to use. It might be locked, auto or continuous auto on your device. Please refer <a href="../Constants/ADKCameraExposureMode.html">ADKCameraExposureMode</a> to set this value to ADKCamera. Default value will be ADKCameraExposureModeAutoExposure.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign, nonatomic) ADKCameraExposureMode cameraExposureMode</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ADKCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cameraWhiteBlanceMode" title="cameraWhiteBlanceMode"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cameraWhiteBlanceMode">&nbsp;&nbsp;cameraWhiteBlanceMode</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The white balance mode you want to use. It might be locked, auto or continuous auto on your device. Please refer <a href="../Constants/ADKCameraWhiteBlanceMode.html">ADKCameraWhiteBlanceMode</a> to set this value to ADKCamera. Default value will be ADKCameraWhiteBlanceModeAutoWhiteBalance.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign, nonatomic) ADKCameraWhiteBlanceMode cameraWhiteBlanceMode</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ADKCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/captureVideoPreviewLayer" title="captureVideoPreviewLayer"></a>
+	<h3 class="method-title"><code><a href="#//api/name/captureVideoPreviewLayer">&nbsp;&nbsp;captureVideoPreviewLayer</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The camera preview view with AVCaptureVideoPreviewLayer. It can preview real-time image from camera sensor. The preview might be mirror image if you turn on mirror mode by using <a href="#//api/name/cameraMirrorMode">cameraMirrorMode</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (strong, readonly, nonatomic) AVCaptureVideoPreviewLayer *captureVideoPreviewLayer</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ADKCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/recording" title="recording"></a>
+	<h3 class="method-title"><code><a href="#//api/name/recording">&nbsp;&nbsp;recording</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>It&rsquo;s camera recording status. If camera is recording video, it will return YES. Please notice the camera only can record one video simultaneously.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign, readonly, nonatomic) BOOL recording</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ADKCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/minExposureBias" title="minExposureBias"></a>
+	<h3 class="method-title"><code><a href="#//api/name/minExposureBias">&nbsp;&nbsp;minExposureBias</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The minimum value of exposure bias. Please keep exposure bias value bigger than this value.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign, readonly, nonatomic) CGFloat minExposureBias</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ADKCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/maxExposureBias" title="maxExposureBias"></a>
+	<h3 class="method-title"><code><a href="#//api/name/maxExposureBias">&nbsp;&nbsp;maxExposureBias</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The maximum value of exposure bias. Please keep exposure bias value less than this value.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign, readonly, nonatomic) CGFloat maxExposureBias</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ADKCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/exposureBias" title="exposureBias"></a>
+	<h3 class="method-title"><code><a href="#//api/name/exposureBias">&nbsp;&nbsp;exposureBias</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The current exposure bias setting on your camera. Bigger exposure bias will cause brighter image result otherwise lower exposure bias will get darker image result.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign, nonatomic) CGFloat exposureBias</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ADKCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/minShutterSpeed" title="minShutterSpeed"></a>
+	<h3 class="method-title"><code><a href="#//api/name/minShutterSpeed">&nbsp;&nbsp;minShutterSpeed</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The minimum value of shutter speed that current camera can support. Please keep shutter speed value bigger than this value.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign, readonly, nonatomic) CGFloat minShutterSpeed</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ADKCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/maxShutterSpeed" title="maxShutterSpeed"></a>
+	<h3 class="method-title"><code><a href="#//api/name/maxShutterSpeed">&nbsp;&nbsp;maxShutterSpeed</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The maximum value of shutter speed that current camera can support. Please keep shutter speed value less than this value.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign, readonly, nonatomic) CGFloat maxShutterSpeed</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ADKCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/shutterSpeed" title="shutterSpeed"></a>
+	<h3 class="method-title"><code><a href="#//api/name/shutterSpeed">&nbsp;&nbsp;shutterSpeed</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The current shutter speed setting on your camera. Bigger shutter speed will get clearer image result otherwise lower shutter speed will get blur image result.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign, nonatomic) CGFloat shutterSpeed</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ADKCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/minISO" title="minISO"></a>
+	<h3 class="method-title"><code><a href="#//api/name/minISO">&nbsp;&nbsp;minISO</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The minimum value of <a href="#//api/name/ISO">ISO</a> that current camera can support. Please keep <a href="#//api/name/ISO">ISO</a> value bigger than this value.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign, readonly, nonatomic) CGFloat minISO</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ADKCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/maxISO" title="maxISO"></a>
+	<h3 class="method-title"><code><a href="#//api/name/maxISO">&nbsp;&nbsp;maxISO</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The maximum value of <a href="#//api/name/ISO">ISO</a> that current camera can support. Please keep <a href="#//api/name/ISO">ISO</a> value less than this value.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign, readonly, nonatomic) CGFloat maxISO</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ADKCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ISO" title="ISO"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ISO">&nbsp;&nbsp;ISO</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The current ISO setting on your camera. Bigger ISO will get faster shutter speed otherwise lower ISO will get slower shutter speed.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign, nonatomic) CGFloat ISO</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ADKCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/minZoomFactor" title="minZoomFactor"></a>
+	<h3 class="method-title"><code><a href="#//api/name/minZoomFactor">&nbsp;&nbsp;minZoomFactor</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The minimum value of zoom factor that current camera can support. Please keep zoom factor value bigger than this value.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign, readonly, nonatomic) CGFloat minZoomFactor</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ADKCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/maxZoomFactor" title="maxZoomFactor"></a>
+	<h3 class="method-title"><code><a href="#//api/name/maxZoomFactor">&nbsp;&nbsp;maxZoomFactor</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The maximum value of zoom factor that current camera can support. Please keep zoom factor value less than this value.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign, readonly, nonatomic) CGFloat maxZoomFactor</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ADKCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/zoomFactor" title="zoomFactor"></a>
+	<h3 class="method-title"><code><a href="#//api/name/zoomFactor">&nbsp;&nbsp;zoomFactor</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The current zoom factor setting on your camera. Bigger zoom factor can get zoom in effect but blurer image result.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign, nonatomic) CGFloat zoomFactor</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ADKCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/minLensPosition" title="minLensPosition"></a>
+	<h3 class="method-title"><code><a href="#//api/name/minLensPosition">&nbsp;&nbsp;minLensPosition</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The minimum value of lens position that current camera can support. Please keep lens position value bigger than this value.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign, readonly, nonatomic) CGFloat minLensPosition</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ADKCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/maxLensPosition" title="maxLensPosition"></a>
+	<h3 class="method-title"><code><a href="#//api/name/maxLensPosition">&nbsp;&nbsp;maxLensPosition</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The maximum value of lens position that current camera can support. Please keep lens position value less than this value.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign, readonly, nonatomic) CGFloat maxLensPosition</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ADKCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/lensPosition" title="lensPosition"></a>
+	<h3 class="method-title"><code><a href="#//api/name/lensPosition">&nbsp;&nbsp;lensPosition</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The current lens position setting on your camera. Lower lens position can reach closer focus otherwise higher lend position can reach farer focus.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign, nonatomic) CGFloat lensPosition</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ADKCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/minWhiteBalanceTemperature" title="minWhiteBalanceTemperature"></a>
+	<h3 class="method-title"><code><a href="#//api/name/minWhiteBalanceTemperature">&nbsp;&nbsp;minWhiteBalanceTemperature</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The minimum value of white balance temperature that current camera can support. Please keep white balance temperature value bigger than this value.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign, readonly, nonatomic) CGFloat minWhiteBalanceTemperature</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ADKCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/maxWhiteBalanceTemperature" title="maxWhiteBalanceTemperature"></a>
+	<h3 class="method-title"><code><a href="#//api/name/maxWhiteBalanceTemperature">&nbsp;&nbsp;maxWhiteBalanceTemperature</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The maximum value of white balance temperature that current camera can support. Please keep white balance temperature value less than this value.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign, readonly, nonatomic) CGFloat maxWhiteBalanceTemperature</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ADKCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/whiteBalanceTemperature" title="whiteBalanceTemperature"></a>
+	<h3 class="method-title"><code><a href="#//api/name/whiteBalanceTemperature">&nbsp;&nbsp;whiteBalanceTemperature</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The current white balance temperature setting on your camera. The white balance color correlated temperature in kelvin. This property will effect color of final image result.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign, nonatomic) CGFloat whiteBalanceTemperature</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ADKCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/minWhiteBalanceTint" title="minWhiteBalanceTint"></a>
+	<h3 class="method-title"><code><a href="#//api/name/minWhiteBalanceTint">&nbsp;&nbsp;minWhiteBalanceTint</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The minimum value of white balance tint that current camera can support. Please keep white balance tint value bigger than this value.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign, readonly, nonatomic) CGFloat minWhiteBalanceTint</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ADKCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/maxWhiteBalanceTint" title="maxWhiteBalanceTint"></a>
+	<h3 class="method-title"><code><a href="#//api/name/maxWhiteBalanceTint">&nbsp;&nbsp;maxWhiteBalanceTint</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The maximum value of white balance tint that current camera can support. Please keep white balance tint value less than this value.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign, readonly, nonatomic) CGFloat maxWhiteBalanceTint</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ADKCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/whiteBalanceTint" title="whiteBalanceTint"></a>
+	<h3 class="method-title"><code><a href="#//api/name/whiteBalanceTint">&nbsp;&nbsp;whiteBalanceTint</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The current white balance tint setting on your camera. This property will effect strength of white balance temperature.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign, nonatomic) CGFloat whiteBalanceTint</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ADKCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/lowLightBoost" title="lowLightBoost"></a>
+	<h3 class="method-title"><code><a href="#//api/name/lowLightBoost">&nbsp;&nbsp;lowLightBoost</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Enable or disable low light boost mechanism on your camera. When you assign YES value into this property, it means you want to enable this feature.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign, nonatomic) BOOL lowLightBoost</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ADKCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/stabilization" title="stabilization"></a>
+	<h3 class="method-title"><code><a href="#//api/name/stabilization">&nbsp;&nbsp;stabilization</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Enable or disable stabilization mechanism on your camera. When you assign YES value into this property, it means you want to enable this feature.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign, nonatomic) BOOL stabilization</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ADKCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cameraPermission" title="cameraPermission"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cameraPermission">+&nbsp;cameraPermission</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Getting status of camera permission. If it return YES means user already approved camera permission that you have permission to use their camera. When it return NO, please handle permission request process by yourself.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (BOOL)cameraPermission</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Camera permission status in BOOL value.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ADKCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/microphonePermission" title="microphonePermission"></a>
+	<h3 class="method-title"><code><a href="#//api/name/microphonePermission">+&nbsp;microphonePermission</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Getting status of microphone permission. If it return YES means user already approved microphone permission that you have permission to use their microphone. When it return NO, please handle permission request process by yourself.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (BOOL)microphonePermission</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Microphone permission status in BOOL value.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ADKCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/frontCameraAvailable" title="frontCameraAvailable"></a>
+	<h3 class="method-title"><code><a href="#//api/name/frontCameraAvailable">+&nbsp;frontCameraAvailable</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Checking for capability of using front camera. If it return YES means current device has this sensor and you can use it. When it return NO, it means current device might be not exist or have no capability to use it.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (BOOL)frontCameraAvailable</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Front camera available status in BOOL value.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ADKCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/rearCameraAvailable" title="rearCameraAvailable"></a>
+	<h3 class="method-title"><code><a href="#//api/name/rearCameraAvailable">+&nbsp;rearCameraAvailable</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Checking for capability of using rear camera. If it return YES means current device has this sensor and you can use it. When it return NO, it means current device might be not exist or have no capability to use it.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (BOOL)rearCameraAvailable</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Rear camera available status in BOOL value.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ADKCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initCameraWithDelegate:quality:position:" title="initCameraWithDelegate:quality:position:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initCameraWithDelegate:quality:position:">&ndash;&nbsp;initCameraWithDelegate:quality:position:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Initializing a camera instance for shooting photos. Please set your required settings at the beginning.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)initCameraWithDelegate:(id)<em>delegate</em> quality:(NSString *)<em>cameraQuality</em> position:(ADKCameraPosition)<em>cameraPosition</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>delegate</code></th>
+						<td><p>Assigning a <a href="#//api/name/delegate">delegate</a> target to handle camera&rsquo;s response. Please refer <a href="../Protocols/ADKCameraDelegate.html">ADKCameraDelegate</a> protocol to know what methods you can implement.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>cameraQuality</code></th>
+						<td><p>Assigning camera quality in camera instance. This values should be the same with sessionPreset in AVCaptureSession.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>cameraPosition</code></th>
+						<td><p>Assigning camera position in <a href="../Constants/ADKCameraPosition.html">ADKCameraPosition</a>. It will help you to set up first camera sensor for you.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Instance of ADKCamera that you can use it to make your own customized camera feature. (Making photo only)</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ADKCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initCamcoderWithDelegate:quality:position:" title="initCamcoderWithDelegate:quality:position:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initCamcoderWithDelegate:quality:position:">&ndash;&nbsp;initCamcoderWithDelegate:quality:position:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Initializing a camera instance for shooting photos and <a href="#//api/name/recording">recording</a> video simultaneously. Please set your required settings at the beginning.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)initCamcoderWithDelegate:(id)<em>delegate</em> quality:(NSString *)<em>cameraQuality</em> position:(ADKCameraPosition)<em>cameraPosition</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>delegate</code></th>
+						<td><p>Assigning a <a href="#//api/name/delegate">delegate</a> target to handle camera&rsquo;s response. Please refer <a href="../Protocols/ADKCameraDelegate.html">ADKCameraDelegate</a> protocol to know what methods you can implement.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>cameraQuality</code></th>
+						<td><p>Assigning camera quality in camera instance. This values should be the same with sessionPreset in AVCaptureSession.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>cameraPosition</code></th>
+						<td><p>Assigning camera position in <a href="../Constants/ADKCameraPosition.html">ADKCameraPosition</a>. It will help you to set up first camera sensor for you.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Instance of ADKCamera that you can use it to make your own customized camera feature.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ADKCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/optimizeForHighestFrameRate" title="optimizeForHighestFrameRate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/optimizeForHighestFrameRate">&ndash;&nbsp;optimizeForHighestFrameRate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Optimizing camera for getting highest frame rate. If you want to get the fastest camera response, you can use this method to achieve your purpose.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)optimizeForHighestFrameRate</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ADKCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/flashAvailable" title="flashAvailable"></a>
+	<h3 class="method-title"><code><a href="#//api/name/flashAvailable">&ndash;&nbsp;flashAvailable</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Checking for capability of using flash feature on your camera. If it return YES means current device has this sensor and you can use it. When it return NO, it means current device might be not exist or have no capability to use it.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)flashAvailable</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Flash available status in BOOL value.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ADKCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/torchAvailable" title="torchAvailable"></a>
+	<h3 class="method-title"><code><a href="#//api/name/torchAvailable">&ndash;&nbsp;torchAvailable</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Checking for capability of using torch feature on your camera. If it return YES means current device has this sensor and you can use it. When it return NO, it means current device might be not exist or have no capability to use it.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)torchAvailable</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Torch available status in BOOL value.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ADKCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/focusAtPoint:" title="focusAtPoint:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/focusAtPoint:">&ndash;&nbsp;focusAtPoint:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Using camera to take focus on your target. The focus point&rsquo;s format should be CGPoint.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)focusAtPoint:(CGPoint)<em>focusPoint</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>focusPoint</code></th>
+						<td><p>Assigning a CGPoint to make a focus point on your camera. The value should between (0, 0) and (1, 1). If you want to convert screen coordiniate into required coordinate, the captureDevicePointOfInterestForPointmethodin AVCaptureVideoPreviewLayer can satisfy your requirement.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ADKCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/exposureAtPoint:" title="exposureAtPoint:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/exposureAtPoint:">&ndash;&nbsp;exposureAtPoint:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Using camera to take exposure on your target. The exposure point&rsquo;s format should be CGPoint.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)exposureAtPoint:(CGPoint)<em>exposurePoint</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>exposurePoint</code></th>
+						<td><p>Assigning a CGPoint to make a exposure point on your camera. The value should between (0, 0) and (1, 1). If you want to convert screen coordiniate into required coordinate, the captureDevicePointOfInterestForPointmethodin AVCaptureVideoPreviewLayer can satisfy your requirement.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ADKCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/startCamera" title="startCamera"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startCamera">&ndash;&nbsp;startCamera</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Asking camera to start it&rsquo;s mechanism for shooting photos or <a href="#//api/name/recording">recording</a> videos. For performance issue, I suggest you should stop camera when you don&rsquo;t need it and recover it by calling startCamera method. For example, presenting modal view to cover camera view, pushing app to background , transferring  into other view and etc.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)startCamera</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ADKCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/stopCamera" title="stopCamera"></a>
+	<h3 class="method-title"><code><a href="#//api/name/stopCamera">&ndash;&nbsp;stopCamera</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Asking camera to stop it&rsquo;s mechanism for shooting photos or <a href="#//api/name/recording">recording</a> videos. For performance issue, I suggest you should stop camera when you don&rsquo;t need it and recover it by calling <a href="#//api/name/startCamera">startCamera</a> method. For example, presenting modal view to cover camera view, pushing app to background , transferring  into other view and etc.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)stopCamera</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ADKCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/captureImage:" title="captureImage:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/captureImage:">&ndash;&nbsp;captureImage:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>@brief</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)captureImage:(void ( ^ ) ( UIImage *image , NSDictionary *exifDic , NSError *error ))<em>completionBlock</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@brief</p>
+
+<p>@param completionBlock</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ADKCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/startCaptureVideo:outputURL:" title="startCaptureVideo:outputURL:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startCaptureVideo:outputURL:">&ndash;&nbsp;startCaptureVideo:outputURL:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Asking camera start to make video <a href="#//api/name/recording">recording</a>. The error handler and response handler will be satisfy in this method.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)startCaptureVideo:(void ( ^ ) ( NSURL *videoOutputURL , NSError *error ))<em>completionBlock</em> outputURL:(NSURL *)<em>videoOutputURL</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionBlock</code></th>
+						<td><p>The block that you handle error and response  behavior. If error parameter is not nil, it means something wrong when you record. Please read error code to understand what happen to it. It also return videoOutputURL to tell you where video <a href="#//api/name/recording">recording</a> file is.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>videoOutputURL</code></th>
+						<td><p>Assigning a video output url with NSURL data type. The camera will record video and save it to this url path.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ADKCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/stopCaptureVideo" title="stopCaptureVideo"></a>
+	<h3 class="method-title"><code><a href="#//api/name/stopCaptureVideo">&ndash;&nbsp;stopCaptureVideo</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Asking camera to terminate video <a href="#//api/name/recording">recording</a>. After you stop capture video, you could get a video file url that camera recorded.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)stopCaptureVideo</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ADKCamera.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2017 Yahoo. All rights reserved. Updated: 2017-04-28</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
