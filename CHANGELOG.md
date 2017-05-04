@@ -2,6 +2,10 @@
 All notable changes to this project will be documented in this file.
 `AppDevKit` adheres to [Semantic Versioning](http://semver.org/).
 
+## 1.1.0
+#### Added
+* Adding a new CameraKit for providing several high level camera control APIs. It allows you control camera features that contain focus, exposure, shutter duration, white blance and etc and can be used manually.    
+
 ## 1.0.3
 #### Added
 * Version check for iOS 10
