@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "AppDevKit"
-  s.version      = "1.0.3"
+  s.version      = "1.1.0"
   s.summary      = "The collection of open develop utilities for iOS development team. It contains foundationl and useful features that Apple didn't provide."
   s.homepage     = "https://github.com/yahoo/AppDevKit"
   s.license      = "Yahoo! Inc. BSD license"
@@ -39,11 +39,14 @@ Pod::Spec.new do |s|
       appDevListViewKit.dependency 'AppDevKit/AppDevUIKit'
   end
 
+  s.subspec 'AppDevCameraKit' do |appDevCameraKit|
+      appDevUIKit.source_files = ['AppDevPods/AppDevCameraKit/**/*', 'AppDevPods/AppDevCameraKit.h']
+      appDevUIKit.public_header_files = ['AppDevPods/AppDevCameraKit/**/*.h', 'AppDevPods/AppDevCameraKit.h']
+  end
+
   s.source = { :git => "https://github.com/yahoo/AppDevKit.git", :tag => s.version.to_s }
   s.source_files = "AppDevPods/AppDevKit.h"
   s.public_header_files = "AppDevPods/AppDevKit.h"
   s.requires_arc = true
-
-  # s.dependency "AppDevKit/AppDevCommonKit"
 
 end
