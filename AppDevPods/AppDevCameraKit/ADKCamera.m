@@ -672,7 +672,7 @@ static void *DeviceWhiteBalanceGainsContext = &DeviceWhiteBalanceGainsContext;
 
 - (CGFloat)exposureBias
 {
-    CGFloat exposureBias;
+    CGFloat exposureBias = NAN;
     if (self.videoCaptureDevice) {
         exposureBias = self.videoCaptureDevice.exposureTargetBias;
     }
@@ -682,7 +682,7 @@ static void *DeviceWhiteBalanceGainsContext = &DeviceWhiteBalanceGainsContext;
 
 - (CGFloat)minShutterSpeed
 {
-    CGFloat minShutterSpeed;
+    CGFloat minShutterSpeed = NAN;
     if (self.videoCaptureDevice) {
         AVCaptureDeviceFormat *captureDeviceFormat = self.videoCaptureDevice.activeFormat;
         minShutterSpeed = CMTimeGetSeconds(captureDeviceFormat.minExposureDuration);
@@ -693,7 +693,7 @@ static void *DeviceWhiteBalanceGainsContext = &DeviceWhiteBalanceGainsContext;
 
 - (CGFloat)maxShutterSpeed
 {
-    CGFloat maxShutterSpeed;
+    CGFloat maxShutterSpeed = NAN;
     if (self.videoCaptureDevice) {
         AVCaptureDeviceFormat *captureDeviceFormat = self.videoCaptureDevice.activeFormat;
         maxShutterSpeed = CMTimeGetSeconds(captureDeviceFormat.maxExposureDuration);
@@ -726,7 +726,7 @@ static void *DeviceWhiteBalanceGainsContext = &DeviceWhiteBalanceGainsContext;
 
 - (CGFloat)shutterSpeed
 {
-    CGFloat shutterSpeed = 0.0f;
+    CGFloat shutterSpeed = NAN;
     if (self.videoCaptureDevice) {
         shutterSpeed = CMTimeGetSeconds(self.videoCaptureDevice.exposureDuration);
     }
@@ -736,7 +736,7 @@ static void *DeviceWhiteBalanceGainsContext = &DeviceWhiteBalanceGainsContext;
 
 - (CGFloat)minISO
 {
-    CGFloat minISO;
+    CGFloat minISO = NAN;
     if (self.videoCaptureDevice) {
         minISO = self.videoCaptureDevice.activeFormat.minISO;
     }
@@ -746,7 +746,7 @@ static void *DeviceWhiteBalanceGainsContext = &DeviceWhiteBalanceGainsContext;
 
 - (CGFloat)maxISO
 {
-    CGFloat maxISO;
+    CGFloat maxISO = NAN;
     if (self.videoCaptureDevice) {
         maxISO = self.videoCaptureDevice.activeFormat.maxISO;
     }
@@ -793,7 +793,7 @@ static void *DeviceWhiteBalanceGainsContext = &DeviceWhiteBalanceGainsContext;
 
 - (CGFloat)maxZoomFactor
 {
-    CGFloat maxZoomFactor;
+    CGFloat maxZoomFactor = NAN;
     if (self.videoCaptureDevice) {
         maxZoomFactor = self.videoCaptureDevice.activeFormat.videoMaxZoomFactor;
     }
@@ -821,7 +821,7 @@ static void *DeviceWhiteBalanceGainsContext = &DeviceWhiteBalanceGainsContext;
 
 - (CGFloat)zoomFactor
 {
-    CGFloat zoomFactor;
+    CGFloat zoomFactor = NAN;
     if (self.videoCaptureDevice) {
         zoomFactor = self.videoCaptureDevice.videoZoomFactor;
     }
@@ -859,7 +859,7 @@ static void *DeviceWhiteBalanceGainsContext = &DeviceWhiteBalanceGainsContext;
 
 - (CGFloat)lensPosition
 {
-    CGFloat lensPosition;
+    CGFloat lensPosition = NAN;
     if (self.videoCaptureDevice) {
         lensPosition = self.videoCaptureDevice.lensPosition;
     }
@@ -889,7 +889,7 @@ static void *DeviceWhiteBalanceGainsContext = &DeviceWhiteBalanceGainsContext;
 
 - (AVCaptureWhiteBalanceGains)whiteBalanceGains
 {
-    AVCaptureWhiteBalanceGains whiteBalanceGains;
+    AVCaptureWhiteBalanceGains whiteBalanceGains = AVCaptureWhiteBalanceGainsCurrent;
     if (self.videoCaptureDevice) {
         whiteBalanceGains = [self normalizedGains:[self.videoCaptureDevice deviceWhiteBalanceGains]];
     }
@@ -927,7 +927,7 @@ static void *DeviceWhiteBalanceGainsContext = &DeviceWhiteBalanceGainsContext;
 
 - (CGFloat)whiteBalanceTemperature
 {
-    CGFloat whiteBalanceTemperature;
+    CGFloat whiteBalanceTemperature = NAN;
     if (self.videoCaptureDevice) {
         AVCaptureWhiteBalanceGains whiteBalanceGains = [self whiteBalanceGains];
         AVCaptureWhiteBalanceTemperatureAndTintValues whiteBalanceTemperatureAndTintValues = [self.videoCaptureDevice temperatureAndTintValuesForDeviceWhiteBalanceGains:whiteBalanceGains];
@@ -962,7 +962,7 @@ static void *DeviceWhiteBalanceGainsContext = &DeviceWhiteBalanceGainsContext;
 
 - (CGFloat)whiteBalanceTint
 {
-    CGFloat whiteBalanceTint;
+    CGFloat whiteBalanceTint = NAN;
     if (self.videoCaptureDevice) {
         AVCaptureWhiteBalanceGains whiteBalanceGains = [self whiteBalanceGains];
         AVCaptureWhiteBalanceTemperatureAndTintValues whiteBalanceTemperatureAndTintValues = [self.videoCaptureDevice temperatureAndTintValuesForDeviceWhiteBalanceGains:whiteBalanceGains];

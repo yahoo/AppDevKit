@@ -40,8 +40,8 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'AppDevCameraKit' do |appDevCameraKit|
-      appDevUIKit.source_files = ['AppDevPods/AppDevCameraKit/**/*', 'AppDevPods/AppDevCameraKit.h']
-      appDevUIKit.public_header_files = ['AppDevPods/AppDevCameraKit/**/*.h', 'AppDevPods/AppDevCameraKit.h']
+      appDevCameraKit.source_files = ['AppDevPods/AppDevCameraKit/**/*', 'AppDevPods/AppDevCameraKit.h']
+      appDevCameraKit.public_header_files = ['AppDevPods/AppDevCameraKit/**/*.h', 'AppDevPods/AppDevCameraKit.h']
   end
 
   s.source = { :git => "https://github.com/yahoo/AppDevKit.git", :tag => s.version.to_s }
