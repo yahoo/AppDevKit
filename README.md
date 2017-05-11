@@ -64,6 +64,7 @@ pod 'AppDevKit/AppDevImageKit'
 
 
 ### Animation Tools
+
   - **UIView+ADKAnimationMacro** > Gives some simple animation behavior for specific UIView.
   
 
@@ -81,6 +82,12 @@ pod 'AppDevKit/AppDevImageKit'
   - **ADKCellDynamicSizeCalculator** > Calculates dynamic cell with and height for UICollectionViewCell and UITableViewCell.
   - **ADKCollectionViewDynamicSizeCell** > Base UICollectionViewCell supports dynamic width and height features.
   - **ADKTableViewDynamicSizeCell** > Base UITableViewCell supports dynamic width and height features.
+
+
+### Camera Tools
+
+  - **ADKCamera** > Allows you to use advanced manual camera features and customize your camera view in few steps.
+  
 
 ### Instruction
 
