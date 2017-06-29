@@ -321,7 +321,7 @@ NSString * const valueObjectConstantKey;
             [self ADKSetConstraintConstant:self.cachedBottomConstraintConstant forAttribute:attribute];
         } else if (attribute == NSLayoutAttributeLeading && self.cachedLeadingConstraintConstant != 0.0f) {
             [self ADKSetConstraintConstant:self.cachedLeadingConstraintConstant forAttribute:attribute];
-        } else if (attribute == NSLayoutAttributeTrailing && self.cachedLeadingConstraintConstant != 0.0f) {
+        } else if (attribute == NSLayoutAttributeTrailing && self.cachedTrailingConstraintConstant != 0.0f) {
             [self ADKSetConstraintConstant:self.cachedTrailingConstraintConstant forAttribute:attribute];
         }
     }
