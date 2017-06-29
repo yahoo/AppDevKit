@@ -25,7 +25,7 @@
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hll-M9-zDp">
                     <rect key="frame" x="147" y="560" width="80" height="80"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
-                    <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.27058823529411763" green="0.0078431372549019607" blue="0.61568627450980395" alpha="1" colorSpace="calibratedRGB"/>
                     <state key="normal" title="SHOOT"/>
                     <connections>
                         <action selector="shootButtonTapHandler:" destination="-1" eventType="touchUpInside" id="5rf-sJ-YaG"/>
