@@ -13,7 +13,7 @@
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-@property BOOL restrictRotation;
+@property (assign, nonnull) BOOL restrictRotation;
 
 @end
 

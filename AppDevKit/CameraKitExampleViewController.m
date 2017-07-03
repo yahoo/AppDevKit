@@ -4,6 +4,8 @@
 //
 //  Created by  Chih Feng Sung on 6/29/17.
 //  Copyright © 2017 Yahoo. All rights reserved.
+//  Licensed under the terms of the BSD License.
+//  Please see the LICENSE file in the project root for terms.
 //
 
 #import "CameraKitExampleViewController.h"
@@ -70,9 +72,9 @@
              self.cameraUtil.captureVideoPreviewLayer.frame = self.view.bounds;
 
              // Updating current lens focus calue
-              self.lenFocusSlider.minimumValue = self.cameraUtil.minLensPosition;
-              self.lenFocusSlider.maximumValue = self.cameraUtil.maxLensPosition;
-              self.lenFocusSlider.value = self.cameraUtil.lensPosition;
+             self.lenFocusSlider.minimumValue = self.cameraUtil.minLensPosition;
+             self.lenFocusSlider.maximumValue = self.cameraUtil.maxLensPosition;
+             self.lenFocusSlider.value = self.cameraUtil.lensPosition;
 
              [self.cameraUtil startCamera];
          }
@@ -146,7 +148,7 @@
                                  // Do nothing
                              }];
         });
-
+        
     }];
 }
 
