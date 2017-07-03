@@ -15,6 +15,7 @@
 #import "DemoCollectionReusableView.h"
 #import "DemoCollectionViewCell.h"
 
+#import "AppDelegate.h"
 #import "ModalMaskViewViewController.h"
 #import "ImageFilterViewController.h"
 #import "ViewAutoLayoutSupportViewController.h"
@@ -24,6 +25,7 @@
 #import "DynamicWidthCellViewController.h"
 #import "OperationViewController.h"
 #import "PullToRefreshExampleViewController.h"
+#import "CameraKitExampleViewController.h"
 #import "YMDCDemoViewController.h"
 
 static NSString * const HeaderCollectionReusableViewIdentifier = @"DemoCollectionReusableView";
@@ -33,6 +35,7 @@ typedef NS_ENUM(NSInteger, ADKitDemoSection) {
     ADKitDemoSectionUI = 0,
     ADKitDemoSectionImage,
     ADKitDemoSectionListView,
+    ADKitDemoSectionCamera,
     ADKitDemoSectionYMDCDemo,
     ADKitDemoSectionCount
 };
@@ -60,7 +63,7 @@ typedef NS_ENUM(NSInteger, ADKitDemoSection) {
 
 - (void)setupView
 {
-    self.title = @"AppDevKit - Demo App";
+    self.title = @"AppDevKit";
 
     UINib *headerNib = [UINib nibWithNibName:HeaderCollectionReusableViewIdentifier bundle:nil];
     [self.demoCollectionView registerNib:headerNib
@@ -74,6 +77,12 @@ typedef NS_ENUM(NSInteger, ADKitDemoSection) {
     self.demoCollectionView.dataSource = self;
 
     self.demoCollectionView.backgroundColor = [UIColor themeBackgroundColor];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+    appDelegate.restrictRotation = NO;
 }
 
 
@@ -95,6 +104,9 @@ typedef NS_ENUM(NSInteger, ADKitDemoSection) {
             break;
         case ADKitDemoSectionListView:
             return 3;
+            break;
+        case ADKitDemoSectionCamera:
+            return 1;
             break;
         case ADKitDemoSectionYMDCDemo:
             return 1;
@@ -123,6 +135,9 @@ typedef NS_ENUM(NSInteger, ADKitDemoSection) {
                     break;
                 case ADKitDemoSectionListView:
                     demoHeaderView.titleLabel.text = @"ListView Tools";
+                    break;
+                case ADKitDemoSectionCamera:
+                    demoHeaderView.titleLabel.text = @"Camera Tools";
                     break;
                 case ADKitDemoSectionYMDCDemo:
                     demoHeaderView.titleLabel.text = @"YMDC Demo";
@@ -170,6 +185,11 @@ typedef NS_ENUM(NSInteger, ADKitDemoSection) {
                     collectionCell.titleLabel.text = @"ADKCellDynamicSizeCalculator (Horizontal)";
                 } else if (indexPath.row == 2) {
                     collectionCell.titleLabel.text = @"UICollectionView+ADKOperation (Force stop)";
+                }
+                break;
+            case ADKitDemoSectionCamera:
+                if (indexPath.row == 0) {
+                    collectionCell.titleLabel.text = @"ADKCamera";
                 }
                 break;
             case ADKitDemoSectionYMDCDemo:
@@ -247,12 +267,21 @@ typedef NS_ENUM(NSInteger, ADKitDemoSection) {
                 [self.navigationController pushViewController:operationViewController animated:YES];
             }
             break;
+        case ADKitDemoSectionCamera:
+            if (indexPath.row == 0) {
+                AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+                appDelegate.restrictRotation = YES;
+                [[UIDevice currentDevice] setValue:@(UIInterfaceOrientationPortrait) forKey:@"orientation"];
+                
+                CameraKitExampleViewController *demoViewController = [[CameraKitExampleViewController alloc] init];
+                [self.navigationController pushViewController:demoViewController animated:YES];
+            }
+            break;
         case ADKitDemoSectionYMDCDemo:
             if (indexPath.row == 0) {
                 YMDCDemoViewController *demoViewController = [[YMDCDemoViewController alloc] init];
                 [self.navigationController pushViewController:demoViewController animated:YES];
             }
-            
             break;
         default:
             break;
@@ -266,5 +295,6 @@ typedef NS_ENUM(NSInteger, ADKitDemoSection) {
 {
     [self.demoCollectionView.collectionViewLayout invalidateLayout];
 }
+
 
 @end

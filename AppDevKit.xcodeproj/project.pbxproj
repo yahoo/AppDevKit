@@ -98,6 +98,8 @@
 		3C99D7A51B035D2900D65CB3 /* AppDevKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C99D7A41B035D2900D65CB3 /* AppDevKitTests.m */; };
 		3C9FAEC31C0D4D7E00B0588C /* OperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9FAEC11C0D4D7E00B0588C /* OperationViewController.m */; };
 		3C9FAEC41C0D4D7E00B0588C /* OperationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C9FAEC21C0D4D7E00B0588C /* OperationViewController.xib */; };
+		3CF4CABF1F04D9BF00B52064 /* CameraKitExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF4CABD1F04D9BF00B52064 /* CameraKitExampleViewController.m */; };
+		3CF4CAC01F04D9BF00B52064 /* CameraKitExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CF4CABE1F04D9BF00B52064 /* CameraKitExampleViewController.xib */; };
 		546930DE1CC4E66F00378A6F /* TestNibFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 546930DD1CC4E66F00378A6F /* TestNibFile.m */; };
 		546930E41CCA2A7600378A6F /* TestUncachedCustomCalculationNibFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 546930E31CCA2A7600378A6F /* TestUncachedCustomCalculationNibFile.m */; };
 		546930E61CCA2AA000378A6F /* TestUncachedCustomCalculationNibFile.xib in Resources */ = {isa = PBXBuildFile; fileRef = 546930E51CCA2AA000378A6F /* TestUncachedCustomCalculationNibFile.xib */; };
@@ -325,6 +327,9 @@
 		3C9FAEC01C0D4D7E00B0588C /* OperationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperationViewController.h; sourceTree = "<group>"; };
 		3C9FAEC11C0D4D7E00B0588C /* OperationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = OperationViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		3C9FAEC21C0D4D7E00B0588C /* OperationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OperationViewController.xib; sourceTree = "<group>"; };
+		3CF4CABC1F04D9BF00B52064 /* CameraKitExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraKitExampleViewController.h; sourceTree = "<group>"; };
+		3CF4CABD1F04D9BF00B52064 /* CameraKitExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraKitExampleViewController.m; sourceTree = "<group>"; };
+		3CF4CABE1F04D9BF00B52064 /* CameraKitExampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CameraKitExampleViewController.xib; sourceTree = "<group>"; };
 		546930DC1CC4E66F00378A6F /* TestNibFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestNibFile.h; sourceTree = "<group>"; };
 		546930DD1CC4E66F00378A6F /* TestNibFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestNibFile.m; sourceTree = "<group>"; };
 		546930E21CCA2A7600378A6F /* TestUncachedCustomCalculationNibFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestUncachedCustomCalculationNibFile.h; sourceTree = "<group>"; };
@@ -663,6 +668,9 @@
 				001D988B1C1407C60097623E /* PullToRefreshExampleViewController.h */,
 				001D988C1C1407C60097623E /* PullToRefreshExampleViewController.m */,
 				001D988D1C1407C60097623E /* PullToRefreshExampleViewController.xib */,
+				3CF4CABC1F04D9BF00B52064 /* CameraKitExampleViewController.h */,
+				3CF4CABD1F04D9BF00B52064 /* CameraKitExampleViewController.m */,
+				3CF4CABE1F04D9BF00B52064 /* CameraKitExampleViewController.xib */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -962,6 +970,7 @@
 			files = (
 				3C1F6E411B28076900A67E37 /* Country-data.plist in Resources */,
 				3C1F6E601B2813F700A67E37 /* SampleVCollectionViewCell.xib in Resources */,
+				3CF4CAC01F04D9BF00B52064 /* CameraKitExampleViewController.xib in Resources */,
 				F7DD981D1D07294A009A42E7 /* Portugal-Flag.jpg in Resources */,
 				F7DD98211D07294A009A42E7 /* Spain-Flag.jpg in Resources */,
 				009131861C9D440D006509B5 /* DynamicHeightCell.xib in Resources */,
@@ -1148,6 +1157,7 @@
 				3C8FA5901C155F31004A4ED9 /* InfiniteScrollingHelpView.m in Sources */,
 				001D988E1C1407C60097623E /* PullToRefreshExampleViewController.m in Sources */,
 				001D99281C17F3EA0097623E /* UIScrollView+ADKInfiniteScrollingView.m in Sources */,
+				3CF4CABF1F04D9BF00B52064 /* CameraKitExampleViewController.m in Sources */,
 				001D98921C141BE40097623E /* PullToRefreshHelpView.m in Sources */,
 				3C1F6E4B1B2810B600A67E37 /* ViewAutoLayoutSupportViewController.m in Sources */,
 				001D992A1C17F3EA0097623E /* UIView+ADKAutoLayoutSupport.m in Sources */,
@@ -1338,6 +1348,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = AppDevKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -1357,6 +1368,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = AppDevKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
