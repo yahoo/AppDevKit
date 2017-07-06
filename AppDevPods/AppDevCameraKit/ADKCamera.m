@@ -28,7 +28,7 @@ static void *ExposureTargetOffsetContext = &ExposureTargetOffsetContext;
 static void *DeviceWhiteBalanceGainsContext = &DeviceWhiteBalanceGainsContext;
 
 
-@interface ADKCamera () <AVCaptureFileOutputRecordingDelegate>
+@interface ADKCamera () <AVCaptureFileOutputRecordingDelegate, AVCaptureVideoDataOutputSampleBufferDelegate>
 
 @property (strong, nonatomic) NSString *cameraQuality;
 @property (strong, nonatomic) AVCaptureSession *captureSession;
@@ -1142,6 +1142,14 @@ static void *DeviceWhiteBalanceGainsContext = &DeviceWhiteBalanceGainsContext;
                                      userInfo:userInfo];
 
     [self handleError:error];
+}
+
+
+#pragma mark -- AVCaptureVideoDataOutputSampleBufferDelegate delegate methods
+
+- (void)captureOutput:(AVCaptureFileOutput *)captureOutput didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer fromConnection:(AVCaptureConnection *)connection
+{
+    // Will add some logic to handle video buffer
 }
 
 
