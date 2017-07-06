@@ -91,7 +91,7 @@ NSString *ADKGetThousandSeparatorNumberString(NSInteger number);
  *  @brief Getting a currency format from giving number with currency symbol.
  *
  *  @param number Assign the NSInteger want to format it.
- *  @param symbol Assign the NSString want to format it.
+ *  @param currencySymbol Assign the NSString want to format it.
  *
  *  @return Retuen a currency format string.
  */

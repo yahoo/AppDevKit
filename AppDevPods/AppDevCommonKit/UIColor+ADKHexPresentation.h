@@ -39,7 +39,7 @@
 /**
  * @brief Create a color by hex string.
  *
- * @param hexstring The value of hex NSString.
+ * @param hexString The value of hex NSString.
  *
  * @return The instance of UIColor.
  */
@@ -48,7 +48,7 @@
 /**
  * @brief Create a color by hex string and alpha.
  *
- * @param hexstring The value of hex NSString.
+ * @param hexString The value of hex NSString.
  * @param alpha The value of alpha NSString.
  *
  * @return The instance of UIColor.
@@ -58,7 +58,7 @@
 /**
  * @brief Create a color by hex string.
  *
- * @param hexstring The value of hex NSString.
+ * @param hexString The value of hex NSString.
  *
  * @return The instance of UIColor.
  */
