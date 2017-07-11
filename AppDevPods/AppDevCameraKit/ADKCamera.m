@@ -38,6 +38,7 @@ static void *DeviceWhiteBalanceGainsContext = &DeviceWhiteBalanceGainsContext;
 @property (strong, nonatomic) AVCaptureDeviceInput *audioCaptureDeviceInput;
 @property (strong, nonatomic) AVCaptureVideoPreviewLayer *captureVideoPreviewLayer;
 @property (strong, nonatomic) AVCaptureStillImageOutput *captureStillImageOutput;
+@property (strong, nonatomic) AVCaptureVideoDataOutput *captureVideoDataOutput;
 // TODO: It will be implemented for iOS 10 SDK
 // @property (strong, nonatomic) AVCapturePhotoOutput *capturePhotoOutput;
 @property (strong, nonatomic) AVCaptureMovieFileOutput *captureMovieFileOutput;
@@ -100,10 +101,9 @@ static void *DeviceWhiteBalanceGainsContext = &DeviceWhiteBalanceGainsContext;
         [self setupDefaultSetting];
 
         self.cameraQuality = cameraQuality;
-        self.cameraPosition = cameraPosition;
-
         [self initializeCamera];
-
+        self.cameraPosition = cameraPosition;
+        
         [self addObservers];
     }
     return self;
@@ -117,10 +117,10 @@ static void *DeviceWhiteBalanceGainsContext = &DeviceWhiteBalanceGainsContext;
         [self setupDefaultSetting];
 
         self.cameraQuality = cameraQuality;
-        self.cameraPosition = cameraPosition;
         self.camcoderMode = YES;
-
         [self initializeCamera];
+        self.cameraPosition = cameraPosition;
+        
         [self addObservers];
     }
     return self;
@@ -215,6 +215,16 @@ static void *DeviceWhiteBalanceGainsContext = &DeviceWhiteBalanceGainsContext;
 
             if ([self.captureSession canAddOutput:self.captureMovieFileOutput]) {
                 [self.captureSession addOutput:self.captureMovieFileOutput];
+            }
+        } else {
+            // Only set live video data tracking on camera mode
+            AVCaptureVideoDataOutput *videoDataOutput = [[AVCaptureVideoDataOutput alloc] init];
+            videoDataOutput.alwaysDiscardsLateVideoFrames = YES;
+            videoDataOutput.videoSettings = @{(id)kCVPixelBufferPixelFormatTypeKey: @(kCVPixelFormatType_32BGRA)};
+
+            if ([self.captureSession canAddOutput:videoDataOutput]) {
+                [self.captureSession addOutput:videoDataOutput];
+                self.captureVideoDataOutput = videoDataOutput;
             }
         }
     }
@@ -395,6 +405,22 @@ static void *DeviceWhiteBalanceGainsContext = &DeviceWhiteBalanceGainsContext;
     }
 
     return nil;
+}
+
+- (void)setTrackLiveVideoData:(BOOL)trackLiveVideoData
+{
+    if (self.camcoderMode) {
+        [self handleErrorWithCode:ADKCameraErrorCodeNotSupport description:@"The trackLiveVideoData proprty will not support camcoder mode"];
+        return;
+    } else {
+        if (trackLiveVideoData) {
+            [self.captureVideoDataOutput setSampleBufferDelegate:self queue:dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0)];
+        } else {
+            [self.captureVideoDataOutput setSampleBufferDelegate:nil queue:nil];
+        }
+    }
+
+    _trackLiveVideoData = trackLiveVideoData;
 }
 
 - (void)setCameraPosition:(ADKCameraPosition)cameraPosition
@@ -1149,7 +1175,9 @@ static void *DeviceWhiteBalanceGainsContext = &DeviceWhiteBalanceGainsContext;
 
 - (void)captureOutput:(AVCaptureFileOutput *)captureOutput didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer fromConnection:(AVCaptureConnection *)connection
 {
-    // Will add some logic to handle video buffer
+    if (self.liveVideoDataDlegate && [self.liveVideoDataDlegate respondsToSelector:@selector(ADKCamera:didUpdateSampleBuffer:)]) {
+        [self.liveVideoDataDlegate ADKCamera:self didUpdateSampleBuffer:sampleBuffer];
+    }
 }
 
 

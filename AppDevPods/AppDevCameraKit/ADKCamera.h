@@ -61,6 +61,7 @@ typedef NS_ENUM(NSInteger, ADKCameraErrorCode) {
     ADKCameraErrorCodeMovieRecording,
     ADKCameraErrorCodeFlashUnavailable,
     ADKCameraErrorCodeTorchUnabailable,
+    ADKCameraErrorCodeNotSupport,
 };
 
 
@@ -85,18 +86,34 @@ typedef NS_ENUM(NSInteger, ADKCameraErrorCode) {
 - (void)ADKCamera:(ADKCamera *)camera didFailWithError:(NSError *)error;
 @end
 
+@protocol ADKCameraLiveVideoDataDelegate <NSObject>
+
+@optional
+- (void)ADKCamera:(ADKCamera *)camera didUpdateSampleBuffer:(CMSampleBufferRef)sampleBuffer;
+@end
+
 
 @interface ADKCamera : NSObject
 
 /**
- * @brief The delegate instance for implement delegate methods. For example, you can use it to monitor focusing, exposuring, error handling and etc.
+ * @brief The delegate instance for implement ADKCameraDelegate methods. For example, you can use it to monitor focusing, exposuring, error handling and etc.
  */
 @property (weak, nonatomic) id <ADKCameraDelegate> delegate;
+
+/**
+ * @brief The delegate instance for implement ADKCameraLiveVideoDataDelegate methods. This delegate will handle live video data process and you can do the real-time image analysis.
+ */
+@property (weak, nonatomic) id <ADKCameraLiveVideoDataDelegate> liveVideoDataDlegate;
 
 /**
  * @brief This property is determined to align photo or video's orientation with device or UIViewController. If you want to align with device orientation but UIViewController wouldn't rotate the UI, you should set alignDeviceOrientation with YES.
  */
 @property (assign, nonatomic) BOOL alignDeviceOrientation;
+
+/**
+ * @brief This property is determined to enable or disable live video data sample feature. It allows you to get live video data when the camera is turned on by CameraKit. Please implement ADKCameraLiveVideoDataDelegate interface to handle data. (This feature is only for camera mode now. It doesn't contain camecoder mode. Using -initCameraWithDelegate:quality:position: series initialized method to create live video data camera.)
+ */
+@property (assign, nonatomic) BOOL trackLiveVideoData;
 
 /**
  * @brief The camera quality of image output result. This values should be the same with sessionPreset in AVCaptureSession.
