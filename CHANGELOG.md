@@ -2,6 +2,16 @@
 All notable changes to this project will be documented in this file.
 `AppDevKit` adheres to [Semantic Versioning](http://semver.org/).
 
+## 1.2.0
+#### Added
+* Extending CameraKit to support live video data feature. When using CameraKit to implement a camera, CameraKit has the capability that allows you to do the real-time image analysis.   
+
+## 1.1.1
+#### Added
+* Adding a sample to demo how to use CameraKit to initialize a camera app.
+#### Fixed
+* Fix logic error in UIView+ADKAutoLayoutSupport.   
+
 ## 1.1.0
 #### Added
 * Adding a new CameraKit for providing several high level camera control APIs. It allows you control camera features that contain focus, exposure, shutter duration, white blance and etc and can be used manually.    
