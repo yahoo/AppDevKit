@@ -2,6 +2,10 @@
 All notable changes to this project will be documented in this file.
 `AppDevKit` adheres to [Semantic Versioning](http://semver.org/).
 
+## 1.2.1
+#### Fixed
+* Fixing the problem of image results with wrong mirror mode. It might be triggerd after users flip camera lens from rear to front or front to rear.  
+
 ## 1.2.0
 #### Added
 * Extending CameraKit to support live video data feature. When using CameraKit to implement a camera, CameraKit has the capability that allows you to do the real-time image analysis.   
