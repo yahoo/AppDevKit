@@ -460,11 +460,10 @@ static void *DeviceWhiteBalanceGainsContext = &DeviceWhiteBalanceGainsContext;
 
     [self.captureSession commitConfiguration];
 
-
     self.videoCaptureDeviceInput = videoCaptureDeviceInput;
-    [self updateCameraStatus];
 
     _cameraPosition = cameraPosition;
+    [self updateCameraStatus];
 }
 
 - (void)setCameraFlashMode:(ADKCameraFlashMode)cameraFlashMode

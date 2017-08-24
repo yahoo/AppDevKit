@@ -19,9 +19,11 @@
 @property (weak, nonatomic) IBOutlet UIImageView *previewImageView;
 @property (weak, nonatomic) IBOutlet UISlider *lenFocusSlider;
 @property (weak, nonatomic) IBOutlet UIButton *shootButton;
+@property (weak, nonatomic) IBOutlet UIButton *switchLensButton;
 
 - (IBAction)lenFocusSliderChangeHandler:(id)sender;
 - (IBAction)shootButtonTapHandler:(id)sender;
+- (IBAction)switchLensButtonTapHandler:(id)sender;
 
 @end
 
@@ -48,6 +50,7 @@
     self.automaticallyAdjustsScrollViewInsets = NO;
 
     self.shootButton.layer.cornerRadius = CGRectGetWidth(self.shootButton.bounds) * 0.5f;
+    self.switchLensButton.layer.cornerRadius = CGRectGetWidth(self.switchLensButton.bounds) * 0.5f;
 
     self.previewImageView.alpha = 0.7f;
 
@@ -145,6 +148,20 @@
         });
         
     }];
+}
+
+- (IBAction)switchLensButtonTapHandler:(id)sender {
+
+    static ADKCameraPosition camPosition = ADKCameraPositionRear;
+
+    if (camPosition == ADKCameraPositionRear) {
+        self.cameraUtil.cameraPosition = ADKCameraPositionFront;
+        camPosition = ADKCameraPositionFront;
+    } else {
+        self.cameraUtil.cameraPosition = ADKCameraPositionRear;
+        camPosition = ADKCameraPositionRear;
+    }
+
 }
 
 @end
