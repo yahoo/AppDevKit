@@ -246,7 +246,16 @@ NSString * const pullToRefreshContentViewBottomMarginKey;
             }
         }
         CGFloat scrollOffsetLimit = self.scrollView.pullToRefreshViewHeight * triggerDistanceTimes;
+#ifdef __IPHONE_11_0
+        CGFloat scrollOffsetThreshold;
+        if (@available(iOS 11, *)) {
+            scrollOffsetThreshold = contentOffset.y + self.scrollView.adjustedContentInset.top + scrollOffsetLimit;
+        } else {
+            scrollOffsetThreshold = contentOffset.y + self.scrollView.contentInset.top + scrollOffsetLimit;
+        }
+#else
         CGFloat scrollOffsetThreshold = contentOffset.y + self.scrollView.contentInset.top + scrollOffsetLimit;
+#endif
 
         if (self.scrollView.isDragging && self.state == ADKPullToRefreshStateStopped && scrollOffsetThreshold < scrollOffsetLimit) {
             self.state = ADKPullToRefreshStateDragging;
