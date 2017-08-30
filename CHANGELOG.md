@@ -2,6 +2,10 @@
 All notable changes to this project will be documented in this file.
 `AppDevKit` adheres to [Semantic Versioning](http://semver.org/).
 
+## 1.2.2
+#### Fixed
+* Fix Pull-To-Refresh on iOS11. Pull-to-refresh triggers reloading immediately even pulling down for a very short distance then releasing on iOS 11. We fixed this problem in this version.
+
 ## 1.2.1
 #### Fixed
 * Fixing the problem of image results with wrong mirror mode. It might be triggerd after users flip camera lens from rear to front or front to rear.  
