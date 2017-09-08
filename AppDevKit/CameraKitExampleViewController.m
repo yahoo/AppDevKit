@@ -60,26 +60,28 @@
 
 - (void)initCamera
 {
-    self.cameraUtil = [[ADKCamera alloc] initCameraWithDelegate:self
-                                                        quality:AVCaptureSessionPresetPhoto
-                                                       position:ADKCameraPositionRear];
-    self.cameraUtil.alignDeviceOrientation = YES;
-
-
     [AVCaptureDevice requestAccessForMediaType:AVMediaTypeVideo completionHandler:^(BOOL granted) {
         if (granted) {
             NSLog(@"Granted access to %@", AVMediaTypeVideo);
 
-            [self.view.layer insertSublayer:self.cameraUtil.captureVideoPreviewLayer atIndex:0];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                self.cameraUtil = [[ADKCamera alloc] initCameraWithDelegate:self
+                                                                    quality:AVCaptureSessionPresetPhoto
+                                                                   position:ADKCameraPositionRear];
+                self.cameraUtil.alignDeviceOrientation = YES;
 
-            self.cameraUtil.captureVideoPreviewLayer.frame = self.view.bounds;
+                [self.view.layer insertSublayer:self.cameraUtil.captureVideoPreviewLayer atIndex:0];
+                self.cameraUtil.captureVideoPreviewLayer.frame = self.view.bounds;
 
-            // Updating current lens focus calue
-            self.lenFocusSlider.minimumValue = self.cameraUtil.minLensPosition;
-            self.lenFocusSlider.maximumValue = self.cameraUtil.maxLensPosition;
-            self.lenFocusSlider.value = self.cameraUtil.lensPosition;
+                [self.cameraUtil startCamera];
+            });
 
-            [self.cameraUtil startCamera];
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                // Updating current lens focus calue
+                self.lenFocusSlider.minimumValue = self.cameraUtil.minLensPosition;
+                self.lenFocusSlider.maximumValue = self.cameraUtil.maxLensPosition;
+                self.lenFocusSlider.value = self.cameraUtil.lensPosition;
+            });
         } else {
             NSLog(@"Not granted access to %@", AVMediaTypeVideo);
 
@@ -146,7 +148,7 @@
                                  // Do nothing
                              }];
         });
-        
+
     }];
 }
 
@@ -161,7 +163,6 @@
         self.cameraUtil.cameraPosition = ADKCameraPositionRear;
         camPosition = ADKCameraPositionRear;
     }
-
 }
 
 @end
