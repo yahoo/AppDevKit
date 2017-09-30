@@ -190,6 +190,7 @@ static void *DeviceWhiteBalanceGainsContext = &DeviceWhiteBalanceGainsContext;
         }
 
         self.captureStillImageOutput = [[AVCaptureStillImageOutput alloc] init];
+        self.captureStillImageOutput.highResolutionStillImageOutputEnabled = YES;
         NSDictionary *outputSettings = @{AVVideoCodecKey: AVVideoCodecJPEG};
         self.captureStillImageOutput.outputSettings = outputSettings;
         if ([self.captureSession canAddOutput:self.captureStillImageOutput]) {
