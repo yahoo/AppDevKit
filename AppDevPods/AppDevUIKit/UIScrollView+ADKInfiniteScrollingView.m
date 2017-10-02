@@ -238,26 +238,81 @@ NSString * const infiniteScrollingHandleViewKey;
             }
         }
 
-        CGFloat scrollOffsetLimit = self.scrollView.contentInset.bottom + self.scrollView.infiniteScrollingViewHeight * triggerDistanceTimes;
-        CGFloat scrollOffsetThreshold = self.scrollView.contentSize.height - CGRectGetHeight(self.scrollView.bounds) - contentOffset.y + scrollOffsetLimit;
+        /*
+         +---------+
+         | content |
+         | size    |
+         |         |
+  frame  |         |
+       +-----------+
+       | |         |
+       | |         |
+       | |         |
+       | |         |
+       +-+---------+ -+-
+       |           |  | adjustedContentInset.bottom
+       +-----------+ -+-
 
-        if (self.scrollView.isDragging && self.state == ADKInfiniteScrollingStateStopped && scrollOffsetThreshold < scrollOffsetLimit) {
-            self.state = ADKInfiniteScrollingStateDragging;
-        } else if (self.scrollView.isDragging && self.state == ADKInfiniteScrollingStateDragging && scrollOffsetThreshold >= scrollOffsetLimit) {
-            self.state = ADKInfiniteScrollingStateStopped;
-        } else if (self.scrollView.isDragging && self.state == ADKInfiniteScrollingStateDragging && scrollOffsetThreshold <= 0.0f ) {
-            self.state = ADKInfiniteScrollingStateTriggered;
-        } else if (self.scrollView.isDragging && self.state != ADKInfiniteScrollingStateStopped && scrollOffsetThreshold > 0.0f) {
-            self.state = ADKInfiniteScrollingStateDragging;
-        } else if (!self.scrollView.isDragging && self.state == ADKInfiniteScrollingStateTriggered) {
-            self.state = ADKInfiniteScrollingStateLoading;
-        } else if (!self.scrollView.isDragging && self.state == ADKInfiniteScrollingStateDragging && scrollOffsetThreshold <= scrollOffsetLimit ) {
-            self.state = ADKInfiniteScrollingStateStopped;
-        }
+ The bottom of visible port converted into coord system in content:
+ contentOffset.y + (frame height - adjustedContentInset.bottom)
+
+State diagram:
+
+         released.1
+      +-------------+
+      v   drag.1    |       drag.3             released.2
+ STOPPED -------> DRAGGING -------> TRIGGERED -----------> LOADING
+   ^  ^    drag.2   |   ^    drag.4   |                     |
+   |  +-------------+   +-------------+                     |
+   |                                                        |
+   +--------------------------------------------------------+
+            implicitly done by stop animating
+
+         */
+
+        CGFloat contentInsetBottom =
+#ifdef __IPHONE_11_0
+            (@available(iOS 11.0, *)) ? self.scrollView.adjustedContentInset.bottom : self.scrollView.contentInset.bottom
+#else
+            self.scrollView.contentInset.bottom
+#endif
+        ;
+
+        /*
+         scrollDraggingThreshold is the distance from the end of content to the point where triggers loading.
+
+         scrollDraggingOffset is the distance that user is dragging beyond the end of content.  It may be a negative value.
+         */
+        CGFloat scrollDraggingThreshold = self.scrollView.infiniteScrollingViewHeight * triggerDistanceTimes;
+        CGFloat scrollDraggingOffset = self.scrollView.contentOffset.y + CGRectGetHeight(self.scrollView.frame) - contentInsetBottom - self.scrollView.contentSize.height;
+
+        if (self.scrollView.isDragging) {
+            if (self.state == ADKInfiniteScrollingStateStopped && scrollDraggingOffset > 0.0f) {
+                // dragging.1
+                self.state = ADKInfiniteScrollingStateDragging;
+            } else if (self.state == ADKInfiniteScrollingStateDragging && scrollDraggingOffset <= 0.0f) {
+                // dragging.2
+                self.state = ADKInfiniteScrollingStateStopped;
+            } else if (self.state == ADKInfiniteScrollingStateDragging && scrollDraggingOffset >= scrollDraggingThreshold) {
+                // dragging.3
+                self.state = ADKInfiniteScrollingStateTriggered;
+            } else if (self.state == ADKInfiniteScrollingStateTriggered && scrollDraggingOffset < scrollDraggingThreshold) {
+                // dragging.4
+                self.state = ADKInfiniteScrollingStateDragging;
+            }
+        } else if (!self.scrollView.isDragging) {
+            if (self.state == ADKInfiniteScrollingStateDragging && scrollDraggingOffset < scrollDraggingThreshold) {
+                // released.1
+                self.state = ADKInfiniteScrollingStateStopped;
+            } else if (self.state == ADKInfiniteScrollingStateTriggered) {
+                // released.2
+                self.state = ADKInfiniteScrollingStateLoading;
+            }
+         }
 
         if (self.scrollView.isDragging && self.state == ADKInfiniteScrollingStateDragging) {
             if ([infiniteScrollingHandleView respondsToSelector:@selector(ADKInfiniteScrollView:draggingWithProgress:)]) {
-                CGFloat progressValue = (contentOffset.y + CGRectGetHeight(self.scrollView.bounds) - self.scrollView.contentSize.height) / (self.scrollView.infiniteScrollingViewHeight * triggerDistanceTimes);
+                CGFloat progressValue = scrollDraggingOffset / scrollDraggingThreshold;
                 [infiniteScrollingHandleView ADKInfiniteScrollView:self.scrollView draggingWithProgress:progressValue];
             }
         }
