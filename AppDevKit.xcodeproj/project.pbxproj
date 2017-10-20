@@ -937,6 +937,7 @@
 				TargetAttributes = {
 					3C99D7841B035D2800D65CB3 = {
 						CreatedOnToolsVersion = 6.3.1;
+						ProvisioningStyle = Manual;
 					};
 					3C99D79D1B035D2900D65CB3 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -1348,6 +1349,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = AppDevKit/Info.plist;
@@ -1359,6 +1361,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yahoo.AppDevKit;
 				PRODUCT_NAME = AppDevKit;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -1368,6 +1371,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = AppDevKit/Info.plist;
@@ -1379,6 +1383,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yahoo.AppDevKit;
 				PRODUCT_NAME = AppDevKit;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
