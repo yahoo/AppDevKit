@@ -37,7 +37,8 @@
 - (UIColor *)ADKInitWithHexRed:(NSUInteger)red green:(NSUInteger)green blue:(NSUInteger)blue alpha:(CGFloat)alpha;
 
 /**
- * @brief Create a color by hex string.
+ * @brief Create a color by hex string. The returned color is undefined if hexString is invalid.
+ *        The behaviour is the same as ADKColorWithRGBHexString:, but ADKColorWithRGBHexString is preferred.
  *
  * @param hexString The value of hex NSString.
  *
@@ -63,6 +64,34 @@
  * @return The instance of UIColor.
  */
 - (UIColor *)ADKInitWithHexString:(NSString *)hexString;
+
+/**
+ * @brief Create a RGB color by hex string. The returned color is undefined if hexString is invalid.
+ *        The behaviour is the same as ADKColorWithHexString:.
+ *
+ * @param RGB hexString The value of hex NSString.
+ *
+ * @return The instance of UIColor.
+ */
++ (UIColor *)ADKColorWithRGBHexString:(NSString *)hexString;
+
+/**
+ * @brief Create a ARGB or RGB color by hex string. The returned color is undefined if hexString is invalid.
+ *
+ * @param ARGB or RGB hexString The value of hex NSString.
+ *
+ * @return The instance of UIColor.
+ */
++ (UIColor *)ADKColorWithARGBHexString:(NSString *)hexString;
+
+/**
+ * @brief Create a RGBA or RGB color by hex string. The returned color is undefined if hexString is invalid
+ *
+ * @param RGBA or RGB hexString The value of hex NSString.
+ *
+ * @return The instance of UIColor.
+ */
++ (UIColor *)ADKColorWithRGBAHexString:(NSString *)hexString;
 
 /**
  * @brief Create a color by hex number.

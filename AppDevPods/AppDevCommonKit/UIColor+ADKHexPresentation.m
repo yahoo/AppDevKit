@@ -24,7 +24,7 @@
 
 + (UIColor *)ADKColorWithHexString:(NSString *)hexString
 {
-    return [[UIColor alloc] ADKInitWithHexString:hexString];
+    return [self ADKColorWithRGBHexString:hexString];
 }
 
 + (UIColor *)ADKColorWithHexString:(NSString *)hexString alpha:(CGFloat)alpha
@@ -44,6 +44,100 @@
     return [self ADKInitWithHexNumber:rgbValue];
 }
 
++ (UIColor *)ADKColorWithRGBHexString:(NSString *)hexString
+{
+    NSString *colorString = [[hexString stringByReplacingOccurrencesOfString: @"#" withString: @""] uppercaseString];
+    CGFloat alpha, red, blue, green;
+    switch ([colorString length]) {
+        case 3: // #RGB
+            alpha = 1.0f;
+            red   = [self ADKColorComponentFrom:colorString start:0 length:1];
+            green = [self ADKColorComponentFrom:colorString start:1 length:1];
+            blue  = [self ADKColorComponentFrom:colorString start:2 length:1];
+            break;
+        case 6: // #RRGGBB
+            alpha = 1.0f;
+            red   = [self ADKColorComponentFrom:colorString start:0 length:2];
+            green = [self ADKColorComponentFrom:colorString start:2 length:2];
+            blue  = [self ADKColorComponentFrom:colorString start:4 length:2];
+            break;
+        default:
+            return [UIColor whiteColor];
+    }
+    return [UIColor colorWithRed: red green: green blue: blue alpha: alpha];
+}
+
+// Ref: https://gist.github.com/codingrhythm/4751825
++ (UIColor *)ADKColorWithARGBHexString:(NSString *)hexString
+{
+    NSString *colorString = [[hexString stringByReplacingOccurrencesOfString: @"#" withString: @""] uppercaseString];
+    CGFloat alpha, red, blue, green;
+    switch ([colorString length]) {
+        case 3: // #RGB
+            alpha = 1.0f;
+            red   = [self ADKColorComponentFrom:colorString start:0 length:1];
+            green = [self ADKColorComponentFrom:colorString start:1 length:1];
+            blue  = [self ADKColorComponentFrom:colorString start:2 length:1];
+            break;
+        case 4: // #ARGB
+            alpha = [self ADKColorComponentFrom:colorString start:0 length:1];
+            red   = [self ADKColorComponentFrom:colorString start:1 length:1];
+            green = [self ADKColorComponentFrom:colorString start:2 length:1];
+            blue  = [self ADKColorComponentFrom:colorString start:3 length:1];
+            break;
+        case 6: // #RRGGBB
+            alpha = 1.0f;
+            red   = [self ADKColorComponentFrom:colorString start:0 length:2];
+            green = [self ADKColorComponentFrom:colorString start:2 length:2];
+            blue  = [self ADKColorComponentFrom:colorString start:4 length:2];
+            break;
+        case 8: // #AARRGGBB
+            alpha = [self ADKColorComponentFrom:colorString start:0 length:2];
+            red   = [self ADKColorComponentFrom:colorString start:2 length:2];
+            green = [self ADKColorComponentFrom:colorString start:4 length:2];
+            blue  = [self ADKColorComponentFrom:colorString start:6 length:2];
+            break;
+        default:
+            return [UIColor whiteColor];
+    }
+    return [UIColor colorWithRed: red green: green blue: blue alpha: alpha];
+}
+
++ (UIColor *)ADKColorWithRGBAHexString:(NSString *)hexString
+{
+    NSString *colorString = [[hexString stringByReplacingOccurrencesOfString: @"#" withString: @""] uppercaseString];
+    CGFloat alpha, red, blue, green;
+    switch ([colorString length]) {
+        case 3: // #RGB
+            red   = [self ADKColorComponentFrom:colorString start:0 length:1];
+            green = [self ADKColorComponentFrom:colorString start:1 length:1];
+            blue  = [self ADKColorComponentFrom:colorString start:2 length:1];
+            alpha = 1.0f;
+            break;
+        case 4: // #RGBA
+            red   = [self ADKColorComponentFrom:colorString start:0 length:1];
+            green = [self ADKColorComponentFrom:colorString start:1 length:1];
+            blue  = [self ADKColorComponentFrom:colorString start:2 length:1];
+            alpha = [self ADKColorComponentFrom:colorString start:3 length:1];
+            break;
+        case 6: // #RRGGBB
+            red   = [self ADKColorComponentFrom:colorString start:0 length:2];
+            green = [self ADKColorComponentFrom:colorString start:2 length:2];
+            blue  = [self ADKColorComponentFrom:colorString start:4 length:2];
+            alpha = 1.0f;
+            break;
+        case 8: // #RRGGBBAA
+            red   = [self ADKColorComponentFrom:colorString start:0 length:2];
+            green = [self ADKColorComponentFrom:colorString start:2 length:2];
+            blue  = [self ADKColorComponentFrom:colorString start:4 length:2];
+            alpha = [self ADKColorComponentFrom:colorString start:6 length:2];
+            break;
+        default:
+            return [UIColor whiteColor];
+    }
+    return [UIColor colorWithRed: red green: green blue: blue alpha: alpha];
+}
+
 + (UIColor *)ADKColorWithHexNumber:(NSUInteger)hexNumber
 {
     return [[UIColor alloc] ADKInitWithHexNumber:hexNumber];
@@ -56,6 +150,15 @@
     CGFloat blue  = ((hexNumber & 0x0000ff)      ) / 255.0f;
     
     return [UIColor colorWithRed:red green:green blue:blue alpha:1.0f];
+}
+
++ (CGFloat)ADKColorComponentFrom:(NSString *)string start:(NSUInteger)start length:(NSUInteger)length
+{
+    NSString *substring = [string substringWithRange: NSMakeRange(start, length)];
+    NSString *fullHex = length == 2 ? substring : [NSString stringWithFormat: @"%@%@", substring, substring];
+    unsigned hexComponent;
+    [[NSScanner scannerWithString: fullHex] scanHexInt: &hexComponent];
+    return hexComponent / 255.0f;
 }
 
 - (UIColor *)ADKColorShiftBySaturation:(CGFloat)shiftValue
