@@ -38,7 +38,7 @@
 
 /**
  * @brief Create a color by hex string. The returned color is undefined if hexString is invalid.
- *        The behaviour is the same as ADKColorWithRGBHexString:, but ADKColorWithRGBHexString is preferred.
+ *        The behaviour is the same as ADKColorWithRGBHexString:, but ADKColorWithRGBHexString: is preferred.
  *
  * @param hexString The value of hex NSString.
  *
