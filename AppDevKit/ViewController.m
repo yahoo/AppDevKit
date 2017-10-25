@@ -77,6 +77,7 @@ typedef NS_ENUM(NSInteger, ADKitDemoSection) {
     self.demoCollectionView.dataSource = self;
 
     self.demoCollectionView.backgroundColor = [UIColor themeBackgroundColor];
+    self.view.backgroundColor = [UIColor themeBackgroundColor];
 }
 
 - (void)viewWillAppear:(BOOL)animated
