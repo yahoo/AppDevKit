@@ -77,4 +77,25 @@ describe(@"Test ADKHexString", ^{
     });
 });
 
+describe(@"Test ADKColorWithRGBHexString", ^{
+    it(@"given color with 7b0099, should get string 7B0099", ^{
+        UIColor *expectedColor = [UIColor colorWithRed:123.0f / 255.0f green:0.0 / 255.0f blue:153.0f / 255.0f alpha:1.0f];
+        [[[UIColor ADKColorWithRGBHexString:@"7B0099"] should] equal:expectedColor];
+    });
+});
+
+describe(@"Test ADKColorWithARGBHexString", ^{
+    it(@"given color with EE7b0099, should get string EE7B0099", ^{
+        UIColor *expectedColor = [UIColor colorWithRed:123.0f / 255.0f green:0.0f / 255.0f blue:153.0f / 255.0f alpha:238.0f / 255.0f];
+        [[[UIColor ADKColorWithARGBHexString:@"EE7B0099"] should] equal:expectedColor];
+    });
+});
+
+describe(@"Test ADKColorWithRGBAHexString", ^{
+    it(@"given color with 7b0099EE, should get string 7B0099EE", ^{
+        UIColor *expectedColor = [UIColor colorWithRed:123.0f / 255.0f green:0.0f / 255.0f blue:153.0f / 255.0f alpha:238.0f / 255.0f];
+        [[[UIColor ADKColorWithRGBAHexString:@"7B0099EE"] should] equal:expectedColor];
+    });
+});
+
 SPEC_END
