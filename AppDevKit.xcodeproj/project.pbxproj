@@ -86,6 +86,7 @@
 		3C2C4B8C1B27964F004414AD /* DemoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C2C4B8A1B27964F004414AD /* DemoCollectionViewCell.xib */; };
 		3C2C4B901B27A08A004414AD /* UIColor+ThemeColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C2C4B8F1B27A08A004414AD /* UIColor+ThemeColor.m */; };
 		3C2D70AF1E557E1E00667727 /* ADKCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C2D70AE1E557E1E00667727 /* ADKCamera.m */; };
+		3C6536D51FAD5F9400570869 /* ADKOpenGLImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C6536D41FAD5F9400570869 /* ADKOpenGLImageView.m */; };
 		3C8FA5901C155F31004A4ED9 /* InfiniteScrollingHelpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8FA58F1C155F31004A4ED9 /* InfiniteScrollingHelpView.m */; };
 		3C95C7BF1D054A1A00EA2A92 /* img-personalization-reminder-expected2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C95C7BE1D054A1A00EA2A92 /* img-personalization-reminder-expected2.png */; };
 		3C95C7C11D054A3500EA2A92 /* img-personalization-reminder-expected4.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C95C7C01D054A3500EA2A92 /* img-personalization-reminder-expected4.png */; };
@@ -307,6 +308,8 @@
 		3C2D70AD1E557E1E00667727 /* ADKCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADKCamera.h; sourceTree = "<group>"; };
 		3C2D70AE1E557E1E00667727 /* ADKCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADKCamera.m; sourceTree = "<group>"; };
 		3C2D70B01E557F9900667727 /* AppDevCameraKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDevCameraKit.h; sourceTree = "<group>"; };
+		3C6536D31FAD5F9300570869 /* ADKOpenGLImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADKOpenGLImageView.h; sourceTree = "<group>"; };
+		3C6536D41FAD5F9400570869 /* ADKOpenGLImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADKOpenGLImageView.m; sourceTree = "<group>"; };
 		3C8FA58E1C155F31004A4ED9 /* InfiniteScrollingHelpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfiniteScrollingHelpView.h; sourceTree = "<group>"; };
 		3C8FA58F1C155F31004A4ED9 /* InfiniteScrollingHelpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfiniteScrollingHelpView.m; sourceTree = "<group>"; };
 		3C95C7BE1D054A1A00EA2A92 /* img-personalization-reminder-expected2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img-personalization-reminder-expected2.png"; sourceTree = "<group>"; };
@@ -715,6 +718,8 @@
 		3C2D70AC1E557DF000667727 /* AppDevCameraKit */ = {
 			isa = PBXGroup;
 			children = (
+				3C6536D31FAD5F9300570869 /* ADKOpenGLImageView.h */,
+				3C6536D41FAD5F9400570869 /* ADKOpenGLImageView.m */,
 				3C2D70AD1E557E1E00667727 /* ADKCamera.h */,
 				3C2D70AE1E557E1E00667727 /* ADKCamera.m */,
 			);
@@ -1157,6 +1162,7 @@
 				001D992C1C17F3EA0097623E /* ADKGradientView.m in Sources */,
 				3C8FA5901C155F31004A4ED9 /* InfiniteScrollingHelpView.m in Sources */,
 				001D988E1C1407C60097623E /* PullToRefreshExampleViewController.m in Sources */,
+				3C6536D51FAD5F9400570869 /* ADKOpenGLImageView.m in Sources */,
 				001D99281C17F3EA0097623E /* UIScrollView+ADKInfiniteScrollingView.m in Sources */,
 				3CF4CABF1F04D9BF00B52064 /* CameraKitExampleViewController.m in Sources */,
 				001D98921C141BE40097623E /* PullToRefreshHelpView.m in Sources */,
