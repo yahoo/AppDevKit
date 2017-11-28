@@ -87,6 +87,7 @@ pod 'AppDevKit/AppDevImageKit'
 ### Camera Tools
 
   - **ADKCamera** > Allows you to use advanced manual camera features and customize your camera view in few steps.
+  - **ADKOpenGLImageView** > It provides an OpenGL ES soltion for rendering a core image on the screen by using GPU.
   
 
 ### Instruction
