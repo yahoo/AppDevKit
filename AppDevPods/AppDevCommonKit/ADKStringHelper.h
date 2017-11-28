@@ -103,11 +103,11 @@ NSString *ADKFirstNonEmptyString(NSInteger num, ...);
 /**
  *  @brief Getting the application Document file path.
  */
-NSString *ADKApplicationDocumentsDirectory();
+NSString *ADKApplicationDocumentsDirectory(void);
 
 /**
  *  @brief Getting the [application]/library/cache file path.
  *
  *  @return path of cache directory
  */
-NSString *ADKApplicationCacheDirectory();
+NSString *ADKApplicationCacheDirectory(void);
