@@ -54,11 +54,12 @@ CGRect ADKExtendToScreenWidth(CGRect Frame);
  *
  *  @return Expected CGSize.
  */
-CGSize ADKCGSizeZeroHeight();
+CGSize ADKCGSizeZeroHeight(void);
 
 /**
  *  @brief return a device's screen size.
  *
  *  @return Expected CGSize.
  */
-CGSize ADKScreenSize();
+CGSize ADKScreenSize(void);
+
