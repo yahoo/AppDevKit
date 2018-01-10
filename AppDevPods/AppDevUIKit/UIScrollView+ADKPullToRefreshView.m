@@ -345,6 +345,11 @@ NSString * const pullToRefreshContentViewBottomMarginKey;
     [self stopAnimating];
 
     CGFloat contentOffsetTop = self.originalTopInset;
+#ifdef __IPHONE_11_0
+    if (@available(iOS 11, *)) {
+        contentOffsetTop = self.scrollView.adjustedContentInset.top;
+    }
+#endif
     CGPoint scrollPoint = CGPointMake(self.scrollView.contentOffset.x, -contentOffsetTop);
     [UIView animateWithDuration:0.3f
                      animations:^{
