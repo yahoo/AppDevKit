@@ -35,7 +35,7 @@
     return instance;
 }
 
-- (instancetype)instanceForNibNamed:(NSString *)nibName
+- (id)instanceForNibNamed:(NSString *)nibName
 {
     id classInstance = nil;
     NSString *nibNameKey = [nibName stringByAppendingPathComponent:@"nib"];
@@ -58,7 +58,7 @@
     return classInstance;
 }
 
-- (instancetype)instanceForClassNamed:(NSString *)className
+- (id)instanceForClassNamed:(NSString *)className
 {
     id classInstance = nil;
     NSString *classNameKey = [className stringByAppendingPathComponent:@"class"];
