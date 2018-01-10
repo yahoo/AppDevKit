@@ -27,7 +27,7 @@
  *
  * @return instance of the cached class.
  */
-- (instancetype)instanceForNibNamed:(NSString *)nibName;
+- (id)instanceForNibNamed:(NSString *)nibName;
 
 /**
  * @brief This is a method for get singleton instance from class file.
@@ -36,6 +36,6 @@
  *
  * @return instance of the cached class.
  */
-- (instancetype)instanceForClassNamed:(NSString *)className;
+- (id)instanceForClassNamed:(NSString *)className;
 
 @end

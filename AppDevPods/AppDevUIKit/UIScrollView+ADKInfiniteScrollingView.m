@@ -270,11 +270,15 @@ State diagram:
 
          */
 
-        CGFloat contentInsetBottom =
 #ifdef __IPHONE_11_0
-            (@available(iOS 11.0, *)) ? self.scrollView.adjustedContentInset.bottom : self.scrollView.contentInset.bottom
+        CGFloat contentInsetBottom;
+        if (@available(iOS 11.0, *)) {
+            contentInsetBottom = self.scrollView.adjustedContentInset.bottom;
+        } else {
+            contentInsetBottom = self.scrollView.contentInset.bottom;
+        }
 #else
-            self.scrollView.contentInset.bottom
+        CGFloat contentInsetBottom = self.scrollView.contentInset.bottom
 #endif
         ;
 
