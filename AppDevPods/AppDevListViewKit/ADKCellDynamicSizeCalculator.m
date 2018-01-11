@@ -31,6 +31,9 @@
     if ([cellInstance isKindOfClass:[UICollectionViewCell class]] || [cellInstance isKindOfClass:[UITableViewCell class]]) {
         UIView *cell = cellInstance;
         cell.bounds = CGRectMake(0.0f, 0.0f, preferredSize.width, 0.0f);
+        if ([cell respondsToSelector:@selector(prepareForReuse)]) {
+            [cell performSelector:@selector(prepareForReuse)];
+        }
         [cell layoutIfNeeded];
         UIView *contentView = [cell performSelector:@selector(contentView)];
         CGSize resultSize = [contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
@@ -48,6 +51,9 @@
     if ([cellInstance isKindOfClass:[UICollectionViewCell class]] || [cellInstance isKindOfClass:[UITableViewCell class]]) {
         UIView *cell = cellInstance;
         cell.bounds = CGRectMake(0.0f, 0.0f, 0.0f, preferredSize.height);
+        if ([cell respondsToSelector:@selector(prepareForReuse)]) {
+            [cell performSelector:@selector(prepareForReuse)];
+        }
         [cell layoutIfNeeded];
         UIView *contentView = [cell performSelector:@selector(contentView)];
         CGSize resultSize = [contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
