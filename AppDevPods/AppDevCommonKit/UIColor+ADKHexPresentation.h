@@ -69,7 +69,7 @@
  * @brief Create a RGB color by hex string. The returned color is undefined if hexString is invalid.
  *        The behaviour is the same as ADKColorWithHexString:.
  *
- * @param RGB hexString The value of hex NSString.
+ * @param hexString The value of RGB hex NSString.
  *
  * @return The instance of UIColor.
  */
@@ -78,7 +78,7 @@
 /**
  * @brief Create a ARGB or RGB color by hex string. The returned color is undefined if hexString is invalid.
  *
- * @param ARGB or RGB hexString The value of hex NSString.
+ * @param hexString The value of ARGB or RGB hex NSString.
  *
  * @return The instance of UIColor.
  */
@@ -87,7 +87,7 @@
 /**
  * @brief Create a RGBA or RGB color by hex string. The returned color is undefined if hexString is invalid
  *
- * @param RGBA or RGB hexString The value of hex NSString.
+ * @param hexString The value of RGBA or RGB hex NSString.
  *
  * @return The instance of UIColor.
  */
