@@ -38,14 +38,14 @@ pod 'AppDevKit/AppDevImageKit'
 
 ### Basic Usage
   
-  Using this develop kit is very simple. First at all, import it in your any code file or just put it in prefix file (.pch). Then you will enjoy this develop kit. 
+  Using this develop kit is very simple. First at all, import it in your any code file or just put it in prefix file (`.pch`). Then you will enjoy this develop kit. 
   
     #import <AppDevKit.h>
 
 ### Common Tools
 
   - **ADKAppUtil** > The foundational tools to support common tasks.
-  - **ADKStringHelper** > The string formatter that will generate formatted stings form date, number and etc for you.
+  - **ADKStringHelper** > The string formatter that will generate formatted strings form date, number and etc for you.
   - **ADKCalculatorHelper** > The calculation set including distance, size, width, height, etc.
   - **ADKNibCacheManager** > The manager to cache different instances in memory and keep it as a singleton.
   - **UIView+ADKGetUIViewController** > Supports get any view's UIViewController.
@@ -56,8 +56,8 @@ pod 'AppDevKit/AppDevImageKit'
 ### UI Tools
 
   - **UIView+ADKAutoLayoutSupport** > Supports command autolayout features.
-  - **UIScrollView+ADKPullToRefreshView** > Supports pull to refresh feature on scrollable view. For example: UIScrollView, UITableView and UICollectionView.
-  - **UIScrollView+ADKInfiniteScrollingView** > Supports infinite scrolling feature on scrollable view. For example: UIScrollView, UITableView and UICollectionView.
+  - **UIScrollView+ADKPullToRefreshView** > Supports pull to refresh feature on scrollable view. For example: `UIScrollView`, `UITableView` and `UICollectionView`.
+  - **UIScrollView+ADKInfiniteScrollingView** > Supports infinite scrolling feature on scrollable view. For example: `UIScrollView`, `UITableView` and `UICollectionView`.
   - **ADKModalMaskView** > Providing a way to create a modal view for presenting specific view.
   - **ADKGradientView** > Creates a gradient view for you.
   - **ADKDashedLineView** > Creates a dashed line around your view.
@@ -65,13 +65,13 @@ pod 'AppDevKit/AppDevImageKit'
 
 ### Animation Tools
 
-  - **UIView+ADKAnimationMacro** > Gives some simple animation behavior for specific UIView.
+  - **UIView+ADKAnimationMacro** > Gives some simple animation behavior for specific `UIView`.
   
 
 ### Image Tools
 
-  - **UIImage+ADKColorReplacement** > Supports color changing / replacement feature on UIImage.
-  - **UIImage+ADKImageFilter** > Supports image FX, resize, crop, etc. on UIImage.
+  - **UIImage+ADKColorReplacement** > Supports color changing / replacement feature on `UIImage`.
+  - **UIImage+ADKImageFilter** > Supports image FX, resize, crop, etc. on `UIImage`.
   - **UIImage+ADKDrawingTemplate** > Supports loss less image from a PDF source.
 
 
@@ -79,9 +79,9 @@ pod 'AppDevKit/AppDevImageKit'
   
   - **UICollectionView+ADKOperation** > Supports force stop scrolling in collection view.
   - **ADKNibSizeCalculator** > Provides correct cell size for different devices effectively.
-  - **ADKCellDynamicSizeCalculator** > Calculates dynamic cell with and height for UICollectionViewCell and UITableViewCell.
-  - **ADKCollectionViewDynamicSizeCell** > Base UICollectionViewCell supports dynamic width and height features.
-  - **ADKTableViewDynamicSizeCell** > Base UITableViewCell supports dynamic width and height features.
+  - **ADKCellDynamicSizeCalculator** > Calculates dynamic cell with and height for `UICollectionViewCell` and `UITableViewCell`.
+  - **ADKCollectionViewDynamicSizeCell** > Base `UICollectionViewCell` supports dynamic width and height features.
+  - **ADKTableViewDynamicSizeCell** > Base `UITableViewCell` supports dynamic width and height features.
 
 
 ### Camera Tools
