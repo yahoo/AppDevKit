@@ -2,6 +2,15 @@
 All notable changes to this project will be documented in this file.
 `AppDevKit` adheres to [Semantic Versioning](http://semver.org/).
 
+
+## 1.3.0
+#### Fixed
+* fixing some bugs in ADKNibCacheManager, ADKCellDynamicSizeCalculator and etc.
+
+#### Added 
+* Adding ADKOpenGLImageView to provides OpenGL rendering solution for CameraKit.
+* Adding color transfer methods for ARGB, GBRA in UIColor.
+
 ## 1.2.2
 #### Fixed
 * Fix Pull-To-Refresh on iOS11. Pull-to-refresh triggers reloading immediately even pulling down for a very short distance then releasing on iOS 11. We fixed this problem in this version.
