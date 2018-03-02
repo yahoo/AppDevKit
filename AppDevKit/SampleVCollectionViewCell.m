@@ -36,12 +36,6 @@
     self.imageView.layer.cornerRadius = CGRectGetWidth(self.imageView.bounds) * 0.5f;
 }
 
-- (void)prepareForReuse
-{
-    // If you need to modify some calculation for adjusting layouts, you can put you code here. ADKCellDynamicSizeCalulator will invoice prepareForReuse method automatically.
-    // self.cellTopConstraint.constant = 50.0f;
-}
-
 - (void)layoutSubviews
 {
     [super layoutSubviews];
