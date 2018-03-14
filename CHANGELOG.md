@@ -2,6 +2,9 @@
 All notable changes to this project will be documented in this file.
 `AppDevKit` adheres to [Semantic Versioning](http://semver.org/).
 
+## 1.3.1
+#### Fixed
+* Revert prepareForReuse: method call in ADKCellDynamicSizeCalculator.
 
 ## 1.3.0
 #### Fixed
