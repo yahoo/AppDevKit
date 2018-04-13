@@ -24,7 +24,11 @@
 
 + (UIColor *)ADKColorWithHexString:(NSString *)hexString
 {
-    return [self ADKColorWithRGBHexString:hexString];
+    if ([hexString hasPrefix:@"0x"] || [hexString hasPrefix:@"0X"]) {
+        return [self ADKColorWithRGBHexString:[hexString substringFromIndex:2]];
+    } else {
+        return [self ADKColorWithRGBHexString:hexString];
+    }
 }
 
 + (UIColor *)ADKColorWithHexString:(NSString *)hexString alpha:(CGFloat)alpha
@@ -34,7 +38,11 @@
 
 - (UIColor *)ADKInitWithHexString:(NSString *)hexString
 {
-    return [self.class ADKColorWithRGBHexString:hexString];
+    if ([hexString hasPrefix:@"0x"] || [hexString hasPrefix:@"0X"]) {
+        return [self.class ADKColorWithRGBHexString:[hexString substringFromIndex:2]];
+    } else {
+        return [self.class ADKColorWithRGBHexString:hexString];
+    }
 }
 
 + (UIColor *)ADKColorWithRGBHexString:(NSString *)hexString

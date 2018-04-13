@@ -43,6 +43,18 @@ describe(@"Test ADKColorWithHexString:", ^{
         [[testColor should] equal:expectedColor];
     });
 
+    it(@"given color with 0x7b0099, expect color should be 7b0099", ^{
+        UIColor *expectedColor = [UIColor colorWithRed:123.0f / 255.0f green:0.0 / 255.0f blue:153.0f / 255.0f alpha:1.0f];
+        UIColor *testColor = [UIColor ADKColorWithHexString:@"0x7b0099"];
+        [[testColor should] equal:expectedColor];
+    });
+
+    it(@"given color with 0X7b0099, expect color should be 7b0099", ^{
+        UIColor *expectedColor = [UIColor colorWithRed:123.0f / 255.0f green:0.0 / 255.0f blue:153.0f / 255.0f alpha:1.0f];
+        UIColor *testColor = [UIColor ADKColorWithHexString:@"0X7b0099"];
+        [[testColor should] equal:expectedColor];
+    });
+
     it(@"given color with 709, expect color should be 770099", ^{
         UIColor *expectedColor = [UIColor colorWithRed:119.0f / 255.0f green:0.0 / 255.0f blue:153.0f / 255.0f alpha:1.0f];
         UIColor *testColor = [UIColor ADKColorWithHexString:@"709"];
@@ -74,6 +86,18 @@ describe(@"Test ADKInitWithHexString:", ^{
     it(@"given color with #7b0099, expect color should be 7b0099", ^{
         UIColor *expectedColor = [UIColor colorWithRed:123.0f / 255.0f green:0.0 / 255.0f blue:153.0f / 255.0f alpha:1.0f];
         UIColor *testColor = [[UIColor alloc] ADKInitWithHexString:@"#7b0099"];
+        [[testColor should] equal:expectedColor];
+    });
+
+    it(@"given color with 0x7b0099, expect color should be 7b0099", ^{
+        UIColor *expectedColor = [UIColor colorWithRed:123.0f / 255.0f green:0.0 / 255.0f blue:153.0f / 255.0f alpha:1.0f];
+        UIColor *testColor = [[UIColor alloc] ADKInitWithHexString:@"0x7b0099"];
+        [[testColor should] equal:expectedColor];
+    });
+
+    it(@"given color with 0X7b0099, expect color should be 7b0099", ^{
+        UIColor *expectedColor = [UIColor colorWithRed:123.0f / 255.0f green:0.0 / 255.0f blue:153.0f / 255.0f alpha:1.0f];
+        UIColor *testColor = [[UIColor alloc] ADKInitWithHexString:@"0X7b0099"];
         [[testColor should] equal:expectedColor];
     });
 
