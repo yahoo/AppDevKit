@@ -19,7 +19,7 @@
 
 - (UIColor *)ADKInitWithHexRed:(NSUInteger)red green:(NSUInteger)green blue:(NSUInteger)blue alpha:(CGFloat)alpha
 {
-    return [[UIColor alloc] initWithRed:red / (0xff*1.0f) green:green / (0xff*1.0f) blue:blue / (0xff*1.0f) alpha:alpha];
+    return [self initWithRed:red / (0xff*1.0f) green:green / (0xff*1.0f) blue:blue / (0xff*1.0f) alpha:alpha];
 }
 
 + (UIColor *)ADKColorWithHexString:(NSString *)hexString
@@ -34,14 +34,7 @@
 
 - (UIColor *)ADKInitWithHexString:(NSString *)hexString
 {
-    NSUInteger rgbValue = 0;
-    NSScanner *scanner = [NSScanner scannerWithString:hexString];
-    if ( [hexString hasPrefix:@"#"] ) {
-        [scanner setScanLocation:1];
-    }
-    [scanner scanHexInt:(unsigned int *)&rgbValue];
-    
-    return [self ADKInitWithHexNumber:rgbValue];
+    return [self.class ADKColorWithRGBHexString:hexString];
 }
 
 + (UIColor *)ADKColorWithRGBHexString:(NSString *)hexString
