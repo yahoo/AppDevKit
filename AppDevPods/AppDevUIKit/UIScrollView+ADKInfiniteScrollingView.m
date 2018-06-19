@@ -82,6 +82,17 @@ NSString * const infiniteScrollingHandleViewKey;
     }
 }
 
+- (void)ADKUpdateInfiniteScrollingLayout
+{
+    ADKInfiniteScrollingContentView *infiniteScrollingContentView = self.infiniteScrollingContentView;
+
+    if (infiniteScrollingContentView) {
+        infiniteScrollingContentView.originalTopInset = self.contentInset.top;
+        infiniteScrollingContentView.originalBottomInset = self.contentInset.bottom;
+        [infiniteScrollingContentView updateLayout];
+    }
+}
+
 #pragma mark - Setter & Getter
 
 - (CGFloat)infiniteScrollingViewHeight

@@ -70,6 +70,12 @@ static NSString * const CellCollectionViewCellIdentifier = @"SampleVCollectionVi
     self.collectionView.dataSource = self;
     
     self.collectionView.backgroundColor = [UIColor themeBackgroundColor];
+
+
+    UIBarButtonItem *layoutBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemEdit
+                                                                                          target:self
+                                                                                          action:@selector(layoutSwitchHandler)];
+    self.navigationItem.rightBarButtonItem = layoutBarButtonItem;
 }
 
 - (void)setupPullToRefreshView
@@ -104,6 +110,30 @@ static NSString * const CellCollectionViewCellIdentifier = @"SampleVCollectionVi
         });
     }];
     self.collectionView.infiniteScrollingContentView.autoFadeEffect = YES;
+}
+
+- (void)layoutSwitchHandler
+{
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Layout Change Notice"
+                                                                             message:@"Simulating layout change when keyboard is appeared. Please scroll to bottom to see the effect. Using ADKUpdateInfiniteScrollingLayout to update layout manually."
+                                                                      preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *closeAlertAction = [UIAlertAction actionWithTitle:@"OK"
+                                                               style:UIAlertActionStyleDefault
+                                                             handler:^(UIAlertAction * _Nonnull action) {
+                                                                 // Simulating layout change when keyboard is appeared and need to adjust contentInsets.
+                                                                 UIEdgeInsets newContentInset = self.collectionView.contentInset;
+                                                                 newContentInset.bottom = 235.0f;
+                                                                 self.collectionView.contentInset = newContentInset;
+                                                                 [self.collectionView ADKUpdateInfiniteScrollingLayout];
+                                                             }];
+    [alertController addAction:closeAlertAction];
+
+    [self presentViewController:alertController
+                       animated:YES
+                     completion:^{
+                         // Do nothing
+                     }];
+
 }
 
 #pragma mark - UICollectionView delegate methods
