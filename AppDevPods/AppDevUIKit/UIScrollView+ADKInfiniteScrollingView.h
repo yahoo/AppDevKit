@@ -49,6 +49,12 @@
 - (void)ADKTriggerInfiniteScrollingWithAnimation:(BOOL)animated;
 
 /**
+ *  @brief Updating ADKInfiniteScrollingContentView's layout arguments into scrolling calculation system forcely. If you want to change scroll view's offset after initialization, please use this method to keep update to date.
+ */
+- (void)ADKUpdateInfiniteScrollingLayout;
+
+
+/**
  *  @brief Deal animation and infinite scrolling state. Please reference Class ADKInfiniteScrollingContentView
  */
 @property (nonatomic, readonly) ADKInfiniteScrollingContentView *infiniteScrollingContentView;
