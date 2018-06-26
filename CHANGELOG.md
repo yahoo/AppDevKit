@@ -2,6 +2,10 @@
 All notable changes to this project will be documented in this file.
 `AppDevKit` adheres to [Semantic Versioning](http://semver.org/).
 
+## 1.4.0
+#### Added
+* Adding a new method to support manual update layout in UIScrollView+ADKInfiniteScrollingView. It allows you to modify scroll view's offset dynamically. 
+
 ## 1.3.1
 #### Fixed
 * Revert prepareForReuse: method call in ADKCellDynamicSizeCalculator.
