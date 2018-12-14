@@ -39,8 +39,11 @@
 {
     id classInstance = nil;
     NSString *nibNameKey = [nibName stringByAppendingPathComponent:@"nib"];
+    NSString *nibFrameKey = [nibName stringByAppendingPathComponent:@"nibFrame"];
     if ([self.nibInstanceCache objectForKey:nibNameKey]) {
         classInstance = [self.nibInstanceCache objectForKey:nibNameKey];
+        // Reset initial frame
+        ((UIView *)classInstance).frame = ((NSValue *)[self.nibInstanceCache objectForKey:nibFrameKey]).CGRectValue;
     } else {
         NSBundle *bundle = [NSBundle bundleForClass:NSClassFromString(nibName)];
         NSArray *objects = [bundle loadNibNamed:nibName owner:self options:nil];
@@ -53,6 +56,7 @@
         }];
         classInstance = blockClassInstance;
         [self.nibInstanceCache setObject:classInstance forKey:nibNameKey];
+        [self.nibInstanceCache setObject:[NSValue valueWithCGRect:((UIView *)classInstance).frame] forKey:nibFrameKey];
     }
 
     return classInstance;
