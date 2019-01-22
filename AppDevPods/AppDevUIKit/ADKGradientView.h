@@ -28,13 +28,13 @@ typedef NS_ENUM(NSUInteger, ADKBlendsType) {
  * @brief Painting gradient start from specific UIColor.
  *
  */
-@property (nonatomic, strong) UIColor *beginColor;
+@property (nonatomic, strong) IBInspectable UIColor *beginColor;
 
 /**
  * @brief Painting gradient end at specific UIColor.
  *
  */
-@property (nonatomic, strong) UIColor *endColor;
+@property (nonatomic, strong) IBInspectable UIColor *endColor;
 
 /**
  * @brief Decide how to paint gradient on this view.
