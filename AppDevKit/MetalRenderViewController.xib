@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MetalRenderViewController">
+            <connections>
+                <outlet property="containerView" destination="Q8c-eO-DDk" id="cnG-AI-iMi"/>
+                <outlet property="demoImageView" destination="Cnj-Wk-RhB" id="T9S-uc-BlA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q8c-eO-DDk">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Cnj-Wk-RhB">
+                    <rect key="frame" x="16" y="80" width="150" height="150"/>
+                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="XVX-9u-YXU"/>
+                        <constraint firstAttribute="width" constant="150" id="bkV-HO-iC9"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="czX-Gc-FD0">
+                    <rect key="frame" x="239" y="80" width="120" height="30"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.69913848460000005" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="1Zq-rc-82S"/>
+                        <constraint firstAttribute="width" constant="120" id="MPo-NR-2B3"/>
+                    </constraints>
+                    <state key="normal" title="ScaleToFill">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="drawScaleToFillImageButtonTapHandler:" destination="-1" eventType="touchUpInside" id="9KJ-kS-ZYM"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yka-fP-kHO">
+                    <rect key="frame" x="239" y="165" width="120" height="30"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.69913848460000005" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="W1C-Pv-Jr7"/>
+                        <constraint firstAttribute="width" constant="120" id="fiP-em-ExE"/>
+                    </constraints>
+                    <state key="normal" title="ScaleAspectFit">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="drawScaleAspectFitImageButtonTapHandler:" destination="-1" eventType="touchUpInside" id="eUN-wb-UXU"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hts-H9-jot">
+                    <rect key="frame" x="239" y="123" width="120" height="30"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.69913848460000005" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="6LP-HT-X32"/>
+                        <constraint firstAttribute="width" constant="120" id="FcA-ML-jPq"/>
+                    </constraints>
+                    <state key="normal" title="ScaleAspectFill">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="drawScaleAspectFillImageButtonTapHandler:" destination="-1" eventType="touchUpInside" id="Luj-bB-uuQ"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CIPhotoEffectChrome Effect" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fNd-Zj-ErA">
+                    <rect key="frame" x="130" y="626" width="229" height="21"/>
+                    <color key="backgroundColor" white="1" alpha="0.69758668660000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="LuG-RU-a4X"/>
+                        <constraint firstAttribute="width" constant="229" id="bwf-O4-EXH"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Cnj-Wk-RhB" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="16" id="18S-Qs-M86"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="czX-Gc-FD0" secondAttribute="trailing" constant="16" id="LOr-5b-2lA"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="hts-H9-jot" secondAttribute="trailing" constant="16" id="OBY-wx-q53"/>
+                <constraint firstItem="Yka-fP-kHO" firstAttribute="top" secondItem="hts-H9-jot" secondAttribute="bottom" constant="12" id="Qa7-Xr-8HJ"/>
+                <constraint firstItem="Q8c-eO-DDk" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="QoQ-eA-m66"/>
+                <constraint firstItem="hts-H9-jot" firstAttribute="top" secondItem="czX-Gc-FD0" secondAttribute="bottom" constant="13" id="U7Z-q5-lDE"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="fNd-Zj-ErA" secondAttribute="bottom" constant="20" id="Vom-i8-A7X"/>
+                <constraint firstItem="Cnj-Wk-RhB" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="16" id="Zbz-wh-oD0"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="fNd-Zj-ErA" secondAttribute="trailing" constant="16" id="anM-PC-ezm"/>
+                <constraint firstItem="czX-Gc-FD0" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="16" id="cJn-m7-Wl3"/>
+                <constraint firstItem="Q8c-eO-DDk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="kx7-60-joO"/>
+                <constraint firstItem="Q8c-eO-DDk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="mN6-aS-jxG"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Yka-fP-kHO" secondAttribute="trailing" constant="16" id="mry-4l-b3F"/>
+                <constraint firstItem="Q8c-eO-DDk" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" id="xgt-4S-twY"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+        </view>
+    </objects>
+</document>

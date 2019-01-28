@@ -91,6 +91,7 @@
     CGFloat alphaColor;
     [self.backgroundColor getRed:&redColor green:&greenColor blue:&blueColor alpha:&alphaColor];
 
+    [self bindDrawable];
     glClearColor(redColor, greenColor, blueColor, alphaColor);
     glClear(GL_COLOR_BUFFER_BIT);
 }
@@ -139,7 +140,7 @@
             break;
         case ADKOpenGLImageViewContentModeScaleToFill:
         default:
-            drawRect = CGRectMake(0.0f, 0.0f, self.drawableWidth, self.drawableHeight);
+            drawRect = drawableRect;
             break;
     }
 

@@ -86,6 +86,9 @@
 		3C2C4B8C1B27964F004414AD /* DemoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C2C4B8A1B27964F004414AD /* DemoCollectionViewCell.xib */; };
 		3C2C4B901B27A08A004414AD /* UIColor+ThemeColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C2C4B8F1B27A08A004414AD /* UIColor+ThemeColor.m */; };
 		3C2D70AF1E557E1E00667727 /* ADKCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C2D70AE1E557E1E00667727 /* ADKCamera.m */; };
+		3C38E7F321C7B0A8000B14D7 /* ADKMetalImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C38E7F121C7B0A8000B14D7 /* ADKMetalImageView.m */; };
+		3C38E7F721C7B244000B14D7 /* OpenGLRenderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C38E7F421C7B243000B14D7 /* OpenGLRenderViewController.xib */; };
+		3C38E7F821C7B244000B14D7 /* OpenGLRenderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C38E7F621C7B244000B14D7 /* OpenGLRenderViewController.m */; };
 		3C6536D51FAD5F9400570869 /* ADKOpenGLImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C6536D41FAD5F9400570869 /* ADKOpenGLImageView.m */; };
 		3C8FA5901C155F31004A4ED9 /* InfiniteScrollingHelpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8FA58F1C155F31004A4ED9 /* InfiniteScrollingHelpView.m */; };
 		3C95C7BF1D054A1A00EA2A92 /* img-personalization-reminder-expected2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C95C7BE1D054A1A00EA2A92 /* img-personalization-reminder-expected2.png */; };
@@ -101,6 +104,8 @@
 		3C9FAEC41C0D4D7E00B0588C /* OperationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C9FAEC21C0D4D7E00B0588C /* OperationViewController.xib */; };
 		3CF4CABF1F04D9BF00B52064 /* CameraKitExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF4CABD1F04D9BF00B52064 /* CameraKitExampleViewController.m */; };
 		3CF4CAC01F04D9BF00B52064 /* CameraKitExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CF4CABE1F04D9BF00B52064 /* CameraKitExampleViewController.xib */; };
+		3CFC9D1121DE1696002B4A59 /* MetalRenderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFC9D0F21DE1696002B4A59 /* MetalRenderViewController.m */; };
+		3CFC9D1221DE1696002B4A59 /* MetalRenderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CFC9D1021DE1696002B4A59 /* MetalRenderViewController.xib */; };
 		546930DE1CC4E66F00378A6F /* TestNibFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 546930DD1CC4E66F00378A6F /* TestNibFile.m */; };
 		546930E41CCA2A7600378A6F /* TestUncachedCustomCalculationNibFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 546930E31CCA2A7600378A6F /* TestUncachedCustomCalculationNibFile.m */; };
 		546930E61CCA2AA000378A6F /* TestUncachedCustomCalculationNibFile.xib in Resources */ = {isa = PBXBuildFile; fileRef = 546930E51CCA2AA000378A6F /* TestUncachedCustomCalculationNibFile.xib */; };
@@ -308,6 +313,11 @@
 		3C2D70AD1E557E1E00667727 /* ADKCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADKCamera.h; sourceTree = "<group>"; };
 		3C2D70AE1E557E1E00667727 /* ADKCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADKCamera.m; sourceTree = "<group>"; };
 		3C2D70B01E557F9900667727 /* AppDevCameraKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDevCameraKit.h; sourceTree = "<group>"; };
+		3C38E7F121C7B0A8000B14D7 /* ADKMetalImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADKMetalImageView.m; sourceTree = "<group>"; };
+		3C38E7F221C7B0A8000B14D7 /* ADKMetalImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADKMetalImageView.h; sourceTree = "<group>"; };
+		3C38E7F421C7B243000B14D7 /* OpenGLRenderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = OpenGLRenderViewController.xib; path = "../../../../Desktop/untitled folder/OpenGLRenderViewController.xib"; sourceTree = "<group>"; };
+		3C38E7F521C7B244000B14D7 /* OpenGLRenderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenGLRenderViewController.h; path = "../../../../Desktop/untitled folder/OpenGLRenderViewController.h"; sourceTree = "<group>"; };
+		3C38E7F621C7B244000B14D7 /* OpenGLRenderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OpenGLRenderViewController.m; path = "../../../../Desktop/untitled folder/OpenGLRenderViewController.m"; sourceTree = "<group>"; };
 		3C6536D31FAD5F9300570869 /* ADKOpenGLImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADKOpenGLImageView.h; sourceTree = "<group>"; };
 		3C6536D41FAD5F9400570869 /* ADKOpenGLImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADKOpenGLImageView.m; sourceTree = "<group>"; };
 		3C8FA58E1C155F31004A4ED9 /* InfiniteScrollingHelpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfiniteScrollingHelpView.h; sourceTree = "<group>"; };
@@ -333,6 +343,9 @@
 		3CF4CABC1F04D9BF00B52064 /* CameraKitExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraKitExampleViewController.h; sourceTree = "<group>"; };
 		3CF4CABD1F04D9BF00B52064 /* CameraKitExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraKitExampleViewController.m; sourceTree = "<group>"; };
 		3CF4CABE1F04D9BF00B52064 /* CameraKitExampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CameraKitExampleViewController.xib; sourceTree = "<group>"; };
+		3CFC9D0E21DE1696002B4A59 /* MetalRenderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MetalRenderViewController.h; sourceTree = "<group>"; };
+		3CFC9D0F21DE1696002B4A59 /* MetalRenderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MetalRenderViewController.m; sourceTree = "<group>"; };
+		3CFC9D1021DE1696002B4A59 /* MetalRenderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MetalRenderViewController.xib; sourceTree = "<group>"; };
 		546930DC1CC4E66F00378A6F /* TestNibFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestNibFile.h; sourceTree = "<group>"; };
 		546930DD1CC4E66F00378A6F /* TestNibFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestNibFile.m; sourceTree = "<group>"; };
 		546930E21CCA2A7600378A6F /* TestUncachedCustomCalculationNibFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestUncachedCustomCalculationNibFile.h; sourceTree = "<group>"; };
@@ -674,6 +687,12 @@
 				3CF4CABC1F04D9BF00B52064 /* CameraKitExampleViewController.h */,
 				3CF4CABD1F04D9BF00B52064 /* CameraKitExampleViewController.m */,
 				3CF4CABE1F04D9BF00B52064 /* CameraKitExampleViewController.xib */,
+				3C38E7F521C7B244000B14D7 /* OpenGLRenderViewController.h */,
+				3C38E7F621C7B244000B14D7 /* OpenGLRenderViewController.m */,
+				3C38E7F421C7B243000B14D7 /* OpenGLRenderViewController.xib */,
+				3CFC9D0E21DE1696002B4A59 /* MetalRenderViewController.h */,
+				3CFC9D0F21DE1696002B4A59 /* MetalRenderViewController.m */,
+				3CFC9D1021DE1696002B4A59 /* MetalRenderViewController.xib */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -720,6 +739,8 @@
 			children = (
 				3C6536D31FAD5F9300570869 /* ADKOpenGLImageView.h */,
 				3C6536D41FAD5F9400570869 /* ADKOpenGLImageView.m */,
+				3C38E7F221C7B0A8000B14D7 /* ADKMetalImageView.h */,
+				3C38E7F121C7B0A8000B14D7 /* ADKMetalImageView.m */,
 				3C2D70AD1E557E1E00667727 /* ADKCamera.h */,
 				3C2D70AE1E557E1E00667727 /* ADKCamera.m */,
 			);
@@ -993,7 +1014,9 @@
 				F7DD98231D07294A009A42E7 /* UK-Flag.jpg in Resources */,
 				F7DD98201D07294A009A42E7 /* Mexico-Flag.jpg in Resources */,
 				009131811C9D3D0E006509B5 /* YMDCDemoViewController.xib in Resources */,
+				3C38E7F721C7B244000B14D7 /* OpenGLRenderViewController.xib in Resources */,
 				001D988F1C1407C60097623E /* PullToRefreshExampleViewController.xib in Resources */,
+				3CFC9D1221DE1696002B4A59 /* MetalRenderViewController.xib in Resources */,
 				3C9FAEC41C0D4D7E00B0588C /* OperationViewController.xib in Resources */,
 				3C2C4B871B2795D3004414AD /* DemoCollectionReusableView.xib in Resources */,
 				3C99D7961B035D2800D65CB3 /* Images.xcassets in Resources */,
@@ -1173,6 +1196,7 @@
 				001D991B1C17F3EA0097623E /* ADKAppUtil.m in Sources */,
 				001D991C1C17F3EA0097623E /* ADKCalculatorHelper.m in Sources */,
 				3C99D7911B035D2800D65CB3 /* ViewController.m in Sources */,
+				3CFC9D1121DE1696002B4A59 /* MetalRenderViewController.m in Sources */,
 				001D992B1C17F3EA0097623E /* ADKDashedLineView.m in Sources */,
 				009131851C9D440D006509B5 /* DynamicHeightCell.m in Sources */,
 				3C1F6E461B28106600A67E37 /* ColorHexPresentationViewController.m in Sources */,
@@ -1185,6 +1209,7 @@
 				001D991E1C17F3EA0097623E /* ADKStringHelper.m in Sources */,
 				3C2D70AF1E557E1E00667727 /* ADKCamera.m in Sources */,
 				001D99181C17F3EA0097623E /* UIView+ADKAnimationMacro.m in Sources */,
+				3C38E7F821C7B244000B14D7 /* OpenGLRenderViewController.m in Sources */,
 				00C074DE1CA662A2004AF305 /* MovieDescCell.m in Sources */,
 				001D99191C17F3EA0097623E /* UIColor+ADKHexPresentation.m in Sources */,
 				3C2C4B901B27A08A004414AD /* UIColor+ThemeColor.m in Sources */,
@@ -1211,6 +1236,7 @@
 				001D99261C17F3EA0097623E /* ADKNibSizeCalculator.m in Sources */,
 				001D99231C17F3EA0097623E /* UICollectionView+ADKOperation.m in Sources */,
 				001D992D1C17F3EA0097623E /* ADKModalMaskView.m in Sources */,
+				3C38E7F321C7B0A8000B14D7 /* ADKMetalImageView.m in Sources */,
 				3C1F6E5A1B28111F00A67E37 /* ImageFilterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1359,7 +1385,7 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = AppDevKit/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1368,6 +1394,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.yahoo.AppDevKit;
 				PRODUCT_NAME = AppDevKit;
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -1381,7 +1408,7 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = AppDevKit/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1390,6 +1417,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.yahoo.AppDevKit;
 				PRODUCT_NAME = AppDevKit;
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

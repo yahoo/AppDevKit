@@ -10,3 +10,5 @@
 
 // Camera Tools
 #import "ADKCamera.h"
+#import "ADKOpenGLImageView.h"
+#import "ADKMetalImageView.h"
