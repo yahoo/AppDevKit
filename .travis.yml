@@ -6,6 +6,6 @@ osx_image: xcode10
 install:
 - gem install xcpretty -N --no-ri --no-rdoc
 script:
-- set -o pipefail && xcodebuild -workspace AppDevKit.xcworkspace -scheme AppDevKit -sdk iphonesimulator12.0 -destination 'platform=iOS Simulator,name=iPhone X,OS=10.0' build test GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES | xcpretty -c
+- set -o pipefail && xcodebuild -workspace AppDevKit.xcworkspace -scheme AppDevKit -sdk iphonesimulator12.0 -destination 'platform=iOS Simulator,name=iPhone 6,OS=10.0' build test GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES | xcpretty -c
 after_success:
   bash <(curl -s https://codecov.io/bash)
