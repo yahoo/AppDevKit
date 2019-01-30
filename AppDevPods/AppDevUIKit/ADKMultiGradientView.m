@@ -1,16 +1,21 @@
 //
-//  ADKGradientView.m
+//  ADKMultiGradientView.m
 //  AppDevKit
 //
-//  Created by Bram Yeh on 12/4/13.
-//  Copyright © 2013, Yahoo Inc.
-//  Licensed under the terms of the BSD License.
-//  Please see the LICENSE file in the project root for terms.
+//  Created by  Chih Feng Sung on 1/29/19.
+//  Copyright © 2019 Yahoo. All rights reserved.
 //
 
-#import "ADKGradientView.h"
+#import "ADKMultiGradientView.h"
 
-@implementation ADKGradientView
+@interface ADKMultiGradientView ()
+
+//@property (nonatomic, strong) NSMutableArray *colors;
+//@property (nonatomic, strong) CGFloat *locations;
+
+@end
+
+@implementation ADKMultiGradientView
 
 - (instancetype)initWithCoder:(NSCoder *)coder
 {
@@ -42,13 +47,21 @@
 {
     [super drawRect:rect];
 
-    //reference: http://myappglog.blogspot.tw/2013/07/blog-post.html and http://www.cnblogs.com/zenny-chen/archive/2012/02/23/2364152.html
     CGContextRef contextRef = UIGraphicsGetCurrentContext();
     CGColorSpaceRef colorSpaceRef = CGColorSpaceCreateDeviceRGB();
-    
-    NSArray *gradientColors = [NSArray arrayWithObjects:(id)[self.beginColor CGColor], (id)[self.endColor CGColor], nil];
-    CGGradientRef gradientRef = CGGradientCreateWithColors(colorSpaceRef, (CFArrayRef)gradientColors, nil);
-    
+
+    NSMutableArray *colors = [NSMutableArray arrayWithCapacity:self.gradientColors.count];
+    for (int i = 0; i < self.gradientLocations.count; i++) {
+        colors[i] =(id)[(UIColor *)[self.gradientColors objectAtIndex:i] CGColor];
+    }
+
+    CGFloat locations[4];
+    for (int i = 0; i < self.gradientLocations.count; i++) {
+        locations[i] = [(NSNumber *)[self.gradientLocations objectAtIndex:i] floatValue];
+    }
+
+    CGGradientRef gradientRef = CGGradientCreateWithColors(colorSpaceRef, (CFArrayRef)colors, locations);
+
     CGPoint beginPoint;
     CGPoint endPoint;
     switch (self.blendsType) {
@@ -69,9 +82,9 @@
             beginPoint = CGPointMake(CGRectGetWidth(rect) / 2.0f, 0.0f);
             endPoint = CGPointMake(CGRectGetWidth(rect) / 2.0f, CGRectGetHeight(rect));
     }
-    
+
     CGContextDrawLinearGradient(contextRef, gradientRef, beginPoint, endPoint, 0);
-    
+
     CGColorSpaceRelease(colorSpaceRef);
     CGGradientRelease(gradientRef);
 }
