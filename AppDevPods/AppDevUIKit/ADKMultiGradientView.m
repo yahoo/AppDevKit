@@ -51,11 +51,11 @@
     CGColorSpaceRef colorSpaceRef = CGColorSpaceCreateDeviceRGB();
 
     NSMutableArray *colors = [NSMutableArray arrayWithCapacity:self.gradientColors.count];
-    for (int i = 0; i < self.gradientLocations.count; i++) {
+    for (int i = 0; i < self.gradientColors.count; i++) {
         colors[i] =(id)[(UIColor *)[self.gradientColors objectAtIndex:i] CGColor];
     }
 
-    CGFloat locations[4];
+    CGFloat locations[self.gradientLocations.count];
     for (int i = 0; i < self.gradientLocations.count; i++) {
         locations[i] = [(NSNumber *)[self.gradientLocations objectAtIndex:i] floatValue];
     }

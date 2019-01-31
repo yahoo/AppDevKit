@@ -17,13 +17,13 @@ NS_ASSUME_NONNULL_BEGIN
  * @brief The colors that use to describe gradient colors. It has to contain UIColor elements.
  *
  */
-@property (nonatomic, strong) NSArray *gradientColors;
+@property (nonatomic, strong) NSArray <UIColor *> *gradientColors;
 
 /**
  * @brief The locations that use to locate gradient color's position. It musts contain NSnumber with CGFloat elements and each value needs from 0.0f to 1.0f.
  *
  */
-@property (nonatomic, strong) NSArray *gradientLocations;
+@property (nonatomic, strong) NSArray <NSNumber *> *gradientLocations;
 
 /**
  * @brief Decide how to paint gradient on this view.

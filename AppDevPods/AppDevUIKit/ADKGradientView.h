@@ -16,13 +16,6 @@
 #import <UIKit/UIKit.h>
 #import "ADKGradientEnum.h"
 
-//typedef NS_ENUM(NSUInteger, ADKBlendsType) {
-//    ADKBlendsTypeFromTopToBottom = 0,
-//    ADKBlendsTypeFromLeftToRight,
-//    ADKBlendsTypeFromLeftTopToRightBottom,
-//    ADKBlendsTypeFromRightTopToLeftBottom
-//};
-
 @interface ADKGradientView : UIView
 
 /**
