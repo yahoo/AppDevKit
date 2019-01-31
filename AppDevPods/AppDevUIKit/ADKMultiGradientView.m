@@ -10,9 +10,6 @@
 
 @interface ADKMultiGradientView ()
 
-//@property (nonatomic, strong) NSMutableArray *colors;
-//@property (nonatomic, strong) CGFloat *locations;
-
 @end
 
 @implementation ADKMultiGradientView
