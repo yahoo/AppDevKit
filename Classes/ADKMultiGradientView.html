@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>ADKGradientView Class Reference</title>
+	<title>ADKMultiGradientView Class Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
@@ -43,8 +43,6 @@
 							<select id="jump-to">
 	<option value="top">Jump To&#133;</option>
 	
-	<option value="overview">Overview</option>
-	
 
 	
 	
@@ -56,11 +54,11 @@
 	
 	<optgroup label="Properties">
 		
-		<option value="//api/name/beginColor">beginColor</option>
-		
 		<option value="//api/name/blendsType">blendsType</option>
 		
-		<option value="//api/name/endColor">endColor</option>
+		<option value="//api/name/gradientColors">gradientColors</option>
+		
+		<option value="//api/name/gradientLocations">gradientLocations</option>
 		
 	</optgroup>
 	
@@ -87,7 +85,7 @@
 		<div id="overview_contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title">ADKGradientView Class Reference</h1>
+					<h1 class="title">ADKMultiGradientView Class Reference</h1>
 
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
@@ -96,14 +94,12 @@
 	<td>UIView</td>
 </tr><tr>
 	<th>Declared in</th>
-	<td>ADKGradientView.h<br />ADKGradientView.m</td>
+	<td>ADKMultiGradientView.h<br />ADKMultiGradientView.m</td>
 </tr>
 						</tbody></table></div>
 					
 
                     
-					
-					
 
 					
 					
@@ -150,7 +146,7 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">ADKGradientView.h</code></p>
+				<p><code class="declared-in-ref">ADKMultiGradientView.h</code></p>
 			</div>
 			
 			
@@ -165,8 +161,8 @@
 
 						<div class="task-list">
 							<div class="section-method">
-	<a name="//api/name/beginColor" title="beginColor"></a>
-	<h3 class="method-title"><code><a href="#//api/name/beginColor">&nbsp;&nbsp;beginColor</a></code>
+	<a name="//api/name/gradientColors" title="gradientColors"></a>
+	<h3 class="method-title"><code><a href="#//api/name/gradientColors">&nbsp;&nbsp;gradientColors</a></code>
 </h3>
 
 	<div class="method-info">
@@ -176,12 +172,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Painting gradient start from specific UIColor.</p>
+				<p>The colors that use to describe gradient colors. It has to contain UIColor elements.</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) IBInspectable UIColor *beginColor</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSArray&lt;UIColor*&gt; *gradientColors</code></div>
 
 		    
 			
@@ -199,15 +195,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">ADKGradientView.h</code></p>
+				<p><code class="declared-in-ref">ADKMultiGradientView.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/endColor" title="endColor"></a>
-	<h3 class="method-title"><code><a href="#//api/name/endColor">&nbsp;&nbsp;endColor</a></code>
+	<a name="//api/name/gradientLocations" title="gradientLocations"></a>
+	<h3 class="method-title"><code><a href="#//api/name/gradientLocations">&nbsp;&nbsp;gradientLocations</a></code>
 </h3>
 
 	<div class="method-info">
@@ -217,12 +213,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Painting gradient end at specific UIColor.</p>
+				<p>The locations that use to locate gradient color&rsquo;s position. It musts contain NSnumber with CGFloat elements and each value needs from 0.0f to 1.0f.</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) IBInspectable UIColor *endColor</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSArray&lt;NSNumber*&gt; *gradientLocations</code></div>
 
 		    
 			
@@ -240,7 +236,7 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">ADKGradientView.h</code></p>
+				<p><code class="declared-in-ref">ADKMultiGradientView.h</code></p>
 			</div>
 			
 			
@@ -281,7 +277,7 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">ADKGradientView.h</code></p>
+				<p><code class="declared-in-ref">ADKMultiGradientView.h</code></p>
 			</div>
 			
 			

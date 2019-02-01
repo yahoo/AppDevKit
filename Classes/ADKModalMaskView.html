@@ -126,133 +126,10 @@
 						
 
 						
-						
+						<h2 class="task-title">Other Methods</h2>
 
 						<div class="task-list">
 							<div class="section-method">
-	<a name="//api/name/modalColor" title="modalColor"></a>
-	<h3 class="method-title"><code><a href="#//api/name/modalColor">&nbsp;&nbsp;modalColor</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Describe a specific UIColor that you want to apply on ADKModalMaskView&rsquo;s modal color.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) UIColor *modalColor</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">ADKModalMaskView.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/delegate" title="delegate"></a>
-	<h3 class="method-title"><code><a href="#//api/name/delegate">&nbsp;&nbsp;delegate</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Assign a delegate owner for ADKModalMaskView. It will help you to do something before ADKModalMaskView dismiss or after dismiss.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, weak) id&lt;ADKModalMaskViewDelegate&gt; delegate</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">ADKModalMaskView.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/modalMode" title="modalMode"></a>
-	<h3 class="method-title"><code><a href="#//api/name/modalMode">&nbsp;&nbsp;modalMode</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Decide which present mode will be using in ADKModalMaskView.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) ADKModalMaskModeType modalMode</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">ADKModalMaskView.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
 	<a name="//api/name/initWithView:" title="initWithView:"></a>
 	<h3 class="method-title"><code><a href="#//api/name/initWithView:">&ndash;&nbsp;initWithView:</a></code>
 </h3>
@@ -280,6 +157,84 @@
 					<tr>
 						<th scope="row" class="argument-name"><code>view</code></th>
 						<td><p>Assiging specific view that you want to present on the screen.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Instance of ADKModalMaskView.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ADKModalMaskView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initWithView:showInFullScreen:autoDismiss:modalColor:maskView:" title="initWithView:showInFullScreen:autoDismiss:modalColor:maskView:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithView:showInFullScreen:autoDismiss:modalColor:maskView:">&ndash;&nbsp;initWithView:showInFullScreen:autoDismiss:modalColor:maskView:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Generating a ADKModalMaskView to present your view with specific modal color and set automatic dismiss mode at begin.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)initWithView:(UIView *)<em>view</em> showInFullScreen:(BOOL)<em>showInFullScreen</em> autoDismiss:(BOOL)<em>isAuto</em> modalColor:(UIColor *)<em>color</em> maskView:(UIView *)<em>maskView</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>view</code></th>
+						<td><p>Assiging specific view that you want to present on the screen.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>showInFullScreen</code></th>
+						<td><p>Decide presnted view scaling mode. Yes means ADKModalMaskView will scale your view to full screen size. No means keep original size.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>isAuto</code></th>
+						<td><p>Enable or disable automatic dismiss mode. Yes means enabled and NO means disable.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>color</code></th>
+						<td><p>Decide a specific UIColor that you want to apply on ADKModalMaskView&rsquo;s modal color.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>maskView</code></th>
+						<td><p>Giving a specific view instance to replace original pure color.</p></td>
 					</tr>
 				
 				</table>
@@ -343,6 +298,74 @@
 					<tr>
 						<th scope="row" class="argument-name"><code>isAuto</code></th>
 						<td><p>Enable or disable automatic dismiss mode. Yes means enabled and NO means disable.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Instance of ADKModalMaskView.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ADKModalMaskView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initWithView:showInFullScreen:modalColor:" title="initWithView:showInFullScreen:modalColor:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithView:showInFullScreen:modalColor:">&ndash;&nbsp;initWithView:showInFullScreen:modalColor:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Generating a ADKModalMaskView to present your view with specific modal color and set automatic dismiss mode at begin.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)initWithView:(UIView *)<em>view</em> showInFullScreen:(BOOL)<em>showInFullScreen</em> modalColor:(UIColor *)<em>color</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>view</code></th>
+						<td><p>Assiging specific view that you want to present on the screen.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>showInFullScreen</code></th>
+						<td><p>Decide presented view scaling mode. Yes means ADKModalMaskView will scale your view to full screen size. No means keep original size.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>color</code></th>
+						<td><p>Descirbe a specific UIColor that you want to apply on ADKModalMaskView&rsquo;s modal color.</p></td>
 					</tr>
 				
 				</table>
@@ -474,152 +497,6 @@
 					<tr>
 						<th scope="row" class="argument-name"><code>isAuto</code></th>
 						<td><p>Enable or disable automatic dismiss mode. Yes means enabled and NO means disable.</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>Instance of ADKModalMaskView.</p>
-			</div>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">ADKModalMaskView.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/initWithView:showInFullScreen:modalColor:" title="initWithView:showInFullScreen:modalColor:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/initWithView:showInFullScreen:modalColor:">&ndash;&nbsp;initWithView:showInFullScreen:modalColor:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Generating a ADKModalMaskView to present your view with specific modal color and set automatic dismiss mode at begin.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (instancetype)initWithView:(UIView *)<em>view</em> showInFullScreen:(BOOL)<em>showInFullScreen</em> modalColor:(UIColor *)<em>color</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>view</code></th>
-						<td><p>Assiging specific view that you want to present on the screen.</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>showInFullScreen</code></th>
-						<td><p>Decide presented view scaling mode. Yes means ADKModalMaskView will scale your view to full screen size. No means keep original size.</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>color</code></th>
-						<td><p>Descirbe a specific UIColor that you want to apply on ADKModalMaskView&rsquo;s modal color.</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>Instance of ADKModalMaskView.</p>
-			</div>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">ADKModalMaskView.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/initWithView:showInFullScreen:autoDismiss:modalColor:maskView:" title="initWithView:showInFullScreen:autoDismiss:modalColor:maskView:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/initWithView:showInFullScreen:autoDismiss:modalColor:maskView:">&ndash;&nbsp;initWithView:showInFullScreen:autoDismiss:modalColor:maskView:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Generating a ADKModalMaskView to present your view with specific modal color and set automatic dismiss mode at begin.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (instancetype)initWithView:(UIView *)<em>view</em> showInFullScreen:(BOOL)<em>showInFullScreen</em> autoDismiss:(BOOL)<em>isAuto</em> modalColor:(UIColor *)<em>color</em> maskView:(UIView *)<em>maskView</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>view</code></th>
-						<td><p>Assiging specific view that you want to present on the screen.</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>showInFullScreen</code></th>
-						<td><p>Decide presnted view scaling mode. Yes means ADKModalMaskView will scale your view to full screen size. No means keep original size.</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>isAuto</code></th>
-						<td><p>Enable or disable automatic dismiss mode. Yes means enabled and NO means disable.</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>color</code></th>
-						<td><p>Decide a specific UIColor that you want to apply on ADKModalMaskView&rsquo;s modal color.</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>maskView</code></th>
-						<td><p>Giving a specific view instance to replace original pure color.</p></td>
 					</tr>
 				
 				</table>
@@ -885,6 +762,137 @@
 </div>
 						</div>
 						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/modalColor" title="modalColor"></a>
+	<h3 class="method-title"><code><a href="#//api/name/modalColor">&nbsp;&nbsp;modalColor</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Describe a specific UIColor that you want to apply on ADKModalMaskView&rsquo;s modal color.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) UIColor *modalColor</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ADKModalMaskView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/delegate" title="delegate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/delegate">&nbsp;&nbsp;delegate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Assign a delegate owner for ADKModalMaskView. It will help you to do something before ADKModalMaskView dismiss or after dismiss.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, weak) id&lt;ADKModalMaskViewDelegate&gt; delegate</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ADKModalMaskView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/modalMode" title="modalMode"></a>
+	<h3 class="method-title"><code><a href="#//api/name/modalMode">&nbsp;&nbsp;modalMode</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Decide which present mode will be using in ADKModalMaskView.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) ADKModalMaskModeType modalMode</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ADKModalMaskView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
 					</div>
 					
 					
@@ -897,7 +905,7 @@
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2017 Yahoo. All rights reserved. Updated: 2017-07-11</p>
+						<p class="copyright">Copyright &copy; 2019 Yahoo. All rights reserved. Updated: 2019-02-01</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
