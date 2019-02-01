@@ -56,6 +56,8 @@
 	
 	<optgroup label="Class Methods">
 		
+		<option value="//api/name/ADKColorWithARGBHexString:">+ ADKColorWithARGBHexString:</option>
+		
 		<option value="//api/name/ADKColorWithHexNumber:">+ ADKColorWithHexNumber:</option>
 		
 		<option value="//api/name/ADKColorWithHexRed:green:blue:alpha:">+ ADKColorWithHexRed:green:blue:alpha:</option>
@@ -63,6 +65,10 @@
 		<option value="//api/name/ADKColorWithHexString:">+ ADKColorWithHexString:</option>
 		
 		<option value="//api/name/ADKColorWithHexString:alpha:">+ ADKColorWithHexString:alpha:</option>
+		
+		<option value="//api/name/ADKColorWithRGBAHexString:">+ ADKColorWithRGBAHexString:</option>
+		
+		<option value="//api/name/ADKColorWithRGBHexString:">+ ADKColorWithRGBHexString:</option>
 		
 	</optgroup>
 	
@@ -280,7 +286,8 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Create a color by hex string.</p>
+				<p>Create a color by hex string. The returned color is undefined if hexString is invalid.
+The behaviour is the same as <a href="#//api/name/ADKColorWithRGBHexString:">ADKColorWithRGBHexString:</a>, but <a href="#//api/name/ADKColorWithRGBHexString:">ADKColorWithRGBHexString:</a> is preferred.</p>
 			</div>
 			
 		    
@@ -417,6 +424,181 @@
 					<tr>
 						<th scope="row" class="argument-name"><code>hexString</code></th>
 						<td><p>The value of hex NSString.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The instance of UIColor.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UIColor+ADKHexPresentation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ADKColorWithRGBHexString:" title="ADKColorWithRGBHexString:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ADKColorWithRGBHexString:">+&nbsp;ADKColorWithRGBHexString:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Create a RGB color by hex string. The returned color is undefined if hexString is invalid.
+The behaviour is the same as <a href="#//api/name/ADKColorWithHexString:">ADKColorWithHexString:</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (UIColor *)ADKColorWithRGBHexString:(NSString *)<em>hexString</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>hexString</code></th>
+						<td><p>The value of RGB hex NSString.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The instance of UIColor.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UIColor+ADKHexPresentation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ADKColorWithARGBHexString:" title="ADKColorWithARGBHexString:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ADKColorWithARGBHexString:">+&nbsp;ADKColorWithARGBHexString:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Create a ARGB or RGB color by hex string. The returned color is undefined if hexString is invalid.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (UIColor *)ADKColorWithARGBHexString:(NSString *)<em>hexString</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>hexString</code></th>
+						<td><p>The value of ARGB or RGB hex NSString.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The instance of UIColor.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UIColor+ADKHexPresentation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ADKColorWithRGBAHexString:" title="ADKColorWithRGBAHexString:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ADKColorWithRGBAHexString:">+&nbsp;ADKColorWithRGBAHexString:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Create a RGBA or RGB color by hex string. The returned color is undefined if hexString is invalid</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (UIColor *)ADKColorWithRGBAHexString:(NSString *)<em>hexString</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>hexString</code></th>
+						<td><p>The value of RGBA or RGB hex NSString.</p></td>
 					</tr>
 				
 				</table>
@@ -800,7 +982,7 @@ Shift value can include positive or negative float and brightness must between 0
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2017 Yahoo. All rights reserved. Updated: 2017-07-11</p>
+						<p class="copyright">Copyright &copy; 2019 Yahoo. All rights reserved. Updated: 2019-02-01</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>

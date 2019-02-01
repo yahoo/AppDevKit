@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>UIView(ADKGetUIViewController) Category Reference</title>
+	<title>ADKOpenGLImageView Class Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
@@ -52,15 +52,17 @@
 
 	
 	
-
-	
-
-	
-	<optgroup label="Instance Methods">
+	<optgroup label="Properties">
 		
-		<option value="//api/name/ADKParentViewController">- ADKParentViewController</option>
+		<option value="//api/name/contentMode">contentMode</option>
+		
+		<option value="//api/name/image">image</option>
 		
 	</optgroup>
+	
+
+	
+
 	
 	
 </select>
@@ -75,13 +77,16 @@
 		<div id="overview_contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title">UIView(ADKGetUIViewController) Category Reference</h1>
+					<h1 class="title">ADKOpenGLImageView Class Reference</h1>
 
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
+	<th>Inherits from</th>
+	<td>GLKView</td>
+</tr><tr>
 	<th>Declared in</th>
-	<td>UIView+ADKGetUIViewController.h<br />UIView+ADKGetUIViewController.m</td>
+	<td>ADKOpenGLImageView.h<br />ADKOpenGLImageView.m</td>
 </tr>
 						</tbody></table></div>
 					
@@ -99,8 +104,8 @@
 
 						<div class="task-list">
 							<div class="section-method">
-	<a name="//api/name/ADKParentViewController" title="ADKParentViewController"></a>
-	<h3 class="method-title"><code><a href="#//api/name/ADKParentViewController">&ndash;&nbsp;ADKParentViewController</a></code>
+	<a name="//api/name/image" title="image"></a>
+	<h3 class="method-title"><code><a href="#//api/name/image">&nbsp;&nbsp;image</a></code>
 </h3>
 
 	<div class="method-info">
@@ -110,12 +115,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Support get specific UIView&rsquo;s parent UIViewController.</p>
+				<p>An image that you want to be rendered on the screen by OpenGL ES2. It must be a core image and use it in main thread.</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (UIViewController *)ADKParentViewController</code></div>
+			<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) CIImage *image</code></div>
 
 		    
 			
@@ -133,7 +138,48 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">UIView+ADKGetUIViewController.h</code></p>
+				<p><code class="declared-in-ref">ADKOpenGLImageView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/contentMode" title="contentMode"></a>
+	<h3 class="method-title"><code><a href="#//api/name/contentMode">&nbsp;&nbsp;contentMode</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>A flag used to determine how a <a href="#//api/name/image">image</a> lays out its content when its bounds change. If you want to scale the <a href="#//api/name/image">image</a> to fit or fill the space while maintaining the image’s original aspect ratio. It would help you do that easily.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign, nonatomic) ADKOpenGLImageViewContentMode contentMode</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ADKOpenGLImageView.h</code></p>
 			</div>
 			
 			
