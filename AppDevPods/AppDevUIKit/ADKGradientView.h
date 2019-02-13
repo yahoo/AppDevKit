@@ -14,13 +14,7 @@
  */
 
 #import <UIKit/UIKit.h>
-
-typedef NS_ENUM(NSUInteger, ADKBlendsType) {
-    ADKBlendsTypeFromTopToBottom = 0,
-    ADKBlendsTypeFromLeftToRight,
-    ADKBlendsTypeFromLeftTopToRightBottom,
-    ADKBlendsTypeFromRightTopToLeftBottom
-};
+#import "ADKGradientEnum.h"
 
 @interface ADKGradientView : UIView
 
@@ -28,19 +22,25 @@ typedef NS_ENUM(NSUInteger, ADKBlendsType) {
  * @brief Painting gradient start from specific UIColor.
  *
  */
-@property (nonatomic, strong) UIColor *beginColor;
+@property (nonatomic, strong) IBInspectable UIColor *beginColor;
 
 /**
  * @brief Painting gradient end at specific UIColor.
  *
  */
-@property (nonatomic, strong) UIColor *endColor;
+@property (nonatomic, strong) IBInspectable UIColor *endColor;
 
 /**
  * @brief Decide how to paint gradient on this view.
  *
  */
 @property (nonatomic, assign) ADKBlendsType blendsType;
+
+/**
+ * @brief Asking current view needs to redraw itself. if you change any setting after initialized, you might need to redraw view to display the newest setting.
+ *
+ */
+- (void)redrawView;
 
 @end
 

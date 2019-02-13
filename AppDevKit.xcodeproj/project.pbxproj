@@ -90,6 +90,9 @@
 		3C38E7F721C7B244000B14D7 /* OpenGLRenderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C38E7F421C7B243000B14D7 /* OpenGLRenderViewController.xib */; };
 		3C38E7F821C7B244000B14D7 /* OpenGLRenderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C38E7F621C7B244000B14D7 /* OpenGLRenderViewController.m */; };
 		3C6536D51FAD5F9400570869 /* ADKOpenGLImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C6536D41FAD5F9400570869 /* ADKOpenGLImageView.m */; };
+		3C739E522201B28C00A92195 /* ADKMultiGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C739E502201B28B00A92195 /* ADKMultiGradientView.m */; };
+		3C739E572201B30700A92195 /* GradientViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C739E552201B30600A92195 /* GradientViewController.xib */; };
+		3C739E582201B30700A92195 /* GradientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C739E562201B30700A92195 /* GradientViewController.m */; };
 		3C8FA5901C155F31004A4ED9 /* InfiniteScrollingHelpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8FA58F1C155F31004A4ED9 /* InfiniteScrollingHelpView.m */; };
 		3C95C7BF1D054A1A00EA2A92 /* img-personalization-reminder-expected2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C95C7BE1D054A1A00EA2A92 /* img-personalization-reminder-expected2.png */; };
 		3C95C7C11D054A3500EA2A92 /* img-personalization-reminder-expected4.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C95C7C01D054A3500EA2A92 /* img-personalization-reminder-expected4.png */; };
@@ -320,6 +323,12 @@
 		3C38E7F621C7B244000B14D7 /* OpenGLRenderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OpenGLRenderViewController.m; path = "../../../../Desktop/untitled folder/OpenGLRenderViewController.m"; sourceTree = "<group>"; };
 		3C6536D31FAD5F9300570869 /* ADKOpenGLImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADKOpenGLImageView.h; sourceTree = "<group>"; };
 		3C6536D41FAD5F9400570869 /* ADKOpenGLImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADKOpenGLImageView.m; sourceTree = "<group>"; };
+		3C739E502201B28B00A92195 /* ADKMultiGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADKMultiGradientView.m; sourceTree = "<group>"; };
+		3C739E512201B28C00A92195 /* ADKMultiGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADKMultiGradientView.h; sourceTree = "<group>"; };
+		3C739E532201B29E00A92195 /* ADKGradientEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADKGradientEnum.h; sourceTree = "<group>"; };
+		3C739E542201B30600A92195 /* GradientViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradientViewController.h; sourceTree = "<group>"; };
+		3C739E552201B30600A92195 /* GradientViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GradientViewController.xib; sourceTree = "<group>"; };
+		3C739E562201B30700A92195 /* GradientViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradientViewController.m; sourceTree = "<group>"; };
 		3C8FA58E1C155F31004A4ED9 /* InfiniteScrollingHelpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfiniteScrollingHelpView.h; sourceTree = "<group>"; };
 		3C8FA58F1C155F31004A4ED9 /* InfiniteScrollingHelpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfiniteScrollingHelpView.m; sourceTree = "<group>"; };
 		3C95C7BE1D054A1A00EA2A92 /* img-personalization-reminder-expected2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img-personalization-reminder-expected2.png"; sourceTree = "<group>"; };
@@ -532,8 +541,11 @@
 				001D990F1C17F3EA0097623E /* UIView+ADKAutoLayoutSupport.m */,
 				001D99101C17F3EA0097623E /* ADKDashedLineView.h */,
 				001D99111C17F3EA0097623E /* ADKDashedLineView.m */,
+				3C739E532201B29E00A92195 /* ADKGradientEnum.h */,
 				001D99121C17F3EA0097623E /* ADKGradientView.h */,
 				001D99131C17F3EA0097623E /* ADKGradientView.m */,
+				3C739E512201B28C00A92195 /* ADKMultiGradientView.h */,
+				3C739E502201B28B00A92195 /* ADKMultiGradientView.m */,
 				001D99141C17F3EA0097623E /* ADKModalMaskView.h */,
 				001D99151C17F3EA0097623E /* ADKModalMaskView.m */,
 			);
@@ -693,6 +705,9 @@
 				3CFC9D0E21DE1696002B4A59 /* MetalRenderViewController.h */,
 				3CFC9D0F21DE1696002B4A59 /* MetalRenderViewController.m */,
 				3CFC9D1021DE1696002B4A59 /* MetalRenderViewController.xib */,
+				3C739E542201B30600A92195 /* GradientViewController.h */,
+				3C739E562201B30700A92195 /* GradientViewController.m */,
+				3C739E552201B30600A92195 /* GradientViewController.xib */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -1005,6 +1020,7 @@
 				F7DD981E1D07294A009A42E7 /* Taiwan-Flag.jpg in Resources */,
 				3C1F6E671B28A2C500A67E37 /* ImageFilterViewController.xib in Resources */,
 				F7DD981C1D07294A009A42E7 /* Turkey-Flag.jpg in Resources */,
+				3C739E572201B30700A92195 /* GradientViewController.xib in Resources */,
 				F7DD98221D07294A009A42E7 /* USA-Flag.jpg in Resources */,
 				3C99D7941B035D2800D65CB3 /* Main.storyboard in Resources */,
 				3C99D7991B035D2800D65CB3 /* LaunchScreen.xib in Resources */,
@@ -1181,6 +1197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C739E582201B30700A92195 /* GradientViewController.m in Sources */,
 				001D991F1C17F3EA0097623E /* ADKViewExclusiveTouch.m in Sources */,
 				001D992C1C17F3EA0097623E /* ADKGradientView.m in Sources */,
 				3C8FA5901C155F31004A4ED9 /* InfiniteScrollingHelpView.m in Sources */,
@@ -1203,6 +1220,7 @@
 				3C1F6E501B2810DE00A67E37 /* ModalMaskViewViewController.m in Sources */,
 				001D99311C17F6370097623E /* ADKAutoLayoutValueObject.m in Sources */,
 				3C9FAEC31C0D4D7E00B0588C /* OperationViewController.m in Sources */,
+				3C739E522201B28C00A92195 /* ADKMultiGradientView.m in Sources */,
 				3C1F6E741B295DB600A67E37 /* ThemeManager.m in Sources */,
 				009131771C9D393C006509B5 /* YMDCDataProvider.m in Sources */,
 				00C074D61CA416C5004AF305 /* YMDCDemoImageCell.m in Sources */,

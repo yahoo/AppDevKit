@@ -25,6 +25,7 @@
 #import "DynamicWidthCellViewController.h"
 #import "OperationViewController.h"
 #import "PullToRefreshExampleViewController.h"
+#import "GradientViewController.h"
 #import "CameraKitExampleViewController.h"
 #import "YMDCDemoViewController.h"
 #import "OpenGLRenderViewController.h"
@@ -100,7 +101,7 @@ typedef NS_ENUM(NSInteger, ADKitDemoSection) {
 {
     switch (section) {
         case ADKitDemoSectionUI:
-            return 5;
+            return 6;
             break;
         case ADKitDemoSectionImage:
             return 1;
@@ -174,6 +175,8 @@ typedef NS_ENUM(NSInteger, ADKitDemoSection) {
                     collectionCell.titleLabel.text = @"ADKModalMaskView & UIImage+ADKImageFilter";
                 } else if (indexPath.row == 4) {
                     collectionCell.titleLabel.text = @"ADKPullToRefreshView & ADKInfiniteScrollView";
+                } else if (indexPath.row == 5) {
+                    collectionCell.titleLabel.text = @"ADKGradientView & ADKMultiGradientView";
                 }
                 break;
             case ADKitDemoSectionImage:
@@ -254,6 +257,9 @@ typedef NS_ENUM(NSInteger, ADKitDemoSection) {
             } else if (indexPath.row == 4){
                 PullToRefreshExampleViewController *pullToRefreshViewController = [[PullToRefreshExampleViewController alloc] init];
                 [self.navigationController pushViewController:pullToRefreshViewController animated:YES];
+            } else if (indexPath.row == 5){
+                GradientViewController *gradientViewController = [[GradientViewController alloc] init];
+                [self.navigationController pushViewController:gradientViewController animated:YES];
             }
             break;
         case ADKitDemoSectionImage:

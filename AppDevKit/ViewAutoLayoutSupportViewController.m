@@ -53,6 +53,9 @@ static NSString * const CellCollectionViewCellIdentifier = @"SampleVCollectionVi
     self.view.backgroundColor = [UIColor blackColor];
     self.typeSegmentedControl.tintColor = [UIColor ADKColorWithHexString:@"CCCCCC"];
 
+    self.edgesForExtendedLayout = UIRectEdgeNone;
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    
     NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"Country-data" ofType:@"plist"];
     self.flagArray = [NSArray arrayWithContentsOfFile:plistPath];
 
