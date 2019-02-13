@@ -59,7 +59,8 @@ pod 'AppDevKit/AppDevImageKit'
   - **UIScrollView+ADKPullToRefreshView** > Supports pull to refresh feature on scrollable view. For example: `UIScrollView`, `UITableView` and `UICollectionView`.
   - **UIScrollView+ADKInfiniteScrollingView** > Supports infinite scrolling feature on scrollable view. For example: `UIScrollView`, `UITableView` and `UICollectionView`.
   - **ADKModalMaskView** > Providing a way to create a modal view for presenting specific view.
-  - **ADKGradientView** > Creates a gradient view for you.
+  - **ADKGradientView** > Creating a simple linear gradient view with orientations for you.
+  - **ADKMultiGradientView** > Creating a complicated linear gradient view with orientations for you.
   - **ADKDashedLineView** > Creates a dashed line around your view.
 
 

@@ -14,13 +14,7 @@
  */
 
 #import <UIKit/UIKit.h>
-
-typedef NS_ENUM(NSUInteger, ADKBlendsType) {
-    ADKBlendsTypeFromTopToBottom = 0,
-    ADKBlendsTypeFromLeftToRight,
-    ADKBlendsTypeFromLeftTopToRightBottom,
-    ADKBlendsTypeFromRightTopToLeftBottom
-};
+#import "ADKGradientEnum.h"
 
 @interface ADKGradientView : UIView
 
@@ -41,6 +35,12 @@ typedef NS_ENUM(NSUInteger, ADKBlendsType) {
  *
  */
 @property (nonatomic, assign) ADKBlendsType blendsType;
+
+/**
+ * @brief Asking current view needs to redraw itself. if you change any setting after initialized, you might need to redraw view to display the newest setting.
+ *
+ */
+- (void)redrawView;
 
 @end
 
