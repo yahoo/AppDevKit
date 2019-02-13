@@ -173,7 +173,7 @@ describe(@"Test ADKIsBelowIOS9", ^{
 describe(@"Test ADKIsBelowIOS10", ^{
     context(@"For different version", ^{
         it(@"with version iOS 10", ^{
-            [[theValue(ADKIsBelowIOS10()) should] equal:theValue(YES)];
+            [[theValue(ADKIsBelowIOS10()) should] equal:theValue(NO)];
         });
     });
 });
