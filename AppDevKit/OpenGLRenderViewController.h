@@ -15,7 +15,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (weak, nonatomic) IBOutlet UIView *containerView;
 @property (weak, nonatomic) IBOutlet UIImageView *demoImageView;
 
-- (IBAction)drawImageButtonTapHandler:(id)sender;
+- (IBAction)drawScaleToFillImageButtonTapHandler:(id)sender;
+- (IBAction)drawScaleAspectFillImageButtonTapHandler:(id)sender;
+- (IBAction)drawScaleAspectFitImageButtonTapHandler:(id)sender;
 
 @end
 

@@ -23,6 +23,14 @@
     [self setupView];
 }
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    self.openGLImageView = [[ADKOpenGLImageView alloc] initWithFrame:self.containerView.frame];
+    self.openGLImageView.backgroundColor = [UIColor lightGrayColor];
+    [self.containerView addSubview:self.openGLImageView];
+}
+
 - (void)setupView
 {
     self.title = @"ADKOpenGLImageView";
@@ -30,19 +38,34 @@
 
     UIImage *demoImage = [UIImage imageNamed:@"Landscape"];
     self.demoImageView.image = demoImage;
-
-    self.openGLImageView = [[ADKOpenGLImageView alloc] initWithFrame:self.containerView.frame];
-    // self.openGLImageView.contentMode = ADKOpenGLImageViewContentModeScaleAspectFill;
-    [self.containerView addSubview:self.openGLImageView];
 }
 
-- (IBAction)drawImageButtonTapHandler:(id)sender
+- (IBAction)drawScaleToFillImageButtonTapHandler:(id)sender
 {
-    NSLog(@"YO");
-    self.openGLImageView.backgroundColor = [UIColor redColor];
+    self.openGLImageView.contentMode = ADKOpenGLImageViewContentModeScaleToFill;
+    [self renderImage];
+}
 
-    CIImage *coreImage = [CIImage imageWithCGImage:self.demoImageView.image.CGImage];
-    self.openGLImageView.image = coreImage;
+- (IBAction)drawScaleAspectFillImageButtonTapHandler:(id)sender
+{
+    self.openGLImageView.contentMode = ADKOpenGLImageViewContentModeScaleAspectFill;
+    [self renderImage];
+}
+
+- (IBAction)drawScaleAspectFitImageButtonTapHandler:(id)sender
+{
+    self.openGLImageView.contentMode = ADKOpenGLImageViewContentModeScaleAspectFit;
+    [self renderImage];
+}
+
+- (void)renderImage
+{
+    CIImage *inputCoreImage = [CIImage imageWithCGImage:self.demoImageView.image.CGImage];
+
+    CIFilter *instantFilter = [CIFilter filterWithName:@"CIPhotoEffectChrome"];
+    [instantFilter setValue:inputCoreImage forKey:kCIInputImageKey];
+
+    self.openGLImageView.image = instantFilter.outputImage;
 }
 
 @end
