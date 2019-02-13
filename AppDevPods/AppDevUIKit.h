@@ -14,4 +14,5 @@
 #import "UIView+ADKAutoLayoutSupport.h"
 #import "ADKDashedLineView.h"
 #import "ADKGradientView.h"
+#import "ADKMultiGradientView.h"
 #import "ADKModalMaskView.h"
