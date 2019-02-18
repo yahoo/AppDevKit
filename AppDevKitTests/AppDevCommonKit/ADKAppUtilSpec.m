@@ -15,6 +15,7 @@
 #import "ADKStringHelper.h"
 #import "TimeTestUtils.h"
 #import "ViewTestUtil.h"
+#import <CoreLocation/CoreLocation.h>
 
 #pragma mark - ADKAppUtil
 
@@ -189,6 +190,59 @@ describe(@"Test ADKIsBelowIOS10", ^{
     context(@"For different version", ^{
         it(@"with version iOS 10", ^{
             [[theValue(ADKIsBelowIOS10()) should] equal:theValue(NO)];
+        });
+    });
+});
+
+describe(@"Test ADKIsLocationServicesAvailableOrNotDetermined", ^{
+    context(@"For different status", ^{
+        beforeEach(^{
+            [CLLocationManager stub:@selector(locationServicesEnabled) andReturn:theValue(YES)];
+        });
+        it(@"when status is kCLAuthorizationStatusAuthorizedAlways", ^{
+            [CLLocationManager stub:@selector(authorizationStatus) andReturn:theValue(kCLAuthorizationStatusAuthorizedAlways)];
+            [[theValue(ADKIsLocationServicesAvailableOrNotDetermined()) should] equal:theValue(YES)];
+        });
+        it(@"when status is kCLAuthorizationStatusAuthorizedWhenInUse", ^{
+            [CLLocationManager stub:@selector(authorizationStatus) andReturn:theValue(kCLAuthorizationStatusAuthorizedWhenInUse)];
+            [[theValue(ADKIsLocationServicesAvailableOrNotDetermined()) should] equal:theValue(YES)];
+        });
+        it(@"when status is kCLAuthorizationStatusNotDetermined", ^{
+            [CLLocationManager stub:@selector(authorizationStatus) andReturn:theValue(kCLAuthorizationStatusNotDetermined)];
+            [[theValue(ADKIsLocationServicesAvailableOrNotDetermined()) should] equal:theValue(YES)];
+        });
+        it(@"when status is kCLAuthorizationStatusDenied", ^{
+            [CLLocationManager stub:@selector(authorizationStatus) andReturn:theValue(kCLAuthorizationStatusDenied)];
+            [[theValue(ADKIsLocationServicesAvailableOrNotDetermined()) should] equal:theValue(NO)];
+        });
+        it(@"when status is kCLAuthorizationStatusRestricted", ^{
+            [CLLocationManager stub:@selector(authorizationStatus) andReturn:theValue(kCLAuthorizationStatusRestricted)];
+            [[theValue(ADKIsLocationServicesAvailableOrNotDetermined()) should] equal:theValue(NO)];
+        });
+    });
+    context(@"For location is disabled", ^{
+        beforeEach(^{
+            [CLLocationManager stub:@selector(locationServicesEnabled) andReturn:theValue(NO)];
+        });
+        it(@"when status is kCLAuthorizationStatusAuthorizedAlways", ^{
+            [CLLocationManager stub:@selector(authorizationStatus) andReturn:theValue(kCLAuthorizationStatusAuthorizedAlways)];
+            [[theValue(ADKIsLocationServicesAvailableOrNotDetermined()) should] equal:theValue(NO)];
+        });
+        it(@"when status is kCLAuthorizationStatusAuthorizedWhenInUse", ^{
+            [CLLocationManager stub:@selector(authorizationStatus) andReturn:theValue(kCLAuthorizationStatusAuthorizedWhenInUse)];
+            [[theValue(ADKIsLocationServicesAvailableOrNotDetermined()) should] equal:theValue(NO)];
+        });
+        it(@"when status is kCLAuthorizationStatusNotDetermined", ^{
+            [CLLocationManager stub:@selector(authorizationStatus) andReturn:theValue(kCLAuthorizationStatusNotDetermined)];
+            [[theValue(ADKIsLocationServicesAvailableOrNotDetermined()) should] equal:theValue(NO)];
+        });
+        it(@"when status is kCLAuthorizationStatusDenied", ^{
+            [CLLocationManager stub:@selector(authorizationStatus) andReturn:theValue(kCLAuthorizationStatusDenied)];
+            [[theValue(ADKIsLocationServicesAvailableOrNotDetermined()) should] equal:theValue(NO)];
+        });
+        it(@"when status is kCLAuthorizationStatusRestricted", ^{
+            [CLLocationManager stub:@selector(authorizationStatus) andReturn:theValue(kCLAuthorizationStatusRestricted)];
+            [[theValue(ADKIsLocationServicesAvailableOrNotDetermined()) should] equal:theValue(NO)];
         });
     });
 });
