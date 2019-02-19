@@ -4,6 +4,8 @@
 //
 //  Created by  Chih Feng Sung on 12/11/18.
 //  Copyright © 2018 Yahoo. All rights reserved.
+//  Licensed under the terms of the BSD License.
+//  Please see the LICENSE file in the project root for terms.
 //
 
 #import "ADKMetalImageView.h"
