@@ -16,7 +16,6 @@ SPEC_BEGIN(ADKDashedLineViewSpec)
 
 describe(@"Test ADKDashedLineView", ^{
     it(@"should be the expected dash view", ^{
-
         ADKDashedLineView *dashedLineView = [[ADKDashedLineView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, 100.0f, 10.0f)];
         UIGraphicsBeginImageContext(dashedLineView.frame.size);
         CGContextRef context = UIGraphicsGetCurrentContext();
@@ -28,7 +27,6 @@ describe(@"Test ADKDashedLineView", ^{
 
         BOOL result = [ImageTestUtils compareImage:testImage toImage:expectedImage];
         [[theValue(result) should] equal:theValue(YES)];
-
     });
 });
 

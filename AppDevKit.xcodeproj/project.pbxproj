@@ -103,6 +103,11 @@
 		3C99D7961B035D2800D65CB3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C99D7951B035D2800D65CB3 /* Images.xcassets */; };
 		3C99D7991B035D2800D65CB3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C99D7971B035D2800D65CB3 /* LaunchScreen.xib */; };
 		3C99D7A51B035D2900D65CB3 /* AppDevKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C99D7A41B035D2900D65CB3 /* AppDevKitTests.m */; };
+		3C9DEEB3221BD6D000DB891F /* UIImage+ADKDrawingTemplateSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9DEEB2221BD6D000DB891F /* UIImage+ADKDrawingTemplateSpec.m */; };
+		3C9DEEB5221BD9CD00DB891F /* img-pdf-assets.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3C9DEEB4221BD9CD00DB891F /* img-pdf-assets.pdf */; };
+		3C9DEEB8221BDCB900DB891F /* img-pdf-assets-expected.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C9DEEB6221BDCB900DB891F /* img-pdf-assets-expected.png */; };
+		3C9DEEB9221BDCB900DB891F /* img-pdf-assets-expected2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C9DEEB7221BDCB900DB891F /* img-pdf-assets-expected2.png */; };
+		3C9DEEBF221BE0D500DB891F /* img-pdf-assets-expected3.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C9DEEBE221BE0D500DB891F /* img-pdf-assets-expected3.png */; };
 		3C9FAEC31C0D4D7E00B0588C /* OperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9FAEC11C0D4D7E00B0588C /* OperationViewController.m */; };
 		3C9FAEC41C0D4D7E00B0588C /* OperationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C9FAEC21C0D4D7E00B0588C /* OperationViewController.xib */; };
 		3CAB9538221B961E0035279D /* ADKDashedLineViewSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CAB9537221B961E0035279D /* ADKDashedLineViewSpec.m */; };
@@ -348,6 +353,11 @@
 		3C99D79E1B035D2900D65CB3 /* AppDevKit.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppDevKit.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C99D7A31B035D2900D65CB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C99D7A41B035D2900D65CB3 /* AppDevKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDevKitTests.m; sourceTree = "<group>"; };
+		3C9DEEB2221BD6D000DB891F /* UIImage+ADKDrawingTemplateSpec.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ADKDrawingTemplateSpec.m"; sourceTree = "<group>"; };
+		3C9DEEB4221BD9CD00DB891F /* img-pdf-assets.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "img-pdf-assets.pdf"; sourceTree = "<group>"; };
+		3C9DEEB6221BDCB900DB891F /* img-pdf-assets-expected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img-pdf-assets-expected.png"; sourceTree = "<group>"; };
+		3C9DEEB7221BDCB900DB891F /* img-pdf-assets-expected2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img-pdf-assets-expected2.png"; sourceTree = "<group>"; };
+		3C9DEEBE221BE0D500DB891F /* img-pdf-assets-expected3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img-pdf-assets-expected3.png"; sourceTree = "<group>"; };
 		3C9FAEC01C0D4D7E00B0588C /* OperationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperationViewController.h; sourceTree = "<group>"; };
 		3C9FAEC11C0D4D7E00B0588C /* OperationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = OperationViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		3C9FAEC21C0D4D7E00B0588C /* OperationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OperationViewController.xib; sourceTree = "<group>"; };
@@ -441,6 +451,7 @@
 			children = (
 				0013F6C41D06923800256C57 /* UIImage+ADKColorReplacementSpec.m */,
 				0013F6C51D06923800256C57 /* UIImage+ADKImageFilterSpec.m */,
+				3C9DEEB2221BD6D000DB891F /* UIImage+ADKDrawingTemplateSpec.m */,
 			);
 			path = AppDevImageKit;
 			sourceTree = "<group>";
@@ -845,6 +856,10 @@
 		782688271C322DCB002CD510 /* TestImages */ = {
 			isa = PBXGroup;
 			children = (
+				3C9DEEB4221BD9CD00DB891F /* img-pdf-assets.pdf */,
+				3C9DEEB6221BDCB900DB891F /* img-pdf-assets-expected.png */,
+				3C9DEEB7221BDCB900DB891F /* img-pdf-assets-expected2.png */,
+				3C9DEEBE221BE0D500DB891F /* img-pdf-assets-expected3.png */,
 				3CAB9539221B9FC00035279D /* img-dashed-line-view-expected.png */,
 				782688281C322E0F002CD510 /* icon-hambuger-and-lbs.png */,
 				782688291C322E0F002CD510 /* icon-hambuger-expected.png */,
@@ -1080,6 +1095,7 @@
 				782688571C322E0F002CD510 /* icon-lbs-expected3.png in Resources */,
 				782688551C322E0F002CD510 /* icon-lbs-expected.png in Resources */,
 				7826884F1C322E0F002CD510 /* icon-hambuger-expected2.png in Resources */,
+				3C9DEEB8221BDCB900DB891F /* img-pdf-assets-expected.png in Resources */,
 				782688511C322E0F002CD510 /* icon-hambuger-expected4.png in Resources */,
 				782688661C322E0F002CD510 /* img-personalization-reminder-expected.png in Resources */,
 				7826886B1C322E0F002CD510 /* img-personalization-reminder-expected4-back.png in Resources */,
@@ -1094,10 +1110,13 @@
 				782688671C322E0F002CD510 /* img-personalization-reminder-expected2-back.png in Resources */,
 				7826886F1C322E0F002CD510 /* img-personalization-reminder-vertical.png in Resources */,
 				782688621C322E0F002CD510 /* img-cropRect-after.png in Resources */,
+				3C9DEEB5221BD9CD00DB891F /* img-pdf-assets.pdf in Resources */,
 				782688521C322E0F002CD510 /* icon-hambuger-expected5.png in Resources */,
 				7826886D1C322E0F002CD510 /* img-personalization-reminder-vertical-expected-back.png in Resources */,
 				546930E61CCA2AA000378A6F /* TestUncachedCustomCalculationNibFile.xib in Resources */,
+				3C9DEEB9221BDCB900DB891F /* img-pdf-assets-expected2.png in Resources */,
 				782688601C322E0F002CD510 /* icon-line-share@2x.png in Resources */,
+				3C9DEEBF221BE0D500DB891F /* img-pdf-assets-expected3.png in Resources */,
 				782688611C322E0F002CD510 /* img-blue-pattern.png in Resources */,
 				782688581C322E0F002CD510 /* icon-lbs-expected4.png in Resources */,
 				7826885B1C322E0F002CD510 /* icon-lbs.png in Resources */,
@@ -1284,6 +1303,7 @@
 				00F333891B12C9B80004164C /* ADKAppUtilSpec.m in Sources */,
 				00F333861B12C9B80004164C /* ImageTestUtils.m in Sources */,
 				546930DE1CC4E66F00378A6F /* TestNibFile.m in Sources */,
+				3C9DEEB3221BD6D000DB891F /* UIImage+ADKDrawingTemplateSpec.m in Sources */,
 				0013F6C61D06923800256C57 /* UIImage+ADKColorReplacementSpec.m in Sources */,
 				0047036F1C951C0B00AFDBF0 /* UIView+ADKAutoLayoutSupportSpec.m in Sources */,
 				00AB34851D6DC59D005031BF /* ADKStringHelperSpec.m in Sources */,
