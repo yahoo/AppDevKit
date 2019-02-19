@@ -105,6 +105,8 @@
 		3C99D7A51B035D2900D65CB3 /* AppDevKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C99D7A41B035D2900D65CB3 /* AppDevKitTests.m */; };
 		3C9FAEC31C0D4D7E00B0588C /* OperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9FAEC11C0D4D7E00B0588C /* OperationViewController.m */; };
 		3C9FAEC41C0D4D7E00B0588C /* OperationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C9FAEC21C0D4D7E00B0588C /* OperationViewController.xib */; };
+		3CAB9538221B961E0035279D /* ADKDashedLineViewSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CAB9537221B961E0035279D /* ADKDashedLineViewSpec.m */; };
+		3CAB953A221B9FC00035279D /* img-dashed-line-view-expected.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CAB9539221B9FC00035279D /* img-dashed-line-view-expected.png */; };
 		3CF4CABF1F04D9BF00B52064 /* CameraKitExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF4CABD1F04D9BF00B52064 /* CameraKitExampleViewController.m */; };
 		3CF4CAC01F04D9BF00B52064 /* CameraKitExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CF4CABE1F04D9BF00B52064 /* CameraKitExampleViewController.xib */; };
 		3CFC9D1121DE1696002B4A59 /* MetalRenderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFC9D0F21DE1696002B4A59 /* MetalRenderViewController.m */; };
@@ -349,6 +351,8 @@
 		3C9FAEC01C0D4D7E00B0588C /* OperationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperationViewController.h; sourceTree = "<group>"; };
 		3C9FAEC11C0D4D7E00B0588C /* OperationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = OperationViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		3C9FAEC21C0D4D7E00B0588C /* OperationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OperationViewController.xib; sourceTree = "<group>"; };
+		3CAB9537221B961E0035279D /* ADKDashedLineViewSpec.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADKDashedLineViewSpec.m; sourceTree = "<group>"; };
+		3CAB9539221B9FC00035279D /* img-dashed-line-view-expected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img-dashed-line-view-expected.png"; sourceTree = "<group>"; };
 		3CF4CABC1F04D9BF00B52064 /* CameraKitExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraKitExampleViewController.h; sourceTree = "<group>"; };
 		3CF4CABD1F04D9BF00B52064 /* CameraKitExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraKitExampleViewController.m; sourceTree = "<group>"; };
 		3CF4CABE1F04D9BF00B52064 /* CameraKitExampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CameraKitExampleViewController.xib; sourceTree = "<group>"; };
@@ -565,6 +569,7 @@
 			isa = PBXGroup;
 			children = (
 				0047036E1C951C0B00AFDBF0 /* UIView+ADKAutoLayoutSupportSpec.m */,
+				3CAB9537221B961E0035279D /* ADKDashedLineViewSpec.m */,
 			);
 			path = AppDevUIKit;
 			sourceTree = "<group>";
@@ -840,6 +845,7 @@
 		782688271C322DCB002CD510 /* TestImages */ = {
 			isa = PBXGroup;
 			children = (
+				3CAB9539221B9FC00035279D /* img-dashed-line-view-expected.png */,
 				782688281C322E0F002CD510 /* icon-hambuger-and-lbs.png */,
 				782688291C322E0F002CD510 /* icon-hambuger-expected.png */,
 				7826882A1C322E0F002CD510 /* icon-hambuger-expected2.png */,
@@ -1070,6 +1076,7 @@
 				782688531C322E0F002CD510 /* icon-hambuger.png in Resources */,
 				782688691C322E0F002CD510 /* img-personalization-reminder-expected3-back.png in Resources */,
 				7826884E1C322E0F002CD510 /* icon-hambuger-expected.png in Resources */,
+				3CAB953A221B9FC00035279D /* img-dashed-line-view-expected.png in Resources */,
 				782688571C322E0F002CD510 /* icon-lbs-expected3.png in Resources */,
 				782688551C322E0F002CD510 /* icon-lbs-expected.png in Resources */,
 				7826884F1C322E0F002CD510 /* icon-hambuger-expected2.png in Resources */,
@@ -1272,6 +1279,7 @@
 				78BF7C731CBD0CD9005B61E6 /* ADKNibSizeCalculatorSpec.m in Sources */,
 				005BF0C91DA104A4007119BD /* ViewTestUtil.m in Sources */,
 				3C99D7A51B035D2900D65CB3 /* AppDevKitTests.m in Sources */,
+				3CAB9538221B961E0035279D /* ADKDashedLineViewSpec.m in Sources */,
 				00F333851B12C9B80004164C /* ControllerTestUtils.m in Sources */,
 				00F333891B12C9B80004164C /* ADKAppUtilSpec.m in Sources */,
 				00F333861B12C9B80004164C /* ImageTestUtils.m in Sources */,
