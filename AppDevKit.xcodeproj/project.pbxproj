@@ -94,6 +94,16 @@
 		3C739E572201B30700A92195 /* GradientViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C739E552201B30600A92195 /* GradientViewController.xib */; };
 		3C739E582201B30700A92195 /* GradientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C739E562201B30700A92195 /* GradientViewController.m */; };
 		3C8FA5901C155F31004A4ED9 /* InfiniteScrollingHelpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8FA58F1C155F31004A4ED9 /* InfiniteScrollingHelpView.m */; };
+		3C914BBD221D5C4C009FEBF1 /* ADKGradientViewSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C914BBC221D5C4C009FEBF1 /* ADKGradientViewSpec.m */; };
+		3C914BBF221D5C65009FEBF1 /* ADKMultiGradientViewSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C914BBE221D5C65009FEBF1 /* ADKMultiGradientViewSpec.m */; };
+		3C914BC4221D5F0C009FEBF1 /* img-gradient-view-expected2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C914BC0221D5F0B009FEBF1 /* img-gradient-view-expected2.png */; };
+		3C914BC5221D5F0C009FEBF1 /* img-gradient-view-expected.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C914BC1221D5F0C009FEBF1 /* img-gradient-view-expected.png */; };
+		3C914BC6221D5F0C009FEBF1 /* img-gradient-view-expected3.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C914BC2221D5F0C009FEBF1 /* img-gradient-view-expected3.png */; };
+		3C914BC7221D5F0C009FEBF1 /* img-gradient-view-expected4.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C914BC3221D5F0C009FEBF1 /* img-gradient-view-expected4.png */; };
+		3C914BCC221D60F6009FEBF1 /* img-multi-gradient-view-expected.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C914BC8221D60F5009FEBF1 /* img-multi-gradient-view-expected.png */; };
+		3C914BCD221D60F6009FEBF1 /* img-multi-gradient-view-expected2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C914BC9221D60F6009FEBF1 /* img-multi-gradient-view-expected2.png */; };
+		3C914BCE221D60F6009FEBF1 /* img-multi-gradient-view-expected3.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C914BCA221D60F6009FEBF1 /* img-multi-gradient-view-expected3.png */; };
+		3C914BCF221D60F6009FEBF1 /* img-multi-gradient-view-expected4.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C914BCB221D60F6009FEBF1 /* img-multi-gradient-view-expected4.png */; };
 		3C95C7BF1D054A1A00EA2A92 /* img-personalization-reminder-expected2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C95C7BE1D054A1A00EA2A92 /* img-personalization-reminder-expected2.png */; };
 		3C95C7C11D054A3500EA2A92 /* img-personalization-reminder-expected4.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C95C7C01D054A3500EA2A92 /* img-personalization-reminder-expected4.png */; };
 		3C99D78B1B035D2800D65CB3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C99D78A1B035D2800D65CB3 /* main.m */; };
@@ -341,6 +351,16 @@
 		3C739E562201B30700A92195 /* GradientViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradientViewController.m; sourceTree = "<group>"; };
 		3C8FA58E1C155F31004A4ED9 /* InfiniteScrollingHelpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfiniteScrollingHelpView.h; sourceTree = "<group>"; };
 		3C8FA58F1C155F31004A4ED9 /* InfiniteScrollingHelpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfiniteScrollingHelpView.m; sourceTree = "<group>"; };
+		3C914BBC221D5C4C009FEBF1 /* ADKGradientViewSpec.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADKGradientViewSpec.m; sourceTree = "<group>"; };
+		3C914BBE221D5C65009FEBF1 /* ADKMultiGradientViewSpec.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADKMultiGradientViewSpec.m; sourceTree = "<group>"; };
+		3C914BC0221D5F0B009FEBF1 /* img-gradient-view-expected2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img-gradient-view-expected2.png"; sourceTree = "<group>"; };
+		3C914BC1221D5F0C009FEBF1 /* img-gradient-view-expected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img-gradient-view-expected.png"; sourceTree = "<group>"; };
+		3C914BC2221D5F0C009FEBF1 /* img-gradient-view-expected3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img-gradient-view-expected3.png"; sourceTree = "<group>"; };
+		3C914BC3221D5F0C009FEBF1 /* img-gradient-view-expected4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img-gradient-view-expected4.png"; sourceTree = "<group>"; };
+		3C914BC8221D60F5009FEBF1 /* img-multi-gradient-view-expected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img-multi-gradient-view-expected.png"; sourceTree = "<group>"; };
+		3C914BC9221D60F6009FEBF1 /* img-multi-gradient-view-expected2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img-multi-gradient-view-expected2.png"; sourceTree = "<group>"; };
+		3C914BCA221D60F6009FEBF1 /* img-multi-gradient-view-expected3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img-multi-gradient-view-expected3.png"; sourceTree = "<group>"; };
+		3C914BCB221D60F6009FEBF1 /* img-multi-gradient-view-expected4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img-multi-gradient-view-expected4.png"; sourceTree = "<group>"; };
 		3C95C7BE1D054A1A00EA2A92 /* img-personalization-reminder-expected2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img-personalization-reminder-expected2.png"; sourceTree = "<group>"; };
 		3C95C7C01D054A3500EA2A92 /* img-personalization-reminder-expected4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img-personalization-reminder-expected4.png"; sourceTree = "<group>"; };
 		3C99D7851B035D2800D65CB3 /* AppDevKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppDevKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -587,6 +607,8 @@
 			children = (
 				0047036E1C951C0B00AFDBF0 /* UIView+ADKAutoLayoutSupportSpec.m */,
 				3CAB9537221B961E0035279D /* ADKDashedLineViewSpec.m */,
+				3C914BBC221D5C4C009FEBF1 /* ADKGradientViewSpec.m */,
+				3C914BBE221D5C65009FEBF1 /* ADKMultiGradientViewSpec.m */,
 			);
 			path = AppDevUIKit;
 			sourceTree = "<group>";
@@ -867,6 +889,14 @@
 				3C9DEEB7221BDCB900DB891F /* img-pdf-assets-expected2.png */,
 				3C9DEEBE221BE0D500DB891F /* img-pdf-assets-expected3.png */,
 				3CAB9539221B9FC00035279D /* img-dashed-line-view-expected.png */,
+				3C914BC1221D5F0C009FEBF1 /* img-gradient-view-expected.png */,
+				3C914BC0221D5F0B009FEBF1 /* img-gradient-view-expected2.png */,
+				3C914BC2221D5F0C009FEBF1 /* img-gradient-view-expected3.png */,
+				3C914BC3221D5F0C009FEBF1 /* img-gradient-view-expected4.png */,
+				3C914BC8221D60F5009FEBF1 /* img-multi-gradient-view-expected.png */,
+				3C914BC9221D60F6009FEBF1 /* img-multi-gradient-view-expected2.png */,
+				3C914BCA221D60F6009FEBF1 /* img-multi-gradient-view-expected3.png */,
+				3C914BCB221D60F6009FEBF1 /* img-multi-gradient-view-expected4.png */,
 				782688281C322E0F002CD510 /* icon-hambuger-and-lbs.png */,
 				3C9DEEC4221BEABF00DB891F /* icon-hambuger-and-lbs2.png */,
 				782688291C322E0F002CD510 /* icon-hambuger-expected.png */,
@@ -1087,9 +1117,13 @@
 				7826884D1C322E0F002CD510 /* icon-hambuger-and-lbs.png in Resources */,
 				782688501C322E0F002CD510 /* icon-hambuger-expected3.png in Resources */,
 				782688541C322E0F002CD510 /* icon-lbs-and-yellow.png in Resources */,
+				3C914BC6221D5F0C009FEBF1 /* img-gradient-view-expected3.png in Resources */,
 				7826885F1C322E0F002CD510 /* icon-line-share.png in Resources */,
+				3C914BCC221D60F6009FEBF1 /* img-multi-gradient-view-expected.png in Resources */,
 				7826886A1C322E0F002CD510 /* img-personalization-reminder-expected3.png in Resources */,
+				3C914BC7221D5F0C009FEBF1 /* img-gradient-view-expected4.png in Resources */,
 				782688631C322E0F002CD510 /* img-cropRect-before.png in Resources */,
+				3C914BCE221D60F6009FEBF1 /* img-multi-gradient-view-expected3.png in Resources */,
 				7826885A1C322E0F002CD510 /* icon-lbs-expected6.png in Resources */,
 				7868764E1CBD12CA00675CD5 /* TestNibFile.xib in Resources */,
 				7826886E1C322E0F002CD510 /* img-personalization-reminder-vertical-expected.png in Resources */,
@@ -1103,8 +1137,10 @@
 				3CAB953A221B9FC00035279D /* img-dashed-line-view-expected.png in Resources */,
 				782688571C322E0F002CD510 /* icon-lbs-expected3.png in Resources */,
 				782688551C322E0F002CD510 /* icon-lbs-expected.png in Resources */,
+				3C914BCD221D60F6009FEBF1 /* img-multi-gradient-view-expected2.png in Resources */,
 				7826884F1C322E0F002CD510 /* icon-hambuger-expected2.png in Resources */,
 				3C9DEEB8221BDCB900DB891F /* img-pdf-assets-expected.png in Resources */,
+				3C914BCF221D60F6009FEBF1 /* img-multi-gradient-view-expected4.png in Resources */,
 				782688511C322E0F002CD510 /* icon-hambuger-expected4.png in Resources */,
 				782688661C322E0F002CD510 /* img-personalization-reminder-expected.png in Resources */,
 				7826886B1C322E0F002CD510 /* img-personalization-reminder-expected4-back.png in Resources */,
@@ -1120,6 +1156,8 @@
 				782688671C322E0F002CD510 /* img-personalization-reminder-expected2-back.png in Resources */,
 				3C9DEEC2221BE87B00DB891F /* icon-line-share-expected5.png in Resources */,
 				7826886F1C322E0F002CD510 /* img-personalization-reminder-vertical.png in Resources */,
+				3C914BC5221D5F0C009FEBF1 /* img-gradient-view-expected.png in Resources */,
+				3C914BC4221D5F0C009FEBF1 /* img-gradient-view-expected2.png in Resources */,
 				782688621C322E0F002CD510 /* img-cropRect-after.png in Resources */,
 				3C9DEEB5221BD9CD00DB891F /* img-pdf-assets.pdf in Resources */,
 				782688521C322E0F002CD510 /* icon-hambuger-expected5.png in Resources */,
@@ -1301,6 +1339,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C914BBF221D5C65009FEBF1 /* ADKMultiGradientViewSpec.m in Sources */,
 				00F333881B12C9B80004164C /* TimeTestUtils.m in Sources */,
 				0013F6C71D06923800256C57 /* UIImage+ADKImageFilterSpec.m in Sources */,
 				0013F6CC1D07D50400256C57 /* UIColor+ADKHexPresentationSpec.m in Sources */,
@@ -1308,6 +1347,7 @@
 				004703721C951D6C00AFDBF0 /* AutoLayoutSupportTestView.m in Sources */,
 				00F333871B12C9B80004164C /* LocationTestUtils.m in Sources */,
 				78BF7C731CBD0CD9005B61E6 /* ADKNibSizeCalculatorSpec.m in Sources */,
+				3C914BBD221D5C4C009FEBF1 /* ADKGradientViewSpec.m in Sources */,
 				005BF0C91DA104A4007119BD /* ViewTestUtil.m in Sources */,
 				3C99D7A51B035D2900D65CB3 /* AppDevKitTests.m in Sources */,
 				3CAB9538221B961E0035279D /* ADKDashedLineViewSpec.m in Sources */,
