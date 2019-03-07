@@ -36,6 +36,36 @@ describe(@"Test ADKColorWithHexString:", ^{
         UIColor *testColor = [UIColor ADKColorWithHexString:@"7b0099"];
         [[testColor should] equal:expectedColor];
     });
+
+    it(@"given color with #7b0099, expect color should be 7b0099", ^{
+        UIColor *expectedColor = [UIColor colorWithRed:123.0f / 255.0f green:0.0 / 255.0f blue:153.0f / 255.0f alpha:1.0f];
+        UIColor *testColor = [UIColor ADKColorWithHexString:@"#7b0099"];
+        [[testColor should] equal:expectedColor];
+    });
+
+    it(@"given color with 0x7b0099, expect color should be 7b0099", ^{
+        UIColor *expectedColor = [UIColor colorWithRed:123.0f / 255.0f green:0.0 / 255.0f blue:153.0f / 255.0f alpha:1.0f];
+        UIColor *testColor = [UIColor ADKColorWithHexString:@"0x7b0099"];
+        [[testColor should] equal:expectedColor];
+    });
+
+    it(@"given color with 0X7b0099, expect color should be 7b0099", ^{
+        UIColor *expectedColor = [UIColor colorWithRed:123.0f / 255.0f green:0.0 / 255.0f blue:153.0f / 255.0f alpha:1.0f];
+        UIColor *testColor = [UIColor ADKColorWithHexString:@"0X7b0099"];
+        [[testColor should] equal:expectedColor];
+    });
+
+    it(@"given color with 709, expect color should be 770099", ^{
+        UIColor *expectedColor = [UIColor colorWithRed:119.0f / 255.0f green:0.0 / 255.0f blue:153.0f / 255.0f alpha:1.0f];
+        UIColor *testColor = [UIColor ADKColorWithHexString:@"709"];
+        [[testColor should] equal:expectedColor];
+    });
+
+    it(@"given color with #709, expect color should be 770099", ^{
+        UIColor *expectedColor = [UIColor colorWithRed:119.0f / 255.0f green:0.0 / 255.0f blue:153.0f / 255.0f alpha:1.0f];
+        UIColor *testColor = [UIColor ADKColorWithHexString:@"#709"];
+        [[testColor should] equal:expectedColor];
+    });
 });
 
 describe(@"Test ADKColorWithHexString:alpha:", ^{
@@ -50,6 +80,36 @@ describe(@"Test ADKInitWithHexString:", ^{
     it(@"expect color should be 7b0099", ^{
         UIColor *expectedColor = [UIColor colorWithRed:123.0f / 255.0f green:0.0 / 255.0f blue:153.0f / 255.0f alpha:1.0f];
         UIColor *testColor = [[UIColor alloc] ADKInitWithHexString:@"7b0099"];
+        [[testColor should] equal:expectedColor];
+    });
+
+    it(@"given color with #7b0099, expect color should be 7b0099", ^{
+        UIColor *expectedColor = [UIColor colorWithRed:123.0f / 255.0f green:0.0 / 255.0f blue:153.0f / 255.0f alpha:1.0f];
+        UIColor *testColor = [[UIColor alloc] ADKInitWithHexString:@"#7b0099"];
+        [[testColor should] equal:expectedColor];
+    });
+
+    it(@"given color with 0x7b0099, expect color should be 7b0099", ^{
+        UIColor *expectedColor = [UIColor colorWithRed:123.0f / 255.0f green:0.0 / 255.0f blue:153.0f / 255.0f alpha:1.0f];
+        UIColor *testColor = [[UIColor alloc] ADKInitWithHexString:@"0x7b0099"];
+        [[testColor should] equal:expectedColor];
+    });
+
+    it(@"given color with 0X7b0099, expect color should be 7b0099", ^{
+        UIColor *expectedColor = [UIColor colorWithRed:123.0f / 255.0f green:0.0 / 255.0f blue:153.0f / 255.0f alpha:1.0f];
+        UIColor *testColor = [[UIColor alloc] ADKInitWithHexString:@"0X7b0099"];
+        [[testColor should] equal:expectedColor];
+    });
+
+    it(@"given color with 709, expect color should be 770099", ^{
+        UIColor *expectedColor = [UIColor colorWithRed:119.0f / 255.0f green:0.0 / 255.0f blue:153.0f / 255.0f alpha:1.0f];
+        UIColor *testColor = [[UIColor alloc] ADKInitWithHexString:@"709"];
+        [[testColor should] equal:expectedColor];
+    });
+
+    it(@"given color with #709, expect color should be 770099", ^{
+        UIColor *expectedColor = [UIColor colorWithRed:119.0f / 255.0f green:0.0 / 255.0f blue:153.0f / 255.0f alpha:1.0f];
+        UIColor *testColor = [[UIColor alloc] ADKInitWithHexString:@"#709"];
         [[testColor should] equal:expectedColor];
     });
 });
@@ -82,6 +142,16 @@ describe(@"Test ADKColorWithRGBHexString", ^{
         UIColor *expectedColor = [UIColor colorWithRed:123.0f / 255.0f green:0.0 / 255.0f blue:153.0f / 255.0f alpha:1.0f];
         [[[UIColor ADKColorWithRGBHexString:@"7B0099"] should] equal:expectedColor];
     });
+
+    it(@"given color with 709, expect color should be 770099", ^{
+        UIColor *expectedColor = [UIColor colorWithRed:119.0f / 255.0f green:0.0 / 255.0f blue:153.0f / 255.0f alpha:1.0f];
+        [[[UIColor ADKColorWithRGBHexString:@"709"] should] equal:expectedColor];
+    });
+
+    it(@"given color with #709, expect color should be 770099", ^{
+        UIColor *expectedColor = [UIColor colorWithRed:119.0f / 255.0f green:0.0 / 255.0f blue:153.0f / 255.0f alpha:1.0f];
+        [[[UIColor ADKColorWithRGBHexString:@"#709"] should] equal:expectedColor];
+    });
 });
 
 describe(@"Test ADKColorWithARGBHexString", ^{
@@ -89,12 +159,52 @@ describe(@"Test ADKColorWithARGBHexString", ^{
         UIColor *expectedColor = [UIColor colorWithRed:123.0f / 255.0f green:0.0f / 255.0f blue:153.0f / 255.0f alpha:238.0f / 255.0f];
         [[[UIColor ADKColorWithARGBHexString:@"EE7B0099"] should] equal:expectedColor];
     });
+
+    it(@"given color with 7B0099, expect color should be FF7B0099", ^{
+        UIColor *expectedColor = [UIColor colorWithRed:123.0f / 255.0f green:0.0f / 255.0f blue:153.0f / 255.0f alpha:255.0f / 255.0f];
+        [[[UIColor ADKColorWithARGBHexString:@"7B0099"] should] equal:expectedColor];
+    });
+
+    it(@"given color with E709, expect color should be EE770099", ^{
+        UIColor *expectedColor = [UIColor colorWithRed:119.0f / 255.0f green:0.0f / 255.0f blue:153.0f / 255.0f alpha:238.0f / 255.0f];
+        [[[UIColor ADKColorWithARGBHexString:@"E709"] should] equal:expectedColor];
+    });
+
+    it(@"given color with 709, expect color should be FF770099", ^{
+        UIColor *expectedColor = [UIColor colorWithRed:119.0f / 255.0f green:0.0f / 255.0f blue:153.0f / 255.0f alpha:255.0f / 255.0f];
+        [[[UIColor ADKColorWithARGBHexString:@"709"] should] equal:expectedColor];
+    });
+
+    it(@"given color with #709, expect color should be FF770099", ^{
+        UIColor *expectedColor = [UIColor colorWithRed:119.0f / 255.0f green:0.0f / 255.0f blue:153.0f / 255.0f alpha:255.0f / 255.0f];
+        [[[UIColor ADKColorWithARGBHexString:@"#709"] should] equal:expectedColor];
+    });
 });
 
 describe(@"Test ADKColorWithRGBAHexString", ^{
     it(@"expect color should be 7B0099EE", ^{
         UIColor *expectedColor = [UIColor colorWithRed:123.0f / 255.0f green:0.0f / 255.0f blue:153.0f / 255.0f alpha:238.0f / 255.0f];
         [[[UIColor ADKColorWithRGBAHexString:@"7B0099EE"] should] equal:expectedColor];
+    });
+
+    it(@"given color with 7B0099, expect color should be 7B0099FF", ^{
+        UIColor *expectedColor = [UIColor colorWithRed:123.0f / 255.0f green:0.0f / 255.0f blue:153.0f / 255.0f alpha:255.0f / 255.0f];
+        [[[UIColor ADKColorWithRGBAHexString:@"7B0099"] should] equal:expectedColor];
+    });
+
+    it(@"given color with 709E, expect color should be 770099EE", ^{
+        UIColor *expectedColor = [UIColor colorWithRed:119.0f / 255.0f green:0.0f / 255.0f blue:153.0f / 255.0f alpha:238.0f / 255.0f];
+        [[[UIColor ADKColorWithRGBAHexString:@"709E"] should] equal:expectedColor];
+    });
+
+    it(@"given color with 709, expect color should be 770099FF", ^{
+        UIColor *expectedColor = [UIColor colorWithRed:119.0f / 255.0f green:0.0f / 255.0f blue:153.0f / 255.0f alpha:255.0f / 255.0f];
+        [[[UIColor ADKColorWithRGBAHexString:@"709"] should] equal:expectedColor];
+    });
+
+    it(@"given color with #709, expect color should be 770099FF", ^{
+        UIColor *expectedColor = [UIColor colorWithRed:119.0f / 255.0f green:0.0f / 255.0f blue:153.0f / 255.0f alpha:255.0f / 255.0f];
+        [[[UIColor ADKColorWithRGBAHexString:@"#709"] should] equal:expectedColor];
     });
 });
 
