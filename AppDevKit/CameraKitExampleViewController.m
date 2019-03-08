@@ -45,9 +45,7 @@
 - (void)setupView
 {
     self.title = @"ADKCamera";
-
     self.edgesForExtendedLayout = UIRectEdgeNone;
-    self.automaticallyAdjustsScrollViewInsets = NO;
 
     self.shootButton.layer.cornerRadius = CGRectGetWidth(self.shootButton.bounds) * 0.5f;
     self.switchLensButton.layer.cornerRadius = CGRectGetWidth(self.switchLensButton.bounds) * 0.5f;
