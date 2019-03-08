@@ -19,12 +19,16 @@
 
 - (UIColor *)ADKInitWithHexRed:(NSUInteger)red green:(NSUInteger)green blue:(NSUInteger)blue alpha:(CGFloat)alpha
 {
-    return [[UIColor alloc] initWithRed:red / (0xff*1.0f) green:green / (0xff*1.0f) blue:blue / (0xff*1.0f) alpha:alpha];
+    return [self initWithRed:red / (0xff*1.0f) green:green / (0xff*1.0f) blue:blue / (0xff*1.0f) alpha:alpha];
 }
 
 + (UIColor *)ADKColorWithHexString:(NSString *)hexString
 {
-    return [self ADKColorWithRGBHexString:hexString];
+    if ([hexString hasPrefix:@"0x"] || [hexString hasPrefix:@"0X"]) {
+        return [self ADKColorWithRGBHexString:[hexString substringFromIndex:2]];
+    } else {
+        return [self ADKColorWithRGBHexString:hexString];
+    }
 }
 
 + (UIColor *)ADKColorWithHexString:(NSString *)hexString alpha:(CGFloat)alpha
@@ -34,14 +38,11 @@
 
 - (UIColor *)ADKInitWithHexString:(NSString *)hexString
 {
-    NSUInteger rgbValue = 0;
-    NSScanner *scanner = [NSScanner scannerWithString:hexString];
-    if ( [hexString hasPrefix:@"#"] ) {
-        [scanner setScanLocation:1];
+    if ([hexString hasPrefix:@"0x"] || [hexString hasPrefix:@"0X"]) {
+        return [self.class ADKColorWithRGBHexString:[hexString substringFromIndex:2]];
+    } else {
+        return [self.class ADKColorWithRGBHexString:hexString];
     }
-    [scanner scanHexInt:(unsigned int *)&rgbValue];
-    
-    return [self ADKInitWithHexNumber:rgbValue];
 }
 
 + (UIColor *)ADKColorWithRGBHexString:(NSString *)hexString
