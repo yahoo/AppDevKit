@@ -208,4 +208,30 @@ describe(@"Test ADKColorWithRGBAHexString", ^{
     });
 });
 
+describe(@"Test ADKIsEqualToColor", ^{
+    it(@"given color with white:0.0, expect to be equal to black color", ^{
+        UIColor *expectedColor = [UIColor blackColor];
+        UIColor *testColor = [UIColor colorWithWhite:0.0f alpha:1.0f];
+        [[theValue([testColor ADKIsEqualToColor:expectedColor]) should] beYes];
+    });
+
+    it(@"given color with white:0.1, expect to be not equal to black color", ^{
+        UIColor *expectedColor = [UIColor blackColor];
+        UIColor *testColor = [UIColor colorWithWhite:0.1f alpha:1.0f];
+        [[theValue([testColor ADKIsEqualToColor:expectedColor]) should] beNo];
+    });
+
+    it(@"given color with FF0000, expect to be equal to red color", ^{
+        UIColor *expectedColor = [UIColor redColor];
+        UIColor *testColor = [UIColor colorWithRed:1.0f green:0.0f blue:0.0f alpha:1.0f];
+        [[theValue([testColor ADKIsEqualToColor:expectedColor]) should] beYes];
+    });
+
+    it(@"given color with 00FF00, expect to be not equal to red color", ^{
+        UIColor *expectedColor = [UIColor redColor];
+        UIColor *testColor = [UIColor colorWithRed:0.0f green:1.0f blue:0.0f alpha:1.0f];
+        [[theValue([testColor ADKIsEqualToColor:expectedColor]) should] beNo];
+    });
+});
+
 SPEC_END
