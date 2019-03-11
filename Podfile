@@ -1,7 +1,7 @@
 # AppDevKit
 source 'https://github.com/CocoaPods/Specs.git'
 
-platform :ios, '7.0'
+platform :ios, '10.0'
 
 target 'AppDevKit' do
 
