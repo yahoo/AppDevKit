@@ -191,9 +191,9 @@
 {
     if (self == anotherColor)
         return YES;
-    
-    CGColorSpaceRef colorSpaceRGB = CGColorSpaceCreateDeviceRGB();
-    
+
+    CGColorSpaceRef colorSpaceRGB = CGColorSpaceCreateWithName(kCGColorSpaceExtendedSRGB);
+
     UIColor *(^convertColorToRGBSpace)(UIColor*) = ^(UIColor *color)
     {
         if (CGColorSpaceGetModel(CGColorGetColorSpace(color.CGColor)) == kCGColorSpaceModelMonochrome)
