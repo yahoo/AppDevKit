@@ -83,7 +83,6 @@ describe(@"Test ADKHideView:withConstraints:", ^{
             [[theValue(testView.buttomView.frame) should] equal:theValue(buttomExpectRect)];
         });
     });
-
 });
 
 describe(@"test ADKHideTopConstraint", ^{
