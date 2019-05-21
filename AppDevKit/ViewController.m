@@ -28,6 +28,8 @@
 #import "GradientViewController.h"
 #import "CameraKitExampleViewController.h"
 #import "YMDCDemoViewController.h"
+#import "OpenGLRenderViewController.h"
+#import "MetalRenderViewController.h"
 
 static NSString * const HeaderCollectionReusableViewIdentifier = @"DemoCollectionReusableView";
 static NSString * const CellCollectionViewCellIdentifier = @"DemoCollectionViewCell";
@@ -108,7 +110,7 @@ typedef NS_ENUM(NSInteger, ADKitDemoSection) {
             return 3;
             break;
         case ADKitDemoSectionCamera:
-            return 1;
+            return 3;
             break;
         case ADKitDemoSectionYMDCDemo:
             return 1;
@@ -194,6 +196,10 @@ typedef NS_ENUM(NSInteger, ADKitDemoSection) {
             case ADKitDemoSectionCamera:
                 if (indexPath.row == 0) {
                     collectionCell.titleLabel.text = @"ADKCamera";
+                } else if (indexPath.row == 1) {
+                    collectionCell.titleLabel.text = @"ADKOpenGLImageView";
+                } else if (indexPath.row == 2) {
+                    collectionCell.titleLabel.text = @"ADKMetalImageView";
                 }
                 break;
             case ADKitDemoSectionYMDCDemo:
@@ -282,6 +288,12 @@ typedef NS_ENUM(NSInteger, ADKitDemoSection) {
                 
                 CameraKitExampleViewController *demoViewController = [[CameraKitExampleViewController alloc] init];
                 [self.navigationController pushViewController:demoViewController animated:YES];
+            } else if (indexPath.row == 1) {
+                OpenGLRenderViewController *openGLRenderViewController = [[OpenGLRenderViewController alloc] init];
+                [self.navigationController pushViewController:openGLRenderViewController animated:YES];
+            } else if (indexPath.row == 2) {
+                MetalRenderViewController *metalRenderViewController = [[MetalRenderViewController alloc] init];
+                [self.navigationController pushViewController:metalRenderViewController animated:YES];
             }
             break;
         case ADKitDemoSectionYMDCDemo:
