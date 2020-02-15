@@ -15,6 +15,7 @@
 #import "ADKStringHelper.h"
 #import "TimeTestUtils.h"
 #import "ViewTestUtil.h"
+#import <CoreLocation/CoreLocation.h>
 
 #pragma mark - ADKAppUtil
 
@@ -162,6 +163,21 @@ describe(@"test ADKIsWideScreen", ^{
     });
 });
 
+describe(@"Test ADKIsBelowIOS7", ^{
+    context(@"For different version", ^{
+        it(@"with version iOS 7", ^{
+            [[theValue(ADKIsBelowIOS7()) should] equal:theValue(NO)];
+        });
+    });
+});
+describe(@"Test ADKIsBelowIOS8", ^{
+    context(@"For different version", ^{
+        it(@"with version iOS 8", ^{
+            [[theValue(ADKIsBelowIOS8()) should] equal:theValue(NO)];
+        });
+    });
+});
+
 describe(@"Test ADKIsBelowIOS9", ^{
     context(@"For different version", ^{
         it(@"with version iOS 9", ^{
@@ -178,7 +194,84 @@ describe(@"Test ADKIsBelowIOS10", ^{
     });
 });
 
+describe(@"Test ADKIsLocationServicesAvailableOrNotDetermined", ^{
+    context(@"For different status", ^{
+        beforeEach(^{
+            [CLLocationManager stub:@selector(locationServicesEnabled) andReturn:theValue(YES)];
+        });
+        it(@"when status is kCLAuthorizationStatusAuthorizedAlways", ^{
+            [CLLocationManager stub:@selector(authorizationStatus) andReturn:theValue(kCLAuthorizationStatusAuthorizedAlways)];
+            [[theValue(ADKIsLocationServicesAvailableOrNotDetermined()) should] equal:theValue(YES)];
+        });
+        it(@"when status is kCLAuthorizationStatusAuthorizedWhenInUse", ^{
+            [CLLocationManager stub:@selector(authorizationStatus) andReturn:theValue(kCLAuthorizationStatusAuthorizedWhenInUse)];
+            [[theValue(ADKIsLocationServicesAvailableOrNotDetermined()) should] equal:theValue(YES)];
+        });
+        it(@"when status is kCLAuthorizationStatusNotDetermined", ^{
+            [CLLocationManager stub:@selector(authorizationStatus) andReturn:theValue(kCLAuthorizationStatusNotDetermined)];
+            [[theValue(ADKIsLocationServicesAvailableOrNotDetermined()) should] equal:theValue(YES)];
+        });
+        it(@"when status is kCLAuthorizationStatusDenied", ^{
+            [CLLocationManager stub:@selector(authorizationStatus) andReturn:theValue(kCLAuthorizationStatusDenied)];
+            [[theValue(ADKIsLocationServicesAvailableOrNotDetermined()) should] equal:theValue(NO)];
+        });
+        it(@"when status is kCLAuthorizationStatusRestricted", ^{
+            [CLLocationManager stub:@selector(authorizationStatus) andReturn:theValue(kCLAuthorizationStatusRestricted)];
+            [[theValue(ADKIsLocationServicesAvailableOrNotDetermined()) should] equal:theValue(NO)];
+        });
+    });
+    context(@"For location is disabled", ^{
+        beforeEach(^{
+            [CLLocationManager stub:@selector(locationServicesEnabled) andReturn:theValue(NO)];
+        });
+        it(@"when status is kCLAuthorizationStatusAuthorizedAlways", ^{
+            [CLLocationManager stub:@selector(authorizationStatus) andReturn:theValue(kCLAuthorizationStatusAuthorizedAlways)];
+            [[theValue(ADKIsLocationServicesAvailableOrNotDetermined()) should] equal:theValue(NO)];
+        });
+        it(@"when status is kCLAuthorizationStatusAuthorizedWhenInUse", ^{
+            [CLLocationManager stub:@selector(authorizationStatus) andReturn:theValue(kCLAuthorizationStatusAuthorizedWhenInUse)];
+            [[theValue(ADKIsLocationServicesAvailableOrNotDetermined()) should] equal:theValue(NO)];
+        });
+        it(@"when status is kCLAuthorizationStatusNotDetermined", ^{
+            [CLLocationManager stub:@selector(authorizationStatus) andReturn:theValue(kCLAuthorizationStatusNotDetermined)];
+            [[theValue(ADKIsLocationServicesAvailableOrNotDetermined()) should] equal:theValue(NO)];
+        });
+        it(@"when status is kCLAuthorizationStatusDenied", ^{
+            [CLLocationManager stub:@selector(authorizationStatus) andReturn:theValue(kCLAuthorizationStatusDenied)];
+            [[theValue(ADKIsLocationServicesAvailableOrNotDetermined()) should] equal:theValue(NO)];
+        });
+        it(@"when status is kCLAuthorizationStatusRestricted", ^{
+            [CLLocationManager stub:@selector(authorizationStatus) andReturn:theValue(kCLAuthorizationStatusRestricted)];
+            [[theValue(ADKIsLocationServicesAvailableOrNotDetermined()) should] equal:theValue(NO)];
+        });
+    });
+});
+
+// We're using iPhone 6 as a test device. Please refer to below device specs.
+// https://developer.apple.com/library/archive/documentation/DeviceInformation/Reference/iOSDeviceCompatibility/Displays/Displays.html
+// iPhone 6's screen size is 375 x 667 and screen ratio should be 0.5622188905547226.
+describe(@"Test ADKPortraitScreenRatio", ^{
+    it(@"with iPhone6", ^{
+        [[theValue(ADKPortraitScreenRatio()) should] equal:theValue(0.5622188905547226)];
+    });
+});
+
+describe(@"Test ADKPortraitScreenSize", ^{
+    it(@"with iPhone6", ^{
+        CGSize expectedSize = CGSizeMake(375.0f, 667.0f);
+        [[theValue(ADKPortraitScreenSize()) should] equal:theValue(expectedSize)];
+    });
+});
+
+describe(@"Test ADKPortraitScreenBoundRect", ^{
+    it(@"with iPhone6", ^{
+        CGRect expectedFrame = CGRectMake(0.0f, 0.0f, 375.0f, 667.0f);
+        [[theValue(ADKPortraitScreenBoundRect()) should] equal:theValue(expectedFrame)];
+    });
+});
+
 SPEC_END
+
 
 #pragma mark - ADKStringHelper
 

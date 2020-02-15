@@ -94,6 +94,16 @@
 		3C739E572201B30700A92195 /* GradientViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C739E552201B30600A92195 /* GradientViewController.xib */; };
 		3C739E582201B30700A92195 /* GradientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C739E562201B30700A92195 /* GradientViewController.m */; };
 		3C8FA5901C155F31004A4ED9 /* InfiniteScrollingHelpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8FA58F1C155F31004A4ED9 /* InfiniteScrollingHelpView.m */; };
+		3C914BBD221D5C4C009FEBF1 /* ADKGradientViewSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C914BBC221D5C4C009FEBF1 /* ADKGradientViewSpec.m */; };
+		3C914BBF221D5C65009FEBF1 /* ADKMultiGradientViewSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C914BBE221D5C65009FEBF1 /* ADKMultiGradientViewSpec.m */; };
+		3C914BC4221D5F0C009FEBF1 /* img-gradient-view-expected2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C914BC0221D5F0B009FEBF1 /* img-gradient-view-expected2.png */; };
+		3C914BC5221D5F0C009FEBF1 /* img-gradient-view-expected.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C914BC1221D5F0C009FEBF1 /* img-gradient-view-expected.png */; };
+		3C914BC6221D5F0C009FEBF1 /* img-gradient-view-expected3.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C914BC2221D5F0C009FEBF1 /* img-gradient-view-expected3.png */; };
+		3C914BC7221D5F0C009FEBF1 /* img-gradient-view-expected4.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C914BC3221D5F0C009FEBF1 /* img-gradient-view-expected4.png */; };
+		3C914BCC221D60F6009FEBF1 /* img-multi-gradient-view-expected.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C914BC8221D60F5009FEBF1 /* img-multi-gradient-view-expected.png */; };
+		3C914BCD221D60F6009FEBF1 /* img-multi-gradient-view-expected2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C914BC9221D60F6009FEBF1 /* img-multi-gradient-view-expected2.png */; };
+		3C914BCE221D60F6009FEBF1 /* img-multi-gradient-view-expected3.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C914BCA221D60F6009FEBF1 /* img-multi-gradient-view-expected3.png */; };
+		3C914BCF221D60F6009FEBF1 /* img-multi-gradient-view-expected4.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C914BCB221D60F6009FEBF1 /* img-multi-gradient-view-expected4.png */; };
 		3C95C7BF1D054A1A00EA2A92 /* img-personalization-reminder-expected2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C95C7BE1D054A1A00EA2A92 /* img-personalization-reminder-expected2.png */; };
 		3C95C7C11D054A3500EA2A92 /* img-personalization-reminder-expected4.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C95C7C01D054A3500EA2A92 /* img-personalization-reminder-expected4.png */; };
 		3C99D78B1B035D2800D65CB3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C99D78A1B035D2800D65CB3 /* main.m */; };
@@ -103,8 +113,18 @@
 		3C99D7961B035D2800D65CB3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C99D7951B035D2800D65CB3 /* Images.xcassets */; };
 		3C99D7991B035D2800D65CB3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C99D7971B035D2800D65CB3 /* LaunchScreen.xib */; };
 		3C99D7A51B035D2900D65CB3 /* AppDevKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C99D7A41B035D2900D65CB3 /* AppDevKitTests.m */; };
+		3C9DEEB3221BD6D000DB891F /* UIImage+ADKDrawingTemplateSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9DEEB2221BD6D000DB891F /* UIImage+ADKDrawingTemplateSpec.m */; };
+		3C9DEEB5221BD9CD00DB891F /* img-pdf-assets.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3C9DEEB4221BD9CD00DB891F /* img-pdf-assets.pdf */; };
+		3C9DEEB8221BDCB900DB891F /* img-pdf-assets-expected.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C9DEEB6221BDCB900DB891F /* img-pdf-assets-expected.png */; };
+		3C9DEEB9221BDCB900DB891F /* img-pdf-assets-expected2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C9DEEB7221BDCB900DB891F /* img-pdf-assets-expected2.png */; };
+		3C9DEEBF221BE0D500DB891F /* img-pdf-assets-expected3.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C9DEEBE221BE0D500DB891F /* img-pdf-assets-expected3.png */; };
+		3C9DEEC2221BE87B00DB891F /* icon-line-share-expected5.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C9DEEC0221BE87B00DB891F /* icon-line-share-expected5.png */; };
+		3C9DEEC3221BE87B00DB891F /* icon-line-share-expected4.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C9DEEC1221BE87B00DB891F /* icon-line-share-expected4.png */; };
+		3C9DEEC5221BEABF00DB891F /* icon-hambuger-and-lbs2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C9DEEC4221BEABF00DB891F /* icon-hambuger-and-lbs2.png */; };
 		3C9FAEC31C0D4D7E00B0588C /* OperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9FAEC11C0D4D7E00B0588C /* OperationViewController.m */; };
 		3C9FAEC41C0D4D7E00B0588C /* OperationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C9FAEC21C0D4D7E00B0588C /* OperationViewController.xib */; };
+		3CAB9538221B961E0035279D /* ADKDashedLineViewSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CAB9537221B961E0035279D /* ADKDashedLineViewSpec.m */; };
+		3CAB953A221B9FC00035279D /* img-dashed-line-view-expected.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CAB9539221B9FC00035279D /* img-dashed-line-view-expected.png */; };
 		3CF4CABF1F04D9BF00B52064 /* CameraKitExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF4CABD1F04D9BF00B52064 /* CameraKitExampleViewController.m */; };
 		3CF4CAC01F04D9BF00B52064 /* CameraKitExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CF4CABE1F04D9BF00B52064 /* CameraKitExampleViewController.xib */; };
 		3CFC9D1121DE1696002B4A59 /* MetalRenderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFC9D0F21DE1696002B4A59 /* MetalRenderViewController.m */; };
@@ -331,6 +351,16 @@
 		3C739E562201B30700A92195 /* GradientViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradientViewController.m; sourceTree = "<group>"; };
 		3C8FA58E1C155F31004A4ED9 /* InfiniteScrollingHelpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfiniteScrollingHelpView.h; sourceTree = "<group>"; };
 		3C8FA58F1C155F31004A4ED9 /* InfiniteScrollingHelpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfiniteScrollingHelpView.m; sourceTree = "<group>"; };
+		3C914BBC221D5C4C009FEBF1 /* ADKGradientViewSpec.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADKGradientViewSpec.m; sourceTree = "<group>"; };
+		3C914BBE221D5C65009FEBF1 /* ADKMultiGradientViewSpec.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADKMultiGradientViewSpec.m; sourceTree = "<group>"; };
+		3C914BC0221D5F0B009FEBF1 /* img-gradient-view-expected2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img-gradient-view-expected2.png"; sourceTree = "<group>"; };
+		3C914BC1221D5F0C009FEBF1 /* img-gradient-view-expected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img-gradient-view-expected.png"; sourceTree = "<group>"; };
+		3C914BC2221D5F0C009FEBF1 /* img-gradient-view-expected3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img-gradient-view-expected3.png"; sourceTree = "<group>"; };
+		3C914BC3221D5F0C009FEBF1 /* img-gradient-view-expected4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img-gradient-view-expected4.png"; sourceTree = "<group>"; };
+		3C914BC8221D60F5009FEBF1 /* img-multi-gradient-view-expected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img-multi-gradient-view-expected.png"; sourceTree = "<group>"; };
+		3C914BC9221D60F6009FEBF1 /* img-multi-gradient-view-expected2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img-multi-gradient-view-expected2.png"; sourceTree = "<group>"; };
+		3C914BCA221D60F6009FEBF1 /* img-multi-gradient-view-expected3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img-multi-gradient-view-expected3.png"; sourceTree = "<group>"; };
+		3C914BCB221D60F6009FEBF1 /* img-multi-gradient-view-expected4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img-multi-gradient-view-expected4.png"; sourceTree = "<group>"; };
 		3C95C7BE1D054A1A00EA2A92 /* img-personalization-reminder-expected2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img-personalization-reminder-expected2.png"; sourceTree = "<group>"; };
 		3C95C7C01D054A3500EA2A92 /* img-personalization-reminder-expected4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img-personalization-reminder-expected4.png"; sourceTree = "<group>"; };
 		3C99D7851B035D2800D65CB3 /* AppDevKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppDevKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -346,9 +376,19 @@
 		3C99D79E1B035D2900D65CB3 /* AppDevKit.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppDevKit.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C99D7A31B035D2900D65CB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C99D7A41B035D2900D65CB3 /* AppDevKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDevKitTests.m; sourceTree = "<group>"; };
+		3C9DEEB2221BD6D000DB891F /* UIImage+ADKDrawingTemplateSpec.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ADKDrawingTemplateSpec.m"; sourceTree = "<group>"; };
+		3C9DEEB4221BD9CD00DB891F /* img-pdf-assets.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "img-pdf-assets.pdf"; sourceTree = "<group>"; };
+		3C9DEEB6221BDCB900DB891F /* img-pdf-assets-expected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img-pdf-assets-expected.png"; sourceTree = "<group>"; };
+		3C9DEEB7221BDCB900DB891F /* img-pdf-assets-expected2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img-pdf-assets-expected2.png"; sourceTree = "<group>"; };
+		3C9DEEBE221BE0D500DB891F /* img-pdf-assets-expected3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img-pdf-assets-expected3.png"; sourceTree = "<group>"; };
+		3C9DEEC0221BE87B00DB891F /* icon-line-share-expected5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-line-share-expected5.png"; sourceTree = "<group>"; };
+		3C9DEEC1221BE87B00DB891F /* icon-line-share-expected4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-line-share-expected4.png"; sourceTree = "<group>"; };
+		3C9DEEC4221BEABF00DB891F /* icon-hambuger-and-lbs2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-hambuger-and-lbs2.png"; sourceTree = "<group>"; };
 		3C9FAEC01C0D4D7E00B0588C /* OperationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperationViewController.h; sourceTree = "<group>"; };
 		3C9FAEC11C0D4D7E00B0588C /* OperationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = OperationViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		3C9FAEC21C0D4D7E00B0588C /* OperationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OperationViewController.xib; sourceTree = "<group>"; };
+		3CAB9537221B961E0035279D /* ADKDashedLineViewSpec.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADKDashedLineViewSpec.m; sourceTree = "<group>"; };
+		3CAB9539221B9FC00035279D /* img-dashed-line-view-expected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img-dashed-line-view-expected.png"; sourceTree = "<group>"; };
 		3CF4CABC1F04D9BF00B52064 /* CameraKitExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraKitExampleViewController.h; sourceTree = "<group>"; };
 		3CF4CABD1F04D9BF00B52064 /* CameraKitExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraKitExampleViewController.m; sourceTree = "<group>"; };
 		3CF4CABE1F04D9BF00B52064 /* CameraKitExampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CameraKitExampleViewController.xib; sourceTree = "<group>"; };
@@ -437,6 +477,7 @@
 			children = (
 				0013F6C41D06923800256C57 /* UIImage+ADKColorReplacementSpec.m */,
 				0013F6C51D06923800256C57 /* UIImage+ADKImageFilterSpec.m */,
+				3C9DEEB2221BD6D000DB891F /* UIImage+ADKDrawingTemplateSpec.m */,
 			);
 			path = AppDevImageKit;
 			sourceTree = "<group>";
@@ -565,6 +606,9 @@
 			isa = PBXGroup;
 			children = (
 				0047036E1C951C0B00AFDBF0 /* UIView+ADKAutoLayoutSupportSpec.m */,
+				3CAB9537221B961E0035279D /* ADKDashedLineViewSpec.m */,
+				3C914BBC221D5C4C009FEBF1 /* ADKGradientViewSpec.m */,
+				3C914BBE221D5C65009FEBF1 /* ADKMultiGradientViewSpec.m */,
 			);
 			path = AppDevUIKit;
 			sourceTree = "<group>";
@@ -840,7 +884,21 @@
 		782688271C322DCB002CD510 /* TestImages */ = {
 			isa = PBXGroup;
 			children = (
+				3C9DEEB4221BD9CD00DB891F /* img-pdf-assets.pdf */,
+				3C9DEEB6221BDCB900DB891F /* img-pdf-assets-expected.png */,
+				3C9DEEB7221BDCB900DB891F /* img-pdf-assets-expected2.png */,
+				3C9DEEBE221BE0D500DB891F /* img-pdf-assets-expected3.png */,
+				3CAB9539221B9FC00035279D /* img-dashed-line-view-expected.png */,
+				3C914BC1221D5F0C009FEBF1 /* img-gradient-view-expected.png */,
+				3C914BC0221D5F0B009FEBF1 /* img-gradient-view-expected2.png */,
+				3C914BC2221D5F0C009FEBF1 /* img-gradient-view-expected3.png */,
+				3C914BC3221D5F0C009FEBF1 /* img-gradient-view-expected4.png */,
+				3C914BC8221D60F5009FEBF1 /* img-multi-gradient-view-expected.png */,
+				3C914BC9221D60F6009FEBF1 /* img-multi-gradient-view-expected2.png */,
+				3C914BCA221D60F6009FEBF1 /* img-multi-gradient-view-expected3.png */,
+				3C914BCB221D60F6009FEBF1 /* img-multi-gradient-view-expected4.png */,
 				782688281C322E0F002CD510 /* icon-hambuger-and-lbs.png */,
+				3C9DEEC4221BEABF00DB891F /* icon-hambuger-and-lbs2.png */,
 				782688291C322E0F002CD510 /* icon-hambuger-expected.png */,
 				7826882A1C322E0F002CD510 /* icon-hambuger-expected2.png */,
 				7826882B1C322E0F002CD510 /* icon-hambuger-expected3.png */,
@@ -858,6 +916,8 @@
 				782688371C322E0F002CD510 /* icon-line-share-expected.png */,
 				782688381C322E0F002CD510 /* icon-line-share-expected2.png */,
 				782688391C322E0F002CD510 /* icon-line-share-expected3.png */,
+				3C9DEEC1221BE87B00DB891F /* icon-line-share-expected4.png */,
+				3C9DEEC0221BE87B00DB891F /* icon-line-share-expected5.png */,
 				7826883A1C322E0F002CD510 /* icon-line-share.png */,
 				7826883B1C322E0F002CD510 /* icon-line-share@2x.png */,
 				7826883C1C322E0F002CD510 /* img-blue-pattern.png */,
@@ -973,7 +1033,7 @@
 		3C99D77D1B035D2800D65CB3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0710;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = Yahoo;
 				TargetAttributes = {
 					3C99D7841B035D2800D65CB3 = {
@@ -1057,9 +1117,13 @@
 				7826884D1C322E0F002CD510 /* icon-hambuger-and-lbs.png in Resources */,
 				782688501C322E0F002CD510 /* icon-hambuger-expected3.png in Resources */,
 				782688541C322E0F002CD510 /* icon-lbs-and-yellow.png in Resources */,
+				3C914BC6221D5F0C009FEBF1 /* img-gradient-view-expected3.png in Resources */,
 				7826885F1C322E0F002CD510 /* icon-line-share.png in Resources */,
+				3C914BCC221D60F6009FEBF1 /* img-multi-gradient-view-expected.png in Resources */,
 				7826886A1C322E0F002CD510 /* img-personalization-reminder-expected3.png in Resources */,
+				3C914BC7221D5F0C009FEBF1 /* img-gradient-view-expected4.png in Resources */,
 				782688631C322E0F002CD510 /* img-cropRect-before.png in Resources */,
+				3C914BCE221D60F6009FEBF1 /* img-multi-gradient-view-expected3.png in Resources */,
 				7826885A1C322E0F002CD510 /* icon-lbs-expected6.png in Resources */,
 				7868764E1CBD12CA00675CD5 /* TestNibFile.xib in Resources */,
 				7826886E1C322E0F002CD510 /* img-personalization-reminder-vertical-expected.png in Resources */,
@@ -1070,9 +1134,13 @@
 				782688531C322E0F002CD510 /* icon-hambuger.png in Resources */,
 				782688691C322E0F002CD510 /* img-personalization-reminder-expected3-back.png in Resources */,
 				7826884E1C322E0F002CD510 /* icon-hambuger-expected.png in Resources */,
+				3CAB953A221B9FC00035279D /* img-dashed-line-view-expected.png in Resources */,
 				782688571C322E0F002CD510 /* icon-lbs-expected3.png in Resources */,
 				782688551C322E0F002CD510 /* icon-lbs-expected.png in Resources */,
+				3C914BCD221D60F6009FEBF1 /* img-multi-gradient-view-expected2.png in Resources */,
 				7826884F1C322E0F002CD510 /* icon-hambuger-expected2.png in Resources */,
+				3C9DEEB8221BDCB900DB891F /* img-pdf-assets-expected.png in Resources */,
+				3C914BCF221D60F6009FEBF1 /* img-multi-gradient-view-expected4.png in Resources */,
 				782688511C322E0F002CD510 /* icon-hambuger-expected4.png in Resources */,
 				782688661C322E0F002CD510 /* img-personalization-reminder-expected.png in Resources */,
 				7826886B1C322E0F002CD510 /* img-personalization-reminder-expected4-back.png in Resources */,
@@ -1084,13 +1152,21 @@
 				782688591C322E0F002CD510 /* icon-lbs-expected5.png in Resources */,
 				7868764D1CBD12CA00675CD5 /* SpecialSizeNibFile.xib in Resources */,
 				7826885C1C322E0F002CD510 /* icon-line-share-expected.png in Resources */,
+				3C9DEEC3221BE87B00DB891F /* icon-line-share-expected4.png in Resources */,
 				782688671C322E0F002CD510 /* img-personalization-reminder-expected2-back.png in Resources */,
+				3C9DEEC2221BE87B00DB891F /* icon-line-share-expected5.png in Resources */,
 				7826886F1C322E0F002CD510 /* img-personalization-reminder-vertical.png in Resources */,
+				3C914BC5221D5F0C009FEBF1 /* img-gradient-view-expected.png in Resources */,
+				3C914BC4221D5F0C009FEBF1 /* img-gradient-view-expected2.png in Resources */,
 				782688621C322E0F002CD510 /* img-cropRect-after.png in Resources */,
+				3C9DEEB5221BD9CD00DB891F /* img-pdf-assets.pdf in Resources */,
 				782688521C322E0F002CD510 /* icon-hambuger-expected5.png in Resources */,
+				3C9DEEC5221BEABF00DB891F /* icon-hambuger-and-lbs2.png in Resources */,
 				7826886D1C322E0F002CD510 /* img-personalization-reminder-vertical-expected-back.png in Resources */,
 				546930E61CCA2AA000378A6F /* TestUncachedCustomCalculationNibFile.xib in Resources */,
+				3C9DEEB9221BDCB900DB891F /* img-pdf-assets-expected2.png in Resources */,
 				782688601C322E0F002CD510 /* icon-line-share@2x.png in Resources */,
+				3C9DEEBF221BE0D500DB891F /* img-pdf-assets-expected3.png in Resources */,
 				782688611C322E0F002CD510 /* img-blue-pattern.png in Resources */,
 				782688581C322E0F002CD510 /* icon-lbs-expected4.png in Resources */,
 				7826885B1C322E0F002CD510 /* icon-lbs.png in Resources */,
@@ -1263,6 +1339,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C914BBF221D5C65009FEBF1 /* ADKMultiGradientViewSpec.m in Sources */,
 				00F333881B12C9B80004164C /* TimeTestUtils.m in Sources */,
 				0013F6C71D06923800256C57 /* UIImage+ADKImageFilterSpec.m in Sources */,
 				0013F6CC1D07D50400256C57 /* UIColor+ADKHexPresentationSpec.m in Sources */,
@@ -1270,12 +1347,15 @@
 				004703721C951D6C00AFDBF0 /* AutoLayoutSupportTestView.m in Sources */,
 				00F333871B12C9B80004164C /* LocationTestUtils.m in Sources */,
 				78BF7C731CBD0CD9005B61E6 /* ADKNibSizeCalculatorSpec.m in Sources */,
+				3C914BBD221D5C4C009FEBF1 /* ADKGradientViewSpec.m in Sources */,
 				005BF0C91DA104A4007119BD /* ViewTestUtil.m in Sources */,
 				3C99D7A51B035D2900D65CB3 /* AppDevKitTests.m in Sources */,
+				3CAB9538221B961E0035279D /* ADKDashedLineViewSpec.m in Sources */,
 				00F333851B12C9B80004164C /* ControllerTestUtils.m in Sources */,
 				00F333891B12C9B80004164C /* ADKAppUtilSpec.m in Sources */,
 				00F333861B12C9B80004164C /* ImageTestUtils.m in Sources */,
 				546930DE1CC4E66F00378A6F /* TestNibFile.m in Sources */,
+				3C9DEEB3221BD6D000DB891F /* UIImage+ADKDrawingTemplateSpec.m in Sources */,
 				0013F6C61D06923800256C57 /* UIImage+ADKColorReplacementSpec.m in Sources */,
 				0047036F1C951C0B00AFDBF0 /* UIView+ADKAutoLayoutSupportSpec.m in Sources */,
 				00AB34851D6DC59D005031BF /* ADKStringHelperSpec.m in Sources */,
@@ -1320,13 +1400,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -1349,7 +1439,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1364,13 +1454,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -1386,7 +1486,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
