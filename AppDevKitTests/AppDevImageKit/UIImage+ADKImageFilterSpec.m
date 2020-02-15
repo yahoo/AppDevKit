@@ -14,7 +14,7 @@
 
 SPEC_BEGIN(UIImageADKImageFilterSpec)
 
-describe(@"test captureView:", ^{
+describe(@"test ADKCaptureView:", ^{
     // NOTE: This tes case should re-think how to test it.
 //    it(@"with adding line icon to a view, and mainScreen.scale is 1", ^{
 //        UIImageView *originImageView = [[UIImageView alloc] initWithImage:[ImageTestUtils readImageNamed:@"icon-line-share.png"]];
@@ -104,9 +104,36 @@ describe(@"test ADKResizeByMaxLength:", ^{
     });
 });
 
-describe(@"test cropSize:", ^{
+describe(@"test ADKScaleToSize", ^{
+    it(@"with line-share image and scale size is 100x100", ^{
+        UIImage *originImage = [ImageTestUtils readImageNamed:@"icon-line-share.png"];
+        UIImage *expectedImage = [ImageTestUtils readImageNamed:@"icon-line-share-expected4.png"];
+        UIImage *unexpectedImage = [ImageTestUtils readImageNamed:@"icon-line-share-expected5.png"];
+        UIImage *testImage = [originImage ADKScaleToSize:CGSizeMake(100.0f, 100.0f)];
+
+        BOOL result = [ImageTestUtils compareImage:testImage toImage:expectedImage];
+        [[theValue(result) should] equal:theValue(YES)];
+
+        result = [ImageTestUtils compareImage:testImage toImage:unexpectedImage];
+        [[theValue(result) should] equal:theValue(NO)];
+    });
+    it(@"with line-share image and scale size is 200x100", ^{
+        UIImage *originImage = [ImageTestUtils readImageNamed:@"icon-line-share.png"];
+        UIImage *unexpectedImage = [ImageTestUtils readImageNamed:@"icon-line-share-expected4.png"];
+        UIImage *expectedImage = [ImageTestUtils readImageNamed:@"icon-line-share-expected5.png"];
+        UIImage *testImage = [originImage ADKScaleToSize:CGSizeMake(200.0f, 100.0f)];
+
+        BOOL result = [ImageTestUtils compareImage:testImage toImage:expectedImage];
+        [[theValue(result) should] equal:theValue(YES)];
+
+        result = [ImageTestUtils compareImage:testImage toImage:unexpectedImage];
+        [[theValue(result) should] equal:theValue(NO)];
+    });
+});
+
+describe(@"test ADKCropSize:", ^{
     
-    it(@"with line-share image and cropSize is (origin.size / 2.0f)", ^{
+    it(@"with line-share image and crop size is (origin.size / 2.0f)", ^{
         UIImage *originImage = [ImageTestUtils readImageNamed:@"icon-line-share.png"];
         UIImage *expectedImage = [ImageTestUtils readImageNamed:@"icon-line-share-expected.png"];
         UIImage *greenImage = [ImageTestUtils readImageNamed:@"icon-hambuger-expected2.png"];
@@ -121,9 +148,9 @@ describe(@"test cropSize:", ^{
     });
 });
 
-describe(@"test cropRect:", ^{
+describe(@"test ADKCropRect:", ^{
 
-    it(@"with cropRect-before image and cropRect is (100, 100, 300, 300)", ^{
+    it(@"with cropRect-before image and crop rect is (100, 100, 300, 300)", ^{
         UIImage *originalImage = [ImageTestUtils readImageNamed:@"img-cropRect-before.png"];
         UIImage *expectedImage = [ImageTestUtils readImageNamed:@"img-cropRect-after.png"];
         UIImage *greenImage = [ImageTestUtils readImageNamed:@"icon-hambuger-expected2.png"];
@@ -138,7 +165,7 @@ describe(@"test cropRect:", ^{
     });
 });
 
-describe(@"test gaussianBlurWithRadius:", ^{
+describe(@"test ADKGaussianBlurWithRadius:", ^{
     
     it(@"with personalization-reminder image, radius is 5, and mainScreen.scale is 1", ^{
         UIImage *originImage = [ImageTestUtils readImageNamed:@"img-personalization-reminder.png"];
@@ -170,7 +197,7 @@ describe(@"test gaussianBlurWithRadius:", ^{
     });
 });
 
-describe(@"test maskImageWithColor:", ^{
+describe(@"test ADKMaskImageWithColor:", ^{
     
     it(@"with lbs icon and color is yellow with 0.5 alpha", ^{
         UIImage *originImage = [ImageTestUtils readImageNamed:@"icon-lbs.png"];
@@ -186,7 +213,7 @@ describe(@"test maskImageWithColor:", ^{
     });
 });
 
-describe(@"test overlayWithTexture:", ^{
+describe(@"test ADKOverlayWithTexture:", ^{
     
     it(@"with hambuger image and texture image is lbs icon", ^{
         UIImage *originImage = [ImageTestUtils readImageNamed:@"icon-hambuger.png"];
@@ -201,9 +228,23 @@ describe(@"test overlayWithTexture:", ^{
         result = [ImageTestUtils compareImage:testImage toImage:greenImage];
         [[theValue(result) should] equal:theValue(NO)];
     });
+
+    it(@"with hambuger image and texture image is lbs icon and icon transparent is 50%", ^{
+        UIImage *originImage = [ImageTestUtils readImageNamed:@"icon-hambuger.png"];
+        UIImage *textureImage = [ImageTestUtils readImageNamed:@"icon-lbs.png"];
+        UIImage *expectedImage = [ImageTestUtils readImageNamed:@"icon-hambuger-and-lbs2.png"];
+        UIImage *unexpectedImage = [ImageTestUtils readImageNamed:@"icon-hambuger-and-lbs.png"];
+
+        UIImage *testImage = [originImage ADKOverlayWithTexture:textureImage transparent:0.5f];
+        BOOL result = [ImageTestUtils compareImage:testImage toImage:expectedImage];
+        [[theValue(result) should] equal:theValue(YES)];
+
+        result = [ImageTestUtils compareImage:testImage toImage:unexpectedImage];
+        [[theValue(result) should] equal:theValue(NO)];
+    });
 });
 
-describe(@"test blackAndWhiteImage", ^{
+describe(@"test ADKBlackAndWhiteImage", ^{
 
     it(@"with hambuger image", ^{
         UIImage *originImage = [ImageTestUtils readImageNamed:@"icon-hambuger.png"];
