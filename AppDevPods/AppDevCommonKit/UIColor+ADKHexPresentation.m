@@ -219,12 +219,19 @@
 - (NSString *)ADKHexString
 {
     const CGFloat *components = CGColorGetComponents(self.CGColor);
+    CGFloat red, green, blue;
 
-    CGFloat red = components[0];
-    CGFloat greeen = components[1];
-    CGFloat blue = components[2];
+    if (CGColorGetNumberOfComponents(self.CGColor) == 2) {
+        red = components[0];
+        green = components[0];
+        blue = components[0];
+    } else {
+        red = components[0];
+        green = components[1];
+        blue = components[2];
+    }
 
-    return [NSString stringWithFormat:@"%02lX%02lX%02lX", lroundf(red * 255), lroundf(greeen * 255), lroundf(blue * 255)];
+    return [NSString stringWithFormat:@"%02lX%02lX%02lX", lroundf(red * 255), lroundf(green * 255), lroundf(blue * 255)];
 }
 
 @end

@@ -30,6 +30,7 @@
 
 - (void)setupView
 {
+    self.backgroundColor = [UIColor clearColor];
     self.blendsType = ADKBlendsTypeFromTopToBottom;
 }
 
