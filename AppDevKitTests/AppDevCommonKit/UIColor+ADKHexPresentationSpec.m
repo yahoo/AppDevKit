@@ -135,6 +135,16 @@ describe(@"Test ADKHexString", ^{
         UIColor *expectedColor = [UIColor colorWithRed:123.0f / 255.0f green:0.0 / 255.0f blue:153.0f / 255.0f alpha:1.0f];
         [[[expectedColor ADKHexString] should] equal:@"7B0099"];
     });
+
+    it(@"given white color, should get string FFFFFF", ^{
+        UIColor *expectedColor = [UIColor whiteColor];
+        [[[expectedColor ADKHexString] should] equal:@"FFFFFF"];
+    });
+
+    it(@"given black color, should get string 000000", ^{
+        UIColor *expectedColor = [UIColor blackColor];
+        [[[expectedColor ADKHexString] should] equal:@"000000"];
+    });
 });
 
 describe(@"Test ADKColorWithRGBHexString", ^{

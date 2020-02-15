@@ -87,7 +87,7 @@
         self.translatesAutoresizingMaskIntoConstraints = YES;
         self.modalColor = color;
         self.backgroundColor = [UIColor clearColor];
-        self.frame = showInFullScreen ? [UIScreen mainScreen].bounds : [UIScreen mainScreen].applicationFrame;
+        self.frame = showInFullScreen ? [UIScreen mainScreen].bounds : [[UIApplication sharedApplication] keyWindow].frame;
         [self addSubview:view];
         view.center = CGPointMake(self.frame.size.width / 2.0f, self.frame.size.height / 2.0f);
         view.userInteractionEnabled = YES;
@@ -118,7 +118,7 @@
 
 - (void)statusBarFrameChanged
 {
-    self.frame = [UIScreen mainScreen].applicationFrame;
+    self.frame = [UIScreen mainScreen].bounds;
 }
 
 - (void)showInView:(UIView *)baseView completion:(void (^)(BOOL finished))completion
