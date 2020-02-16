@@ -69,15 +69,6 @@ NSString * const pullToRefreshContentViewBottomMarginKey;
     }
 }
 
-- (void)willRemoveSubview:(UIView *)subview
-{
-    ADKPullToRefreshContentView *pullToRefreshContentView = self.pullToRefreshContentView;
-    if (subview == pullToRefreshContentView && pullToRefreshContentView.isObserving) {
-        [self removeObserver:pullToRefreshContentView forKeyPath:@"contentOffset"];
-        pullToRefreshContentView.isObserving = NO;
-    }
-    [super willRemoveSubview:subview];
-}
  
 - (void)ADKTriggerPullToRefresh
 {
@@ -176,6 +167,15 @@ NSString * const pullToRefreshContentViewBottomMarginKey;
     }
     
     return self;
+}
+
+- (void)willMoveToSuperview:(UIView *)newSuperview
+{
+    [super willMoveToSuperview:newSuperview];
+    if (self.superview != nil && self.isObserving) {
+        [self.superview removeObserver:self forKeyPath:@"contentOffset"];
+        self.isObserving = NO;
+    }
 }
 
 - (void)setState:(ADKPullToRefreshState)state

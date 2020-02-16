@@ -62,11 +62,6 @@ typedef NS_ENUM(NSUInteger, YMDCDemoSection) {
     [self setupInfiniteScrollingView];
 }
 
-- (void)dealloc
-{
-    self.collectionView.showInfiniteScrolling = NO;
-    self.collectionView.showPullToRefresh = NO;
-}
 
 - (void)didReceiveMemoryWarning
 {

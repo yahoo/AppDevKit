@@ -154,16 +154,6 @@ NSString * const infiniteScrollingHandleViewKey;
     return NO;
 }
 
-- (void)willRemoveSubview:(UIView *)subview
-{
-    ADKInfiniteScrollingContentView *infiniteScrollingContentView = self.infiniteScrollingContentView;
-    if (subview == infiniteScrollingContentView && infiniteScrollingContentView.isObserving) {
-        [self removeObserver:infiniteScrollingContentView forKeyPath:@"contentOffset"];
-        [self removeObserver:infiniteScrollingContentView forKeyPath:@"contentSize"];
-        infiniteScrollingContentView.isObserving = NO;
-    }
-    [super willRemoveSubview:subview];
-}
 
 @end
 
@@ -178,6 +168,16 @@ NSString * const infiniteScrollingHandleViewKey;
     }
     
     return self;
+}
+
+- (void)willMoveToSuperview:(UIView *)newSuperview
+{
+    [super willMoveToSuperview:newSuperview];
+    if (self.superview != nil && self.isObserving) {
+        [self.superview removeObserver:self forKeyPath:@"contentOffset"];
+        [self.superview removeObserver:self forKeyPath:@"contentSize"];
+        self.isObserving = NO;
+    }
 }
 
 - (void)setState:(ADKInfiniteScrollingState)state
