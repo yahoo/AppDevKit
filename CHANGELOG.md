@@ -2,6 +2,14 @@
 All notable changes to this project will be documented in this file.
 `AppDevKit` adheres to [Semantic Versioning](http://semver.org/).
 
+## 1.6.0
+#### Added
+* Adding a new ADKMetalImageView to support Metal framework. It can be used for CIImage instance and render view very fast with GUP clips.
+* Adding ADKHexString compatible of UIColor to support different HEX color formate. EX: 0xFFAA33 and FFAA33.
+* Adding the UIColor support for extended SRGB color space.
+#### Fixed
+* Fixing the issues that ADKGradientView and ADKMultiGradientView won't display gradient color correctly when setting color contains transparent alpha channel.
+
 ## 1.5.0
 #### Added
 * Adding a new gradient view generator that can creat a complicated gradient effect with multiple colors and locations.
