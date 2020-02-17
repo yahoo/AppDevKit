@@ -6,6 +6,7 @@
 //  Copyright © 2017, Yahoo Inc.
 //  Licensed under the terms of the BSD License.
 //  Please see the LICENSE file in the project root for terms.
+//
 
 #import "ADKOpenGLImageView.h"
 
@@ -91,6 +92,7 @@
     CGFloat alphaColor;
     [self.backgroundColor getRed:&redColor green:&greenColor blue:&blueColor alpha:&alphaColor];
 
+    [self bindDrawable];
     glClearColor(redColor, greenColor, blueColor, alphaColor);
     glClear(GL_COLOR_BUFFER_BIT);
 }
@@ -139,7 +141,7 @@
             break;
         case ADKOpenGLImageViewContentModeScaleToFill:
         default:
-            drawRect = CGRectMake(0.0f, 0.0f, self.drawableWidth, self.drawableHeight);
+            drawRect = drawableRect;
             break;
     }
 

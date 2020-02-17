@@ -19,12 +19,16 @@
 
 - (UIColor *)ADKInitWithHexRed:(NSUInteger)red green:(NSUInteger)green blue:(NSUInteger)blue alpha:(CGFloat)alpha
 {
-    return [[UIColor alloc] initWithRed:red / (0xff*1.0f) green:green / (0xff*1.0f) blue:blue / (0xff*1.0f) alpha:alpha];
+    return [self initWithRed:red / (0xff*1.0f) green:green / (0xff*1.0f) blue:blue / (0xff*1.0f) alpha:alpha];
 }
 
 + (UIColor *)ADKColorWithHexString:(NSString *)hexString
 {
-    return [self ADKColorWithRGBHexString:hexString];
+    if ([hexString hasPrefix:@"0x"] || [hexString hasPrefix:@"0X"]) {
+        return [self ADKColorWithRGBHexString:[hexString substringFromIndex:2]];
+    } else {
+        return [self ADKColorWithRGBHexString:hexString];
+    }
 }
 
 + (UIColor *)ADKColorWithHexString:(NSString *)hexString alpha:(CGFloat)alpha
@@ -34,14 +38,11 @@
 
 - (UIColor *)ADKInitWithHexString:(NSString *)hexString
 {
-    NSUInteger rgbValue = 0;
-    NSScanner *scanner = [NSScanner scannerWithString:hexString];
-    if ( [hexString hasPrefix:@"#"] ) {
-        [scanner setScanLocation:1];
+    if ([hexString hasPrefix:@"0x"] || [hexString hasPrefix:@"0X"]) {
+        return [self.class ADKColorWithRGBHexString:[hexString substringFromIndex:2]];
+    } else {
+        return [self.class ADKColorWithRGBHexString:hexString];
     }
-    [scanner scanHexInt:(unsigned int *)&rgbValue];
-    
-    return [self ADKInitWithHexNumber:rgbValue];
 }
 
 + (UIColor *)ADKColorWithRGBHexString:(NSString *)hexString
@@ -190,9 +191,9 @@
 {
     if (self == anotherColor)
         return YES;
-    
-    CGColorSpaceRef colorSpaceRGB = CGColorSpaceCreateDeviceRGB();
-    
+
+    CGColorSpaceRef colorSpaceRGB = CGColorSpaceCreateWithName(kCGColorSpaceExtendedSRGB);
+
     UIColor *(^convertColorToRGBSpace)(UIColor*) = ^(UIColor *color)
     {
         if (CGColorSpaceGetModel(CGColorGetColorSpace(color.CGColor)) == kCGColorSpaceModelMonochrome)
@@ -218,12 +219,19 @@
 - (NSString *)ADKHexString
 {
     const CGFloat *components = CGColorGetComponents(self.CGColor);
+    CGFloat red, green, blue;
 
-    CGFloat red = components[0];
-    CGFloat greeen = components[1];
-    CGFloat blue = components[2];
+    if (CGColorGetNumberOfComponents(self.CGColor) == 2) {
+        red = components[0];
+        green = components[0];
+        blue = components[0];
+    } else {
+        red = components[0];
+        green = components[1];
+        blue = components[2];
+    }
 
-    return [NSString stringWithFormat:@"%02lX%02lX%02lX", lroundf(red * 255), lroundf(greeen * 255), lroundf(blue * 255)];
+    return [NSString stringWithFormat:@"%02lX%02lX%02lX", lroundf(red * 255), lroundf(green * 255), lroundf(blue * 255)];
 }
 
 @end

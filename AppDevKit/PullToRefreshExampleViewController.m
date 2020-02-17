@@ -49,11 +49,6 @@ static NSString * const CellCollectionViewCellIdentifier = @"SampleVCollectionVi
     // Dispose of any resources that can be recreated.
 }
 
-- (void)dealloc
-{
-    self.collectionView.showInfiniteScrolling = NO;
-    self.collectionView.showPullToRefresh = NO;
-}
 
 - (void)setupView
 {
