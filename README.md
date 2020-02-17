@@ -89,6 +89,7 @@ pod 'AppDevKit/AppDevImageKit'
 
   - **ADKCamera** > Allows you to use advanced manual camera features and customize your camera view in few steps.
   - **ADKOpenGLImageView** > It provides an OpenGL ES soltion for rendering a core image on the screen by using GPU.
+  - **ADKMetalImageView** > It provides an Metal framework soltion for rendering a core image on the screen by using GPU.
   
 
 ### Instruction
