@@ -9,6 +9,7 @@ All notable changes to this project will be documented in this file.
 * Adding the UIColor support for extended SRGB color space.
 #### Fixed
 * Fixing the issues that ADKGradientView and ADKMultiGradientView won't display gradient color correctly when setting color contains transparent alpha channel.
+* Fixing the crash issue when PullToRefresh and InfiniteScrolling are using in the same UIScrollView. It would miss the paired removeObserver: method call.
 
 ## 1.5.0
 #### Added
