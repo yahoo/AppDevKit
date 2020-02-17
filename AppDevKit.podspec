@@ -1,14 +1,14 @@
 Pod::Spec.new do |s|
 
   s.name         = "AppDevKit"
-  s.version      = "1.5.0"
+  s.version      = "1.6.0"
   s.summary      = "The collection of open develop utilities for iOS development team. It contains foundational and useful features that Apple didn't provide."
   s.homepage     = "https://github.com/yahoo/AppDevKit"
   s.license      = "Yahoo! Inc. BSD license"
 
   s.author       = { "anistar sung" => "cfsung@yahoo-inc.com", "core team" => "app-dev-kit@yahoo-inc.com" }
-  s.platform     = :ios, "7.0"
-  s.ios.deployment_target = '7.0'
+  s.platform     = :ios, "10.0"
+  s.ios.deployment_target = '10.0'
 
   s.subspec 'AppDevCommonKit' do |appDevCommonKit|
       appDevCommonKit.source_files = ['AppDevPods/AppDevCommonKit/**/*', 'AppDevPods/AppDevCommonKit.h']
