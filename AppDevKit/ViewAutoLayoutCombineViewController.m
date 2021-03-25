@@ -50,7 +50,6 @@
     self.view.backgroundColor = [UIColor themeBackgroundColor];
     
     self.edgesForExtendedLayout = UIRectEdgeNone;
-    self.automaticallyAdjustsScrollViewInsets = NO;
     
     self.hideTopBtn.layer.borderWidth = 1.0f;
     self.hideLeftBtn.layer.borderWidth = 1.0f;
