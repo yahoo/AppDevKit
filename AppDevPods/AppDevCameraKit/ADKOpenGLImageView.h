@@ -25,6 +25,9 @@ typedef NS_ENUM(NSInteger, ADKOpenGLImageViewContentMode) {
     ADKOpenGLImageViewContentModeBottomRight
 };
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+
 @interface ADKOpenGLImageView : GLKView
 
 /**
@@ -38,3 +41,5 @@ typedef NS_ENUM(NSInteger, ADKOpenGLImageViewContentMode) {
 @property (assign, nonatomic) ADKOpenGLImageViewContentMode contentMode;
 
 @end
+
+#pragma clang diagnostic pop

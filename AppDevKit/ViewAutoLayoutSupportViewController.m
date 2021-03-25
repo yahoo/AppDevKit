@@ -54,7 +54,7 @@ static NSString * const CellCollectionViewCellIdentifier = @"SampleVCollectionVi
     self.typeSegmentedControl.tintColor = [UIColor ADKColorWithHexString:@"CCCCCC"];
 
     self.edgesForExtendedLayout = UIRectEdgeNone;
-    self.automaticallyAdjustsScrollViewInsets = NO;
+    self.avatorCollectionView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
     
     NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"Country-data" ofType:@"plist"];
     self.flagArray = [NSArray arrayWithContentsOfFile:plistPath];
