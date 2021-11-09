@@ -9,7 +9,7 @@ Yahoo’s Taiwan based iOS app development team has been using this development 
 
 AppDevKit has five major parts that include command, user interfaces, animations, image view, and list view support libraries. AppDevKit could be installed by CocoaPods. Please feel welcome to use AppDevKit in your iOS projects as it is licensed under the permissive open source BSD license. 
 
-You can help contribute improvements to this project too. If you have suggestions, corrections, or enhancements, please send us a pull request. If you have questions for the team, you can contact **cfsung@oath.com** directly, or the core team at **app-dev-kit@oath.com**. Thank you for checking this out. 
+You can help contribute improvements to this project too. If you have suggestions, corrections, or enhancements, please send us a pull request. If you have questions for the team, you can contact **cfsung@yahooinc.com** directly, or the core team at **app-dev-kit@yahooinc.com**. Thank you for checking this out. 
 
 <img src="img/AppDevKit-Sticker.png">
 
