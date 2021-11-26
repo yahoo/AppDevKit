@@ -1,0 +1,1 @@
+../UIImage+ADKDrawingTemplate.h
