@@ -10,7 +10,7 @@
 
 #import <objc/runtime.h>
 #import "UIView+ADKAutoLayoutSupport.h"
-#import "ADKAutoLayoutValueObject.h"
+#import "ValueObjects/ADKAutoLayoutValueObject.h"
 
 @interface UIView ()
 
