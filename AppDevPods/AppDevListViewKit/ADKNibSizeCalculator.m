@@ -9,6 +9,7 @@
 //
 
 #import "ADKNibSizeCalculator.h"
+#import "ADKCalculatorHelper.h"
 
 @interface ADKNibSizeCalculator ()
 

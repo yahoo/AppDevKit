@@ -10,7 +10,6 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "ADKCalculatorHelper.h"
 
 typedef NS_ENUM(NSUInteger, ADKNibSizeStyle) {
     ADKNibOriginalSize = 0,
