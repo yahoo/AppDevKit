@@ -10,7 +10,7 @@
 
 #import <UIKit/UIKit.h>
 
-typedef NS_ENUM(NSUInteger, ADKLayoutAttribute) {
+typedef NS_OPTIONS(NSUInteger, ADKLayoutAttribute) {
     ADKLayoutAttributeTop = 1 << 0,
     ADKLayoutAttributeBottom = 1 << 1,
     ADKLayoutAttributeLeading = 1 << 2,
