@@ -34,12 +34,10 @@
     return instance;
 }
 
-
 - (CGSize)sizeForNibNamed:(NSString *)nibName
 {
-    return  [[ADKNibSizeCalculator sharedInstance] sizeForNibNamed:nibName withStyle:ADKNibDefaultScaling];
+    return  [self sizeForNibNamed:nibName withStyle:ADKNibDefaultScaling];
 }
-
 
 - (CGSize)sizeForNibNamed:(NSString *)nibName withStyle:(ADKNibSizeStyle)style
 {
@@ -48,6 +46,21 @@
 
 - (CGSize)sizeForNibNamed:(NSString *)nibName withStyle:(ADKNibSizeStyle)style fitSize:(CGSize)containerSize
 {
+    return [self sizeForNibNamed:nibName atBundle:nil withStyle:ADKNibDefaultScaling fitSize:containerSize];
+}
+
+- (CGSize)sizeForNibNamed:(NSString *)nibName atBundle:(NSBundle *)bundle
+{
+    return [self sizeForNibNamed:nibName atBundle:bundle withStyle:ADKNibDefaultScaling];
+}
+
+- (CGSize)sizeForNibNamed:(NSString *)nibName atBundle:(NSBundle *)bundle withStyle:(ADKNibSizeStyle)style
+{
+    return [self sizeForNibNamed:nibName atBundle:bundle withStyle:style fitSize:ADKScreenSize()];
+}
+
+- (CGSize)sizeForNibNamed:(NSString *)nibName atBundle:(NSBundle *)bundle withStyle:(ADKNibSizeStyle)style fitSize:(CGSize)containerSize
+{
     CGSize nibSize = ADKCGSizeZeroHeight();
     UIDeviceOrientation deviceOrientation = [[UIDevice currentDevice] orientation];
     NSString *nibwithStyle = [NSString stringWithFormat:@"%@_%lu_%lu_%@", nibName, (unsigned long)deviceOrientation, (unsigned long)style, NSStringFromCGSize(containerSize)];
@@ -55,8 +68,9 @@
         NSString *sizeString = [self.nibSizeCache objectForKey:nibwithStyle];
         nibSize = CGSizeFromString(sizeString);
     } else {
-        NSBundle *bundle = [NSBundle bundleForClass:NSClassFromString(nibName)];
-        NSArray *objects = [bundle loadNibNamed:nibName owner:self options:nil];
+        NSBundle *resourceBundle = bundle ?: [NSBundle bundleForClass:NSClassFromString(nibName)];
+        NSString *pureNibName = nibName.pathExtension.length > 0 ? nibName.pathExtension : nibName;
+        NSArray *objects = [resourceBundle loadNibNamed:pureNibName owner:self options:nil];
         __block UIView *blockClassInstance = nil;
         [objects enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             if ([obj isKindOfClass:[UIView class]]) {
