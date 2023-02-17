@@ -280,6 +280,7 @@
 		00C074DB1CA662A2004AF305 /* MovieDescCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieDescCell.h; sourceTree = "<group>"; };
 		00C074DC1CA662A2004AF305 /* MovieDescCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieDescCell.m; sourceTree = "<group>"; };
 		00C074DD1CA662A2004AF305 /* MovieDescCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieDescCell.xib; sourceTree = "<group>"; };
+		00D0D58D27B1243800146C28 /* AppDevKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = AppDevKit; sourceTree = "<group>"; };
 		00F3337A1B12C9B80004164C /* ControllerTestUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControllerTestUtils.h; sourceTree = "<group>"; };
 		00F3337B1B12C9B80004164C /* ControllerTestUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControllerTestUtils.m; sourceTree = "<group>"; };
 		00F3337C1B12C9B80004164C /* ImageTestUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageTestUtils.h; sourceTree = "<group>"; };
@@ -294,7 +295,7 @@
 		3B65A2B5AB01A8E9D6C03F5B /* Pods-AppDevKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppDevKitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppDevKitTests/Pods-AppDevKitTests.release.xcconfig"; sourceTree = "<group>"; };
 		3C1F6E401B28076900A67E37 /* Country-data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Country-data.plist"; sourceTree = "<group>"; };
 		3C1F6E431B28106600A67E37 /* ColorHexPresentationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorHexPresentationViewController.h; sourceTree = "<group>"; };
-		3C1F6E441B28106600A67E37 /* ColorHexPresentationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ColorHexPresentationViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		3C1F6E441B28106600A67E37 /* ColorHexPresentationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ColorHexPresentationViewController.m; sourceTree = "<group>"; };
 		3C1F6E451B28106600A67E37 /* ColorHexPresentationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColorHexPresentationViewController.xib; sourceTree = "<group>"; };
 		3C1F6E481B2810B600A67E37 /* ViewAutoLayoutSupportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewAutoLayoutSupportViewController.h; sourceTree = "<group>"; };
 		3C1F6E491B2810B600A67E37 /* ViewAutoLayoutSupportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ViewAutoLayoutSupportViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
@@ -660,6 +661,14 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
+		00D0D58B27B1226000146C28 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				00D0D58D27B1243800146C28 /* AppDevKit */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
 		00F333771B12C9B80004164C /* TestUtils */ = {
 			isa = PBXGroup;
 			children = (
@@ -809,6 +818,7 @@
 		3C99D77C1B035D2800D65CB3 = {
 			isa = PBXGroup;
 			children = (
+				00D0D58B27B1226000146C28 /* Packages */,
 				3C99D7871B035D2800D65CB3 /* AppDevKit */,
 				3C99D7A11B035D2900D65CB3 /* AppDevKitTests */,
 				3C99D7861B035D2800D65CB3 /* Products */,
@@ -1002,6 +1012,8 @@
 			dependencies = (
 			);
 			name = AppDevKit;
+			packageProductDependencies = (
+			);
 			productName = ECDevelopKit;
 			productReference = 3C99D7851B035D2800D65CB3 /* AppDevKit.app */;
 			productType = "com.apple.product-type.application";

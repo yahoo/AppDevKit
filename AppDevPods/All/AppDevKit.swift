@@ -1,5 +1,5 @@
 //
-//  AppDevKit.h
+//  AppDevKit.swift
 //  AppDevKit
 //
 //  Copyright © 2021, Yahoo Inc.
@@ -25,7 +25,3 @@ import Foundation
 
 // Camera Tools
 @_exported import AppDevCameraKit
-
-
-
-

@@ -47,20 +47,24 @@ let package = Package(
         ),
         .target(
             name: "AppDevCommonKit",
-            path: "AppDevPods/AppDevCommonKit"
+            path: "AppDevPods/AppDevCommonKit",
+            publicHeadersPath: "."
         ),
         .target(
             name: "AppDevUIKit",
-            path: "AppDevPods/AppDevUIKit"
+            path: "AppDevPods/AppDevUIKit",
+            publicHeadersPath: "."
         ),
         .target(
             name: "AppDevAnimateKit",
-            path: "AppDevPods/AppDevAnimateKit"
+            path: "AppDevPods/AppDevAnimateKit",
+            publicHeadersPath: "."
         ),
         .target(
             name: "AppDevImageKit",
             dependencies: ["AppDevCommonKit"],
             path: "AppDevPods/AppDevImageKit",
+            publicHeadersPath: ".",
             cSettings: [
                 .headerSearchPath("../")
             ]
@@ -69,13 +73,15 @@ let package = Package(
             name: "AppDevListViewKit",
             dependencies: ["AppDevUIKit", "AppDevCommonKit"],
             path: "AppDevPods/AppDevListViewKit",
+            publicHeadersPath: ".",
             cSettings: [
                 .headerSearchPath("../")
             ]
         ),
         .target(
             name: "AppDevCameraKit",
-            path: "AppDevPods/AppDevCameraKit"
+            path: "AppDevPods/AppDevCameraKit",
+            publicHeadersPath: "."
         ),
         .testTarget(
             name: "AppDevKitTests",
