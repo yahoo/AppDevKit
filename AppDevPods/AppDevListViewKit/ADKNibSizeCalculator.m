@@ -46,7 +46,7 @@
 
 - (CGSize)sizeForNibNamed:(NSString *)nibName withStyle:(ADKNibSizeStyle)style fitSize:(CGSize)containerSize
 {
-    return [self sizeForNibNamed:nibName atBundle:nil withStyle:ADKNibDefaultScaling fitSize:containerSize];
+    return [self sizeForNibNamed:nibName atBundle:nil withStyle:style fitSize:containerSize];
 }
 
 - (CGSize)sizeForNibNamed:(NSString *)nibName atBundle:(NSBundle *)bundle
