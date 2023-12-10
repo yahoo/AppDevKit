@@ -48,5 +48,6 @@ Pod::Spec.new do |s|
   s.source_files = "AppDevPods/AppDevKit.h"
   s.public_header_files = "AppDevPods/AppDevKit.h"
   s.requires_arc = true
+  s.resource_bundles = {'AppDevKit' => ['PrivacyInfo.xcprivacy']}
 
 end
