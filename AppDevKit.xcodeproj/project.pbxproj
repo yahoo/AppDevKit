@@ -260,6 +260,7 @@
 		004703751C951D9300AFDBF0 /* AutoLayoutSupportTestView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AutoLayoutSupportTestView.xib; sourceTree = "<group>"; };
 		005BF0C71DA104A4007119BD /* ViewTestUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewTestUtil.h; sourceTree = "<group>"; };
 		005BF0C81DA104A4007119BD /* ViewTestUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewTestUtil.m; sourceTree = "<group>"; };
+		0061C3D62B24B22800F56B31 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		007D0F911C101B51002FD0B1 /* ViewAutoLayoutCombineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewAutoLayoutCombineViewController.h; sourceTree = "<group>"; };
 		007D0F921C101B51002FD0B1 /* ViewAutoLayoutCombineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewAutoLayoutCombineViewController.m; sourceTree = "<group>"; };
 		007D0F931C101B51002FD0B1 /* ViewAutoLayoutCombineViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewAutoLayoutCombineViewController.xib; sourceTree = "<group>"; };
@@ -280,7 +281,7 @@
 		00C074DB1CA662A2004AF305 /* MovieDescCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieDescCell.h; sourceTree = "<group>"; };
 		00C074DC1CA662A2004AF305 /* MovieDescCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieDescCell.m; sourceTree = "<group>"; };
 		00C074DD1CA662A2004AF305 /* MovieDescCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieDescCell.xib; sourceTree = "<group>"; };
-		00D0D58D27B1243800146C28 /* AppDevKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = AppDevKit; sourceTree = "<group>"; };
+		00D0D58D27B1243800146C28 /* AppDevKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = AppDevKit; sourceTree = "<group>"; };
 		00F3337A1B12C9B80004164C /* ControllerTestUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControllerTestUtils.h; sourceTree = "<group>"; };
 		00F3337B1B12C9B80004164C /* ControllerTestUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControllerTestUtils.m; sourceTree = "<group>"; };
 		00F3337C1B12C9B80004164C /* ImageTestUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageTestUtils.h; sourceTree = "<group>"; };
@@ -506,6 +507,7 @@
 				001D98F41C17F3EA0097623E /* AppDevImageKit */,
 				001D98FD1C17F3EA0097623E /* AppDevListViewKit */,
 				3C2D70AC1E557DF000667727 /* AppDevCameraKit */,
+				0061C3D62B24B22800F56B31 /* PrivacyInfo.xcprivacy */,
 			);
 			name = AppDevKitPods;
 			path = AppDevPods;
