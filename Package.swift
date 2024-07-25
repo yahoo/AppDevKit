@@ -43,27 +43,32 @@ let package = Package(
         .target(
             name: "AppDevKit",
             dependencies: ["AppDevCommonKit", "AppDevUIKit", "AppDevAnimateKit", "AppDevImageKit", "AppDevListViewKit", "AppDevCameraKit"],
-            path: "AppDevPods/All"
+            path: "AppDevPods/All",
+            resources: [.copy("PrivacyInfo.xcprivacy")]
         ),
         .target(
             name: "AppDevCommonKit",
             path: "AppDevPods/AppDevCommonKit",
+            resources: [.copy("PrivacyInfo.xcprivacy")],
             publicHeadersPath: "."
         ),
         .target(
             name: "AppDevUIKit",
             path: "AppDevPods/AppDevUIKit",
+            resources: [.copy("PrivacyInfo.xcprivacy")],
             publicHeadersPath: "."
         ),
         .target(
             name: "AppDevAnimateKit",
             path: "AppDevPods/AppDevAnimateKit",
+            resources: [.copy("PrivacyInfo.xcprivacy")],
             publicHeadersPath: "."
         ),
         .target(
             name: "AppDevImageKit",
             dependencies: ["AppDevCommonKit"],
             path: "AppDevPods/AppDevImageKit",
+            resources: [.copy("PrivacyInfo.xcprivacy")],
             publicHeadersPath: ".",
             cSettings: [
                 .headerSearchPath("../")
@@ -73,6 +78,7 @@ let package = Package(
             name: "AppDevListViewKit",
             dependencies: ["AppDevUIKit", "AppDevCommonKit"],
             path: "AppDevPods/AppDevListViewKit",
+            resources: [.copy("PrivacyInfo.xcprivacy")],
             publicHeadersPath: ".",
             cSettings: [
                 .headerSearchPath("../")
@@ -81,12 +87,15 @@ let package = Package(
         .target(
             name: "AppDevCameraKit",
             path: "AppDevPods/AppDevCameraKit",
+            resources: [.copy("PrivacyInfo.xcprivacy")],
             publicHeadersPath: "."
         ),
         .testTarget(
             name: "AppDevKitTests",
             dependencies: ["AppDevKit"],
-            path: "AppDevKitTests")
+            path: "AppDevKitTests",
+            resources: [.copy("PrivacyInfo.xcprivacy")]
+        )
     ]
 )
 
